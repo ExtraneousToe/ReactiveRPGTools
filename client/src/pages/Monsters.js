@@ -11,6 +11,10 @@ import { sortAscending as sortCRAsc } from "../utility/challengeRatingUtil";
 import { MonsterDisplay } from "../components/MonsterDisplay";
 
 import { CARD_SIZES } from "../data/referenceCardSizes";
+import {
+    CreatureTypeList,
+    sortCreatureTypeAsc,
+} from "../utility/creatureTypeUtil";
 
 export function Monsters(props) {
     const pathWithId = "/monsters/:id";
@@ -39,10 +43,10 @@ export function Monsters(props) {
         new DisplayColumn(
             "Type",
             (item) => {
-                return <>{item["CreatureTypeRef"]}</>;
+                return <CreatureTypeList creatureType={item["CreatureType"]} />;
             },
             (a, b) => {
-                return sortStrAsc(a.CreatureTypeRef, b.CreatureTypeRef);
+                return sortCreatureTypeAsc(a.CreatureType, b.CreatureType);
             }
         ),
         new DisplayColumn(

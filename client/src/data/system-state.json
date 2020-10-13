@@ -1750,7 +1750,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "ToA", "WDMM", "BGDIA"],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -1853,7 +1856,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "WDMM", "IMR", "MOT"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -1877,7 +1883,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "RoT", "SKT", "WDH", "WDMM", "GoS", "MOT"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -2022,7 +2031,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MM",
             "OtherSources": ["BGDIA", "IMR", "EGW"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -2213,7 +2225,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "WDH", "WDMM", "BGDIA", "IMR"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -2583,7 +2598,10 @@
                 "WDMM",
                 "GoS"
             ],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -2607,7 +2625,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "GoS", "ERLW", "MOT"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -2980,7 +3001,10 @@
                 "RMBRE",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "Bugbear",
             "HarvestingTable": {
                 "Rows": [
@@ -3009,7 +3033,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP"],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "Bugbear",
             "HarvestingTable": {
                 "Rows": [
@@ -3082,7 +3109,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "WDMM", "GoS", "EGW"],
-            "CreatureTypeRef": "humanoid (bullywug)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["bullywug"]
+            },
             "TrinketTableType": "Bullywug",
             "HarvestingTable": {
                 "Rows": [
@@ -3340,7 +3370,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -3544,7 +3577,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "SKT", "TftYP", "GoS", "MOT"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -3726,7 +3762,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "TftYP", "ToA", "WDMM", "EGW"],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -3943,7 +3982,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["RoT", "ToA", "GoS", "EGW", "MOT"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -4110,7 +4152,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "WDMM", "GoS", "BGDIA", "EGW"],
-            "CreatureTypeRef": "aberration (shapechanger)",
+            "CreatureType": {
+                "Type": "aberration",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -4170,7 +4215,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "WDH", "WDMM"],
-            "CreatureTypeRef": "humanoid (gnome)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gnome"]
+            },
             "TrinketTableType": "Deep Gnome",
             "HarvestingTable": {
                 "Rows": []
@@ -4261,7 +4309,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -4404,7 +4455,10 @@
                 "IMR",
                 "EGW"
             ],
-            "CreatureTypeRef": "monstrosity (shapechanger)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -4512,7 +4566,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "GoS", "BGDIA", "IMR", "EGW"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -4589,7 +4646,10 @@
                 "BGDIA",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": "Drow",
             "HarvestingTable": {
                 "Rows": [
@@ -4618,7 +4678,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "TftYP", "WDH", "WDMM", "DC", "DIP", "SLW"],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": "Drow",
             "HarvestingTable": {
                 "Rows": [
@@ -4656,7 +4719,10 @@
                 "DC",
                 "DIP"
             ],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": "Drow",
             "HarvestingTable": {
                 "Rows": [
@@ -4689,7 +4755,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "WDMM", "GoS"],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": "Drow",
             "HarvestingTable": {
                 "Rows": [
@@ -4765,7 +4834,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "GoS", "BGDIA", "EGW", "MOT"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -4802,7 +4874,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "TftYP", "WDH", "WDMM", "BGDIA", "EGW"],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": "Duergar",
             "HarvestingTable": {
                 "Rows": [
@@ -5025,7 +5100,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "WDMM", "BGDIA", "MOT"],
-            "CreatureTypeRef": "celestial (titan)",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": ["titan"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -5151,7 +5229,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "RoT", "SKT", "TftYP", "WDMM"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -5436,7 +5517,10 @@
                 "EGW",
                 "MOT"
             ],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -5669,7 +5753,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -5720,7 +5807,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["RoT", "SKT", "TftYP", "ToA", "EGW"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -5809,7 +5899,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "WDH", "WDMM"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -5833,7 +5926,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "WDMM", "GoS", "ERLW"],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -6797,7 +6893,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": "Githyanki",
             "HarvestingTable": {
                 "Rows": []
@@ -6821,7 +6920,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": "Githyanki",
             "HarvestingTable": {
                 "Rows": []
@@ -6845,7 +6947,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": "Githzerai",
             "HarvestingTable": {
                 "Rows": []
@@ -6869,7 +6974,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": "Githzerai",
             "HarvestingTable": {
                 "Rows": []
@@ -6893,7 +7001,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "WDMM", "GoS", "BGDIA", "EGW"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -6968,7 +7079,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "TftYP", "GoS", "BGDIA", "ERLW", "EGW"],
-            "CreatureTypeRef": "humanoid (gnoll)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gnoll"]
+            },
             "TrinketTableType": "Gnoll",
             "HarvestingTable": {
                 "Rows": []
@@ -6992,7 +7106,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["BGDIA"],
-            "CreatureTypeRef": "fiend (gnoll)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["gnoll"]
+            },
             "TrinketTableType": "Gnoll",
             "HarvestingTable": {
                 "Rows": []
@@ -7016,7 +7133,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "GoS", "BGDIA"],
-            "CreatureTypeRef": "humanoid (gnoll)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gnoll"]
+            },
             "TrinketTableType": "Gnoll",
             "HarvestingTable": {
                 "Rows": []
@@ -7089,7 +7209,10 @@
                 "RMBRE",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "Goblin",
             "HarvestingTable": {
                 "Rows": []
@@ -7113,7 +7236,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "ToA", "WDMM", "GoS", "BGDIA"],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "Goblin",
             "HarvestingTable": {
                 "Rows": []
@@ -7208,7 +7334,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -7249,7 +7378,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "HotDQ", "TftYP", "WDH", "GoS"],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7273,7 +7405,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["ToA", "WDMM"],
-            "CreatureTypeRef": "aberration (shapechanger)",
+            "CreatureType": {
+                "Type": "aberration",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7341,7 +7476,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["ToA", "GoS", "IMR", "EGW", "MOT"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7365,7 +7503,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "aberration (shapechanger)",
+            "CreatureType": {
+                "Type": "aberration",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7506,7 +7647,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "humanoid (grimlock)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["grimlock"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7627,7 +7771,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "SKT", "WDH", "BGDIA", "ERLW"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7651,7 +7798,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "MM",
             "OtherSources": ["RoT", "GoS", "SLW", "IMR"],
-            "CreatureTypeRef": "humanoid (human)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7805,7 +7955,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "TftYP", "WDMM", "BGDIA", "EGW"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -7854,7 +8007,10 @@
                 "ERLW",
                 "EGW"
             ],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -7917,7 +8073,10 @@
                 "RMBRE",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "Hobgoblin",
             "HarvestingTable": {
                 "Rows": [
@@ -7946,7 +8105,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "PotA", "SKT", "WDMM", "BGDIA"],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "Hobgoblin",
             "HarvestingTable": {
                 "Rows": [
@@ -7979,7 +8141,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "WDMM", "BGDIA"],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "Hobgoblin",
             "HarvestingTable": {
                 "Rows": [
@@ -8320,7 +8485,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["ToA", "WDMM", "BGDIA", "ERLW", "IMR", "EGW"],
-            "CreatureTypeRef": "fiend (shapechanger)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -8464,7 +8632,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "GoS", "BGDIA"],
-            "CreatureTypeRef": "humanoid (shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -8488,7 +8659,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "WDH", "WDMM", "BGDIA", "ERLW"],
-            "CreatureTypeRef": "humanoid (kenku)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["kenku"]
+            },
             "TrinketTableType": "Kenku",
             "HarvestingTable": {
                 "Rows": []
@@ -8592,7 +8766,10 @@
                 "ERLW",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (kobold)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["kobold"]
+            },
             "TrinketTableType": "Kobold",
             "HarvestingTable": {
                 "Rows": []
@@ -8616,7 +8793,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MM",
             "OtherSources": ["GoS", "SLW", "EGW", "MOT"],
-            "CreatureTypeRef": "monstrosity (titan)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["titan"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -8640,7 +8820,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "TftYP", "WDH", "WDMM", "GoS", "EGW"],
-            "CreatureTypeRef": "humanoid (kuo-toa)",
+            "CreatureType": { "Type": "humanoid", "Tags": ["kuo-toa"] },
             "TrinketTableType": "Kuo-toa",
             "HarvestingTable": {
                 "Rows": []
@@ -8664,7 +8844,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "WDMM"],
-            "CreatureTypeRef": "humanoid (kuo-toa)",
+            "CreatureType": { "Type": "humanoid", "Tags": ["kuo-toa"] },
             "TrinketTableType": "Kuo-toa",
             "HarvestingTable": {
                 "Rows": []
@@ -8688,7 +8868,7 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "GoS"],
-            "CreatureTypeRef": "humanoid (kuo-toa)",
+            "CreatureType": { "Type": "humanoid", "Tags": ["kuo-toa"] },
             "TrinketTableType": "Kuo-toa",
             "HarvestingTable": {
                 "Rows": []
@@ -8712,7 +8892,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "WDH", "WDMM", "GoS"],
-            "CreatureTypeRef": "humanoid (kuo-toa)",
+            "CreatureType": { "Type": "humanoid", "Tags": ["kuo-toa"] },
             "TrinketTableType": "Kuo-toa",
             "HarvestingTable": {
                 "Rows": []
@@ -8876,7 +9056,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "GoS"],
-            "CreatureTypeRef": "humanoid (lizardfolk)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["lizardfolk"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -8900,7 +9083,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (lizardfolk)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["lizardfolk"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -8935,7 +9121,10 @@
                 "IMR",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (lizardfolk)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["lizardfolk"]
+            },
             "TrinketTableType": "Lizardfolk",
             "HarvestingTable": {
                 "Rows": []
@@ -8959,7 +9148,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "ToA", "GoS", "IMR", "EGW"],
-            "CreatureTypeRef": "humanoid (lizardfolk)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["lizardfolk"]
+            },
             "TrinketTableType": "Lizardfolk",
             "HarvestingTable": {
                 "Rows": []
@@ -9109,7 +9301,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "GoS", "BGDIA", "IMR"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -9203,7 +9398,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "GoS", "BGDIA", "EGW"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -9302,7 +9500,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDH", "GoS"],
-            "CreatureTypeRef": "humanoid (merfolk)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["merfolk"]
+            },
             "TrinketTableType": "Merfolk",
             "HarvestingTable": {
                 "Rows": []
@@ -9353,7 +9554,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "RoT", "ToA", "WDMM", "BGDIA"],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -9387,7 +9591,10 @@
                 "IMR",
                 "EGW"
             ],
-            "CreatureTypeRef": "monstrosity (shapechanger)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -9672,7 +9879,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "GoS"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -9696,7 +9906,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "GoS", "IMR"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -9720,7 +9933,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -9744,7 +9960,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "ToA", "WDMM", "BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -9785,7 +10004,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "GoS"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -9970,7 +10192,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "RoT", "ToA", "WDMM", "BGDIA"],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10004,7 +10229,10 @@
                 "ERLW",
                 "RMBRE"
             ],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10069,7 +10297,10 @@
                 "RMBRE",
                 "EGW"
             ],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10128,7 +10359,10 @@
                 "ERLW",
                 "EGW"
             ],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10164,7 +10398,10 @@
                 "RMBRE",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": "Orc",
             "HarvestingTable": {
                 "Rows": []
@@ -10188,7 +10425,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "SKT", "TftYP", "EGW"],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": "Orc",
             "HarvestingTable": {
                 "Rows": []
@@ -10212,7 +10452,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "ToA", "WDMM", "GoS"],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": "Orc",
             "HarvestingTable": {
                 "Rows": []
@@ -10244,7 +10487,10 @@
                 "GoS",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": "Orc",
             "HarvestingTable": {
                 "Rows": []
@@ -10397,7 +10643,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["ERLW", "MOT"],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10577,7 +10826,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["GoS", "ERLW", "IMR", "EGW"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10601,7 +10853,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["BGDIA"],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -10944,7 +11199,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "humanoid (quaggoth)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["quaggoth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10968,7 +11226,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -10992,7 +11253,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "humanoid (quaggoth)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["quaggoth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -11016,7 +11280,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "TftYP", "WDMM", "BGDIA", "EGW"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -11526,7 +11793,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "GoS", "DIP", "SDW", "BGDIA", "EGW"],
-            "CreatureTypeRef": "humanoid (sahuagin)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["sahuagin"]
+            },
             "TrinketTableType": "Sahuagin",
             "HarvestingTable": {
                 "Rows": []
@@ -11550,7 +11820,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "WDMM", "GoS"],
-            "CreatureTypeRef": "humanoid (sahuagin)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["sahuagin"]
+            },
             "TrinketTableType": "Sahuagin",
             "HarvestingTable": {
                 "Rows": []
@@ -11574,7 +11847,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["TftYP", "GoS", "SDW", "BGDIA"],
-            "CreatureTypeRef": "humanoid (sahuagin)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["sahuagin"]
+            },
             "TrinketTableType": "Sahuagin",
             "HarvestingTable": {
                 "Rows": []
@@ -11625,7 +11901,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "IMR"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -11755,7 +12034,10 @@
                 "SLW",
                 "MOT"
             ],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -11853,7 +12135,10 @@
                 "IMR",
                 "MOT"
             ],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -11891,7 +12176,10 @@
                 "BGDIA",
                 "MOT"
             ],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -11951,7 +12239,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "GoS"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12116,7 +12407,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MM",
             "OtherSources": ["BGDIA"],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -12327,7 +12621,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "SKT", "GoS", "BGDIA", "ERLW", "IMR"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12462,7 +12759,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "SKT", "TftYP", "WDMM", "MOT"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12525,7 +12825,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["SKT", "TftYP", "GoS", "MOT"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12557,7 +12860,10 @@
                 "ERLW",
                 "EGW"
             ],
-            "CreatureTypeRef": "fiend (shapechanger)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12589,7 +12895,7 @@
                 "WDMM",
                 "EGW"
             ],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12613,7 +12919,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": [],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12637,7 +12943,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "HotDQ", "WDMM"],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12669,7 +12975,7 @@
                 "IMR",
                 "EGW"
             ],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12702,7 +13008,7 @@
                 "EGW",
                 "MOT"
             ],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12726,7 +13032,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["PotA", "ToA", "WDMM", "GoS", "DIP", "SDW", "LR"],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12758,7 +13064,7 @@
                 "GoS",
                 "BGDIA"
             ],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12782,7 +13088,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "RoT", "DIP", "SDW", "EGW"],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12806,7 +13112,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "SKT", "WDMM", "GoS", "DC", "DIP", "MOT"],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12830,7 +13136,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "WDMM", "GoS"],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12854,7 +13160,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MM",
             "OtherSources": ["IMR", "MOT"],
-            "CreatureTypeRef": "monstrosity (titan)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["titan"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12878,7 +13187,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (thri-kreen)",
+            "CreatureType": { "Type": "humanoid", "Tags": ["thri-kreen"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -12978,7 +13287,10 @@
                 "EGW",
                 "MOT"
             ],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13097,7 +13409,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "PotA", "TftYP", "WDH", "WDMM"],
-            "CreatureTypeRef": "humanoid (troglodyte)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["troglodyte"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13133,7 +13448,10 @@
                 "SLW",
                 "EGW"
             ],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13157,7 +13475,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "LMoP", "TftYP", "GoS", "RMBRE"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -13226,7 +13547,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "BGDIA", "EGW"],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13277,7 +13601,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MM",
             "OtherSources": ["GoS", "BGDIA", "IMR", "MOT"],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13311,7 +13638,10 @@
                 "BGDIA",
                 "EGW"
             ],
-            "CreatureTypeRef": "undead (shapechanger)",
+            "CreatureType": {
+                "Type": "undead",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13373,7 +13703,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "MM",
             "OtherSources": ["RoT"],
-            "CreatureTypeRef": "undead (shapechanger)",
+            "CreatureType": {
+                "Type": "undead",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13397,7 +13730,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "MM",
             "OtherSources": [],
-            "CreatureTypeRef": "undead (shapechanger)",
+            "CreatureType": {
+                "Type": "undead",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13466,7 +13802,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "GoS", "EGW"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -13507,7 +13846,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "PotA", "GoS"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13531,7 +13873,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["CoS", "PotA", "TftYP", "WDMM", "GoS", "BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -13757,7 +14102,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["GoS", "EGW"],
-            "CreatureTypeRef": "humanoid (human, shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13781,7 +14129,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["ToA", "DC", "DIP", "BGDIA", "IMR", "EGW"],
-            "CreatureTypeRef": "humanoid (human, shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13814,7 +14165,10 @@
                 "IMR",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (human, shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13838,7 +14192,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["ToA", "EGW"],
-            "CreatureTypeRef": "humanoid (human, shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -13872,7 +14229,10 @@
                 "IMR",
                 "EGW"
             ],
-            "CreatureTypeRef": "humanoid (human, shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -14017,7 +14377,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "ToA", "GoS"],
-            "CreatureTypeRef": "humanoid (kobold)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["kobold"]
+            },
             "TrinketTableType": "Kobold",
             "HarvestingTable": {
                 "Rows": []
@@ -14278,7 +14641,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["WDMM", "EGW"],
-            "CreatureTypeRef": "fiend (demon, shapechanger)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": [
@@ -14944,7 +15310,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["RoT", "ToA", "WDMM", "DIP", "SLW"],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -14968,7 +15337,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "RoT", "SKT", "ToA"],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -14992,7 +15364,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "RoT", "SKT", "ToA"],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15016,7 +15391,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "RoT", "SKT", "ToA"],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15040,7 +15418,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MM",
             "OtherSources": ["HotDQ", "RoT", "SKT", "ToA", "WDMM"],
-            "CreatureTypeRef": "humanoid (yuan-ti)",
+            "CreatureType": { "Type": "humanoid", "Tags": ["yuan-ti"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15108,7 +15486,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": ["BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15159,7 +15540,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["IMR"],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15210,7 +15594,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": ["DIP", "SDW"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15288,7 +15675,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15312,7 +15702,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "monstrosity (titan)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["titan"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15336,7 +15729,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fey (elf)",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15414,7 +15810,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA", "BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15573,7 +15972,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": ["BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15624,7 +16026,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15675,7 +16080,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15780,7 +16188,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15804,7 +16215,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "humanoid (derro)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["derro"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15828,7 +16242,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "humanoid (derro)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["derro"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15852,7 +16269,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15876,7 +16296,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15900,7 +16323,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15924,7 +16350,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15948,7 +16377,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15972,7 +16404,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -15996,7 +16431,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16020,7 +16458,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16044,7 +16485,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16095,7 +16539,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16119,7 +16566,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16170,7 +16620,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16194,7 +16647,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16218,7 +16674,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16242,7 +16701,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "humanoid (dwarf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["dwarf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16266,7 +16728,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16344,7 +16809,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16449,7 +16917,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16554,7 +17025,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": ["WDMM"],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16578,7 +17052,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16602,7 +17079,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16626,7 +17106,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16650,7 +17133,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gith)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gith"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16674,7 +17160,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16725,7 +17214,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "fiend (demon, shapechanger)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16857,7 +17349,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -16908,7 +17403,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17013,7 +17511,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "construct (inevitable)",
+            "CreatureType": {
+                "Type": "construct",
+                "Tags": ["inevitable"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17037,7 +17538,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17061,7 +17565,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (meazel)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["meazel"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17112,7 +17619,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17163,7 +17673,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17187,7 +17700,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17211,7 +17727,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (nagpa)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["nagpa"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17343,7 +17862,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17367,7 +17889,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17391,7 +17916,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17415,7 +17943,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17439,7 +17970,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17463,7 +17997,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17487,7 +18024,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17619,7 +18159,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": ["DIP", "SLW"],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17643,7 +18186,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17690,7 +18236,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17714,7 +18263,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17792,7 +18344,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (elf)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17816,7 +18371,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -17840,7 +18398,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fey (elf)",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18080,7 +18641,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fey (elf)",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18320,7 +18884,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "MTF",
             "OtherSources": ["TTP"],
-            "CreatureTypeRef": "humanoid (tortle)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["tortle"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18344,7 +18911,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": ["TTP"],
-            "CreatureTypeRef": "humanoid (tortle)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["tortle"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18395,7 +18965,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "giant",
+            "CreatureType": {
+                "Type": "giant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18419,7 +18992,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18497,7 +19073,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fey (elf)",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": ["elf"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18521,7 +19100,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "MTF",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (yugoloth)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["yugoloth"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18545,7 +19127,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA", "BGDIA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18650,7 +19235,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "MTF",
             "OtherSources": ["OotA"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18697,7 +19285,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "DIP",
             "OtherSources": ["DC", "SDW"],
-            "CreatureTypeRef": "humanoid (half-orc, shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["half-orc", "shapechanger"]
+            },
             "TrinketTableType": "",
             "HarvestingTable": {
                 "Rows": []
@@ -18721,7 +19312,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "DIP",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gnome)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gnome"]
+            },
             "TrinketTableType": "",
             "HarvestingTable": {
                 "Rows": []
@@ -18772,7 +19366,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "LMoP",
             "OtherSources": ["RMBRE"],
-            "CreatureTypeRef": "humanoid (human)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18796,7 +19393,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "LMoP",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (human)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18874,7 +19474,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (changeling, shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["changeling", "shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -18979,7 +19582,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19134,7 +19740,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (human)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19212,7 +19821,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (kalashtar)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["kalashtar"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19425,7 +20037,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19476,7 +20091,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (shifter)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["shifter"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19577,7 +20195,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (warforged)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["warforged"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19682,7 +20303,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19706,7 +20330,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19730,7 +20357,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19781,7 +20411,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "ERLW",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (warforged)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["warforged"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -19913,7 +20546,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["MOT"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20045,7 +20681,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20123,7 +20762,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["TftYP"],
-            "CreatureTypeRef": "fiend (shapechanger)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20147,7 +20789,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20279,7 +20924,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["IMR"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20465,7 +21113,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "giant (cloud giant)",
+            "CreatureType": { "Type": "giant", "Tags": ["cloud giant"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20570,7 +21218,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20594,7 +21245,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20672,7 +21326,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["GoS"],
-            "CreatureTypeRef": "humanoid (shapechanger)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["shapechanger"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20831,7 +21488,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20936,7 +21596,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "giant (fire giant)",
+            "CreatureType": { "Type": "giant", "Tags": ["fire giant"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20960,7 +21620,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (firenewt)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["firenewt"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -20984,7 +21647,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (firenewt)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["firenewt"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21035,7 +21701,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gnoll)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gnoll"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21086,7 +21755,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "giant (frost giant)",
+            "CreatureType": { "Type": "giant", "Tags": ["frost giant"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21218,7 +21887,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gnoll)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gnoll"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21242,7 +21914,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (gnoll)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["gnoll"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21320,7 +21995,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (grung)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["grung"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21344,7 +22022,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (grung)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["grung"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21368,7 +22049,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (grung)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["grung"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21419,7 +22103,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "hobgoblin (v2)",
             "HarvestingTable": {
                 "Rows": [
@@ -21452,7 +22139,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": "hobgoblin (v2)",
             "HarvestingTable": {
                 "Rows": [
@@ -21539,7 +22229,10 @@
             "ReferenceCardSize": 3,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "celestial",
+            "CreatureType": {
+                "Type": "celestial",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21563,7 +22256,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["DIP", "SLW"],
-            "CreatureTypeRef": "humanoid (kobold)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["kobold"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21587,7 +22283,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (kobold)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["kobold"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21611,7 +22310,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (kobold)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["kobold"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21635,7 +22337,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21767,7 +22472,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["GoS"],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21791,7 +22499,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -21896,7 +22607,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "giant (hill giant)",
+            "CreatureType": { "Type": "giant", "Tags": ["hill giant"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22055,7 +22766,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (goblinoid)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["goblinoid"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22079,7 +22793,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22103,7 +22820,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22127,7 +22847,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22151,7 +22874,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22175,7 +22901,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (orc)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["orc"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22253,7 +22982,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22304,7 +23036,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA", "BGDIA", "IMR"],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22409,7 +23144,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22433,7 +23171,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA", "IMR", "MOT"],
-            "CreatureTypeRef": "ooze",
+            "CreatureType": {
+                "Type": "ooze",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22538,7 +23279,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "giant (stone giant)",
+            "CreatureType": { "Type": "giant", "Tags": ["stone giant"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22562,7 +23303,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["GoS"],
-            "CreatureTypeRef": "giant (storm giant)",
+            "CreatureType": { "Type": "giant", "Tags": ["storm giant"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22586,7 +23327,7 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22610,7 +23351,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["GoS"],
-            "CreatureTypeRef": "beast (swarm:T)",
+            "CreatureType": { "Type": "beast", "Tags": ["swarm:T"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22661,7 +23402,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fiend (demon, orc)",
+            "CreatureType": {
+                "Type": "fiend",
+                "Tags": ["demon", "orc"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22685,7 +23429,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22844,7 +23591,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -22868,7 +23618,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23081,7 +23834,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["DIP", "SDW"],
-            "CreatureTypeRef": "plant",
+            "CreatureType": {
+                "Type": "plant",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23105,7 +23861,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (xvart)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["xvart"]
+            },
             "TrinketTableType": "Xvart",
             "HarvestingTable": {
                 "Rows": []
@@ -23129,7 +23888,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (xvart)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["xvart"]
+            },
             "TrinketTableType": "Xvart",
             "HarvestingTable": {
                 "Rows": []
@@ -23153,7 +23915,10 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "humanoid (xvart)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["xvart"]
+            },
             "TrinketTableType": "Xvart",
             "HarvestingTable": {
                 "Rows": []
@@ -23177,7 +23942,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "fey",
+            "CreatureType": {
+                "Type": "fey",
+                "Tags": []
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23201,7 +23969,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23225,7 +23996,7 @@
             "ReferenceCardSize": 1,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "humanoid (yuan-ti)",
+            "CreatureType": { "Type": "humanoid", "Tags": ["yuan-ti"] },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23249,7 +24020,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23273,7 +24047,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23297,7 +24074,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23321,7 +24101,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": ["ToA"],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23345,7 +24128,10 @@
             "ReferenceCardSize": 2,
             "PrimarySource": "VGM",
             "OtherSources": [],
-            "CreatureTypeRef": "monstrosity (shapechanger, yuan-ti)",
+            "CreatureType": {
+                "Type": "monstrosity",
+                "Tags": ["shapechanger", "yuan-ti"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23473,7 +24259,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "HotDQ",
             "OtherSources": ["RoT"],
-            "CreatureTypeRef": "humanoid (human)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
@@ -23497,7 +24286,10 @@
             "ReferenceCardSize": 0,
             "PrimarySource": "HotDQ",
             "OtherSources": ["RoT"],
-            "CreatureTypeRef": "humanoid (human)",
+            "CreatureType": {
+                "Type": "humanoid",
+                "Tags": ["human"]
+            },
             "TrinketTableType": null,
             "HarvestingTable": {
                 "Rows": []
