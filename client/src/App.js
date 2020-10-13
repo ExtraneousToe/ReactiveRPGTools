@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import { Layout } from "./LayoutControl/Layout";
+import "./App.css";
+
+import { MENU } from "./navigationConstants";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let routeOpts = [];
+    for (let i = 0; i < MENU.length; ++i) {
+        let linkDeets = MENU[i];
+        routeOpts.push(
+            <Route
+                key={i}
+                path={linkDeets.routePaths[0]}
+                render={(props) => linkDeets.renderFunction(props)}
+                exact={linkDeets.exact}
+            />
+        );
+    }
+
+    return (
+        <Layout>
+            <Switch>{routeOpts}</Switch>
+        </Layout>
+    );
 }
 
 export default App;

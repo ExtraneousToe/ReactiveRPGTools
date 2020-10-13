@@ -1,0 +1,39 @@
+.element-list {
+    list-style: none;
+    padding-left: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 500px;
+    border: 1px solid lightgray;
+    font-size: 0.75em;
+}
+
+.element-list li {
+    border-bottom: 1px solid gray;
+}
+
+.element-list li:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+.element-list li.active {
+    background-color: rgb(75, 75, 75);
+}
+
+.elist-column {
+    text-overflow: ellipsis;
+    min-width: 25% !important;
+    max-width: 33.3333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list-header:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+.list-header.active {
+    background-color: rgb(75, 75, 75);
+}
