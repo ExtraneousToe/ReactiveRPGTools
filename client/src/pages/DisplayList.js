@@ -3,8 +3,34 @@ import { useHistory } from "react-router";
 import { Row, Col } from "reactstrap";
 import "./DisplayList.css";
 
+export class DisplayColumn {
+    constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
+        this.colDisplay = colDisplay;
+        this.listDisplayFunc = listDisplayFunc;
+        this.ascendingSortFunction = ascendingSortFunction;
+
+        this.sortFunc = this.sortFunc.bind(this);
+        this.sortAscending = this.sortAscending.bind(this);
+        this.sortDescending = this.sortDescending.bind(this);
+    }
+
+    sortFunc(isAscending) {
+        return isAscending ? this.sortAscending : this.sortDescending;
+    }
+
+    sortAscending(a, b) {
+        return this.ascendingSortFunction(a, b);
+    }
+
+    sortDescending(a, b) {
+        return -this.ascendingSortFunction(a, b);
+    }
+}
+
 export function DisplayList(props) {
     let history = useHistory();
+
+    // headers should be a collection of DisplayColumn instances
     let headers = props.headers;
     let items = props.items;
 

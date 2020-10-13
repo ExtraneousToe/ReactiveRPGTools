@@ -1,7 +1,7 @@
 import React from "react";
 import { matchPath } from "react-router";
 import { Col, Container, Row } from "reactstrap";
-import { DisplayList } from "./DisplayList";
+import { DisplayList, DisplayColumn } from "./DisplayList";
 import { CRList } from "../components/ChallengeRatingDisplay";
 
 import Storage from "../utility/StorageUtil";
