@@ -8,6 +8,10 @@ export function CRList(props) {
     } else {
         let crOut = cr.CR;
 
+        if (typeof crOut === "number" && crOut < 1 && crOut !== 0) {
+            crOut = `1/${1 / crOut}`;
+        }
+
         if (cr.InCoven !== null) {
             crOut += ` (${cr.InCoven} in coven)`;
         }

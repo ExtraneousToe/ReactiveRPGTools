@@ -36,34 +36,6 @@ export function DisplayList(props) {
     let sortProperty = headers[sortByIdx].prop;
     console.log(`${sortProperty} ${sortAscending}`);
 
-    // let sortType = typeof items[0][sortProperty];
-    // let ascMod = sortAscending ? 1 : -1;
-    // switch (sortType) {
-    //     case "string":
-    //         items.sort((a, b) => {
-    //             let x = a[sortProperty].toLowerCase();
-    //             let y = b[sortProperty].toLowerCase();
-
-    //             if (y < x) {
-    //                 return ascMod;
-    //             }
-    //             if (x < y) {
-    //                 return -ascMod;
-    //             }
-    //             return 0;
-    //         });
-    //         break;
-    //     case "number":
-    //         items.sort((a, b) => {
-    //             return (a[sortProperty] - b[sortProperty]) * ascMod;
-    //         });
-    //         break;
-    //     case "object":
-    //         break;
-    //     default:
-    //         console.log(`Sorting on property type: ${sortType}`);
-    // }
-
     items.sort(
         sortAscending
             ? headers[sortByIdx].sortingFunctionAsc
