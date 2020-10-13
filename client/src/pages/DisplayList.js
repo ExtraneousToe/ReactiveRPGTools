@@ -52,8 +52,9 @@ export function DisplayList(props) {
                         setSortAscending(true);
                     }
                 }}
+                className={`list-header ${i === sortByIdx && "active"}`}
             >
-                {headers[i].display}{" "}
+                {headers[i].colDisplay}{" "}
                 {i === sortByIdx && <>{sortAscending ? "^" : "v"}</>}
             </Col>
         );
@@ -62,11 +63,7 @@ export function DisplayList(props) {
     let sortProperty = headers[sortByIdx].prop;
     console.log(`${sortProperty} ${sortAscending}`);
 
-    items.sort(
-        sortAscending
-            ? headers[sortByIdx].sortingFunctionAsc
-            : headers[sortByIdx].sortingFunctionDesc
-    );
+    items.sort(headers[sortByIdx].sortFunc(sortAscending));
 
     let contentsRows = [];
     for (let i = 0; i < items.length; ++i) {
@@ -74,7 +71,6 @@ export function DisplayList(props) {
 
         for (let h = 0; h < headers.length; ++h) {
             let headerObj = headers[h];
-            // items[i][headers[h].prop]
 
             innerCols.push(
                 <Col key={h}>{headerObj.listDisplayFunc(items[i])}</Col>
@@ -91,17 +87,14 @@ export function DisplayList(props) {
                     e.preventDefault();
                 }}
             >
-                <Row>
-                    {/* {items[i][headers[0].prop]} */}
-                    {innerCols}
-                </Row>
+                <Row>{innerCols}</Row>
             </li>
         );
     }
 
     return (
         <>
-            <Row>{headerRowContents}</Row>
+            <Row className="mx-0">{headerRowContents}</Row>
             <ul className="element-list">{contentsRows}</ul>
         </>
     );

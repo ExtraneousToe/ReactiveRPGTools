@@ -27,58 +27,42 @@ export function Monsters(props) {
     }
 
     const headers = [
-        {
-            display: "Name",
-            prop: "Name",
-            listDisplayFunc: (item) => {
+        new DisplayColumn(
+            "Name",
+            (item) => {
                 return <>{item["Name"]}</>;
             },
-            sortingFunctionAsc: (a, b) => {
+            (a, b) => {
                 return sortStrAsc(a.Name, b.Name);
-            },
-            sortingFunctionDesc: (a, b) => {
-                return -sortStrAsc(a.Name, b.Name);
-            },
-        },
-        {
-            display: "Type",
-            prop: "CreatureTypeRef",
-            listDisplayFunc: (item) => {
+            }
+        ),
+        new DisplayColumn(
+            "Type",
+            (item) => {
                 return <>{item["CreatureTypeRef"]}</>;
             },
-            sortingFunctionAsc: (a, b) => {
+            (a, b) => {
                 return sortStrAsc(a.CreatureTypeRef, b.CreatureTypeRef);
-            },
-            sortingFunctionDesc: (a, b) => {
-                return -sortStrAsc(a.CreatureTypeRef, b.CreatureTypeRef);
-            },
-        },
-        {
-            display: "CR",
-            prop: "ChallengeRating",
-            listDisplayFunc: (item) => {
+            }
+        ),
+        new DisplayColumn(
+            "CR",
+            (item) => {
                 return <CRList cr={item["ChallengeRating"]} />;
             },
-            sortingFunctionAsc: (a, b) => {
+            (a, b) => {
                 return sortCRAsc(a.ChallengeRating, b.ChallengeRating);
-            },
-            sortingFunctionDesc: (a, b) => {
-                return -sortCRAsc(a.ChallengeRating, b.ChallengeRating);
-            },
-        },
-        {
-            display: "Card Size",
-            prop: "ReferenceCardSize",
-            listDisplayFunc: (item) => {
+            }
+        ),
+        new DisplayColumn(
+            "Card Size",
+            (item) => {
                 return <>{CARD_SIZES[item["ReferenceCardSize"]]}</>;
             },
-            sortingFunctionAsc: (a, b) => {
+            (a, b) => {
                 return a.ReferenceCardSize - b.ReferenceCardSize;
-            },
-            sortingFunctionDesc: (a, b) => {
-                return b.ReferenceCardSize - a.ReferenceCardSize;
-            },
-        },
+            }
+        ),
     ];
 
     return (
@@ -97,9 +81,9 @@ export function Monsters(props) {
                     <MonsterDisplay monster={monster} />
                 </Col>
             </Row>
-            <div>{JSON.stringify(match)}</div>
-            <div>{JSON.stringify(props)}</div>
-            <div>{JSON.stringify(monster)}</div>
+            <div>Match: {JSON.stringify(match)}</div>
+            <div>Props: {JSON.stringify(props)}</div>
+            {/* <div>{JSON.stringify(monster)}</div> */}
         </Container>
     );
 }

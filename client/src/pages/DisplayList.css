@@ -12,6 +12,10 @@
     border-bottom: 1px solid gray;
 }
 
+.element-list li:nth-child(even) {
+    background-color: rgb(231, 231, 231);
+}
+
 .element-list li:hover {
     background-color: darkgray;
     color: black;
@@ -21,19 +25,11 @@
     background-color: rgb(75, 75, 75);
 }
 
-.elist-column {
-    text-overflow: ellipsis;
-    min-width: 25% !important;
-    max-width: 33.3333333%;
-    padding-left: 15px;
-    padding-right: 15px;
+.list-header.active {
+    background-color: rgb(182, 182, 182);
 }
 
 .list-header:hover {
     background-color: darkgray;
     color: black;
-}
-
-.list-header.active {
-    background-color: rgb(75, 75, 75);
 }
