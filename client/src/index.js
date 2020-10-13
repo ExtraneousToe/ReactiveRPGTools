@@ -5,9 +5,12 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
+import Storage from "./utility/StorageUtil";
 
 const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
 const rootElement = document.getElementById("root");
+
+Storage.Init();
 
 ReactDOM.render(
     <React.StrictMode>

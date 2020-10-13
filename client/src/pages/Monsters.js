@@ -4,7 +4,10 @@ import { Col, Container, Row } from "reactstrap";
 import { DisplayList } from "./DisplayList";
 import { CRList } from "../components/ChallengeRatingDisplay";
 
-import Data from "../data/system-state.json";
+import Storage from "../utility/StorageUtil";
+import { getIdFromMonster } from "../utility/monsterUtil";
+import { sortAscending as sortStrAsc } from "../utility/stringUtil";
+import { sortAscending as sortCRAsc } from "../utility/challengeRatingUtil";
 import { MonsterDisplay } from "../components/MonsterDisplay";
 
 import { CARD_SIZES } from "../data/referenceCardSizes";
@@ -17,10 +20,10 @@ export function Monsters(props) {
     let match = matchPath(props.location.pathname, { path: pathWithId });
     if (match !== null) {
         // if there is an id, search for the monster
-        monster = Data.Monsters.filter(
-            (obj) => obj.Name === match.params.id
-        )[0];
-        // monster = match.params.id;
+        let id = match.params.id;
+        if (Storage.monsterDict[id] !== undefined) {
+            monster = Storage.monsterDict[id];
+        }
     }
 
     const headers = [
@@ -30,6 +33,12 @@ export function Monsters(props) {
             listDisplayFunc: (item) => {
                 return <>{item["Name"]}</>;
             },
+            sortingFunctionAsc: (a, b) => {
+                return sortStrAsc(a.Name, b.Name);
+            },
+            sortingFunctionDesc: (a, b) => {
+                return -sortStrAsc(a.Name, b.Name);
+            },
         },
         {
             display: "Type",
@@ -37,30 +46,37 @@ export function Monsters(props) {
             listDisplayFunc: (item) => {
                 return <>{item["CreatureTypeRef"]}</>;
             },
+            sortingFunctionAsc: (a, b) => {
+                return sortStrAsc(a.CreatureTypeRef, b.CreatureTypeRef);
+            },
+            sortingFunctionDesc: (a, b) => {
+                return -sortStrAsc(a.CreatureTypeRef, b.CreatureTypeRef);
+            },
         },
         {
             display: "CR",
             prop: "ChallengeRating",
             listDisplayFunc: (item) => {
-                let cr = item["ChallengeRating"];
-
-                return <CRList cr={cr} />;
+                return <CRList cr={item["ChallengeRating"]} />;
+            },
+            sortingFunctionAsc: (a, b) => {
+                return sortCRAsc(a.ChallengeRating, b.ChallengeRating);
+            },
+            sortingFunctionDesc: (a, b) => {
+                return -sortCRAsc(a.ChallengeRating, b.ChallengeRating);
             },
         },
         {
             display: "Card Size",
             prop: "ReferenceCardSize",
             listDisplayFunc: (item) => {
-                /*
-                 public enum ECardSize
-                {
-                    None,
-                    Small,
-                    Medium,
-                    Large
-                }
-                */
                 return <>{CARD_SIZES[item["ReferenceCardSize"]]}</>;
+            },
+            sortingFunctionAsc: (a, b) => {
+                return a.ReferenceCardSize - b.ReferenceCardSize;
+            },
+            sortingFunctionDesc: (a, b) => {
+                return b.ReferenceCardSize - a.ReferenceCardSize;
             },
         },
     ];
@@ -72,8 +88,9 @@ export function Monsters(props) {
                     {/* Filter field */}
                     <DisplayList
                         headers={headers}
-                        items={Data.Monsters}
+                        items={Storage.monsterList}
                         pathRoot={props.match.path}
+                        idFunction={getIdFromMonster}
                     />
                 </Col>
                 <Col className="col-7 border">

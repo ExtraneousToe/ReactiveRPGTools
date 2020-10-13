@@ -9,11 +9,11 @@ export function CRList(props) {
         let crOut = cr.CR;
 
         if (cr.InCoven !== null) {
-            crOut += `, ${cr.InCoven} in coven`;
+            crOut += ` (${cr.InCoven} in coven)`;
         }
 
         if (cr.InLair !== null) {
-            crOut += `, ${cr.InLair} in lair`;
+            crOut += ` (${cr.InLair} in lair)`;
         }
 
         return <>{crOut}</>;
