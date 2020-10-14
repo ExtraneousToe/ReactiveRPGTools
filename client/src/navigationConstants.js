@@ -1,5 +1,7 @@
 import React from "react";
 import { Monsters } from "./pages/Monsters";
+import { fileSaveAs } from "./utility/saveFile";
+import Storage from "./utility/StorageUtil";
 
 export const MENU = [
     {
@@ -9,7 +11,35 @@ export const MENU = [
         routePaths: ["/"],
         exact: true,
         renderFunction: (props) => {
-            return <span>Home</span>;
+            return (
+                <div>
+                    <h1>Home</h1>
+                    <div>
+                        <button
+                            onClick={(e) => {
+                                e.preventDefault();
+                                fileSaveAs(
+                                    "system-state.json",
+                                    JSON.stringify({
+                                        Monsters: Storage.monsterList,
+                                        HarvestedItems:
+                                            Storage.harvestableItemList,
+                                        TrinketTables: Storage.trinketTableList,
+                                    })
+                                );
+                            }}
+                        >
+                            Save State
+                        </button>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            style={{ width: "100%", height: "4em" }}
+                        />
+                    </div>
+                </div>
+            );
         },
     },
     {

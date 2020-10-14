@@ -4,7 +4,6 @@ import { Layout } from "./LayoutControl/Layout";
 import "./App.css";
 
 import { MENU } from "./navigationConstants";
-
 function App() {
     let routeOpts = [];
     for (let i = 0; i < MENU.length; ++i) {

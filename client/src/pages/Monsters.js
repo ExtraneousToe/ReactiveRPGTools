@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { matchPath } from "react-router";
 import { Col, Container, Row } from "reactstrap";
 import { DisplayList, DisplayColumn } from "./DisplayList";
@@ -15,8 +15,11 @@ import {
     CreatureTypeList,
     sortCreatureTypeAsc,
 } from "../utility/creatureTypeUtil";
+import { FilterBlock } from "../components/FilterBlock";
 
 export function Monsters(props) {
+    let [filterObj, setFilterObj] = useState({});
+
     const pathWithId = "/monsters/:id";
     let monster = null;
 
@@ -73,10 +76,11 @@ export function Monsters(props) {
         <Container fluid>
             <Row>
                 <Col className="col-5 border">
-                    {/* Filter field */}
+                    <FilterBlock submitFilter={setFilterObj} />
                     <DisplayList
                         headers={headers}
                         items={Storage.monsterList}
+                        filterObject={filterObj}
                         pathRoot={props.match.path}
                         idFunction={getIdFromMonster}
                     />
@@ -85,9 +89,8 @@ export function Monsters(props) {
                     <MonsterDisplay monster={monster} />
                 </Col>
             </Row>
-            <div>Match: {JSON.stringify(match)}</div>
-            <div>Props: {JSON.stringify(props)}</div>
-            {/* <div>{JSON.stringify(monster)}</div> */}
+            {/* <div>Match: {JSON.stringify(match)}</div> */}
+            {/* <div>Props: {JSON.stringify(props)}</div> */}
         </Container>
     );
 }

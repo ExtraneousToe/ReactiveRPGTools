@@ -4,6 +4,9 @@ import { getCreatureTypeDisplayString } from "../utility/creatureTypeUtil";
 import { getChallengeRatingDisplayString } from "../utility/challengeRatingUtil";
 import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import { CARD_SIZES } from "../data/referenceCardSizes";
+import Storage from "../utility/StorageUtil";
+import { TrinketTableDisplay } from "../utility/trinketTableUtil";
+import { HarvestingTableDisplay } from "../utility/harvestingTableUtil";
 
 const COMBAT_TAB_KEY = "combat";
 const TABLES_TAB_KEY = "tables";
@@ -12,7 +15,7 @@ const HARVESTING_TAB_KEY = "harvesting";
 const TRINKET_TAB_KEY = "trinkets";
 
 export function MonsterDisplay(props) {
-    let [tabKey, setTabKey] = useState(COMBAT_TAB_KEY);
+    let [tabKey, setTabKey] = useState(TABLES_TAB_KEY);
     let [tablesTabKey, setTablesTabKey] = useState(HARVESTING_TAB_KEY);
     let monster = props.monster;
 
@@ -105,14 +108,25 @@ export function MonsterDisplay(props) {
                             title="Harvesting"
                             disabled={!hasHarvestingTable}
                         >
-                            {JSON.stringify(monster.HarvestingTable)}
+                            <HarvestingTableDisplay
+                                challengeRating={monster.ChallengeRating}
+                                creatureType={monster.CreatureType}
+                                harvestingTable={monster.HarvestingTable}
+                            />
+                            {/* {JSON.stringify(monster.HarvestingTable)} */}
                         </Tab>
                         <Tab
                             eventKey={TRINKET_TAB_KEY}
                             title="Trinkets"
                             disabled={!hasTrinketTable}
                         >
-                            {monster.TrinketTableType}
+                            <TrinketTableDisplay
+                                trinketTable={
+                                    Storage.trinketTableDict[
+                                        monster.TrinketTableType
+                                    ]
+                                }
+                            />
                         </Tab>
                     </Tabs>
                 </Tab>

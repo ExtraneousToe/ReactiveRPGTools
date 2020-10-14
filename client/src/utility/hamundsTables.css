@@ -1,0 +1,14 @@
+.hamund-table {
+    font-size: 0.75em;
+}
+
+.hamund-header {
+    font-weight: bold;
+}
+
+.hamund-row {
+}
+
+.hamund-row:nth-child(even) {
+    background-color: lightgray;
+}
