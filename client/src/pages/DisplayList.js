@@ -64,7 +64,7 @@ export function DisplayList(props) {
     let filterKeys = Object.keys(filterObject);
 
     for (let i = 0; i < filterKeys.length; ++i) {
-        let keyValue = filterObject[filterKeys[i]]; //.toLowerCase();
+        // let keyValue = filterObject[filterKeys[i]]; //.toLowerCase();
         // if (keyValue === "" || keyValue === null) {
         //     continue;
         // }

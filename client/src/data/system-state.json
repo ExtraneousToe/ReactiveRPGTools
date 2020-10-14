@@ -10226,7 +10226,7 @@
             "PrimarySource": "VGM",
             "OtherSources": [],
             "CreatureType": { "Type": "humanoid", "Tags": ["goblinoid"] },
-            "TrinketTableType": "hobgoblin (v2)",
+            "TrinketTableType": "Hobgoblin (v2)",
             "HarvestingTable": {
                 "Rows": [
                     { "DifficultyClass": 5, "ItemNameRef": "hobgoblin_ear" },
@@ -10252,7 +10252,7 @@
             "PrimarySource": "VGM",
             "OtherSources": [],
             "CreatureType": { "Type": "humanoid", "Tags": ["goblinoid"] },
-            "TrinketTableType": "hobgoblin (v2)",
+            "TrinketTableType": "Hobgoblin (v2)",
             "HarvestingTable": {
                 "Rows": [
                     { "DifficultyClass": 5, "ItemNameRef": "hobgoblin_ear" },

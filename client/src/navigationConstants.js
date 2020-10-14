@@ -2,6 +2,7 @@ import React from "react";
 import { Monsters } from "./pages/Monsters";
 import { fileSaveAs } from "./utility/saveFile";
 import Storage from "./utility/StorageUtil";
+import { sortAscending } from "./utility/stringUtil";
 
 export const MENU = [
     {
@@ -18,13 +19,37 @@ export const MENU = [
                         <button
                             onClick={(e) => {
                                 e.preventDefault();
+
+                                let monsters = Object.values(
+                                    Storage.monsterDict
+                                );
+                                monsters.sort((a, b) =>
+                                    sortAscending(a.Name, b.Name)
+                                );
+
+                                let harvestedItems = Object.values(
+                                    Storage.harvestableItemDict
+                                );
+                                harvestedItems.sort((a, b) =>
+                                    sortAscending(a.ReferenceId, b.ReferenceId)
+                                );
+
+                                let trinketTables = Object.values(
+                                    Storage.trinketTableDict
+                                );
+                                trinketTables.sort((a, b) =>
+                                    sortAscending(
+                                        a.TrinketTableType,
+                                        b.TrinketTableType
+                                    )
+                                );
+
                                 fileSaveAs(
                                     "system-state.json",
                                     JSON.stringify({
-                                        Monsters: Storage.monsterList,
-                                        HarvestedItems:
-                                            Storage.harvestableItemList,
-                                        TrinketTables: Storage.trinketTableList,
+                                        Monsters: monsters,
+                                        HarvestedItems: harvestedItems,
+                                        TrinketTables: trinketTables,
                                     })
                                 );
                             }}
