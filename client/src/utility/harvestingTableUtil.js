@@ -17,7 +17,7 @@ export function HarvestingTableDisplay(props) {
             <Col className="">Description</Col>
             <Col className="col-1">Value</Col>
             <Col className="col-1">Weight</Col>
-            <Col className="col-1">Crafting</Col>
+            <Col className="col-2">Crafting</Col>
         </Row>
     );
 
@@ -51,7 +51,7 @@ export function HarvestingTableDisplay(props) {
 
             valueOut = item.ValueGP;
             weightOut = item.WeightLB;
-            craftingOut = item.CraftingUsage;
+            craftingOut = item.CraftingUsage.join(" or ");
         }
 
         if (row.Quantity !== "") {
@@ -68,7 +68,7 @@ export function HarvestingTableDisplay(props) {
                 <Col className="">{descriptionOut}</Col>
                 <Col className="col-1">{valueOut}</Col>
                 <Col className="col-1">{weightOut}</Col>
-                <Col className="col-1">{craftingOut}</Col>
+                <Col className="col-2">{craftingOut}</Col>
             </Row>
         );
     }

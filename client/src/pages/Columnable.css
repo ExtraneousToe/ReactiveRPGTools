@@ -1,0 +1,5 @@
+.scrollableColumn {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 87vh;
+}

@@ -16,6 +16,7 @@ import {
     sortCreatureTypeAsc,
 } from "../utility/creatureTypeUtil";
 import { MonsterFilterBlock } from "../components/MonsterFilterBlock";
+import "./Columnable.css";
 
 export function Monsters(props) {
     let [filterObj, setFilterObj] = useState({});
@@ -85,7 +86,7 @@ export function Monsters(props) {
                         idFunction={getIdFromMonster}
                     />
                 </Col>
-                <Col className="col-7 border">
+                <Col className="col-7 border scrollableColumn">
                     <MonsterDisplay monster={monster} />
                 </Col>
             </Row>

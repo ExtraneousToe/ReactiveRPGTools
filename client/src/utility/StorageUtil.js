@@ -1,8 +1,5 @@
 import Data from "../data/system-state.json";
-import {
-    getItemReference,
-    getItemReferenceFromName,
-} from "./harvestedItemUtil";
+import { getItemReferenceFromName } from "./harvestedItemUtil";
 import { getIdFromMonster } from "./monsterUtil";
 
 // let initialised = false;
@@ -23,10 +20,10 @@ const Storage = {
         for (let idx = 0; idx < Data.HarvestedItems.length; ++idx) {
             let harvestedItem = Data.HarvestedItems[idx];
 
-            harvestedItem.Description = harvestedItem.Description.Paragraphs.filter(
+            harvestedItem.Description = harvestedItem.Description.filter(
                 (line) => line !== ""
             );
-            harvestedItem.UseText = harvestedItem.UseText.Paragraphs.filter(
+            harvestedItem.UseText = harvestedItem.UseText.filter(
                 (line) => line !== ""
             );
 

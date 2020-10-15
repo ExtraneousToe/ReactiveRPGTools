@@ -41,7 +41,11 @@ function BlockRow_Select(key, label, value, setter, selectOpts, optLabels) {
                 >
                     <option value={null}>Ignore</option>
                     {selectOpts.map((opt, idx) => {
-                        return <option value={opt}>{optLabels[opt]}</option>;
+                        return (
+                            <option key={idx} value={opt}>
+                                {optLabels[opt]}
+                            </option>
+                        );
                     })}
                 </select>
             </Col>
@@ -78,42 +82,33 @@ export function MonsterFilterBlock(props) {
         )
     );
 
-    return (
-        <form
-            className="border"
-            onSubmit={(e) => {
-                let obj = {};
-                if (nameField !== "") {
-                    obj.Name = (obj) => {
-                        return obj.Name.toLowerCase().match(
-                            nameField.toLowerCase()
-                        );
-                    };
-                }
-                if (typeField !== "") {
-                    obj.Type = (obj) => {
-                        let crString = getCreatureTypeDisplayString(
-                            obj.CreatureType
-                        );
-                        return crString
-                            .toLowerCase()
-                            .match(typeField.toLowerCase());
-                    };
-                }
-                if (cardSizeField >= 0) {
-                    obj.CardSize = (obj) => {
-                        return obj.ReferenceCardSize == cardSizeField;
-                    };
-                }
+    const submitFunc = (e) => {
+        let obj = {};
+        if (nameField !== "") {
+            obj.Name = (obj) => {
+                return obj.Name.toLowerCase().match(nameField.toLowerCase());
+            };
+        }
+        if (typeField !== "") {
+            obj.Type = (obj) => {
+                let crString = getCreatureTypeDisplayString(obj.CreatureType);
+                return crString.toLowerCase().match(typeField.toLowerCase());
+            };
+        }
+        if (cardSizeField >= 0) {
+            obj.CardSize = (obj) => {
+                return obj.ReferenceCardSize === Number(cardSizeField);
+            };
+        }
 
-                props.submitFilter(obj);
-                e.preventDefault();
-            }}
-        >
+        props.submitFilter(obj);
+        e.preventDefault();
+    };
+
+    return (
+        <form id="filter" className="border" onSubmit={submitFunc}>
             {filterRows}
-            <button type="submit" style={{ display: "none" }}>
-                Apply Filter
-            </button>
+            <button type="submit">Apply Filter</button>
         </form>
     );
 }
