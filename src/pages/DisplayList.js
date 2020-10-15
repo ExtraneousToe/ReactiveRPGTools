@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
-import { Row, Col } from "reactstrap";
+import { Row, Col } from "react-bootstrap";
 import "./DisplayList.css";
 
 export class DisplayColumn {

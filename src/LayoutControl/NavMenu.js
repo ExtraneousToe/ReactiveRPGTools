@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
+import { Container, Navbar } from "react-bootstrap";
+import { NavbarBrand, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import { MENU } from "../navigationConstants";
