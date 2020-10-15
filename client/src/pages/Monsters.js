@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { matchPath } from "react-router";
-import { Col, Container, Row } from "reactstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { DisplayList, DisplayColumn } from "./DisplayList";
 import { CRList } from "../components/ChallengeRatingDisplay";
 
@@ -15,7 +15,7 @@ import {
     CreatureTypeList,
     sortCreatureTypeAsc,
 } from "../utility/creatureTypeUtil";
-import { FilterBlock } from "../components/FilterBlock";
+import { MonsterFilterBlock } from "../components/MonsterFilterBlock";
 
 export function Monsters(props) {
     let [filterObj, setFilterObj] = useState({});
@@ -76,10 +76,10 @@ export function Monsters(props) {
         <Container fluid>
             <Row>
                 <Col className="col-5 border">
-                    <FilterBlock submitFilter={setFilterObj} />
+                    <MonsterFilterBlock submitFilter={setFilterObj} />
                     <DisplayList
                         headers={headers}
-                        items={Storage.monsterList}
+                        items={Object.values(Storage.monsterDict)}
                         filterObject={filterObj}
                         pathRoot={props.match.path}
                         idFunction={getIdFromMonster}

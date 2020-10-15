@@ -49,7 +49,7 @@ function BlockRow_Select(key, label, value, setter, selectOpts, optLabels) {
     );
 }
 
-export function FilterBlock(props) {
+export function MonsterFilterBlock(props) {
     let [nameField, setNameField] = useState("");
     let [typeField, setTypeField] = useState("");
     let [cardSizeField, setCardSizeField] = useState();

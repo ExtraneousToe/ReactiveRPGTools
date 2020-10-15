@@ -23,10 +23,10 @@ const Storage = {
         for (let idx = 0; idx < Data.HarvestedItems.length; ++idx) {
             let harvestedItem = Data.HarvestedItems[idx];
 
-            harvestedItem.Description.Paragraphs = harvestedItem.Description.Paragraphs.filter(
+            harvestedItem.Description = harvestedItem.Description.Paragraphs.filter(
                 (line) => line !== ""
             );
-            harvestedItem.UseText.Paragraphs = harvestedItem.UseText.Paragraphs.filter(
+            harvestedItem.UseText = harvestedItem.UseText.Paragraphs.filter(
                 (line) => line !== ""
             );
 
@@ -42,12 +42,19 @@ const Storage = {
                 harvestedItem.CraftingUsage === undefined
             ) {
                 harvestedItem.CraftingUsage = [];
-            } else if (typeof harvestedItem.CraftingUsage === "string") {
-                harvestedItem.CraftingUsage = [harvestedItem.CraftingUsage];
+            }
+
+            if (
+                harvestedItem.RequiredToolNames === null ||
+                harvestedItem.RequiredToolNames === undefined
+            ) {
+                harvestedItem.RequiredToolNames = [];
             }
 
             if (harvestedItem.ReferenceId === undefined) {
-                harvestedItem.ReferenceId = getItemReference(harvestedItem);
+                harvestedItem.ReferenceId = getItemReferenceFromName(
+                    harvestedItem.Name
+                );
             }
 
             Storage.harvestableItemDict[
@@ -105,10 +112,10 @@ const Storage = {
                     Storage.harvestableItemDict[row.ItemNameRef] = {
                         ReferenceId: row.ItemNameRef,
                         Name: row.ItemNameRef,
-                        UseText: { Paragraphs: [] },
+                        UseText: [],
+                        RequiredToolNames: [],
                         CraftingUsage: [],
-                        Description: { Paragraphs: [] },
-                        IsConsumable: false,
+                        Description: [],
                         ValueGP: "-",
                         WeightLB: "-",
                     };
@@ -116,6 +123,13 @@ const Storage = {
             }
 
             Storage.monsterDict[getIdFromMonster(monster)] = monster;
+        }
+
+        let hItems = Object.values(Storage.harvestableItemDict);
+        for (let i = 0; i < hItems.length; ++i) {
+            hItems[i].Quantity = undefined;
+            hItems[i].Notes = undefined;
+            hItems[i].IsConsumable = undefined;
         }
 
         Storage._init = true;

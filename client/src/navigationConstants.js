@@ -1,4 +1,5 @@
 import React from "react";
+import { HarvestedItems } from "./pages/HarvestedItems";
 import { Monsters } from "./pages/Monsters";
 import { fileSaveAs } from "./utility/saveFile";
 import Storage from "./utility/StorageUtil";
@@ -84,7 +85,7 @@ export const MENU = [
         routePaths: ["/harvesteditems"],
         exact: false,
         renderFunction: (props) => {
-            return <span>Harvested Items</span>;
+            return <HarvestedItems {...props} />;
         },
     },
     {

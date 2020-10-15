@@ -34,25 +34,17 @@ export function HarvestingTableDisplay(props) {
 
         if (item !== null && item !== undefined) {
             nameOut = item.Name;
-            if (item.Quantity !== null && item.Quantity.length > 0) {
-                nameOut += ` (${item.Quantity})`;
-            }
-            if (item.Notes !== null && item.Notes !== undefined) {
-                nameOut += ` (${item.Notes})`;
-            }
 
             let lines = 0;
 
-            for (let j = 0; j < item.Description.Paragraphs.length; ++j) {
-                descriptionOut.push(
-                    <p key={lines++}>{item.Description.Paragraphs[j]}</p>
-                );
+            for (let j = 0; j < item.Description.length; ++j) {
+                descriptionOut.push(<p key={lines++}>{item.Description[j]}</p>);
             }
 
-            for (let j = 0; j < item.UseText.Paragraphs.length; ++j) {
+            for (let j = 0; j < item.UseText.length; ++j) {
                 descriptionOut.push(
                     <p key={lines++}>
-                        {j === 0 && <b>Use: </b>} {item.UseText.Paragraphs[j]}
+                        {j === 0 && <b>Use: </b>} {item.UseText[j]}
                     </p>
                 );
             }
@@ -60,6 +52,13 @@ export function HarvestingTableDisplay(props) {
             valueOut = item.ValueGP;
             weightOut = item.WeightLB;
             craftingOut = item.CraftingUsage;
+        }
+
+        if (row.Quantity !== "") {
+            nameOut += ` (${row.Quantity})`;
+        }
+        if (row.Notes !== "") {
+            nameOut += ` (${row.Notes})`;
         }
 
         rowsOut.push(
