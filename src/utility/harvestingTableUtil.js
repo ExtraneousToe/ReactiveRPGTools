@@ -41,6 +41,19 @@ export function HarvestingTableDisplay(props) {
                 descriptionOut.push(<p key={lines++}>{item.Description[j]}</p>);
             }
 
+            // output tools, if any
+            if (
+                item.RequiredToolNames !== undefined &&
+                item.RequiredToolNames.length > 0
+            ) {
+                descriptionOut.push(
+                    <p key={lines++} className="font-weight-bold">
+                        Requires{" "}
+                        {item.RequiredToolNames.join(" and ").toLowerCase()}.
+                    </p>
+                );
+            }
+
             for (let j = 0; j < item.UseText.length; ++j) {
                 descriptionOut.push(
                     <p key={lines++}>

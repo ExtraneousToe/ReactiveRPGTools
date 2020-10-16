@@ -82,6 +82,8 @@ export function MonsterFilterBlock(props) {
         )
     );
 
+    // TODO: add option to filter by having (or not) harvesting/trinket tables
+
     const submitFunc = (e) => {
         let obj = {};
         if (nameField !== "") {

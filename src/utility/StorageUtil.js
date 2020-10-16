@@ -39,6 +39,10 @@ const Storage = {
                 harvestedItem.CraftingUsage === undefined
             ) {
                 harvestedItem.CraftingUsage = [];
+            } else {
+                harvestedItem.CraftingUsage = harvestedItem.CraftingUsage.filter(
+                    (line) => line !== ""
+                );
             }
 
             if (
@@ -46,6 +50,10 @@ const Storage = {
                 harvestedItem.RequiredToolNames === undefined
             ) {
                 harvestedItem.RequiredToolNames = [];
+            } else {
+                harvestedItem.RequiredToolNames = harvestedItem.RequiredToolNames.filter(
+                    (line) => line !== ""
+                );
             }
 
             if (harvestedItem.ReferenceId === undefined) {
