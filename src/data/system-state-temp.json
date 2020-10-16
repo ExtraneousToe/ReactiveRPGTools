@@ -19668,7 +19668,7 @@
                     {
                         "DifficultyClass": 10,
                         "ItemNameRef": "cranium_rat_brain",
-                        "Quantity": "",
+                        "Quantity": "x10",
                         "Notes": ""
                     },
                     {
@@ -20665,7 +20665,7 @@
                 "Rows": [
                     {
                         "DifficultyClass": 5,
-                        "ItemNameRef": "mind_flayer_mucus",
+                        "ItemNameRef": "mind_flayer_mucus_(ulitharid)",
                         "Quantity": "vial",
                         "Notes": ""
                     },
@@ -20677,7 +20677,7 @@
                     },
                     {
                         "DifficultyClass": 15,
-                        "ItemNameRef": "mind_flayer_heart",
+                        "ItemNameRef": "mind_flayer_heart_(ulitharid)",
                         "Quantity": "",
                         "Notes": ""
                     },
@@ -24148,43 +24148,51 @@
         },
         {
             "ReferenceId": "alhoon_brain",
-            "Name": "alhoon_brain",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Alhoon Brain",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Helm of Mind Trapping"],
+            "Description": [
+                "The brain of an alhoon is substantially different to that of a regular illithid. Having severed their connection to the elder brain, the lobes responsible for communication and community are noticeably atrophied, whereas the sections related to curiosity and learning have grown. When used in artificing, the result is substantially different to using a regular illithid's, and instead takes inspiration from the alhoon's nefarious periapt of mind trapping."
+            ],
+            "ValueGP": "1600 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "alhoon_heart",
-            "Name": "alhoon_heart",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Alhoon Heart",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Amulet of the Closed Heart"],
+            "Description": [
+                "As part of an illithid's descent into becoming an alhoon, they must forsake their colony and elder brain, an emotionally painful act even for the usually indifferent illithids. To recover from this self-inflicted wound, alhoons erect barriers around their hearts, both figuratively and literally. With their burgeoning understanding of magic, alhoons cast spells that numb their hearts and prevent them from yearning for a colony they may never return to. This magic remains in their hearts even after their death and yields great benefits when artificing."
+            ],
+            "ValueGP": "375 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "alhoon_skin",
-            "Name": "alhoon_skin",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Alhoon Skin",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Due to a lack of mucus, an alhoon's skin is noticeably pale and flakey and can literally crumble once the alhoon has died. Completely useless for any kind of leatherworking, crushing the skin into a dust and inhaling it has been known to induce a psychosis that makes one believe they have died (despite their breathing and walking around providing evidence to the contrary). For some strange reason, some people find this experience to be quite cathartic, causing alhoon dust to be offered in the more exotic entertainment dens."
+            ],
+            "ValueGP": "10 gp",
+            "WeightLB": "15 lb"
         },
         {
             "ReferenceId": "alhoon_tentacle",
-            "Name": "alhoon_tentacle",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Alhoon Tentacle",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Ink of Secret Knowledge"],
+            "Description": [
+                "Dry and brittle, an alhoon's tentacles have lost much of the strength and dexterity of a living illithid's. While they have been rendered useless for the purposes of weapon crafting, these tentacles make for a potent magical ink once powdered and mixed with enchanted chalks."
+            ],
+            "ValueGP": "45 gp",
+            "WeightLB": "2 lb"
         },
         {
             "UseText": [],
@@ -24482,23 +24490,27 @@
         },
         {
             "ReferenceId": "annis_hag_hair",
-            "Name": "annis_hag_hair",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Annis Hag Hair",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Corrupted Strength"],
+            "Description": [
+                "The hair of an annis hag clumps like moss upon a weathered boulder. Imbued with traces of the hag's corrupting magic, it almost feels like its growing and attaching itself to your hand when you hold it."
+            ],
+            "ValueGP": "6 gp",
+            "WeightLB": "2 lb"
         },
         {
             "ReferenceId": "annis_hag_skull",
-            "Name": "annis_hag_skull",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Annis Hag Skull",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Corruption Skull"],
+            "Description": [
+                "An annis hag tends to have a number of iron teeth that it has embedded in its gums and magically fused to its own skull. This skull thus possesses strong magical power similar to the iron tokens that it hands to naïve children, and is thus able to be exploited by those with artificing knowledge."
+            ],
+            "ValueGP": "40 gp",
+            "WeightLB": "10 lb"
         },
         {
             "UseText": [],
@@ -24580,33 +24592,39 @@
         },
         {
             "ReferenceId": "babau_eye",
-            "Name": "babau_eye",
+            "Name": "Babau Eye",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Curse of Weakening"],
+            "Description": [
+                "A babau is capable of weakening those it gazes at, channeling the dark countenance of Graz'zt as it stares into one's soul. As conduits of this power, they make wonderful components for the creation of curses, something that Graz'zt probably approves of."
+            ],
+            "ValueGP": "10 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "babau_horn",
-            "Name": "babau_horn",
+            "Name": "Babau Horn",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Melee piercing weapon, +1 (DMG)"],
+            "Description": [
+                "Made of a special type of keratin harder than any regular creature's, a babau horn makes a particularly deadly weapon. It is said that people slain by weapons forged from these horns die particularly painfully, and bleed out unusually slowly, but this is unconfirmed."
+            ],
+            "ValueGP": "6 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "babau_skin",
-            "Name": "babau_skin",
+            "Name": "Babau Skin",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Demon Vellum"],
+            "Description": [
+                "The tight black skin of a babau resembles worn leather in the way that it creases and fades with the movement of the demon. Despite its horrid aesthetic, these same properties make it a natural vellum, and when inscribed properly, can become the vessel of particularly dark magic."
+            ],
+            "ValueGP": "100 gp",
+            "WeightLB": "5 lb"
         },
         {
             "UseText": [],
@@ -24620,13 +24638,17 @@
         },
         {
             "ReferenceId": "banderhobb_goo",
-            "Name": "banderhobb_goo",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Banderhobb Goo",
+            "UseText": [
+                "You may spend an action to pour the contents of this vial onto a lizard, snake, toad, or frog that is no larger than Medium sized. That creature immediately grows into the giant version of itself (as described in the Monster Manual) for 1 hour. It returns to its normal size at the end of the hour, or if it drops to 0 hit points. While under the effect of this item, the creature becomes violent and attempts to attack the nearest creature it can see whenever possible."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "One half of the disgusting components that constitute a banderhobb's vile form is the rendered flesh of various swamp creatures. When the banderhobb expires, this flesh loses any sense of cohesion and breaks down into a fetid goo. This goo still holds some mutagenic properties when harvested correctly, but care should be used when applying it to anything."
+            ],
+            "ValueGP": "25 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [
@@ -24696,43 +24718,57 @@
         },
         {
             "ReferenceId": "barghest_blood",
-            "Name": "barghest_blood",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Barghest Blood",
+            "UseText": [
+                "You may spend an action to drink this blood. If you do so, you polymorph into a goblin version of yourself for the next hour. Your game statistics remain the same in your new form, except your size changes to Small. You revert to your normal form at the end of the hour, or if you die."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The blood of a barghest is the same color as that of a goblin's, but has a slippery consistency more in line with that of a traditional yugoloth. It possesses some transformative properties as is befitting of its status as a shapeshifter."
+            ],
+            "ValueGP": "1 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "barghest_fang",
-            "Name": "barghest_fang",
+            "Name": "Barghest Fang",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Soul Render"],
+            "Description": [
+                "The fangs of a barghest are magically imbued and capable of tearing a soul from a body the way normal fangs tear flesh from bone. While this may seem incomprehensibly evil, they may be refashioned into weapons that use that very same property to fight incorporeal undead, thus earning them a little bit of redemption."
+            ],
+            "ValueGP": "12 gp",
+            "WeightLB": "4 lb"
         },
         {
             "ReferenceId": "barghest_fur",
-            "Name": "barghest_fur",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Barghest Fur",
+            "UseText": [
+                "If a small bag of barghest fur is thrown into a fire larger than 10 feet high or wide, the fur is instantly disintegrated and the fire transforms into a portal to a random location on the plane of Gehenna for the next minute, or until the fire is extinguished. Anything entering the portal automatically suffers 4d8 fire damage from the heat of the original flame."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Goblin Effigy"],
+            "Description": [
+                "Barghests have an odd reaction to fire that transports them back to their home plane of Gehenna if they are engulfed in it for any period of time. This property extends to pristine samples of their fur, which can create a portal when used as tinder. Be warned though, that using said portal will still be quite painful. Alternatively, it can be used to make a macabre magical doll that is useful for goblinbased distractions."
+            ],
+            "ValueGP": "13 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "barghest_stomach_acid",
-            "Name": "barghest_stomach_acid",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Barghest Stomach Acid",
+            "UseText": [
+                "If you pour this item onto a humanoid that has died within the past 10 minutes, that humanoid's soul will begin to be destroyed instead of passing into the afterlife. It takes 24 hours for a soul to be completely destroyed, after which no mortal magic may return that humanoid to life. If a resurrection attempt is made during those 24 hours, the attempt only has a 50 per cent chance of success. Removing the acid from the body of the humanoid before the 24 hours is over halts the destruction of the soul. This item has enough stomach acid to destroy one soul, and stomach acid that has been used once may not be used again."
+            ],
+            "RequiredToolNames": ["Enchanted vial"],
+            "CraftingUsage": [""],
+            "Description": [
+                "Barghests possess an insidious ability befitting of a creature spawned from Gehenna: they are capable of devouring the souls along with the flesh of those they kill. While their teeth are responsible for the actual rending of soul from flesh, their stomachs are to blame for the destruction of the soul itself, their digestive fluids possessing an unholy property."
+            ],
+            "ValueGP": "60 gp",
+            "WeightLB": "2 lb"
         },
         {
             "UseText": [],
@@ -24830,8 +24866,7 @@
             "CraftingUsage": [""],
             "Name": "Behir Horn",
             "Description": [
-                "The horn of a behir is composed of a unique keratin that has an odd reaction to the presence of dragons. A dragon's mere presence causes these horns to resonate, usually alerting a behir to the presence of their hated foe. The horns will still function in the hands of anyone else, but the dragon usually must be much closer for the vibrations to be detected.",
-                "Use: When within 1 mile of a dragon (whether it in its true form or polymorphed into a different shape), this horn will begin to vibrate, with the vibrations becoming more pronounced the closer it is to the dragon. This horn does not indicate the direction of the dragon, only its general proximity."
+                "The horn of a behir is composed of a unique keratin that has an odd reaction to the presence of dragons. A dragon's mere presence causes these horns to resonate, usually alerting a behir to the presence of their hated foe. The horns will still function in the hands of anyone else, but the dragon usually must be much closer for the vibrations to be detected."
             ],
             "ValueGP": "300 gp",
             "WeightLB": "30 lb",
@@ -24888,23 +24923,27 @@
         },
         {
             "ReferenceId": "bheur_hag_hair",
-            "Name": "bheur_hag_hair",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Bheur Hag Hair",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Corrupted Strength"],
+            "Description": [
+                "Despite resembling the hoar frost that grows on spider webs, the hair of a bheur hag is surprisingly supple and flexible. Possessing traces of the hag's ancient frost magic, these hairs have been repurposed into strings for various inventions, imparting their wintery power wherever they are used."
+            ],
+            "ValueGP": "20 gp",
+            "WeightLB": "4 lb"
         },
         {
             "ReferenceId": "bheur_hag_skull",
-            "Name": "bheur_hag_skull",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Bheur Hag Skull",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Frozen Skull"],
+            "Description": [
+                "Once removed from its taut, frozen flesh, the skull of a bheur hag flashes a constant rictus grin. It stares back at whoever gazes at it, mocking them with thoughts of anxiety and desperation regardless of their current situation. It is dangerous to use in crafting, but when done well, can create an item that oozes with dark magic and the slow of winter."
+            ],
+            "ValueGP": "40 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "black_residue",
@@ -24996,13 +25035,15 @@
         },
         {
             "ReferenceId": "bodak_eye",
-            "Name": "bodak_eye",
+            "Name": "Bodak Eye",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Death Goggles"],
+            "Description": [
+                "Pure white, blank and incredibly disturbing. Filled with the unholy, necrotic energies of the demon prince Orcus, these eyes can be worked upon by a talented thaumaturge to create a rather morbid set of goggles that allow the wielder to literally see death wherever they look."
+            ],
+            "ValueGP": "70 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [],
@@ -25074,23 +25115,27 @@
         },
         {
             "ReferenceId": "brontosaurus_neck_sack",
-            "Name": "brontosaurus_neck_sack",
+            "Name": "Brontosaurus Neck Sack",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "One would think that the massive neck of a brontosaurus would not be able to support itself, and yet amazingly it does. Even more amazingly, this is achieved not through magic but by mere physics; the neck of a brontosaurus is actually filled with several air sacks that help support its neck and saves on weight. These air sacks may be repurposed for various tools and equipment, including buoyancy aids for ship hulls."
+            ],
+            "ValueGP": "60 gp",
+            "WeightLB": "20 lb"
         },
         {
             "ReferenceId": "brontosaurus_toe",
-            "Name": "brontosaurus_toe",
+            "Name": "Brontosaurus Toe",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Any melee bludgeoning weapon, +1 (DMG)"],
+            "Description": [
+                "The massive toes of a brontosaurus are strong and durable enough to support its considerable weight. As such, they make wonderful materials to bludgeon one's opponent with."
+            ],
+            "ValueGP": "30 gp",
+            "WeightLB": "15 lb"
         },
         {
             "UseText": [],
@@ -25205,73 +25250,91 @@
         },
         {
             "ReferenceId": "catoblepas_eye",
-            "Name": "catoblepas_eye",
+            "Name": "Catoblepas Eye",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Withering Lenses"],
+            "Description": [
+                "The catoblepas is the natural embodiment of death and decay, and nowhere is this better exemplified than in their eyes. Filled with necrotic energy rarely seen outside of the undead, these eyes wither anything they look at, turning fresh bodies into suitable fare for the catoblepas. Artificers have learned to take these orbs and transform them into deadly lenses with much of the same ability."
+            ],
+            "ValueGP": "42 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "catoblepas_fur",
-            "Name": "catoblepas_fur",
+            "Name": "Catoblepas Fur",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Filter Rag"],
+            "Description": [
+                "The thick, mangy red fur of the catoblepas looks and feels more like the decayed vegetable matter that one would find at the bottom of the swamp it lives in. The unique structure of this fur makes it the perfect trap for bacteria and disease. While many would thus assume that this fur is a vector for plague, this very property actually makes it a wonderful filter, and when cleaned and dried properly can actually be used to make even the most polluted water into something potable."
+            ],
+            "ValueGP": "10 gp",
+            "WeightLB": "7 lb"
         },
         {
             "ReferenceId": "catoblepas_milk",
-            "Name": "catoblepas_milk",
+            "Name": "Catoblepas Milk",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The pale, vaguely reddish milk of a catoblepas smells worse than it looks. It is easy to mistake even fresh catoblepas milk as having gone rancid, due to its sharp taste and odor. Despite this, it is considerably valuable, as it is the basis for the gourmet foodstuff: death cheese."
+            ],
+            "ValueGP": "5 gp",
+            "WeightLB": "9 lb"
         },
         {
             "ReferenceId": "catoblepas_tail",
-            "Name": "catoblepas_tail",
+            "Name": "Catoblepas Tail",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Flail, +1 (DMG)"],
+            "Description": [
+                "A solid tail, capable of rattling a knight wearing the sturdiest plate. Taken, treated with oils, and reinforced with steel strips turns this monstrous act of nature into a deadly weapon on the battlefield."
+            ],
+            "ValueGP": "25 gp",
+            "WeightLB": "15 lb"
         },
         {
             "ReferenceId": "cave_fisher_blood",
-            "Name": "cave_fisher_blood",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Cave Fisher Blood",
+            "UseText": [
+                "As an action, you may throw this vial at a target you can see within 20 feet of you as a ranged attack. This vial shatters on impact, covering your target in flammable liquid. That target has vulnerability to fire damage until the end of your next turn."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Cave fisher blood is known not just for being alcoholic, but also being particularly flammable. In other words, this blood is capable of warming you up one way or another."
+            ],
+            "ValueGP": "5 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "cave_fisher_carapace",
-            "Name": "cave_fisher_carapace",
+            "Name": "Cave Fisher Carapace",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Incredibly hard and with a strangely attractive milky white tone, cave fisher carapaces are highly valued in subterranean societies. They have been used for everything from tools, to armor, to jewelry, and ironically its value has made cave fishers an endangered species in some areas."
+            ],
+            "ValueGP": "10 gp",
+            "WeightLB": "40 lb"
         },
         {
             "ReferenceId": "cave_fisher_filament",
-            "Name": "cave_fisher_filament",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Cave Fisher Filament",
+            "UseText": [
+                "This filament may be unspooled like a regular piece of rope. The filament sticks to anything it touches, except for silk. A creature that touches the filament becomes immediately adhered to it. A creature adhered to the filament is considered grappled (escape DC 13), and ability checks made to escape this grapple have disadvantage. The filament can be attacked (AC 15; 5 hit points; immunity to poison and psychic damage), but a weapon that fails to sever it becomes stuck to it, requiring an action and a successful DC 13 Strength check to pull free."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Rope of Climbing (DMG)"],
+            "Description": [
+                "The notorious adhesive filament of a cave fisher is difficult to extract without muddling it up into an unusable sticky ball. If such a thing is available, it is advised that you wrap your filament around a bolt of silk cloth, as the filament has trouble sticking to this material, allowing you to unwind it later with ease. Once an artificer has gotten their hands on this filament, they can easily turn it into the ever useful rope of climbing. This fact has made cave fishers particularly valuable for hunters trying to make some quick cash."
+            ],
+            "ValueGP": "20 gp",
+            "WeightLB": "10 lb"
         },
         {
             "UseText": [],
@@ -25411,43 +25474,55 @@
         },
         {
             "ReferenceId": "chitine_blood",
-            "Name": "chitine_blood",
+            "Name": "Chitine Blood",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Drow Poison (DMG)"],
+            "Description": [
+                "Chitine blood actually has much in common with their drow progenitors, and as such is just as capable of creating the infamous drow poison. While most chitine do not have the facilities to transmute their blood into this poison, they become capable of producing it naturally when they are in their choldrith forms."
+            ],
+            "ValueGP": "1 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "chitine_fur",
-            "Name": "chitine_fur",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Chitine Fur",
+            "UseText": [
+                "You may sprinkle this pouch of fur as an action on any web within 5 feet of you. This fur will vibrate strongly if a creature comes in contact with the web it is sprinkled on. Once this fur has been sprinkled on a web, it cannot be removed."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Chitine fur is surprisingly light and fluffy, and if one closes their eyes while touching it, they would not be at fault for thinking they were touching a duckling's down. This density is what allows a chitine to sense tiny vibrations in their webs, and good samples of this fur can help an enterprising adventurer identify these hazards and avoid them."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "choldrith_blood",
-            "Name": "choldrith_blood",
+            "Name": "Choldrith Blood",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Drow Poison (DMG)"],
+            "Description": [
+                "Choldrith blood is even more potent than chitine blood when it comes to producing the poisonous enzymes that constitute drow poison. As such, choldriths have become capable of creating their own poison without any external help and use it on their own weapons."
+            ],
+            "ValueGP": "1 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "choldrith_fur",
-            "Name": "choldrith_fur",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Choldrith Fur",
+            "UseText": [
+                "You may sprinkle this pouch of fur as an action on any web within 5 feet of you. This fur will vibrate strongly if a creature comes in contact with the web it is sprinkled on. Once this fur has been sprinkled on a web, it cannot be removed."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Choldrith fur is surprisingly light and fluffy, and if one closes their eyes while touching it, they would not be at fault for thinking they were touching a duckling's down. This density is what allows a choldrith to sense tiny vibrations in their webs, and good samples of this fur can help an enterprising adventurer identify these hazards and avoid them."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [],
@@ -25619,13 +25694,15 @@
         },
         {
             "ReferenceId": "cranium_rat_brain",
-            "Name": "cranium_rat_brain",
+            "Name": "Cranium Rat Brain",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Idea Bulb"],
+            "Description": [
+                "A rodent brain, permanently altered by exposure to an illithid's psionic energy. Divorced from life, these brains have an at times unsettling ability to light up when exposed to the ambient thoughts of sentient creatures. Excavation of illithid colonies have revealed that some of their hallways have been studded with preserved brains to lend them proximity based illumination."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "crystalline_powder",
@@ -25703,23 +25780,29 @@
         },
         {
             "ReferenceId": "darkling_ash",
-            "Name": "darkling_ash",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Darkling Ash",
+            "UseText": [
+                "When you cast the darkness spell, you may expend 1 or more pouches of this ash instead of the usual material components. If you do so, the radius of the magical darkness you create expands by 5 feet for every pouch of ash you expend."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Radiant Resistance (DMG)"],
+            "Description": [
+                "The burnt remains of a darkling after its absorbed light has burst out. While it is disappointing that most of their body has been made unharvestable, the ash still holds some magical properties as a light nullifier. This should be obvious in that it was the only portion of the darkling's body to not disintegrate when exposed to a light flash."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "2 lb"
         },
         {
             "ReferenceId": "darkling_elder_tattoo",
-            "Name": "darkling_elder_tattoo",
+            "Name": "Darkling Elder Tattoo",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Radiant Oil"],
+            "Description": [
+                "The ritual to become a darkling elder is painful, risky, and costly. The enchanted tattoos contain traces of metals, rare pigments, and magical reagents that are capable of surviving the light flash that accompanies a darkling's death. It is quite difficult to do so, but carefully sifting through the elder's ashes can reveal these tattoo components, which still carry the light they absorbed and are thus extremely valuable."
+            ],
+            "ValueGP": "4 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [],
@@ -25747,33 +25830,39 @@
         },
         {
             "ReferenceId": "death_kiss_blood",
-            "Name": "death_kiss_blood",
+            "Name": "Death Kiss Blood",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Lightning Blood"],
+            "Description": [
+                "The crackling blood of a death kiss is as electrified as a field before a storm. Many foolish adventurers find that their metal weapons turn into conductors of their own deaths when used to strike a death kiss."
+            ],
+            "ValueGP": "10 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "death_kiss_main_eye",
-            "Name": "death_kiss_main_eye",
+            "Name": "Death Kiss Main Eye",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Bloodhunter's Lens"],
+            "Description": [
+                "Unlike most beholders, the eye of a death kiss holds no offensive or defensive abilities. However, when removed, boiled, mashed into a paste, and fortified with arcane components, the resulting mixture makes a potent medicine used to treat blood diseases and other maladies. Alternatively, it makes for a powerful lens to aid in the hunting and tracking of one's foes."
+            ],
+            "ValueGP": "540 gp",
+            "WeightLB": "20 lb"
         },
         {
             "ReferenceId": "death_kiss_tentacle",
-            "Name": "death_kiss_tentacle",
+            "Name": "Death Kiss Tentacle",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Leeching Whip"],
+            "Description": [
+                "The tentacles of a death kiss lack any ranged capabilities. Instead they are much more capable in melee combat, being lined with vampiric teeth that can drain a victim of blood. The hollow teeth of the death kiss served as the inspiration for the first hypodermic needles, and thus in a strange way, beholders could be seen as the inventors of this medical breakthrough."
+            ],
+            "ValueGP": "33 gp",
+            "WeightLB": "12 lb"
         },
         {
             "UseText": [],
@@ -25825,13 +25914,15 @@
         },
         {
             "ReferenceId": "deinonychus_sickle",
-            "Name": "deinonychus_sickle",
+            "Name": "Deinonychus Sickle",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Sickle (DMG)"],
+            "Description": [
+                "The deinonychus possesses a distinctive sickle shaped claw on its hind feet. These claws make for wonderful sickle substitutes when a metallic version cannot be made."
+            ],
+            "ValueGP": "4 gp",
+            "WeightLB": "3 lb"
         },
         {
             "UseText": [],
@@ -25976,43 +26067,53 @@
         },
         {
             "ReferenceId": "devourer_claw",
-            "Name": "devourer_claw",
+            "Name": "Devourer Claw",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [
+                "Any melee slashing weapon except whips, +2 (DMG)"
+            ],
+            "Description": [
+                "The rending claws of a devourer can tear through any flesh it meets, leaving a trail of necrotic corruption as they do. Although they lose their deathly infusions once removed, the claws remain incredibly sharp and battle-worthy."
+            ],
+            "ValueGP": "100 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "devourer_ribcage",
-            "Name": "devourer_ribcage",
+            "Name": "Devourer Ribcage",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Breastplate of the Boundary"],
+            "Description": [
+                "Of all horrors, terrors, and ghastly dangers that have been invented by the demon princes, the devourer's chest is doubtless one of the worst. Imbued with dark magic that draws trapped mortals closer to Orcus' domain, the devourer's ribs are a powerful crafting component. With a clever act of thaumaturgy, their negative influence can be reversed and used to sustain a creature that is near death. It is a risky proposition however, as the ribs still possess a weak connection to Orcus, and so long as that is maintained, he will stop at nothing to claim his prey."
+            ],
+            "ValueGP": "555 gp",
+            "WeightLB": "35 lb"
         },
         {
             "ReferenceId": "devourer_skin",
-            "Name": "devourer_skin",
+            "Name": "Devourer Skin",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Necrotic Cloak"],
+            "Description": [
+                "The cadaverous skin of a devourer has practically been tanned into leather while still on the body. It is difficult to remove it without tearing, but when done properly it can be crafted into a cloak that can shelter you from both the elements and from death itself."
+            ],
+            "ValueGP": "2250 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "dimetrodon_hide",
-            "Name": "dimetrodon_hide",
+            "Name": "Dimetrodon Hide",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Leather Armor (PHB)"],
+            "Description": [
+                "The scaly tough hide of a dimetrodon is similar to that of a crocodile. Removed and tanned, it makes for an eye catching piece of armor."
+            ],
+            "ValueGP": "3 gp",
+            "WeightLB": "10 lb"
         },
         {
             "UseText": [],
@@ -26086,23 +26187,31 @@
         },
         {
             "ReferenceId": "draegloth_claw",
-            "Name": "draegloth_claw",
+            "Name": "Draegloth Claw",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [
+                "Any melee piercing or slashing weapon, +1 (DMG)"
+            ],
+            "Description": [
+                "The long claws of a draegloth are deformed, monstrous versions of their drow arms. Useless for anything except tearing through flesh, they in turn make wonderful crafting components for stronger weapons. It is something of a custom for drow to use such weapons as a spiteful punishment against a family that has sent a draegloth against them, which is the origin of the Underdark payback idiom, \"to give someone the draegloth claw.\""
+            ],
+            "ValueGP": "11 gp",
+            "WeightLB": "20 lb"
         },
         {
             "ReferenceId": "draegloth_heart",
-            "Name": "draegloth_heart",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Draegloth Heart",
+            "UseText": [
+                "You may spend an action to stab this heart. If you do so, you summon forth a glabrezu as if you had cast the summon greater demon spell at 9th level. Once this ability has been used once, the heart withers away and become useless."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Similar to a drow heart that has been touched by Lolth, the heart of a draegloth carries a strong connection to the Abyss and may act as a conduit to summon forth more demons from that infernal plane."
+            ],
+            "ValueGP": "30 gp",
+            "WeightLB": "4 lb"
         },
         {
             "UseText": [],
@@ -26271,43 +26380,53 @@
         },
         {
             "ReferenceId": "elder_brain_fluid",
-            "Name": "elder_brain_fluid",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Elder Brain Fluid",
+            "UseText": [
+                "As an action you may drink a vial of this brain fluid. If you do so, for the next 1 hour you automatically succeed on detecting the nature of illusions upon seeing them. At the end of the hour, you automatically suffer one level of exhaustion as your brain resets its sensory intake methods."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Boundless Intellect"],
+            "Description": [
+                "The fluids secreted by an elder brain resemble that of the fluids excreted by a regular humanoid's, but are in fact more akin to that of an illithid's mucus secretion. This fluid is a rich miasma of enzymes and grey matter that when imbibed, has strong perception altering effects for anyone that is not an illithid."
+            ],
+            "ValueGP": "50 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "elder_brain_tentacle",
-            "Name": "elder_brain_tentacle",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Elder Brain Tentacle",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Mind Whip, +1"],
+            "Description": [
+                "Although considerably longer than an illithid's, an elder brain's tentacle possesses many of the same anatomical features. When crafted into a whip, they are capable of scouring both the flesh and the mind."
+            ],
+            "ValueGP": "150 gp",
+            "WeightLB": "35 lb"
         },
         {
             "ReferenceId": "elder_brain_thalamus",
-            "Name": "elder_brain_thalamus",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Elder Brain Thalamus",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Crown of Limitless Knowledge"],
+            "Description": [
+                "The thalamus of an elder brain is much like a regular humanoid's and contributes to their prestigious memory. It takes a very skilled artificer to transform it into a magical item, but when done properly, it allows a user to tap into the limitless knowledge of the elder brain."
+            ],
+            "ValueGP": "3000 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "elder_brain_white_matter",
-            "Name": "elder_brain_white_matter",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Elder Brain White Matter",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Interrogator's Web"],
+            "Description": [
+                "The connective tissue between the many folds and neurons of an elder brain, harvesting this material in-tact requires an extremely steady hand and extensive medical knowledge. It is however an extremely useful crafting material as it lends itself well for making items that take advantage of its original purpose as a biological method of transmitting information."
+            ],
+            "ValueGP": "430 gp",
+            "WeightLB": "15 lb"
         },
         {
             "ReferenceId": "empyrean_blood",
@@ -26511,13 +26630,15 @@
         },
         {
             "ReferenceId": "fire_giant_shield_scrap",
-            "Name": "fire_giant_shield_scrap",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Fire Giant Shield Scrap",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Fire Flash Armor"],
+            "Description": [
+                "The shields of a fire giant dreadnought are much too large for any regular sized adventurer to wield or even transport. Their inner workings however are masterfully crafted and can only be forged by the fire giant's prestigious strength and affinity for flame. These contraptions can be taken to a tinker who most likely will happily accept an opportunity to experiment with such interesting craftwork."
+            ],
+            "ValueGP": "7550 gp",
+            "WeightLB": "20 lb"
         },
         {
             "ReferenceId": "fire_snake_scales",
@@ -26533,43 +26654,53 @@
         },
         {
             "ReferenceId": "firenewt_mucus",
-            "Name": "firenewt_mucus",
+            "Name": "Firenewt Mucus",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The sign of a healthy firenewt is a thin layer of mucus on their skin. This mucus smells of sulfur and other minerals that the firenewts come into regular contact with, but serves as a wonderful lubricant and insulation material. Tinkers are often glad to get their hands on samples of this to help maintain their mechanical inventions."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "flail_snail_flail",
-            "Name": "flail_snail_flail",
+            "Name": "Flail Snail Flail",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Whip, morningstar, or flail, +1 (DMG)"],
+            "Description": [
+                "The eponymous flail tentacles of the flail snail. While powerful when attached to their body, they atrophy from the enzymes in them when amputated and become useless. Only a steady hand and reasonable knowledge of snail anatomy can allow a harvester to slice these off and preserve them long enough to recraft them into something more useful."
+            ],
+            "ValueGP": "9 gp",
+            "WeightLB": "4 lb"
         },
         {
             "ReferenceId": "flail_snail_shell",
-            "Name": "flail_snail_shell",
+            "Name": "Flail Snail Shell",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [
+                "Robe of Scintillating Colors (DMG), Spellguard Shield (DMG), Antimagic Shield"
+            ],
+            "Description": [
+                "The incredibly valuable flail snail shell has numerous uses and seems to be a gift from the elemental plane. Even the most primitive of societies have realised the power inherent in these shells, and several tribes have made it a rite of passage for a trio of youths to hunt a snail and then craft three shields from the shell. These shields become a bond mark and point of pride for the three individuals for the rest of their lives."
+            ],
+            "ValueGP": "5000 gp",
+            "WeightLB": "250 lb"
         },
         {
             "ReferenceId": "flail_snail_slime_gland",
-            "Name": "flail_snail_slime_gland",
+            "Name": "Flail Snail Slime Gland",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Glass Oil"],
+            "Description": [
+                "The signature glassy residue left behind by a flail snail as it travels is the undigested remains of whatever it has eaten. An unruptured slime gland is particularly valuable as it holds large quantities of versatile liquid slime. Aside from various alchemical projects, a more mundane use is in cosmetics: adding the slime to powders creates a glittery foundation that shimmers like diamonds."
+            ],
+            "ValueGP": "30 gp",
+            "WeightLB": "4 lb"
         },
         {
             "UseText": [],
@@ -26677,43 +26808,51 @@
         },
         {
             "ReferenceId": "froghemoth_eye",
-            "Name": "froghemoth_eye",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Froghemoth Eye",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Eye Drone"],
+            "Description": [
+                "The eyestalks of a froghemoth are prehensile and have a surprising amount of acuity. With the application of a little electricity, they can become mobile again, allowing them to act as independent drones."
+            ],
+            "ValueGP": "77 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "froghemoth_foam",
-            "Name": "froghemoth_foam",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Froghemoth Foam",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Superior Healing (DMG)"],
+            "Description": [
+                "The mucus-like coating that a froghemoth expels whenever it lays an egg contains a surprising amount of antibiotics and other healing properties. Most likely this was designed to keep bacteria and disease from infecting the otherwise uncared for egg. Regardless of its actual purpose, this foam makes an excellent base for the brewing of healing potions."
+            ],
+            "ValueGP": "10 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "froghemoth_tentacle",
-            "Name": "froghemoth_tentacle",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Froghemoth Tentacle",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Whip, +2 (DMG)"],
+            "Description": [
+                "The four long tentacles of a froghemoth are usually the last things that swamp dwellers see. Extremely strong along every point of articulation, the mucus produced along the tentacles also creates a mild adhesive that makes extricating oneself even more difficult."
+            ],
+            "ValueGP": "33 gp",
+            "WeightLB": "12 lb"
         },
         {
             "ReferenceId": "froghemoth_tongue",
-            "Name": "froghemoth_tongue",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Froghemoth Tongue",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Snap Tongue Attachment"],
+            "Description": [
+                "The tongue of a froghemoth is essentially the same as that of a smaller frog but on a much larger scale. While the lack of saliva production has resulted in the loss of its adhesive property, it maintains its extremely strong snapping action that allowed it to shoot forth and snag prey, as well as a surprising amount of prehensile control. Particularly crafty tinkers have realized how to transform this tongue into a ropey weapon attachment that can give melee weapons a little extra reach and control."
+            ],
+            "ValueGP": "500 gp",
+            "WeightLB": "12 lb"
         },
         {
             "ReferenceId": "frost_giant_fingernail",
@@ -26793,53 +26932,67 @@
         },
         {
             "ReferenceId": "gauth_eyestalk",
-            "Name": "gauth_eyestalk",
+            "Name": "Gauth Eyestalk",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Lesser Eye Stalk Wand"],
+            "Description": [
+                "The eye stalks of a gauth are not as powerful as that of a beholder, but they still have some use when harvested and processed by a skilled artificer. If a player harvests an eye stalk, roll 1d6. The type of eye stalk they receive corresponds to the number rolled, as described in the gauth's statblock."
+            ],
+            "ValueGP": "33 gp",
+            "WeightLB": "6 lb"
         },
         {
             "ReferenceId": "gauth_main_eye",
-            "Name": "gauth_main_eye",
+            "Name": "Gauth Main Eye",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Stunning Lens"],
+            "Description": [
+                "The gaze of a gauth differs from a beholder's in that instead of draining magic, the gauth's gaze drains mobility. Why exactly this occurs is up for debate, but some scholars have argued it as proof that movement itself is a form of magic (it should be noted however that these scholars are largely considered crackpots by the greater scientific community)."
+            ],
+            "ValueGP": "115 gp",
+            "WeightLB": "15 lb"
         },
         {
             "ReferenceId": "gauth_stomach",
-            "Name": "gauth_stomach",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Gauth Stomach",
+            "UseText": [
+                "You may spend an action to rupture this stomach and spill the contents onto a magical item, causing it to lose all magical properties for 24 hours, as well as 1d4 charges if it is a charged item. This ability does not function on artefacts or items with the legendary rarity."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Gauths boast the rather annoying ability to literally consume magic and magical energy. Some believe that this is related to the magic nullification ability of a beholder's main eye, but this is still merely conjecture. Either way, allowing a gauth near your magical sword is a surefire way to end up with a relatively useless hunk of metal."
+            ],
+            "ValueGP": "17 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "gazer_eyestalk",
-            "Name": "gazer_eyestalk",
+            "Name": "Gazer Eyestalk",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Minor Eye Stalk Wand"],
+            "Description": [
+                "The tiny stalks of a gazer are incredibly difficult to harvest undamaged, and the wands they create are just as fragile. They are best treated as weapons of last resort for a mage that is out of options. If a player harvests an eye stalk, roll 1d4. The type of eye stalk they receive corresponds to the number rolled, as described in the gazer's statblock."
+            ],
+            "ValueGP": "1 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "gazer_main_eye",
-            "Name": "gazer_main_eye",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Gazer Main Eye",
+            "UseText": [
+                "When casting the find familiar spell, you may expend this item instead of the usual material component. If you do so, your summoned familiar takes the form of a gazer instead of the usual choices. This gazer has all of the normal abilities of a familiar, as well as its normal abilities as a gazer. This gazer-familiar lasts until it either drops to 0 hit points or is dismissed."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The main eye of a gazer is particularly useful when used in magic, despite its lack of utility for its original owner. Possessing a small fraction of its beholder-creator's power, it makes a useful spell component."
+            ],
+            "ValueGP": "4 gp",
+            "WeightLB": "2 lb"
         },
         {
             "ReferenceId": "gelatinous_residue",
@@ -26933,33 +27086,41 @@
         },
         {
             "ReferenceId": "giant_strider_gas_bladder",
-            "Name": "giant_strider_gas_bladder",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Giant Strider Gas Bladder",
+            "UseText": [
+                "As an action, you may burst this bladder, spreading a cloud of highly flammable gas in a 10 foot-foot radius. Any creature within this cloud has vulnerability to fire damage. The cloud disperses 1 minute after being created, or if it is ignited. This item may also be thrown up to 20 feet, bursting on impact with the ground."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "A melon sized bladder located just above the giant strider's lungs. This bladder contains a highly flammable gas that the giant strider uses to kill and cook their prey. This gas is harvested by firenewts for usage in their alchemy, which often imparts their potions with the distinctive methane odour of a giant strider's innards."
+            ],
+            "ValueGP": "6 gp",
+            "WeightLB": "4 lb"
         },
         {
             "ReferenceId": "giant_strider_hide",
-            "Name": "giant_strider_hide",
+            "Name": "Giant Strider Hide",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The distinctive red hide of a giant strider is surprisingly flexible and comfortable if tanned into a set of leather clothes. The fetching hue and its natural warmth make it a valuable trade good for mountain societies."
+            ],
+            "ValueGP": "6 sp",
+            "WeightLB": "15 lb"
         },
         {
             "ReferenceId": "giant_strider_tongue",
-            "Name": "giant_strider_tongue",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Giant Strider Tongue",
+            "UseText": ["This tongue can be used in place of a tinder."],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The hard tongue of a giant strider makes a distinctive clicking sound in their beaks. By striking their tongues against their beaks, giant striders create sparks that light the gas they shoot from their innards, resulting in a deadly stream of fire that turns their prey into a tasty roast."
+            ],
+            "ValueGP": "5 sp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "gibbering_mouther_teeth",
@@ -26975,33 +27136,39 @@
         },
         {
             "ReferenceId": "girallon_fang",
-            "Name": "girallon_fang",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Girallon Fang",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Any melee piercing weapon, +1 (DMG)"],
+            "Description": [
+                "Yellowed, hard, and sharp, the girallon fang has been refashioned into everything from cutlery, to farming equipment, to weaponry."
+            ],
+            "ValueGP": "11 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "girallon_foot",
-            "Name": "girallon_foot",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Girallon Foot",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Reversal Boots"],
+            "Description": [
+                "Due to the magi-artificial nature of a girallon, their body parts are capable of imprinting their properties on anyone that wears equipment made from them. This is especially true in their feet which may be refashioned into a pair of boots that grant the wearer the opposable feet of a primate."
+            ],
+            "ValueGP": "20 gp",
+            "WeightLB": "6 lb"
         },
         {
             "ReferenceId": "girallon_fur",
-            "Name": "girallon_fur",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Girallon Fur",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Snow white, thick, yet softer than it looks. Because of this, girallon fur has been repurposed as a toupee material by anyone who can afford it, and has certainly been found in more than one aristocratic wig. This has given rise to the lower-class derogatory term for out-of-touch nobles: \"a girallon scalp.\""
+            ],
+            "ValueGP": "4 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "githyanki_brain",
@@ -27491,23 +27658,27 @@
         },
         {
             "ReferenceId": "grung_bladder",
-            "Name": "grung_bladder",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Grung Bladder",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Bewildering Bagpipes"],
+            "Description": [
+                "In jungles occupied by grung, the echo of their distinctive chirr can be heard no matter where one goes. The chirr is most dangerous when elicited by their elite warriors, denoted by their orange or gold hues. These grung possess a series of membranes kept in a sack below their chins that when warbled appropriately, creates a more mesmerizing tune that can dull the senses of the unaware. Some craftier bards have taken to using these sacks in musical instruments that can create some of the same mesmerizing and hypnotic tones."
+            ],
+            "ValueGP": "6 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "grung_poison_gland",
-            "Name": "grung_poison_gland",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Grung Poison Gland",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Unfortunately, the poison of a grung is neutralized shortly after being harvested and is thus effectively useless. The poison gland however still possesses trace enzymes and chemicals that create a mild hallucinogenic when brewed long enough. Some yuan-ti tribes that live near grung tribes have been found with clay pots full of this hallucinogenic drink, ostensibly for ceremonial purposes."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "gruumsh-touched_orc_heart",
@@ -27525,33 +27696,41 @@
         },
         {
             "ReferenceId": "guard_drake_blood",
-            "Name": "guard_drake_blood",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Guard Drake Blood",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Dra-gone Paste/Dragon Paste"],
+            "Description": [
+                "The blood of a guard drake greatly resembles that of a real dragon, however its luster is noticeably dulled, and it is much more viscous than the famously freeflowing dragon blood. While it contains much less magical potential, guard drake blood apparently smells enough like regular dragon blood to confuse a dragon's sense of smell, thus giving rise to its use in certain dragon baits/repellents."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "guard_drake_heart",
-            "Name": "guard_drake_heart",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Guard Drake Heart",
+            "UseText": [
+                "If you cast the locate creature spell on this heart once per day for 10 consecutive days, it becomes permanently enchanted and reacts to the presence of dragons that are the same color as the guard drake from whom this heart was taken. While enchanted in this way, the heart will begin to beat while it is within 1,000 feet of that color of dragon, with the heart beating steadily faster the closer that dragon is."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Amulet of Dragonkin"],
+            "Description": [
+                "A guard drake's heart is one of the only truly magical organs in its body as it shares an innate connection with the dragon that created it. With a bit of magical altering, it can be used to track dragons wherever it goes."
+            ],
+            "ValueGP": "20 gp",
+            "WeightLB": "2 lb"
         },
         {
             "ReferenceId": "guard_drake_scales",
-            "Name": "guard_drake_scales",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Guard Drake Scales",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "As a guard drake is formed of a dragon's scales, it is no wonder that their own scales resemble that of their progenitors'. They are however, of a much lower quality, and are more reminiscent of the smooth scales of a snake than the heavy plates of a real dragon's. While they are useless for making more guard drakes or for making armor, they can be used for stylish sets of clothing in the striking hues of the chromatic dragonflights."
+            ],
+            "ValueGP": "6 gp",
+            "WeightLB": "7 lb"
         },
         {
             "ReferenceId": "guardian_naga_fang",
@@ -27591,13 +27770,15 @@
         },
         {
             "ReferenceId": "hadrosaurus_skull",
-            "Name": "hadrosaurus_skull",
+            "Name": "Hadrosaurus Skull",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Mount Barding (PHB)"],
+            "Description": [
+                "The oddly ridged skull of a hadrosaurus is quite sturdy and is the perfect shape to act as a helmet for horses and other mounts."
+            ],
+            "ValueGP": "3 gp",
+            "WeightLB": "30 lb"
         },
         {
             "ReferenceId": "hag_blood",
@@ -28143,73 +28324,91 @@
         },
         {
             "ReferenceId": "ki-rin_blood",
-            "Name": "ki-rin_blood",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ki-Rin Blood",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Vigor"],
+            "Description": [
+                "The shimmering, golden blood of a ki-rin flows like and resembles fresh honey. Wherever the blood spills, plant-life is sure to flourish, which often causes the death sites of ki-rin to become magnificent gardens in their honor. The vigor granting properties of the ki-rin's blood is easily mixed into potions and is thus a valuable reagent for all sorts of restorative potions."
+            ],
+            "ValueGP": "20 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "ki-rin_fur",
-            "Name": "ki-rin_fur",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ki-Rin Fur",
+            "UseText": [
+                "You may choose to use a bolt of ki-rin fur as a bandage whenever you roll a hit die to recover hit points during a short rest. If you do so, you forgo the roll and instead gain the maximum value possible from that die. A ki-rin fur bandage that has been used once may not be used again until it has been soaked in clean water for at least 8 hours."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Sun Stream Bow"],
+            "Description": [
+                "Shining like spun gold, but softer than silk, the fur of a ki-rin is coveted far and wide for the spinning of clothes worthy of only kings and emperors. Aside from its use in tailoring, the restorative magic inherent to the ki-rin makes their fur wonderful for use as a bandage, and ki-rin fur can be found standard in the healing kits of imperial palaces."
+            ],
+            "ValueGP": "33 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "ki-rin_heart",
-            "Name": "ki-rin_heart",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ki-Rin Heart",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Heart Scales"],
+            "Description": [
+                "The wisdom of a ki-rin is legendary, and their hearts are capable of detecting evil and lies whenever they are in their presence. When their powerful magic is imbued into a golden set of scales, they are capable of continuing their judgement of the wicked even beyond death."
+            ],
+            "ValueGP": "750 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "ki-rin_hoof",
-            "Name": "ki-rin_hoof",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ki-Rin Hoof",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Any melee bludgeoning weapon, +2 (DMG)"],
+            "Description": [
+                "The copper-colored hooves of a ki-rin are much harder than the metal they resemble. Once reinforced and attached to a sturdy handle, they are capable of smiting evil even after the demise of their owner."
+            ],
+            "ValueGP": "92 gp",
+            "WeightLB": "12 lb"
         },
         {
             "ReferenceId": "ki-rin_horn",
-            "Name": "ki-rin_horn",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ki-Rin Horn",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Wand of the Golden Ray"],
+            "Description": [
+                "The horn of a ki-rin radiates a faint golden hue even after removal from its original owner. Despite superficially resembling an ordinary horn, the horn of a ki-rin is formed from a special keratin that channels magical energies particularly well and is thus suited for making magical wands, staves, and rods."
+            ],
+            "ValueGP": "2650 gp",
+            "WeightLB": "4 lb"
         },
         {
             "ReferenceId": "ki-rin_scales",
-            "Name": "ki-rin_scales",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ki-Rin Scales",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Golden Sun Armor"],
+            "Description": [
+                "Golden like the morning sun, the scales of a ki-rin are inherently magical and protect their wearer with magical strength. The scales must be treated more like the hide of a reptile and be tanned properly in order to be useful, but they make for a heavenly suit of armor once that is all done."
+            ],
+            "ValueGP": "385 gp",
+            "WeightLB": "35 lb"
         },
         {
             "ReferenceId": "kobold_dragonshield_heart",
-            "Name": "kobold_dragonshield_heart",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Kobold Dragonshield Heart",
+            "UseText": [
+                "As an action you may eat this heart or feed it to a willing ally. If the eater is suffering from a frightened or paralysis effect that would allow a saving throw to end it, they may immediately attempt that saving throw at advantage."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "A kobold that bears the title of dragonshield is one that has been raised by a draconic patron to the heights of kobold potential (admittedly still not much of an achievement). Their hearts bear slight mutations that add extra adrenaline in times of stress, allowing them to push on when other kobolds would falter (again, not that impressive of an achievement)."
+            ],
+            "ValueGP": "3 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "kobold_teeth",
@@ -28237,33 +28436,43 @@
         },
         {
             "ReferenceId": "korred_hide",
-            "Name": "korred_hide",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Korred Hide",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Stone Swim Armour"],
+            "Description": [
+                "Stone grey and rough like granite, a korred's hide is not a pleasant thing to touch. It does however possess many magical properties that impart the korred with its famous stone swimming abilities. When used as the inner lining of a suit of armor, these properties can be transferred to its wearer (just ensure you wear a comfortable undershirt when doing so)."
+            ],
+            "ValueGP": "150 gp",
+            "WeightLB": "20 lb"
         },
         {
             "ReferenceId": "korred_hoof",
-            "Name": "korred_hoof",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Korred Hoof",
+            "UseText": [
+                "While holding this item against stone or soil, you gain a tremorsense out to a range of 30 feet."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Boots of Stone Strength"],
+            "Description": [
+                "A korred's hoof is as sensitive to the earth as a bat's ears are to sound. Small air pockets inside these hooves allow them to vibrate from the slightest tremor in the ground and make them surprisingly light. Duergar have been found using these hooves as tools in their spelunking, but there is nothing stopping the rest of us from doing the same if we ever find ourselves in the possession of one."
+            ],
+            "ValueGP": "20 gp",
+            "WeightLB": "8 lb"
         },
         {
             "ReferenceId": "korred_scalp",
-            "Name": "korred_scalp",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Korred Scalp",
+            "UseText": [
+                "This scalp contains 10 braids of 1 foot in length each. When cut, these braids permanently transform into whatever material was used to cut it. Once all hair has been removed from this scalp, it becomes useless."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Korred hair is one of the most unique materials in the Multiverse, capable of transforming into whatever material is used to cut it. If one wants to keep the hair in its versatile state, there is a relatively grisly workaround: taking the korred's whole scalp. If you do so, it is advised that one braids the hair before storing it, as the hair becomes quite brittle and prone to damage upon the death of the korred."
+            ],
+            "ValueGP": "varies",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "kraken_blood",
@@ -28459,43 +28668,57 @@
         },
         {
             "ReferenceId": "lesser_demon_essence",
-            "Name": "lesser_demon_essence",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Lesser Demon Essence",
+            "UseText": [
+                "If you cast the summon lesser demons spell, you may use this item in place of the usual material component. This item is not consumed upon its usage and may be reused indefinitely."
+            ],
+            "RequiredToolNames": ["Spirit paper"],
+            "CraftingUsage": [""],
+            "Description": [
+                "Like the tinder that sparks a fire, the soul of a lesser demon is consumed to animate the devourer. While this soul is mostly lost after being fed to the devourer, shreds of its essence can be captured in spirit paper to be used for demonic rituals."
+            ],
+            "ValueGP": "10 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "leucrotta_bile",
-            "Name": "leucrotta_bile",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Leucrota Bile",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Potion of Digestion"],
+            "Description": [
+                "Leucrota bile is unlike that of any other mortal creature and is more akin to that of a demon. Capable of digesting the undigestible, once diluted and mixed with neutralising agents, the bile makes for a useful potion for the survivalist adventurer."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "leucrotta_hide",
-            "Name": "leucrotta_hide",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Leucrota Hide",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "A leucrota's hide is as odious and oily as a blanket belonging to a wandering vagrant. Even leatherworkers that have developed a resistance to the horrid stench of the tannery cannot stomach being near a leucrota. Still, with extensive treatment and the strategic use of perfumes, a leucrota hide makes for an excellent rainskin due to its natural oils."
+            ],
+            "ValueGP": "20 gp",
+            "WeightLB": "20 lb"
         },
         {
             "ReferenceId": "leucrotta_mouth_ridge",
-            "Name": "leucrotta_mouth_ridge",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Leucrota Mouth Ridge",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [
+                "Battleaxe, +1 (DMG)",
+                "Greataxe, +1 (DMG)",
+                "Morningstar, +1 (DMG)"
+            ],
+            "Description": [
+                "Rather than individual teeth, a leucrota simply has a bony ridge that runs around the circumference of its mouth. This mouth ridge is said to be as strong as adamantium, and indeed has been shown to be strong enough to tear through steel and rock alike."
+            ],
+            "ValueGP": "60 gp",
+            "WeightLB": "4 lb"
         },
         {
             "ReferenceId": "lich_dust",
@@ -28525,13 +28748,17 @@
         },
         {
             "ReferenceId": "liquid_shadow",
-            "Name": "liquid_shadow",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Liquid Shadow",
+            "UseText": [
+                "You may spend an action to pour the contents of this vial over yourself, merging with the shadows within for the next hour. During this time, whenever you are in dim light or darkness, you may take the Hide action as a bonus action, and you may spend an action to teleport, along with whatever you are wearing and carrying, up to 30 feet to an unoccupied space of dim light or darkness that you can see."
+            ],
+            "RequiredToolNames": ["Enchanted vial"],
+            "CraftingUsage": ["Shadow Dye"],
+            "Description": [
+                "The other half of the components of a banderhobb is liquid shadow, siphoned from a dark realm like the Shadowfell or Underdark. It shifts constantly in its vial and no amount of light seems to be able to disperse it."
+            ],
+            "ValueGP": "65 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "living_brainstem",
@@ -28889,13 +29116,15 @@
         },
         {
             "ReferenceId": "mark_of_imix",
-            "Name": "mark_of_imix",
+            "Name": "Mark of Imix",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Amulet of Imix"],
+            "Description": [
+                "The mark of the Fire Prince Imix, branded onto the skin of every firenewt that venerates him as their patron. Taken whole, this mark serves as a matrix for crafting a gem that can channel some of the destructive elemental prince's powers."
+            ],
+            "ValueGP": "3 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [],
@@ -28909,23 +29138,27 @@
         },
         {
             "ReferenceId": "mark_of_lolth_(choldrith)",
-            "Name": "mark_of_lolth_(choldrith)",
+            "Name": "Mark of Lolth (Choldrith)",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Drow Amulet"],
+            "Description": [
+                "Just like a drow priestess of Lolth, a choldrith bears the mark of Lolth on its body. If harvested and preserved properly, its powers can be transferred to an amulet that can channel the Spider Goddess' powers, whether she likes it or not."
+            ],
+            "ValueGP": "40 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "mark_of_lolth_(draegloth)",
-            "Name": "mark_of_lolth_(draegloth)",
+            "Name": "Mark of Lolth (Draegloth)",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Drow Amulet"],
+            "Description": [
+                "As gifts from Lolth, draegloths carry her dark brand on them somewhere on their bodies, similar to high priestesses of the Spider Queen. If harvested and preserved properly, its powers can be transferred to an amulet that can channel the Spider Goddess' powers, whether she likes it or not."
+            ],
+            "ValueGP": "40 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [],
@@ -28975,13 +29208,15 @@
         },
         {
             "ReferenceId": "mark_of_orcus",
-            "Name": "mark_of_orcus",
+            "Name": "Mark of Orcus",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Curse of Desolation"],
+            "Description": [
+                "The infamous mace and skull symbol of Orcus is carved into every bodak's chest, regardless of their origin. These blasphemous symbols maintain a strong connection to Orcus even after the defeat of its bodak, and there are techniques to use them to channel the demon lord's power for dark and powerful curses."
+            ],
+            "ValueGP": "40 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "mark_of_raxivort",
@@ -29005,23 +29240,29 @@
         },
         {
             "ReferenceId": "mark_of_the_depths",
-            "Name": "mark_of_the_depths",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Mark of the Depths",
+            "UseText": [
+                "You may spend an action to tear this item in half. If you do so, all creatures within 300 feet of you must succeed on a DC 13 Wisdom saving throw or be stunned until the end of your next turn. In addition, any creature that succeeds on the saving throw gains the memories of the last 24 hours of the deep scion from whom this item was harvested."
+            ],
+            "RequiredToolNames": ["Spirit paper"],
+            "CraftingUsage": [""],
+            "Description": [
+                "Despite the fact that a deep scion reverts to its original form upon its death, there is still a mark of its dark patron that lingers for a moment before vanishing into the aether. A quick application of spirit paper can trap this essence and reuse it for later, hopefully for more altruistic purposes."
+            ],
+            "ValueGP": "45 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "mark_of_varpak",
-            "Name": "mark_of_varpak",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Mark of Varpak",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Bite of Varpak"],
+            "Description": [
+                "An everlasting one is a frost giant that has been touched by Varpak. By devouring a troll sent by the ravenous god, the stomach of a frost giant changes irrevocably, bearing what resemble bite marks as Varpak devours anything the frost giant eats. These marks can be excised from an everlasting one's stomach and used to enchant weapons with a dangerous blessing."
+            ],
+            "ValueGP": "3795 gp",
+            "WeightLB": "12 lb"
         },
         {
             "ReferenceId": "mark_of_yeenoghu",
@@ -29037,23 +29278,29 @@
         },
         {
             "ReferenceId": "maw_demon_stomach",
-            "Name": "maw_demon_stomach",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Maw Demon Stomach",
+            "UseText": [
+                "If you cast the summon lesser demons spell, you may expend this item instead of its usual material component. If you do, the CR limits of the summoned demons specified in the spell are doubled."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The unholy stomach of a maw demon actually doubles as a portal to the Abyss, usually leading directly to Yeenoghu's gullet. With only some slight alteration however, this stomach can be properly harvested and treated to act as a slightly different conduit for lesser demons."
+            ],
+            "ValueGP": "4 gp",
+            "WeightLB": "12 lb"
         },
         {
             "ReferenceId": "maw_demon_teeth",
-            "Name": "maw_demon_teeth",
+            "Name": "Maw Demon Teeth",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Portable Mouth"],
+            "Description": [
+                "These jagged, uneven teeth are incredibly sharp and capable of rending meat from bone easier than a hot knife through butter. The nefarious magic in them make them wonderful materials for a morbidly amusing little trinket."
+            ],
+            "ValueGP": "1 gp",
+            "WeightLB": "7 lb"
         },
         {
             "ReferenceId": "medusa_hair",
@@ -29095,33 +29342,41 @@
         },
         {
             "ReferenceId": "meenlock_claw",
-            "Name": "meenlock_claw",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Meenlock Claw",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The meenlock claw is known for its ability to paralyze the creatures that it strikes. Unfortunately, it loses much of its magical potency upon its death and is capable of inflicting nothing more than a slight numbing sensation. Ironically, these claws have been repurposed by Feywild inhabitants as herding rods to calm over-agitated livestock."
+            ],
+            "ValueGP": "1 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "meenlock_head",
-            "Name": "meenlock_head",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Meenlock Head",
+            "UseText": [
+                "When you make a Charisma (Intimidation) check while holding this head, you may choose to do so at advantage. Once this ability has been used 5 times, the head loses all magic and becomes worthless."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Tormentor's Cap"],
+            "Description": [
+                "Resembling an overgrown ant head, a meenlock's head is truly something to behold. Other than its use as a wonderful wall ornament, it can be hollowed out and used as a helmet with limited forms of some of the meenlock's abilities."
+            ],
+            "ValueGP": "4 gp",
+            "WeightLB": "6 lb"
         },
         {
             "ReferenceId": "meenlock_spirit",
-            "Name": "meenlock_spirit",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Meenlock Spirit",
+            "UseText": [""],
+            "RequiredToolNames": ["Spirit paper"],
+            "CraftingUsage": ["Curse of Never-Ending Fear"],
+            "Description": [
+                "A meenlock is a being born out of emotion, and this emotion can be harvested with a quick application of spirit paper. Hags in particular are fond of harvesting meenlocks for their spirits in order to craft insidious curses."
+            ],
+            "ValueGP": "12 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "merfolk_scales",
@@ -29186,7 +29441,7 @@
         {
             "ReferenceId": "mezzoloth_chitin",
             "Name": "Mezzoloth Chitin",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": ["Mezzoloth Mail"],
             "Description": [
@@ -29274,6 +29529,18 @@
             "WeightLB": "1 lb"
         },
         {
+            "ReferenceId": "mind_flayer_heart_(ulitharid)",
+            "Name": "Mind Flayer Heart (Ulitharid)",
+            "UseText": [],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Amulet of the Mind Flayer"],
+            "Description": [
+                "A mind flayer heart is a dark organ, filled with vile humours and thin ichors. When transformed into an amulet, it can grant many of the psionic abilities of an illithid, but at a terrible price."
+            ],
+            "ValueGP": "155 gp",
+            "WeightLB": "1 lb"
+        },
+        {
             "ReferenceId": "mind_flayer_mucus",
             "Name": "Mind Flayer Mucus",
             "UseText": [],
@@ -29283,6 +29550,18 @@
                 "The mucus secreted by a well fed mind flayer has a slightly sticky texture and smells roughly of weak formaldahyde. Filled with the thoughts and emotions of the mind flayer's meals, this mucus can undergo an alchemical process to turn into an intoxicating draught known as: Whisper. When consumed, the drinker experiences a rush of euphoria as dozens of minds recount lost knowledge and memories in a cascade of mental whispers. While unpleasant, this drink is considered a high honour in many Underdark societies."
             ],
             "ValueGP": "10 gp",
+            "WeightLB": "1 lb"
+        },
+        {
+            "ReferenceId": "mind_flayer_mucus_(ulitharid)",
+            "Name": "Mind Flayer Mucus (Ulitharid)",
+            "UseText": [],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The mucus secreted by a well fed mind flayer has a slightly sticky texture and smells roughly of weak formaldahyde. Filled with the thoughts and emotions of the mind flayer's meals, this mucus can undergo an alchemical process to turn into an intoxicating draught known as: Whisper. When consumed, the drinker experiences a rush of euphoria as dozens of minds recount lost knowledge and memories in a cascade of mental whispers. While unpleasant, this drink is considered a high honour in many Underdark societies."
+            ],
+            "ValueGP": "20 gp",
             "WeightLB": "1 lb"
         },
         {
@@ -29489,13 +29768,15 @@
         },
         {
             "ReferenceId": "mote_of_storm_giant",
-            "Name": "mote_of_storm_giant",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Mote of Storm Giant",
+            "UseText": [""],
+            "RequiredToolNames": ["Enchanted vial"],
+            "CraftingUsage": ["Potion of Giant Strength (Storm) (DMG)"],
+            "Description": [
+                "A storm giant quintessent lacks a stable physical form and is instead dispersed into the atmosphere around them, swirling as a literal force of nature. That said, much of their essence can be found distilled into a single mote of weather. Sometimes this takes the form of sparkling rain drops, a breeze that carries a whisper of the giant's name, or a snowflake with a particularly striking pattern. This mote carries much of the original storm giant's power and is thus a good substitute for their physical remains when used in alchemical pursuits."
+            ],
+            "ValueGP": "150 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [],
@@ -29511,13 +29792,17 @@
         },
         {
             "ReferenceId": "mouth_of_grolantor_bile",
-            "Name": "mouth_of_grolantor_bile",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Mouth of Grolantor Bile",
+            "UseText": [
+                "When you cast the confusion spell, you may use this vial of bile instead of the spell's usual material components. If you do so, whenever a creature that is under the effects of your confusion spell rolls a d10 to determine their behavior, you may choose to have them reroll their d10 and you may then pick between the two results. Using the bile in this way does not consume it, and you may reuse it as many times as you wish."
+            ],
+            "RequiredToolNames": ["Enchanted vial"],
+            "CraftingUsage": [""],
+            "Description": [
+                "The stomach of a hill giant is a remarkable thing, able to digest and handle just about anything. As such, it is a particular point of interest in the rare case that something actually does manage to give it indigestion. The hill giants believe that it is a portent of their god Grolantor, while scholars say it is just a stomach flu. Either way, the hill giant's stomach reacts by producing special enzymes that attempt to cure the giant, but when digested also send them quite mad. While it may be pitiful for the giant, this bile can become especially useful if one manages to get their hands on it, as its uses in magic is quite potent."
+            ],
+            "ValueGP": "180 gp",
+            "WeightLB": "2 lb"
         },
         {
             "ReferenceId": "mouther_spittle",
@@ -29838,7 +30123,7 @@
         {
             "ReferenceId": "nycaloth_claw",
             "Name": "Nycaloth Claw",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": ["Sword of Wounding (DMG)"],
             "Description": [
@@ -29864,7 +30149,7 @@
         {
             "ReferenceId": "nycaloth_wing",
             "Name": "Nycaloth Wing",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": ["Infernal Wings"],
             "Description": [
@@ -30282,13 +30567,14 @@
             "WeightLB": "1 lb"
         },
         {
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
+            "UseText": [
+                "When you drink this blood, you regain 6d8+3 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
             "Name": "Planetar Blood",
             "Description": [
-                "The blood of an angel flows with radiant energy that brings life to all it touches (it clearly didn't work hard enough for its original owner though). Many of the most desperate people actively seek angels in an attempt to harvest their blood as a panacea, without putting much thought into the worse fate that awaits them should they succeed.",
-                "Use: When you drink this blood, you regain 6d8+3 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+                "The blood of an angel flows with radiant energy that brings life to all it touches (it clearly didn't work hard enough for its original owner though). Many of the most desperate people actively seek angels in an attempt to harvest their blood as a panacea, without putting much thought into the worse fate that awaits them should they succeed."
             ],
             "ValueGP": "600 gp",
             "WeightLB": "1 lb",
@@ -30307,13 +30593,14 @@
             "ReferenceId": "planetar_bone"
         },
         {
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
+            "UseText": [
+                "While holding two of these ears, you have advantage on Wisdom (Insight) ability checks to detect a lie being spoken."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
             "Name": "Planetar Ear",
             "Description": [
-                "A planetar is known for its ability to hear lies whenever they are spoken. Their ears carry on this trait even in death and can be seen twitching when falsehood passes through them.",
-                "Use: While holding two of these ears, you have advantage on Wisdom (Insight) ability checks to detect a lie being spoken."
+                "A planetar is known for its ability to hear lies whenever they are spoken. Their ears carry on this trait even in death and can be seen twitching when falsehood passes through them."
             ],
             "ValueGP": "200 gp",
             "WeightLB": "2 lb",
@@ -30523,13 +30810,15 @@
         },
         {
             "ReferenceId": "quetzalcoatlus_beak",
-            "Name": "quetzalcoatlus_beak",
+            "Name": "Quetzalcoatlus Beak",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Lance (PHB)"],
+            "Description": [
+                "The sharp beak of a quetzalcoatlus is capable of piercing flesh, bone, and armor alike. It only makes sense that when reinforced with some metal, it makes for a wonderful lance."
+            ],
+            "ValueGP": "7 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "quickling_blood",
@@ -31120,43 +31409,55 @@
         },
         {
             "ReferenceId": "shoosuva_fur",
-            "Name": "shoosuva_fur",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Shoosuva Fur",
+            "UseText": [
+                "A beast that has an Intelligence score of 4 or less that smells this fur within 10 feet of it must succeed on a DC 10 Wisdom saving throw or become berserk. While berserk, the beast spends each of its turns moving as close as it can to another creature and attacking it if possible. The beast remains berserk until it is either unconscious, 1 minute ends, or a creature that the beast is normally friendly with spends its action to make a Wisdom (Animal Handling) check with a DC of 15. On a success, the effect ends. A beast that has had the effect end, or who succeeds its initial saving throw, is immune to the effect of this item for 24 hours."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "Shoosuva fur falls in clumps from their bodies, like a dog afflicted with mange. It is not overly useful or attractive, but demonologists have found that the scent of this fur tends to make animals more aggressive and violent. Owners of underground gladiator pits have taken this information to spur their animal fighters to create more \"entertaining\" shows."
+            ],
+            "ValueGP": "35 gp",
+            "WeightLB": "2 lb"
         },
         {
             "ReferenceId": "shoosuva_heart",
-            "Name": "shoosuva_heart",
+            "Name": "Shoosuva Heart",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Yeenoghu's Boon"],
+            "Description": [
+                "The heart of a shoosuva resembles that of a gnoll who has been \"blessed\" by Yeenoghu. Even when removed from its body, it occasionally beats when in the presence of fresh blood and meat."
+            ],
+            "ValueGP": "100 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "shoosuva_spike",
-            "Name": "shoosuva_spike",
+            "Name": "Shoosuva Spike",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": [
+                "Any melee piercing or slashing weapon, +2 (DMG)"
+            ],
+            "Description": [
+                "The bony protrusions along a shoosuva's spine are remarkably hard and sharp. These spines actually grow depending on how well fed a shoosuva is, and the strongest of them (and thus most able to hunt) have an intimidating frill of bone down their backs."
+            ],
+            "ValueGP": "52 gp",
+            "WeightLB": "13 lb"
         },
         {
             "ReferenceId": "shoosuva_tail",
-            "Name": "shoosuva_tail",
+            "Name": "Shoosuva Tail",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Yeenoghu's Wrath"],
+            "Description": [
+                "The tail of a shoosuva is almost as powerful as that of a bone devil. Loaded with an insidious poison that leaves a victim helpless, it makes for a wonderful whip if the poison gland within can be harvested in-tact."
+            ],
+            "ValueGP": "285 gp",
+            "WeightLB": "15 lb"
         },
         {
             "ReferenceId": "shrieker_spore_colony",
@@ -31236,13 +31537,17 @@
         },
         {
             "ReferenceId": "slipper_boggle_oil",
-            "Name": "slipper_boggle_oil",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Slippery Boggle Oil",
+            "UseText": [
+                "You may spend an action to pour this oil on yourself. For the next hour, you gain advantage on Dexterity (Acrobatics) checks made to escape bonds, squeeze through narrow spaces, and end grapples. Alternatively, you may spend an action to pour this oil on the ground, creating a 5 foot puddle where poured for 1 hour. Any creature that enters that puddle or starts its turn there must succeed on a DC 11 Dexterity saving throw or fall prone."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "The other variety of oil that a boggle is capable of creating, a slippery substance that makes surfaces virtually impossible to traverse. One of a boggle's most reliable pranks is to simply oil the area around a house's larder, causing anyone entering it to slip and spill all sorts of foodstuffs on themselves."
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "slithering_tracker_slime",
@@ -31256,35 +31561,39 @@
         },
         {
             "ReferenceId": "smiling_one_mask",
-            "Name": "smiling_one_mask",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Smiling One Mask",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Mask of Clouds"],
+            "Description": [
+                "A cloud giant smiling one is easily identified by the unnerving two-faced mask it wears. Doubling as both a fashion choice and a religious focus, this mask has a connection to the giant god Memnor. While unusable to anyone that is not a giant, thaumaturges can still repurpose it for something better."
+            ],
+            "ValueGP": "2000 gp",
+            "WeightLB": "15 lb"
         },
         {
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
+            "UseText": [
+                "When you drink this blood, you regain 8d8+4 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
             "Name": "Solar Blood",
             "Description": [
-                "The blood of an angel flows with radiant energy that brings life to all it touches (it clearly didn't work hard enough for its original owner though). Many of the most desperate people actively seek angels in an attempt to harvest their blood as a panacea, without putting much thought into the worse fate that awaits them should they succeed.",
-                "Use: When you drink this blood, you regain 8d8+4 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+                "The blood of an angel flows with radiant energy that brings life to all it touches (it clearly didn't work hard enough for its original owner though). Many of the most desperate people actively seek angels in an attempt to harvest their blood as a panacea, without putting much thought into the worse fate that awaits them should they succeed."
             ],
             "ValueGP": "800 gp",
             "WeightLB": "1 lb",
             "ReferenceId": "solar_blood"
         },
         {
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
+            "UseText": [
+                "While holding 2 of these ears, you have advantage on Wisdom (Insight) ability checks to detect a lie being spoken."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
             "Name": "Solar Ear",
             "Description": [
-                "A solar is known for its ability to hear lies whenever they are spoken. Their ears carry on this trait even in death and can be seen twitching when falsehood passes through them.",
-                "Use: While holding 2 of these ears, you have advantage on Wisdom (Insight) ability checks to detect a lie being spoken."
+                "A solar is known for its ability to hear lies whenever they are spoken. Their ears carry on this trait even in death and can be seen twitching when falsehood passes through them."
             ],
             "ValueGP": "200 gp",
             "WeightLB": "2 lb",
@@ -31545,23 +31854,29 @@
         },
         {
             "ReferenceId": "stegosaurus_ridge",
-            "Name": "stegosaurus_ridge",
+            "Name": "Stegosaurus Ridge",
             "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["(Bone) Plate Armor (PHB)"],
+            "Description": [
+                "The bony plates of a stegosaurus back provide natural protection and make it a nightmare for anything to try and bite down on them. As natural plates, they make a perfect suit of armor for those with a metal aversion."
+            ],
+            "ValueGP": "13 gp",
+            "WeightLB": "35 lb"
         },
         {
             "ReferenceId": "sticky_boggle_oil",
-            "Name": "sticky_boggle_oil",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Sticky Boggle Oil",
+            "UseText": [
+                "You may spend an action to coat yourself with this oil. For the next hour, you have advantage on Strength (Athletics) checks made to grapple and any ability check made to maintain a hold on another creature, surface, or object. You can also climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. Alternatively, you may spend an action to pour this oil on the ground, creating a 5 foot puddle where poured for 1 hour. Any creature that enters that puddle or starts its turn there must succeed on a DC 11 Strength saving throw or be restrained. On its turn, a creature can use an action to try to extricate itself from the sticky puddle, ending the effect and moving into the nearest safe unoccupied space with a successful DC 11 Strength check."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "One of the varieties of oil that a boggle is capable of creating, a sticky, tar-like substance that traps those unlucky enough to step in it. While not the strongest of substances, it can prove to be quite the nuisance (as anyone with a boggle in their house will discover after they rise from their chamber pot to discover it sticking to their backside)."
+            ],
+            "ValueGP": "1 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "stirge_needle",
@@ -31589,13 +31904,15 @@
         },
         {
             "ReferenceId": "stone_giant_dreamwalker_brain",
-            "Name": "stone_giant_dreamwalker_brain",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Stone Giant Dreamwalker Brain",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Helmet of Stone Dreams"],
+            "Description": [
+                "The brain of a stone giant dreamwalker hardly resembles a brain at all. Signs of extreme calcification abound throughout the organ, causing it to more resemble a large piece of pumice. Interestingly enough, the calcification is most extreme in the areas of the brain known to be responsible for vision, identity, and decision making. Thus it is theorized by some that the \"dreamwalker\" state of the stone giants may actually be some form of disease rather than a quasi-mystical experience."
+            ],
+            "ValueGP": "2845 gp",
+            "WeightLB": "10 lb"
         },
         {
             "ReferenceId": "stone_giant_fingernail",
@@ -31635,13 +31952,15 @@
         },
         {
             "ReferenceId": "storm_giant_quintessent_water",
-            "Name": "storm_giant_quintessent_water",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Storm Giant Quintessent Water",
+            "UseText": [""],
+            "RequiredToolNames": ["Enchanted vial"],
+            "CraftingUsage": ["Flask of Storms"],
+            "Description": [
+                "A storm giant quintessent is capable of forming parts of its own raging storm into weapons for use in combat. To do this, it must impart the ambient atmosphere with the same sense of physicality and stability that it has used on itself to maintain a recognisable giant shape. Once the quintessent is defeated, some of this imparted power remains in their dispersed weapons, which can then be hastily collected for use in powerful alchemy later on."
+            ],
+            "ValueGP": "2800 gp",
+            "WeightLB": "3 lb"
         },
         {
             "ReferenceId": "storm_giant_spine",
@@ -31657,13 +31976,15 @@
         },
         {
             "ReferenceId": "storm_giant_spirit",
-            "Name": "storm_giant_spirit",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Storm Giant Spirit",
+            "UseText": [""],
+            "RequiredToolNames": ["Spirit paper"],
+            "CraftingUsage": ["Cloak of the Storm Spirit"],
+            "Description": [
+                "Although its form has been dispersed to the atmosphere around it, the spirit of a storm giant quintessent rages on stronger than ever. If its physical form is ever dissipated, their physically untethered spirit can be imprinted onto a piece of spirit paper which can later be transferred to a powerful cloak."
+            ],
+            "ValueGP": "11500 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "succubus-incubus_blood",
@@ -31703,13 +32024,17 @@
         },
         {
             "ReferenceId": "swarm_mentality",
-            "Name": "swarm_mentality",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Swarm Mentality",
+            "UseText": [
+                "This item starts with a number of charges equal to the number of rats that were in the swarm this item was harvested from. If you are subjected to a divination spell, or any spell that would attempt to either read your thoughts or sense your emotions while wearing this time on the top of your head, you may spend your reaction to spend a charge and nullify the effects of that spell. Once the last charge on this item has been used, it is rendered worthless."
+            ],
+            "RequiredToolNames": ["Spirit paper"],
+            "CraftingUsage": ["Swarm Charms"],
+            "Description": [
+                "When multiple cranium rats swarm together, their latent psionic energy is amplified and swirls about them, which lingers with each surviving member of the swarm even as others die around them. An unorthodox application of spirit paper can trap this potent cloud of psionic energy from the last rat of the swarm to be used later for whatever purpose."
+            ],
+            "ValueGP": "60 gp",
+            "WeightLB": "1 lb"
         },
         {
             "ReferenceId": "tanarukk_adrenal_gland",
@@ -31733,13 +32058,15 @@
         },
         {
             "ReferenceId": "telepathic_gland",
-            "Name": "telepathic_gland",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Telepathic Gland",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Amulet of Telepathic Control"],
+            "Description": [
+                "The elder brain's telepathic gland is a roughly apple sized bulb located on its temporal lobe. Although it is relatively small, the telepathic gland has a huge reach and is responsible for many of the elder brain's psionic abilities. Harvesting it intact is difficult, but it can serve as the basis for powerful magical items."
+            ],
+            "ValueGP": "1110 gp",
+            "WeightLB": "4 lb"
         },
         {
             "ReferenceId": "thorny_thorns",
@@ -31973,28 +32300,32 @@
         },
         {
             "ReferenceId": "ulitharid_brain",
-            "Name": "ulitharid_brain",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ulitharid Brain",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Helm of the Ulitharid"],
+            "Description": [
+                "The brain of an ulitharid is larger and denser than that of a regular illithid. Within an ulitharid brain is the potential to grow into a formidable elder brain, much like how a caterpillar possesses the potential to grow into a butterfly (although in a much less pleasant way). As part of this, an ulitharid brain boats an engorged cerebrum and communication centers, which bolsters its telepathic abilities and enables it to serve as a portable psionic hub for its colony."
+            ],
+            "ValueGP": "375 gp",
+            "WeightLB": "9 lb"
         },
         {
             "ReferenceId": "ulitharid_tentacle",
-            "Name": "ulitharid_tentacle",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Ulitharid Tentacle",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": ["Mind Whip"],
+            "Description": [
+                "The mouth tentacle of the mind flayer is renowned for affecting more than the physical on every lash. It retains this property beyond the death of its owner, and Underdark interrogators are rumored to use whips made of these tentacles in their work."
+            ],
+            "ValueGP": "25 gp",
+            "WeightLB": "7 lb"
         },
         {
             "ReferenceId": "ultroloth_eye",
             "Name": "Ultroloth Eye",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": ["Helm of Hypnotism"],
             "Description": [
@@ -32228,13 +32559,17 @@
         },
         {
             "ReferenceId": "velociraptor_pheromones",
-            "Name": "velociraptor_pheromones",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Velociraptor Pheromones",
+            "UseText": [
+                "While you have this vial of pheromones open, you have advantage on any Wisdom (Animal Handling) checks made to convince an animal that is friendly to you to attack another creature."
+            ],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "While the claw and bite of a velociraptor is nasty, they are not overly deadly. Instead, the real value of a velociraptor is found in their pheromone glands located just below their tail. These pheromones are how these social animals coordinate their hunts, and many modern animals still have strong reactions to them from just one whiff"
+            ],
+            "ValueGP": "2 gp",
+            "WeightLB": "1 lb"
         },
         {
             "UseText": [],
@@ -32358,13 +32693,15 @@
         },
         {
             "ReferenceId": "witherling_dust",
-            "Name": "witherling_dust",
-            "UseText": [],
-            "RequiredToolNames": [],
-            "CraftingUsage": [],
-            "Description": [],
-            "ValueGP": "-",
-            "WeightLB": "-"
+            "Name": "Witherling Dust",
+            "UseText": [""],
+            "RequiredToolNames": [""],
+            "CraftingUsage": [""],
+            "Description": [
+                "A gnoll skeleton that has been transformed into a witherling is much the same as any other. However, prolonged exposure to the elements can cause them to gain a unique layer of dust the consistency (and smell) of extremely aged cheese. While this dust is not overtly magical, it is very useful as pounce for drying the mystical inks that fiendish cults use when scribing their dark tomes and scrolls. Needless to say, this product has a very niche market."
+            ],
+            "ValueGP": "8 cp",
+            "WeightLB": "2 lb"
         },
         {
             "ReferenceId": "wood_woad_bark",
@@ -32771,7 +33108,7 @@
         {
             "ReferenceId": "yuan-ti_abomination_scales",
             "Name": "Yuan-Ti Abomination Scales",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": ["Serpent Shield"],
             "Description": [
@@ -32783,7 +33120,7 @@
         {
             "ReferenceId": "yuan-ti_blood",
             "Name": "Yuan-Ti Blood",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": ["Potion of Poison Immunity"],
             "Description": [
@@ -32809,7 +33146,7 @@
         {
             "ReferenceId": "yugoloth_heart",
             "Name": "Yugoloth Heart",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": ["Gem of Teleportation"],
             "Description": [
@@ -32841,7 +33178,7 @@
         {
             "ReferenceId": "zombie_juice",
             "Name": "Zombie Juice",
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": [""],
             "CraftingUsage": [""],
             "Description": [
