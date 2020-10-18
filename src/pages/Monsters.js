@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { matchPath } from "react-router";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { DisplayList, DisplayColumn } from "./DisplayList";
 import { CRList } from "../components/ChallengeRatingDisplay";
-
 import Storage from "../utility/StorageUtil";
 import { getIdFromMonster } from "../utility/monsterUtil";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
@@ -17,6 +16,7 @@ import {
 } from "../utility/creatureTypeUtil";
 import { MonsterFilterBlock } from "../components/MonsterFilterBlock";
 import "./Columnable.css";
+import "../LayoutControl/Layout.css";
 
 export function Monsters(props) {
     let [filterObj, setFilterObj] = useState({});
@@ -74,9 +74,9 @@ export function Monsters(props) {
     ];
 
     return (
-        <Container fluid>
-            <Row>
-                <Col className="col-5 border">
+        <>
+            <Row className="h-100" xs={1} md={2}>
+                <Col className="border h-100">
                     <MonsterFilterBlock submitFilter={setFilterObj} />
                     <DisplayList
                         headers={headers}
@@ -86,12 +86,10 @@ export function Monsters(props) {
                         idFunction={getIdFromMonster}
                     />
                 </Col>
-                <Col className="col-7 border scrollableColumn">
+                <Col className="border scrollableColumn">
                     <MonsterDisplay monster={monster} />
                 </Col>
             </Row>
-            {/* <div>Match: {JSON.stringify(match)}</div> */}
-            {/* <div>Props: {JSON.stringify(props)}</div> */}
-        </Container>
+        </>
     );
 }

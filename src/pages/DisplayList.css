@@ -3,9 +3,9 @@
     padding-left: 0px;
     overflow-x: hidden;
     overflow-y: auto;
-    max-height: 500px;
     border: 1px solid lightgray;
     font-size: 0.75em;
+    max-height: calc(100% - 150px);
 }
 
 .element-list li {

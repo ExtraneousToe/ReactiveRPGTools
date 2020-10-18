@@ -64,17 +64,7 @@ export function DisplayList(props) {
     let filterKeys = Object.keys(filterObject);
 
     for (let i = 0; i < filterKeys.length; ++i) {
-        // let keyValue = filterObject[filterKeys[i]]; //.toLowerCase();
-        // if (keyValue === "" || keyValue === null) {
-        //     continue;
-        // }
-
         items = items.filter(filterObject[filterKeys[i]]);
-        //     (item) => {
-        //         return (item);
-        //     }
-        //     // return item[filterKeys[i]].toLowerCase().match(keyValue);
-        // );
     }
 
     items.sort(headers[sortByIdx].sortFunc(sortAscending));

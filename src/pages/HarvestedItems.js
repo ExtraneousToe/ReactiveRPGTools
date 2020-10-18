@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { matchPath } from "react-router";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { DisplayList, DisplayColumn } from "./DisplayList";
 import { HarvestedItemFilterBlock } from "../components/HarvestedItemFilterBlock";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
@@ -39,9 +39,9 @@ export function HarvestedItems(props) {
     ];
 
     return (
-        <Container fluid>
-            <Row>
-                <Col className="col-5 border">
+        <>
+            <Row className="h-100" xs={1} md={2}>
+                <Col className="border h-100">
                     <HarvestedItemFilterBlock submitFilter={setFilterObj} />
                     <DisplayList
                         headers={headers}
@@ -51,12 +51,12 @@ export function HarvestedItems(props) {
                         idFunction={getItemReference}
                     />
                 </Col>
-                <Col className="col-7 border">
+                <Col className="border scrollableColumn">
                     {harvestedItem !== null && (
                         <HarvestedItemDisplay harvestedItem={harvestedItem} />
                     )}
                 </Col>
             </Row>
-        </Container>
+        </>
     );
 }

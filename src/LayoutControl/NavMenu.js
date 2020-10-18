@@ -24,10 +24,10 @@ export function NavMenu(props) {
 
     return (
         <header>
-            <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3">
+            <Navbar className="border-bottom p-0">
                 <Container>
                     <NavbarBrand tag={Link} to="/">
-                        Reactive RPG
+                        Reactive RPG {JSON.stringify(process.env.NODE_ENV)}
                     </NavbarBrand>
                     <Container
                         className="d-sm-inline-flex flex-sm-row-reverse"
