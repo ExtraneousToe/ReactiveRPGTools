@@ -56,6 +56,7 @@ export function Home(props) {
             <div>
                 <input type="text" style={{ width: "100%", height: "4em" }} />
             </div>
+            <div>{JSON.stringify(props)}</div>
         </div>
     );
 }

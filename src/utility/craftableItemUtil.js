@@ -6,6 +6,7 @@ import {
     SelectInput,
     ArrayInput,
 } from "./inputUtil";
+import Storage from "../utility/StorageUtil";
 
 export function getIdFromItemName(name) {
     return name.toLowerCase().replace(/\s+/g, "_");
@@ -18,57 +19,68 @@ export function getIdFromItem(item) {
 
 export function CraftableItemDisplay(props) {
     let craftableItem = props.craftableItem;
-    return <>{JSON.stringify(craftableItem)}</>;
-}
 
-function simplePassthrough(val) {
-    return val;
-}
+    let materialOutput = craftableItem.Materials.map((mat, idx) => {
+        return (
+            <span key={idx}>
+                {Storage.harvestableItemDict[mat.ComponentId].Name} (
+                {mat.Quantity})
+            </span>
+        );
+    });
+    let finalMaterialOutput = [];
+    for (let i = 0; i < materialOutput.length; ++i) {
+        if (finalMaterialOutput.length !== 0) {
+            finalMaterialOutput.push(" or ");
+        }
+        finalMaterialOutput.push(materialOutput[i]);
+    }
 
-const ARRAY_CONC = ";;";
-function joinArray(val) {
-    return val.join(ARRAY_CONC);
-}
-function splitArray(val) {
-    return val.split(ARRAY_CONC);
+    return (
+        <>
+            <Row>
+                <Col className="font-weight-bold">{craftableItem.Name}</Col>
+            </Row>
+            <Row>
+                <Col>
+                    <i>
+                        {craftableItem.Type},{" "}
+                        {(craftableItem.Rarity !== null
+                            ? craftableItem.Rarity
+                            : ""
+                        ).toLowerCase()}{" "}
+                        {craftableItem.RequiresAttunement &&
+                            "(requires attunement)"}
+                    </i>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <i>
+                        Crafted by: {finalMaterialOutput} (
+                        {craftableItem.Crafter})
+                    </i>
+                </Col>
+            </Row>
+            &nbsp;
+            <Row>
+                <Col className="col-3 font-weight-bold">Description:</Col>
+            </Row>
+            <Row>
+                <Col>
+                    {craftableItem.Description.length > 0 &&
+                        craftableItem.Description.map((para, idx) => {
+                            return <p key={idx}>{para}</p>;
+                        })}
+                </Col>
+            </Row>
+        </>
+    );
 }
 
 export class EditingCraftableItemDisplay extends React.Component {
     constructor(props) {
         super(props);
-
-        // this.stringKeys = [
-        //     {
-        //         key: "Id",
-        //         type: "text",
-        //         retrieve: simplePassthrough,
-        //         store: simplePassthrough,
-        //     },
-        //     {
-        //         key: "Name",
-        //         type: "text",
-        //         retrieve: simplePassthrough,
-        //         store: simplePassthrough,
-        //     },
-        //     {
-        //         key: "Crafter",
-        //         type: "text",
-        //         retrieve: simplePassthrough,
-        //         store: simplePassthrough,
-        //     },
-        //     {
-        //         key: "Rarity",
-        //         type: "text",
-        //         retrieve: simplePassthrough,
-        //         store: simplePassthrough,
-        //     },
-        //     {
-        //         key: "Description",
-        //         type: "text",
-        //         retrieve: joinArray,
-        //         store: splitArray,
-        //     },
-        // ];
 
         this.state = this.generateStateObject(this.props.craftableItem);
         this.applyStateToItem = this.applyStateToItem.bind(this);
@@ -76,13 +88,6 @@ export class EditingCraftableItemDisplay extends React.Component {
 
     generateStateObject(craftableItem) {
         let obj = {};
-        // for (let i = 0; i < this.stringKeys.length; ++i) {
-        //     let targetValue = craftableItem[this.stringKeys[i].key];
-
-        //     obj[this.stringKeys[i].key] = this.stringKeys[i].retrieve(
-        //         targetValue
-        //     );
-        // }
         return obj;
     }
 
@@ -116,49 +121,18 @@ export class EditingCraftableItemDisplay extends React.Component {
 
     componentWillUnmount() {
         let partialObject = {};
-        // for (let i = 0; i < this.stringKeys.length; ++i) {
-        //     partialObject[this.stringKeys[i]] = "";
-        // }
         this.setState(partialObject);
     }
 
     render() {
         let craftableItem = this.props.craftableItem;
 
-        let output = [];
-        // for (let i = 0; i < this.stringKeys.length; ++i) {
-        //     let key = this.stringKeys[i];
-        //     let value = "";
-        //     if (this.state[key.key] !== null) {
-        //         value = this.state[key.key];
-        //     }
-
-        //     output.push(
-        //         <Row key={output.length}>
-        //             <Col className="col-3 font-weight-bold">{key.key}: </Col>
-        //             <Col className="border">
-        //                 <input
-        //                     type={key.type}
-        //                     value={value}
-        //                     style={{ width: "inherit" }}
-        //                     onChange={(e) => {
-        //                         e.preventDefault();
-        //                         this.handleInput(e, key.key);
-        //                     }}
-        //                     disabled={key.key === "Id"}
-        //                 />
-        //             </Col>
-        //         </Row>
-        //     );
-        // }
-
-        // return <>{JSON.stringify(craftableItem)}</>;
-
         return (
             <Container fluid>
                 {/* <div>propObj :: {JSON.stringify(craftableItem)}</div> */}
                 <StringInput object={craftableItem} objKey="Id" disabled />
                 <StringInput object={craftableItem} objKey="Name" />
+                <StringInput object={craftableItem} objKey="Type" />
                 <SelectInput
                     object={craftableItem}
                     objKey="Crafter"
@@ -175,6 +149,7 @@ export class EditingCraftableItemDisplay extends React.Component {
                     object={craftableItem}
                     objKey="Rarity"
                     options={[
+                        "",
                         "Common",
                         "Uncommon",
                         "Rare",

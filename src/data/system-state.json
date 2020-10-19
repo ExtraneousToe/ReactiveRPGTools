@@ -24695,7 +24695,7 @@
         {
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Arrow+1 (DMG)", "Bolt +1 (DMG)"],
+            "CraftingUsage": ["Arrow, +1 (DMG)", "Bolt, +1 (DMG)"],
             "Name": "Barbed Devil Barb",
             "Description": [
                 "Touching a barbed devil is like sleeping in a bed of porcupines. Incredibly sharp and durable, these barbs sometimes find a second use as nails in the crafting of particular sets of armour and equipment. Otherwise they serve as building material for sturdy arrows and bolts."
@@ -25675,7 +25675,7 @@
         {
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Flail +1 (DMG)"],
+            "CraftingUsage": ["Flail, +1 (DMG)"],
             "Name": "Clump of Beard Lashes",
             "Description": [
                 "A disgrace to beards and bearded creatures around the multiverse. The lashes that extrude from the bearded devil's chin are tougher than oiled cords and covered with dozens of wicked barbs. Any weaponsmith worth their forge can craft these lashes into a particularly powerful flail."
@@ -26757,7 +26757,11 @@
             "Name": "Flail Snail Flail",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Whip, morningstar, or flail, +1 (DMG)"],
+            "CraftingUsage": [
+                "Whip, +1 (DMG)",
+                "Morningstar, +1 (DMG)",
+                "Flail, +1 (DMG)"
+            ],
             "Description": [
                 "The eponymous flail tentacles of the flail snail. While powerful when attached to their body, they atrophy from the enzymes in them when amputated and become useless. Only a steady hand and reasonable knowledge of snail anatomy can allow a harvester to slice these off and preserve them long enough to recraft them into something more useful."
             ],
@@ -26770,7 +26774,9 @@
             "UseText": [],
             "RequiredToolNames": [],
             "CraftingUsage": [
-                "Robe of Scintillating Colors (DMG), Spellguard Shield (DMG), Antimagic Shield"
+                "Robe of Scintillating Colors (DMG)",
+                "Spellguard Shield (DMG)",
+                "Antimagic Shield"
             ],
             "Description": [
                 "The incredibly valuable flail snail shell has numerous uses and seems to be a gift from the elemental plane. Even the most primitive of societies have realised the power inherent in these shells, and several tribes have made it a rite of passage for a trio of youths to hunt a snail and then craft three shields from the shell. These shields become a bond mark and point of pride for the three individuals for the rest of their lives."
@@ -27476,7 +27482,7 @@
             "CraftingUsage": [
                 "Greatclub, +1 (DMG)",
                 "Maul, +1 (DMG)",
-                "Warhammer, + 1 (DMG)"
+                "Warhammer, +1 (DMG)"
             ],
             "Description": [
                 "The hooves of a gorgon resemble anvils more than anything else. It is ironic then that these are often reforged by blacksmiths on their own anvils."
@@ -27717,7 +27723,7 @@
             "Name": "Griffon Feather",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Arrow +1 (DMG)"],
+            "CraftingUsage": ["Arrow, +1 (DMG)"],
             "Description": [
                 "The pristine feathers of a griffon carry an almost supernatural aerodynamic quality to them. Fletchers and sharpshooters prize good condition griffon feathers for crafting high quality arrows."
             ],
@@ -28405,7 +28411,7 @@
             "Name": "Iron Golem Iron",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Plate Armour, + 3 (DMG)", "Shield, + 3 (DMG)"],
+            "CraftingUsage": ["Plate Armour, +3 (DMG)", "Shield, +3 (DMG)"],
             "Description": [
                 "The metal used to craft an iron golem is leagues better than what you would find in an average alley blacksmith's shop. Taking this metal and resmelting it can craft some of the finest armour in the land."
             ],
@@ -29192,7 +29198,7 @@
         {
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Studded Leather Armour +3 (DMG)"],
+            "CraftingUsage": ["Studded Leather Armour, +3 (DMG)"],
             "Name": "Marble Skin",
             "Description": [
                 "The skin of an empyrean resembles that of living marble and shares much of its durability. It takes a very steady hand and great skill to remove it without shattering it into a thousand pieces, but the result is a hide that flexes like leather but protects like stone."
@@ -29791,7 +29797,7 @@
             "Name": "Minotaur Hide",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Studded Leather, +1 (DMG)"],
+            "CraftingUsage": ["Studded Leather Armour, +1 (DMG)"],
             "Description": [
                 "A minotaur resembles cattle in every way that counts. Taking their hides and tanning them into leather is no more distasteful than doing so to an ordinary bull."
             ],
@@ -30409,7 +30415,7 @@
             "Name": "Ogre Hand",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Gaunlets of Ogre Power (DMG)"],
+            "CraftingUsage": ["Gauntlets of Ogre Power (DMG)"],
             "Description": [
                 "Brutish, rough, and very large, the hands of an ogre are meant for little more than wielding a club to smash those smaller than their owner."
             ],
@@ -31513,8 +31519,8 @@
             "WeightLB": "15 lb"
         },
         {
-            "UseText": [""],
-            "RequiredToolNames": [""],
+            "UseText": [],
+            "RequiredToolNames": [],
             "CraftingUsage": ["Dusk Armour"],
             "Name": "Shadow Dragon Scale",
             "Description": [
@@ -31575,8 +31581,8 @@
             "WeightLB": "1 lb"
         },
         {
-            "UseText": [""],
-            "RequiredToolNames": [""],
+            "UseText": [],
+            "RequiredToolNames": [],
             "CraftingUsage": ["Shadow Wing Cape"],
             "Name": "Shadowdragon Wing",
             "Description": [
@@ -31587,7 +31593,7 @@
             "ReferenceId": "shadowdragon_wing"
         },
         {
-            "UseText": [""],
+            "UseText": [],
             "RequiredToolNames": ["Enchanted vial"],
             "CraftingUsage": ["Shadowflame Oil"],
             "Name": "Shadowflame Ember",
@@ -31675,8 +31681,8 @@
             "WeightLB": "15 lb"
         },
         {
-            "UseText": [""],
-            "RequiredToolNames": [""],
+            "UseText": [],
+            "RequiredToolNames": [],
             "CraftingUsage": [
                 "Cloak of Mending (XGE)",
                 "Cloak of Billowing (XGE)"
@@ -32948,7 +32954,7 @@
         {
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Dagger +1 (DMG)"],
+            "CraftingUsage": ["Dagger, +1 (DMG)"],
             "Name": "Vrock Talon",
             "Description": [
                 "The talons of a vrock are incredibly sharp, easily capable of rending through armour like a scythe through dry grass. When fashioned into a set of daggers, they can make one a cut above the rest in a fight."
@@ -34975,6 +34981,4745 @@
                     "WeightLB": "varies"
                 }
             ]
+        }
+    ],
+    "CraftableItems": [
+        {
+            "Id": "(bone)_plate_armor_(phb)",
+            "Name": "(Bone) Plate Armor (PHB)",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "stegosaurus_ridge", "Quantity": "x4" }
+            ],
+            "Type": "Heavy armor"
+        },
+        {
+            "Id": "(wooden)_breastplate",
+            "Name": "(Wooden) Breastplate",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "treant_bark", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "[type]_dragon_arrow",
+            "Name": "[Type] Dragon Arrow",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "adult_[type]_dragon_tooth",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "ancient_[type]_dragon_tooth",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "young_[type]_dragon_tooth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "[type]_dragon_bolt",
+            "Name": "[Type] Dragon Bolt",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "adult_[type]_dragon_tooth",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "ancient_[type]_dragon_tooth",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "young_[type]_dragon_tooth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "[type]_dragon_scale_mail_(dmg)",
+            "Name": "[Type] Dragon Scale Mail (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "adult_[type]_dragon_scales",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "ancient_[type]_dragon_scales",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "young_[type]_dragon_scales",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "[type]_dragon_wand",
+            "Name": "[Type] Dragon Wand",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "adult_[type]_dragon_horn-spine",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "ancient_[type]_dragon_horn-spine",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "young_[type]_dragon_horn-spine",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "[type]_dragon's_mercy",
+            "Name": "[Type] Dragon's Mercy",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "[type]_wyrmling_secondary_dragon_breath_pouch",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "adult_[type]_secondary_dragon_breath_pouch",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "ancient_[type]_secondary_dragon_breath_pouch",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "young_[type]_secondary_dragon_breath_pouch",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "[type]_dragon's_wrath",
+            "Name": "[Type] Dragon's Wrath",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "[type]_wyrmling_dragon_breath_pouch",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "adult_[type]_dragon_breath_pouch",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "ancient_[type]_dragon_breath_pouch",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "young_[type]_dragon_breath_pouch",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "aboleth_amulet",
+            "Name": "Aboleth Amulet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "aboleth_brain_lobe", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_dragonkin",
+            "Name": "Amulet of Dragonkin",
+            "Crafter": "Artificer",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [
+                "This amulet is the same color as the guard drake from whom it was crafted. While wearing this amulet, your appearance takes on a more dragon-like aesthetic. You grow patches of scales over your body (the same color as the amulet), your eyes become lizard-like, your teeth grow sharper and you grow a foot-long, prehensile tail from your back. You gain no other benefits from this amulet, however",
+                "All these attributes disappear instantly if the amulet is removed."
+            ],
+            "Materials": [
+                { "ComponentId": "guard_drake_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_enslavement",
+            "Name": "Amulet of Enslavement",
+            "Crafter": "Artificer",
+            "Rarity": "Rare",
+            "RequiresAttunement": false,
+            "Description": [
+                "While you are wearing this amulet, any charm effect that currently afflicts you is considered to have an infinite duration instead of its usual duration. Once this amulet has been worn for a cumulative total of 24 hours, it crumbles into dust and becomes worthless."
+            ],
+            "Materials": [{ "ComponentId": "neogi_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_imix",
+            "Name": "Amulet of Imix",
+            "Crafter": "Thaumaturge",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While wearing and attuned to this amulet, you gain 5 temporary hit points whenever you reduce an enemy to 0 hit points. In addition, any time you are forced to roll a Constitution saving throw to maintain control of a fire elemental or maintain concentration on a spell that deals fire damage, you do so at advantage."
+            ],
+            "Materials": [{ "ComponentId": "mark_of_imix", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_maglubiyet",
+            "Name": "Amulet of Maglubiyet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mark_of_maglubiyet", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_secrets",
+            "Name": "Amulet of Secrets",
+            "Crafter": "Artificer",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This blood red amulet is set inside a gold frame the colour of desert sand. While wearing and attuned to this amulet, you gain an uncanny ability to disguise your thoughts and emotions. You become immune to any effect that would sense your emotions or read your thoughts, as well as any divination spell that you refuse. Wisdom (Insight) checks made to ascertain your intentions or sincerity have disadvantage.",
+                "In addition, you may use the amulet to cast the spell zone of truth without using a spell slot or requiring any components. The DC for the casting of this spell in this way is 8 + your Charisma modifier + your proficiency bonus, and you are exempt from the effects of the spell. Once you have used this ability 3 times in one day, you may not use it again until you finish a long rest."
+            ],
+            "Materials": [{ "ComponentId": "sphinx_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_telepathic_control",
+            "Name": "Amulet of Telepathic Control",
+            "Crafter": "Artificer",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While wearing this amulet, you gain the following abilities:",
+                "- You have telepathy out to a range of 1 mile",
+                "- You are aware of the presence of creatures within 100 feet of you that have an Intelligence score of 4 or higher. You know the distance and direction to those creatures but can’t sense anything else about them.",
+                "- You may cast the dominate monster spell without requiring any components or using any spell slots. Once this ability has been used once, it cannot be used again until the next dawn."
+            ],
+            "Materials": [
+                { "ComponentId": "telepathic_gland", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_the_closed_heart",
+            "Name": "Amulet of the Closed Heart",
+            "Crafter": "Artificer",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While wearing this amulet, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.",
+                "In addition, you gain the ability to spend your action to create a pulse of emotionally dampening mental energy in a 30-foot radius around yourself. Any creature in that radius that is under a charm or fear condition that would end on a successful saving throw may immediately attempt that saving throw, adding your Intelligence modifier in addition to their normal modifiers."
+            ],
+            "Materials": [{ "ComponentId": "alhoon_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_the_desert_tyrant",
+            "Name": "Amulet of the Desert Tyrant",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mummy_lord_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_the_forest",
+            "Name": "Amulet of the Forest",
+            "Crafter": "Artificer",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This green amulet possesses two sparkling motes of light inside of it. While wearing this amulet, you may spend 1 minute focusing on a living tree within 5 feet of you. If you do so, you gain an innate bond with that tree that lasts for the next 24 hours. This bond grants the tree a low level of sentience, similar to the speak with plants spell, with the additional bonus that you and the tree may communicate over any distance so long as you are both on the same plane of existence. You may also spend your action to experience what the tree is experiencing until the start of your next turn, during which you are deaf and blind regarding your own senses.",
+                "In addition, you may spend 10 minutes focusing on a square patch of soil that is 5 feet on each side. At the end of that 10 minutes, a tree magically grows from that patch of soil. The tree has a diameter of 5 feet and grows until it is 20 feet tall or reaches a solid object above it, whichever comes first. You automatically have an innate bond with this tree, and it disappears automatically 24 hours after it has been created. You may only have one of these trees at a time, attempting to create a new one while another already exists causes the earlier one to disappear early."
+            ],
+            "Materials": [{ "ComponentId": "wood_woad_eye", "Quantity": "x2" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_the_mind_flayer",
+            "Name": "Amulet of the Mind Flayer",
+            "Crafter": "Artificer",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While you are wearing this amulet, you may spend an action to designate up to 4 willing creatures within 30 feet of you as your thralls. So long as you and your thralls are on the same plane of existence, you may communicate with them telepathically. In addition, so long as you and at least one of your thralls are within 30 feet of each other, you both gain advantage on Intelligence saving throws, and if you suffer psychic damage, you may spend your reaction to force your thrall to suffer some, or all of that damage instead of you. You may only have up to 4 creatures as your thralls at a time. If you wish to add a new creature, you must spend an action breaking your connection to one of your old ones first.",
+                "Curse: Using this amulet is a dangerous proposition due to its incredibly vile origins. Attuning to this amulet curses you until you are targeted by the remove curse spell or similar magic; removing this amulet fails to end the curse. While cursed, you automatically fail on saving throws imposed by members of the illithid race, including elder brains and intellect devourers."
+            ],
+            "Materials": [
+                { "ComponentId": "mind_flayer_heart", "Quantity": "x1" },
+                {
+                    "ComponentId": "mind_flayer_heart_(ulitharid)",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_the_ocean_lord",
+            "Name": "Amulet of the Ocean Lord",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "kraken_brain_stem", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "amulet_of_the_trickster",
+            "Name": "Amulet of the Trickster",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "rakshasa_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "anathema_device",
+            "Name": "Anathema Device",
+            "Crafter": "Tinker",
+            "Rarity": "Rare",
+            "RequiresAttunement": false,
+            "Description": [
+                "This yuan-ti heart is encased in a complicated contraption of copper wires and other mechanical pieces. You may spend your action to activate this contraption, causing it to shock the heart and forcing it to beat. So long as the heart is beating, you emit an aura of fear in a 30-foot radius circle centered on yourself. Any creature of your choice that starts their turn in that circle must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute of any member of your race. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target is immune to this aura for the next 24 hours.",
+                "The heart remains beating for 1 minute, or until you drop it from your hand. Once this item has been used once, it cannot be used again for 24 hours."
+            ],
+            "Materials": [
+                { "ComponentId": "anathema_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "angel_robe",
+            "Name": "Angel Robe",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "deva_skin", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "anti-magic_crystal",
+            "Name": "Anti-Magic Crystal",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "beholder_main_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "anti-venom_(dmg)",
+            "Name": "Anti-venom (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "stirgle_bile", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_heavy_armour_or_shield,_+_1_(dmg)",
+            "Name": "Any heavy armour or shield, + 1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "gorgon_plate", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_melee_bludgeoning_weapon,_+1_(dmg)",
+            "Name": "Any melee bludgeoning weapon, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ankylosaurus_tail", "Quantity": "x1" },
+                { "ComponentId": "barlgura_hand", "Quantity": "x1" },
+                { "ComponentId": "brontosaurus_toe", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_melee_bludgeoning_weapon,_+2_(dmg)",
+            "Name": "Any melee bludgeoning weapon, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ki-rin_hoof", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_melee_piercing_or_slashing_weapon,_+1_(dmg)",
+            "Name": "Any melee piercing or slashing weapon, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "draegloth_claw", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_melee_piercing_or_slashing_weapon,_+2_(dmg)",
+            "Name": "Any melee piercing or slashing weapon, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "shoosuva_spike", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_melee_piercing_weapon,_+1_(dmg)",
+            "Name": "Any melee piercing weapon, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "girallon_fang", "Quantity": "x1" },
+                { "ComponentId": "tanarukk_horn", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_melee_piercing_weapon,_+2_(dmg)",
+            "Name": "Any melee piercing weapon, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "hezrou_claw", "Quantity": "x1" },
+                { "ComponentId": "purple_worm_tooth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_melee_slashing_weapon_except_whips,_+2_(dmg)",
+            "Name": "Any melee slashing weapon except whips, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "devourer_claw", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "any_piercing_weapon,_+2_(dmg)",
+            "Name": "Any piercing weapon, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "nalfeshnee_tusk", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "armor_of_the_forest_sentinel",
+            "Name": "Armor of the Forest Sentinel",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "wood_woad_bark", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "armour_of_the_guardian",
+            "Name": "Armour of the Guardian",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "shield_guardian_breastplate",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "arrow,_+1_(dmg)",
+            "Name": "Arrow, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "hippogriff_feather", "Quantity": "x1" },
+                { "ComponentId": "plesiosaurus_tooth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "arrow,_+2_(dmg)",
+            "Name": "Arrow, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "hydra_tooth", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "bag_of_colding",
+            "Name": "Bag of Colding",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "frost_giant_tongue", "Quantity": "x1" },
+                { "ComponentId": "ghast_hide", "Quantity": "x1" },
+                { "ComponentId": "ghoul_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "barbed_cloak",
+            "Name": "Barbed Cloak",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "barbed_hide", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "basilisk_gaze_poison",
+            "Name": "Basilisk Gaze Poison",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "basilisk_bile", "Quantity": "x1" },
+                { "ComponentId": "basilisk_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "battleaxe,_+1_(dmg)",
+            "Name": "Battleaxe, +1 (DMG)",
+            "Crafter": "Blacksmith",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "leucrotta_mouth_ridge", "Quantity": "x1" }
+            ],
+            "Type": "Martial weapon, melee weapon"
+        },
+        {
+            "Id": "bewildering_bagpipes",
+            "Name": "Bewildering Bagpipes",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "grung_bladder", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "big_catch_hook",
+            "Name": "Big Catch Hook",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "sea_spawn_teeth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "bite_of_varpak",
+            "Name": "Bite of Varpak",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mark_of_varpak", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "black_heart",
+            "Name": "Black Heart",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "death_knight_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "blight_oil",
+            "Name": "Blight Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "blight_seeds", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "blinders_helm",
+            "Name": "Blinders Helm",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "helmed_horror_helmet", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "bloodhunter's_lens",
+            "Name": "Bloodhunter's Lens",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "death_kiss_main_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "boots_of_iron_gait",
+            "Name": "Boots of Iron Gait",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "redcap_boots", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "boots_of_speed_(dmg)",
+            "Name": "Boots of Speed (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "quickling_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "boots_of_stone_strength",
+            "Name": "Boots of Stone Strength",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "korred_hoof", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "boots_of_the_winterlands_(dmg)",
+            "Name": "Boots of the Winterlands (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "abominable_yeti_hide", "Quantity": "x1" },
+                { "ComponentId": "yeti_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "breastplate_of_the_boundary",
+            "Name": "Breastplate of the Boundary",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "devourer_ribcage", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "breastplate,_+_2",
+            "Name": "Breastplate, + 2",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "golem_stone", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "bronze_companion",
+            "Name": "Bronze Companion",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "spark_of_creation", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "camouflage_chitin",
+            "Name": "Camouflage Chitin",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "thri-kreen_carapace", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "camouflage_cloak",
+            "Name": "Camouflage Cloak",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "trapper_hide", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "canteen_of_last_resort",
+            "Name": "Canteen of Last Resort",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ankheg_gaster", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cap_of_aggression",
+            "Name": "Cap of Aggression",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "redcap_cap", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cape_of_helping_hands",
+            "Name": "Cape of Helping Hands",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "marilith_spine", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "celestial_helm",
+            "Name": "Celestial Helm",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "solar_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "chain_of_command",
+            "Name": "Chain of Command",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "succubus-incubus_tail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "chain_of_entanglement",
+            "Name": "Chain of Entanglement",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "living_chain", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "charlatan's_die_(xge)",
+            "Name": "Charlatan's Die (XGE)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cursed_knucklebones", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "charming_knife",
+            "Name": "Charming Knife",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "lamia_claw", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "chest_burster",
+            "Name": "Chest Burster",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "slaad_egg_gland", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "chimera_kite",
+            "Name": "Chimera Kite",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "chimera_dragon_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "chimera_trident",
+            "Name": "Chimera Trident",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "chimera_dragon_head", "Quantity": "x1" },
+                { "ComponentId": "chimera_goat_head", "Quantity": "x1" },
+                { "ComponentId": "chimera_lion_head", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "chuul's_caress_poison",
+            "Name": "Chuul's Caress Poison",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "chuul_venom", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cinder_shield",
+            "Name": "Cinder Shield",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "salamander_scale", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "clay_weapon",
+            "Name": "Clay Weapon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "clay_golem_clay", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cleric's_bane_poison",
+            "Name": "Cleric's Bane Poison",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "yurtrus_ichor", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_billowing_(xge)",
+            "Name": "Cloak of Billowing (XGE)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "shimmer_cloth", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_displacement_(dmg)",
+            "Name": "Cloak of Displacement (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cloaker_hide", "Quantity": "x1" },
+                { "ComponentId": "displacer_beast_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_distorted_time",
+            "Name": "Cloak of Distorted Time",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "sphinx_pelt", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_dragonflight",
+            "Name": "Cloak of Dragonflight",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "adult_dragon_wing", "Quantity": "x1" },
+                { "ComponentId": "ancient_dragon_wing", "Quantity": "x1" },
+                { "ComponentId": "young_dragon_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_magic_immunity",
+            "Name": "Cloak of Magic Immunity",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "rakshasa_hide", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_mending_(xge)",
+            "Name": "Cloak of Mending (XGE)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "shimmer_cloth", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_the_bat_(dmg)",
+            "Name": "Cloak of the Bat (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "vampire_hair", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloak_of_the_storm_spirit",
+            "Name": "Cloak of the Storm Spirit",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "storm_giant_spirit", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "cloud_step_oil",
+            "Name": "Cloud Step Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cloud_giant_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "corruption_skull",
+            "Name": "Corruption Skull",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "annis_hag_skull", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "crown_of_celestial_rule",
+            "Name": "Crown of Celestial Rule",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "empyrean_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "crown_of_darkness",
+            "Name": "Crown of Darkness",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "vampire_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "crown_of_limitless_knowledge",
+            "Name": "Crown of Limitless Knowledge",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "elder_brain_thalamus", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_desolation",
+            "Name": "Curse of Desolation",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "mark_of_orcus", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_jealousy",
+            "Name": "Curse of Jealousy",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "peryton_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_never-ending_fear",
+            "Name": "Curse of Never-Ending Fear",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "meenlock_spirit", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_nightmares",
+            "Name": "Curse of Nightmares",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "rakshasa_claw", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_spite",
+            "Name": "Curse of Spite",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "wraith_energy", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_sun's_bane",
+            "Name": "Curse of Sun's Bane",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "yeth_hound_fur", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_vanity",
+            "Name": "Curse of Vanity",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "medusa_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_vengeance",
+            "Name": "Curse of Vengeance",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "echo_of_vengeance", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "curse_of_weakening",
+            "Name": "Curse of Weakening",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "babau_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dagger_of_life_stealing",
+            "Name": "Dagger of Life Stealing",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "vampire_spawn_fang", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dagger,_+1_(dmg)",
+            "Name": "Dagger, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "allosaurus_claw", "Quantity": "x1" },
+                { "ComponentId": "bulette_teeth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "death_goggles",
+            "Name": "Death Goggles",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "bodak_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "debilitating_whip",
+            "Name": "Debilitating Whip",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "roper_tendril", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "decanter_of_endless_water",
+            "Name": "Decanter of Endless Water",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "living_water", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "deception_skull",
+            "Name": "Deception Skull",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "green_hag_skull", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "deceptive_eyepatch",
+            "Name": "Deceptive Eyepatch",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cyclops_eyelid", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "demilich_censer",
+            "Name": "Demilich Censer",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "demilich_smoke", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "demon_bomb",
+            "Name": "Demon Bomb",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "balor_ash", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "demon_leather",
+            "Name": "Demon Leather",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "glabrezu_skin", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "demon_light",
+            "Name": "Demon Light",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "nalfeshnee_eyes", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "demon_music_box",
+            "Name": "Demon Music Box",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "vrock_vocal_cords", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "demon_needle",
+            "Name": "Demon Needle",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "chasme_proboscis", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "demon_vellum",
+            "Name": "Demon Vellum",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "babau_skin", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "devil_vellum",
+            "Name": "Devil Vellum",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "bone_devil_skin", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dino-helm",
+            "Name": "Dino-Helm",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ankylosaurus_skull", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "divine_justice",
+            "Name": "Divine Justice",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "planetar_bone", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "doublet_of_psionic_protection",
+            "Name": "Doublet of Psionic Protection",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "neothelid_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dra-gone_paste/dragon_paste",
+            "Name": "Dra-gone Paste/Dragon Paste",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "guard_drake_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dracolich_censer",
+            "Name": "Dracolich Censer",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "dracolich_bone", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dragon_bone_weapon",
+            "Name": "Dragon Bone Weapon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "adult_[type]_dragon_bone", "Quantity": "x1" },
+                {
+                    "ComponentId": "ancient_[type]_dragon_bone",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "young_[type]_dragon_bone", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dragon_stone",
+            "Name": "Dragon Stone",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ancient_dragon_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dragon_turtle_jelly",
+            "Name": "Dragon Turtle Jelly",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "dragon_turtle_plastron", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "drone_producer",
+            "Name": "Drone producer",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "chasme_wing", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "drow_amulet",
+            "Name": "Drow Amulet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mark_of_lolth", "Quantity": "x1" },
+                {
+                    "ComponentId": "mark_of_lolth_(choldrith)",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "mark_of_lolth_(draegloth)",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "mark_of_lolth_(drider)", "Quantity": "x1" },
+                {
+                    "ComponentId": "mark_of_lolth_(priestess_of_lolth)",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "drow_poison",
+            "Name": "Drow Poison",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "drow_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "drow_poison_(dmg)",
+            "Name": "Drow Poison (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "chitine_blood", "Quantity": "x1" },
+                { "ComponentId": "choldrith_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dusk_armour",
+            "Name": "Dusk Armour",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "shadow_dragon_scale", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "dust_of_disappearance_(dmg)",
+            "Name": "Dust of Disappearance (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "sprite_wing", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "earhorn_of_hearing_(xge)",
+            "Name": "Earhorn of Hearing (XGE)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "darkmantle_otolith", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "elemental_gem_(blue_sapphire)_(dmg)",
+            "Name": "Elemental Gem (Blue Sapphire) (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "mote_of_air", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "elemental_gem_(emerald)_(dmg)",
+            "Name": "Elemental Gem (Emerald) (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "mote_of_water", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "elemental_gem_(red_corundum)_(dmg)",
+            "Name": "Elemental Gem (Red Corundum) (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "mote_of_fire_(fire_elemental)",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "mote_of_fire_(magmin)", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "elemental_gem_(yellow_diamond)_(dmg)",
+            "Name": "Elemental Gem (Yellow Diamond) (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "mote_of_earth", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "eye_drone",
+            "Name": "Eye Drone",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "froghemoth_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "eye_of_the_eagle_(dmg)",
+            "Name": "Eye of the Eagle (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "griffon_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "eye_stalk_wand",
+            "Name": "Eye Stalk Wand",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "beholder_eye_stalk", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "eyes_of_charming_(dmg)",
+            "Name": "Eyes of Charming (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "dryad_eye", "Quantity": "x1" },
+                { "ComponentId": "succubus-incubus_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "eyes_of_the_eagle_(dmg)",
+            "Name": "Eyes of the Eagle (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "hippogriff_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "faerie_dragon_dust",
+            "Name": "Faerie Dragon Dust",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "faerie_dragon_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fear_skull",
+            "Name": "Fear Skull",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "sea_hag_skull", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fiend_censer",
+            "Name": "Fiend Censer",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "imp_head", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fiend_fuel",
+            "Name": "Fiend Fuel",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "spine_devil_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "figurine_of_wondrous_power_(obsidian_statue)_(dmg)",
+            "Name": "Figurine of Wondrous Power (Obsidian Statue) (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "nightmare_hoof", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "filter_rag",
+            "Name": "Filter Rag",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "catoblepas_fur", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fire_arrow",
+            "Name": "Fire Arrow",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "spined_devil_spine", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fire_bolt",
+            "Name": "Fire Bolt",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "spined_devil_spine", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fire_dagger",
+            "Name": "Fire Dagger",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "salamander_fang", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fire_flash_armor",
+            "Name": "Fire Flash Armor",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "fire_giant_shield_scrap", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "flail,_+1_(dmg)",
+            "Name": "Flail, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "catoblepas_tail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "flask_of_storms",
+            "Name": "Flask of Storms",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "storm_giant_quintessent_water",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "floating_oil",
+            "Name": "Floating Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "gas_spore_gas", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "fomorian_crystal",
+            "Name": "Fomorian Crystal",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "fomorian_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "frostbite_armour",
+            "Name": "Frostbite Armour",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ice_devil_carapace", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "frostbite_weapon",
+            "Name": "Frostbite Weapon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ice_devil_mandible", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "frostclaw_weapon",
+            "Name": "Frostclaw Weapon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "yeti_claw", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "frostclaw_weapon,_+1",
+            "Name": "Frostclaw Weapon, +1",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "abominable_yeti_claw", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "frozen_skull",
+            "Name": "Frozen Skull",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "bheur_hag_skull", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "gargoyle_wing_cloak",
+            "Name": "Gargoyle Wing Cloak",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gargoyle_wings", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "gauntlets_of_ogre_power_(dmg)",
+            "Name": "Gauntlets of Ogre Power (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "oni_hand", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "gem_of_teleportation",
+            "Name": "Gem of Teleportation",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "yugoloth_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "gem_of_the_underdark",
+            "Name": "Gem of the Underdark",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "grick_pearl", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "glaive,_+2_(dmg)",
+            "Name": "Glaive, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "tyrannosaurus_rex_claw", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "glass_oil",
+            "Name": "Glass Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "flail_snail_slime_gland", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "glutton_cutlery",
+            "Name": "Glutton Cutlery",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "nalfeshnee_teeth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "goblin_effigy",
+            "Name": "Goblin Effigy",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "barghest_fur", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "goggles_of_night_(dmg)",
+            "Name": "Goggles of Night (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "oni_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "golden_sun_armor",
+            "Name": "Golden Sun Armor",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ki-rin_scales", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "golem_companion",
+            "Name": "Golem Companion",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "manual_ashes_(clay_golem)",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "manual_ashes_(flesh_golem)",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "manual_ashes_(iron_golem)",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "manual_ashes_(stone_golem)",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "greataxe,_+1_(dmg)",
+            "Name": "Greataxe, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "allosaurus_jaw", "Quantity": "x1" },
+                { "ComponentId": "leucrotta_mouth_ridge", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "greataxe,_+2_(dmg)",
+            "Name": "Greataxe, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "death_tyrant_jaw", "Quantity": "x1" },
+                { "ComponentId": "tyrannosaurus_rex_jawbone", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "greatclub,_+1_(dmg)",
+            "Name": "Greatclub, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "gorgon_hoof", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "grell_jerkin",
+            "Name": "Grell Jerkin",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "grell_hide", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "grick_hide_cloak",
+            "Name": "Grick Hide Cloak",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "alpha_grick_hide", "Quantity": "x1" },
+                { "ComponentId": "grick_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "gut_rot",
+            "Name": "Gut Rot",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "violet_fungus_stalk", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "hair_tonic",
+            "Name": "Hair Tonic",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "satyr_hair", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "halberd,_+3_(dmg)",
+            "Name": "Halberd, +3 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "pit_fiend_claw", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "hand_of_undeath",
+            "Name": "Hand of Undeath",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "wight_hand", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "harpy_harp",
+            "Name": "Harpy Harp",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "harpy_vocal_cords", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "harpy_ink",
+            "Name": "Harpy Ink",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "harpy_egg", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "hat_of_disguise_(dmg)",
+            "Name": "Hat of Disguise (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "doppelganger_face", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "heart_scales",
+            "Name": "Heart Scales",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ki-rin_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "heavy_armor,_+1_(dmg)",
+            "Name": "Heavy armor, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "tlincalli_chitin", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_abyssal_domination",
+            "Name": "Helm of Abyssal Domination",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "pit_fiend_head", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_hypnotism",
+            "Name": "Helm of Hypnotism",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ultroloth_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_mind_trapping",
+            "Name": "Helm of Mind Trapping",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "alhoon_brain", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_telepathy_(dmg)",
+            "Name": "Helm of Telepathy (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "doppelganger_brain", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_the_cryptkeeper",
+            "Name": "Helm of the Cryptkeeper",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "spawn_of_kyuss_brain", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_the_illithid",
+            "Name": "Helm of the Illithid",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mind_flayer_brain", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_the_minotaur",
+            "Name": "Helm of the Minotaur",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "minotaur_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_the_ulitharid",
+            "Name": "Helm of the Ulitharid",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ulitharid_brain", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helm_of_transmission",
+            "Name": "Helm of Transmission",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ettin_head", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "helmet_of_stone_dreams",
+            "Name": "Helmet of Stone Dreams",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "stone_giant_dreamwalker_brain",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "horn_of_fear",
+            "Name": "Horn of Fear",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "yeth_hound_voice_box", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "horn_of_the_ancient_roar",
+            "Name": "Horn of the Ancient Roar",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "androsphinx_vocal_cords", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "horn_of_the_fiendish_voice",
+            "Name": "Horn of the Fiendish Voice",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "glabrezu_horn", "Quantity": "x1" },
+                { "ComponentId": "horned_devil_horn", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "idea_bulb",
+            "Name": "Idea Bulb",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cranium_rat_brain", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "infernal_wings",
+            "Name": "Infernal Wings",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cambion_wing", "Quantity": "x1" },
+                { "ComponentId": "devil_wings_(bone_devil)", "Quantity": "x1" },
+                { "ComponentId": "devil_wings_(erinyes)", "Quantity": "x1" },
+                {
+                    "ComponentId": "devil_wings_(horned_devil)",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "devil_wings_(pit_fiend)", "Quantity": "x1" },
+                { "ComponentId": "nycaloth_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "ink_of_secret_knowledge",
+            "Name": "Ink of Secret Knowledge",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "alhoon_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "instrument_of_harmony",
+            "Name": "Instrument of Harmony",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "unicorn_hair", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "interrogator's_web",
+            "Name": "Interrogator's Web",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "elder_brain_white_matter", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "iron_bands_of_bilarro_(dmg)",
+            "Name": "Iron Bands of Bilarro (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "living_chain", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "javelin,_+1_(dmg)",
+            "Name": "Javelin, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "gorgon_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "kraken_bolt",
+            "Name": "Kraken Bolt",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "kraken_tooth", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "kraken_paint",
+            "Name": "Kraken Paint",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "kraken_ink", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "kraken_shield",
+            "Name": "Kraken Shield",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "kraken_crown_scale", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "kraken_tunic",
+            "Name": "Kraken Tunic",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "kraken_hide", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lance_(dmg)",
+            "Name": "Lance (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "pteranodon_beak", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lance_(phb)",
+            "Name": "Lance (PHB)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "quetzalcoatlus_beak", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lance,_+1_(dmg)",
+            "Name": "Lance, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "gorgon_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "leather_armor_(phb)",
+            "Name": "Leather Armor (PHB)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "dimetrodon_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "leeching_whip",
+            "Name": "Leeching Whip",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "death_kiss_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lens_of_forgotten_history",
+            "Name": "Lens of Forgotten History",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "aboleth_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lens_of_insight",
+            "Name": "Lens of Insight",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "nothic_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lenses_of_hypnosis",
+            "Name": "Lenses of Hypnosis",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "morkoth_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lenses_of_secrets",
+            "Name": "Lenses of Secrets",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gynosphinx_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lenses_of_the_oasis",
+            "Name": "Lenses of the Oasis",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "lamia_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lesser_eye_stalk_wand",
+            "Name": "Lesser Eye Stalk Wand",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gauth_eyestalk", "Quantity": "x1" },
+                { "ComponentId": "spectator_eye_stalk", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lich_censer",
+            "Name": "Lich Censer",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "lich_dust", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lightning_oil",
+            "Name": "Lightning Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "lightning_sack", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "living_chalk",
+            "Name": "Living Chalk",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "enchanted_pumice", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "living_dentures",
+            "Name": "Living Dentures",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gibbering_mouther_teeth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "living_lamp",
+            "Name": "Living Lamp",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "fire_giant_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "longbow,_+1_(dmg)",
+            "Name": "Longbow, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "centaur_tail", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "loupe_of_the_depths",
+            "Name": "Loupe of the Depths",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "kraken_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "lycan_gas",
+            "Name": "Lycan Gas",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "lycanthrope_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "magical_dowsing_rod",
+            "Name": "Magical Dowsing Rod",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "arcana_ganglia", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "magmin_pan",
+            "Name": "Magmin Pan",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "magma_shell", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "manticore_cloak",
+            "Name": "Manticore Cloak",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "manticore_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mask_of_clouds",
+            "Name": "Mask of Clouds",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "smiling_one_mask", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mask_of_fear",
+            "Name": "Mask of Fear",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "chain_devil_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "maul,_+1_(dmg)",
+            "Name": "Maul, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "gorgon_hoof", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "medusa_whip",
+            "Name": "Medusa Whip",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "medusa_hair", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "melee_piercing_weapon,_+1_(dmg)",
+            "Name": "Melee piercing weapon, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "babau_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "merrow_amulet",
+            "Name": "Merrow Amulet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "merrow_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "metal_detector",
+            "Name": "Metal Detector",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "rust_monster_antenna", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mezzoloth_mail",
+            "Name": "Mezzoloth Mail",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mezzoloth_chitin", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mimic_oil",
+            "Name": "Mimic Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "mimic_gel", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mind_hook",
+            "Name": "Mind Hook",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "neothelid_hook", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mind_whip",
+            "Name": "Mind Whip",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mind_flayer_tentacle", "Quantity": "x1" },
+                { "ComponentId": "mindwitness_tentacle", "Quantity": "x1" },
+                { "ComponentId": "ulitharid_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mind_whip,_+1",
+            "Name": "Mind Whip, +1",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "elder_brain_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "minor_eye_stalk_wand",
+            "Name": "Minor Eye Stalk Wand",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gazer_eyestalk", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "minotaur_compass",
+            "Name": "Minotaur Compass",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "minotaur_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mirror_of_insecurity",
+            "Name": "Mirror of Insecurity",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "vargouille_jaw", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "monocle_of_focus",
+            "Name": "Monocle of Focus",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "cyclops_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mood_cap",
+            "Name": "Mood Cap",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "flumph_membrane", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "moon_muzzle_mixture",
+            "Name": "Moon Muzzle Mixture",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "lycanthrope_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "morningstar,_+1_(dmg)",
+            "Name": "Morningstar, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "leucrotta_mouth_ridge", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mount_barding_(phb)",
+            "Name": "Mount Barding (PHB)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "hadrosaurus_skull", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mummy_rot_juice",
+            "Name": "Mummy Rot Juice",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "mummy_dust", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "mutated_eye_stalk_wand",
+            "Name": "Mutated Eye Stalk Wand",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mindwitness_eye_stalk", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "necrotic_cloak",
+            "Name": "Necrotic Cloak",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "devourer_skin", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "negative_energy_crystal",
+            "Name": "Negative Energy Crystal",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "death_tyrant_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "night_hag_dreamcatcher",
+            "Name": "Night Hag Dreamcatcher",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "night_hag_hair", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "nightmare_skull",
+            "Name": "Nightmare Skull",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "night_hag_skull", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "obfuscation_pigments",
+            "Name": "Obfuscation Pigments",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "displacer_beast_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "ocean_master_paint",
+            "Name": "Ocean Master Paint",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "dragon_turtle_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "oil_of_etherealness_(dmg)",
+            "Name": "Oil of Etherealness (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ectoplasmic_trail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "oni_amulet",
+            "Name": "Oni Amulet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "oni_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "otyugh_whip",
+            "Name": "Otyugh Whip",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "otyugh_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "paralysing_dust",
+            "Name": "Paralysing Dust",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ghast_claws", "Quantity": "x1" },
+                { "ComponentId": "ghoul_claws", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "petrifying_dagger",
+            "Name": "Petrifying Dagger",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cockatrice_beak", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "philter_of_love_(dmg)",
+            "Name": "Philter of Love (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "devil-tinged_blood", "Quantity": "x1" },
+                { "ComponentId": "lamia_blood", "Quantity": "x1" },
+                { "ComponentId": "succubus-incubus_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "pillow_of_perfect_rest",
+            "Name": "Pillow of Perfect Rest",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "couatl_feather", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "pipes_of_haunting_(dmg)",
+            "Name": "Pipes of Haunting (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "banshee_remnant", "Quantity": "x1" },
+                { "ComponentId": "xvart_tongue", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "plate_armour,_+1_(dmg)",
+            "Name": "Plate Armour, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "umber_hulk_carapace", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "poison_lung",
+            "Name": "Poison Lung",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "poison_canister", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "portable_mouth",
+            "Name": "Portable Mouth",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "maw_demon_teeth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_boundless_intellect",
+            "Name": "Potion of Boundless Intellect",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "elder_brain_fluid", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_bravery",
+            "Name": "Potion of Bravery",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "bearded_devil_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_celestial_might",
+            "Name": "Potion of Celestial Might",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "empyrean_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_corrupted_strength",
+            "Name": "Potion of Corrupted Strength",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "annis_hag_hair", "Quantity": "x1" },
+                { "ComponentId": "bheur_hag_hair", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_desecration",
+            "Name": "Potion of Desecration",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "cursed_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_detect_thoughts_(dmg)",
+            "Name": "Potion of Detect Thoughts (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "flumph_brain", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_digestion",
+            "Name": "Potion of Digestion",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "leucrotta_bile", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_dragonstrength",
+            "Name": "Potion of Dragonstrength",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "[type]_wyrmling_dragon_blood",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "adult_[type]_dragon_blood",
+                    "Quantity": "x1"
+                },
+                {
+                    "ComponentId": "ancient_[type]_dragon_blood",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "young_[type]_dragon_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_elemental_tempering",
+            "Name": "Potion of Elemental Tempering",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "adult_remorhaz_blood", "Quantity": "x1" },
+                { "ComponentId": "young_remorhaz_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_fire_resistance_(dmg)",
+            "Name": "Potion of Fire Resistance (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "barbed_devil_blood", "Quantity": "x1" },
+                { "ComponentId": "nightmare_ashes", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_flying_(dmg)",
+            "Name": "Potion of Flying (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "pegasus_wing", "Quantity": "x1" },
+                { "ComponentId": "peryton_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(cloud)",
+            "Name": "Potion of Giant Strength (Cloud)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cloud_giant_fingernail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(fire)",
+            "Name": "Potion of Giant Strength (Fire)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "fire_giant_fingernail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(frost)",
+            "Name": "Potion of Giant Strength (Frost)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "frost_giant_fingernail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(hill)",
+            "Name": "Potion of Giant Strength (Hill)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "hill_giant_fingernail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(hill)_(dmg)",
+            "Name": "Potion of Giant Strength (Hill) (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ettin_fingernail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(stone)",
+            "Name": "Potion of Giant Strength (Stone)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "stone_giant_fingernail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(storm)",
+            "Name": "Potion of Giant Strength (Storm)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "storm_giant_fingernail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_giant_strength_(storm)_(dmg)",
+            "Name": "Potion of Giant Strength (Storm) (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mote_of_storm_giant", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_growth_(dmg)",
+            "Name": "Potion of Growth (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "duergar_brainstem", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_healing_(dmg)",
+            "Name": "Potion of Healing (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "troll_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_infernal_vitality",
+            "Name": "Potion of Infernal Vitality",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "pit_fiend_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_invisibility_(dmg)",
+            "Name": "Potion of Invisibility (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "duergar_brainstem", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_lightning_blood",
+            "Name": "Potion of Lightning Blood",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "death_kiss_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_liquid_form",
+            "Name": "Potion of Liquid Form",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "slithering_tracker_slime", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_magical_madness",
+            "Name": "Potion of Magical Madness",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "kuo-toa_archpriest_brain", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_mind_flayer_resistance",
+            "Name": "Potion of Mind Flayer Resistance",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "grimlock_brain", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_ogre_strength",
+            "Name": "Potion of Ogre Strength",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "half-ogre_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_poison_(dmg)",
+            "Name": "Potion of Poison (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "quasit_venom", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_poison_immunity",
+            "Name": "Potion of Poison Immunity",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "yuan-ti_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_poison_resistance_(dmg)",
+            "Name": "Potion of Poison Resistance (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "quaggoth_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_pollution_breathing",
+            "Name": "Potion of Pollution Breathing",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "hezrou_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_radiant_resistance_(dmg)",
+            "Name": "Potion of Radiant Resistance (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "darkling_ash", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_rage",
+            "Name": "Potion of Rage",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "barlgura_bile", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_rapport",
+            "Name": "Potion of Rapport",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "rapport_spores", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_reflexes",
+            "Name": "Potion of Reflexes",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "marilith_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_ruined_flesh",
+            "Name": "Potion of Ruined Flesh",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "fomorian_growth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_sensing",
+            "Name": "Potion of Sensing",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "kuo-toa_brain", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_sickness",
+            "Name": "Potion of Sickness",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "manes_vapour", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_sloth",
+            "Name": "Potion of Sloth",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "horned_devil_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_speak_with_plants",
+            "Name": "Potion of Speak With Plants",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "blight_pollen", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_stamina",
+            "Name": "Potion of Stamina",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "pegasus_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_superior_healing_(dmg)",
+            "Name": "Potion of Superior Healing (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "froghemoth_foam", "Quantity": "x1" },
+                { "ComponentId": "hydra_blood", "Quantity": "x1" },
+                { "ComponentId": "morkoth_humor", "Quantity": "x1" },
+                { "ComponentId": "naga_scale", "Quantity": "x1" },
+                { "ComponentId": "oni_blood", "Quantity": "x1" },
+                { "ComponentId": "shambling_mound_mulch", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_the_sahuagin",
+            "Name": "Potion of the Sahuagin",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "sahuagin_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_the_sea",
+            "Name": "Potion of the Sea",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "kraken_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_the_siege",
+            "Name": "Potion of the Siege",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "goristro_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_vigor",
+            "Name": "Potion of Vigor",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ki-rin_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_vitality",
+            "Name": "Potion of Vitality",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "unicorn_blood", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_water_breathing_(dmg)",
+            "Name": "Potion of Water Breathing (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "aboleth_mucus", "Quantity": "x1" },
+                { "ComponentId": "merrow_blood", "Quantity": "x1" },
+                { "ComponentId": "sea_hag_hair", "Quantity": "x1" },
+                { "ComponentId": "sea_spawn_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_winter's_rest",
+            "Name": "Potion of Winter's Rest",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "yeti_eye_(abominable_yeti)",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "yeti_eye_(yeti)", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "potion_of_winterbite",
+            "Name": "Potion of Winterbite",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ice_devil_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "purple_piercer",
+            "Name": "Purple Piercer",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "purple_worm_stinger", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "radiant_oil",
+            "Name": "Radiant Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "darkling_elder_tattoo", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "raxivort's_boon",
+            "Name": "Raxivort's Boon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mark_of_raxivort", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "remorhaz_plate",
+            "Name": "Remorhaz Plate",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "young_remorhaz_carapace", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "remorhaz_plate,_+1",
+            "Name": "Remorhaz Plate, +1",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "adult_remorhaz_carapace", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "repelling_candle",
+            "Name": "Repelling Candle",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ogre_fat", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "reversal_boots",
+            "Name": "Reversal Boots",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "girallon_foot", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "ring_of_spell_storing_(dmg)",
+            "Name": "Ring of Spell Storing (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "spell_storing_plate", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "ring_of_storm_giant_growth",
+            "Name": "Ring of Storm Giant Growth",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "roc_heart_piece", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "rope_of_climbing_(dmg)",
+            "Name": "Rope of Climbing (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "cave_fisher_filament", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "salamander_fire",
+            "Name": "Salamander Fire",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "salamander_blood", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "security_antenna",
+            "Name": "Security Antenna",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "remorhaz_antenna", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "sensory_collar",
+            "Name": "Sensory Collar",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "otyugh_telepathy_ganglia", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "serpent_shield",
+            "Name": "Serpent Shield",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                {
+                    "ComponentId": "yuan-ti_abomination_scales",
+                    "Quantity": "x1"
+                }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shadow_amulet",
+            "Name": "Shadow Amulet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "demonic_imprint", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shadow_dye",
+            "Name": "Shadow Dye",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "liquid_shadow", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shadow_hunter_bow",
+            "Name": "Shadow Hunter Bow",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "yeth_hound_spine", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shadow_spikes",
+            "Name": "Shadow Spikes",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "shadow_mastiff_teeth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shadow_wing_cape",
+            "Name": "Shadow Wing Cape",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "shadowdragon_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shadowflame_oil",
+            "Name": "Shadowflame Oil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "shadowflame_ember", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shell_of_hearing",
+            "Name": "Shell of Hearing",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "hook_horror_cochlea", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shield_of_reflection",
+            "Name": "Shield of Reflection",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "spectator_main_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shield_of_reflection,_+1",
+            "Name": "Shield of Reflection, +1",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "morkoth_gladius", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shield,_+3_(dmg)",
+            "Name": "Shield, +3 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "dragon_turtle_shell_shard", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "shortbow,_+1_(dmg)",
+            "Name": "Shortbow, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "centaur_tail", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "sickle_(dmg)",
+            "Name": "Sickle (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "deinonychus_sickle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "sickle_of_chaos",
+            "Name": "Sickle of Chaos",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "blue_slaad_claw", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "sickle,_+1_(dmg)",
+            "Name": "Sickle, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "umber_hulk_mandibles", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "siege_dust",
+            "Name": "Siege Dust",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "goristro_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "silhouette_shawl",
+            "Name": "Silhouette Shawl",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "shadow_mastiff_fur", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "skull_of_revelation",
+            "Name": "Skull of Revelation",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "flameskull", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "slaad_doublet",
+            "Name": "Slaad Doublet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "slaad_hide", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "snap_tongue_attachment",
+            "Name": "Snap Tongue Attachment",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "froghemoth_tongue", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "soul_render",
+            "Name": "Soul Render",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "barghest_fang", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "spear,_+1_(dmg)",
+            "Name": "Spear, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "bulette_teeth", "Quantity": "x1" },
+                { "ComponentId": "gorgon_horn", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "spectral_gauntlets",
+            "Name": "Spectral Gauntlets",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "spirit_echo", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "staff_of_multiplied_recovery",
+            "Name": "Staff of Multiplied Recovery",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "hydra_spinal_cord", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "staff_of_split_control",
+            "Name": "Staff of Split Control",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "anathema_spine", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "staff_of_the_woodlands_(dmg)",
+            "Name": "Staff of the Woodlands (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "treant_root", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "stinger_whip",
+            "Name": "Stinger Whip",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "bone_devil_tail", "Quantity": "x1" },
+                { "ComponentId": "tlincalli_tail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "stone_anvil",
+            "Name": "Stone Anvil",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "stone_giant_molar", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "stone_cleaver_weapon",
+            "Name": "Stone Cleaver Weapon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "bulette_claw", "Quantity": "x1" },
+                { "ComponentId": "xorn_tooth", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "stone_swim_armor",
+            "Name": "Stone Swim Armor",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "xorn_shell", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "stone_swim_armour",
+            "Name": "Stone Swim Armour",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "bulette_hide", "Quantity": "x1" },
+                { "ComponentId": "korred_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "storm_caller",
+            "Name": "Storm Caller",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "lightning_sack", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "storm_pole",
+            "Name": "Storm Pole",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "storm_giant_spine", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "studded_leather_armour_(dmg)",
+            "Name": "Studded Leather Armour (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "ankylosaurus_hide", "Quantity": "x1" },
+                { "ComponentId": "lizardfolk_hide", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "studded_leather_armour,_+2_(dmg)",
+            "Name": "Studded Leather Armour, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "marilith_snake_leather", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "stunning_lens",
+            "Name": "Stunning Lens",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gauth_main_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "sun_stream_bow",
+            "Name": "Sun Stream Bow",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ki-rin_fur", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "swarm_charms",
+            "Name": "Swarm Charms",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "swarm_mentality", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "sword_of_life_stealing_(dmg)",
+            "Name": "Sword of Life Stealing (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "vampire_fang", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "sword_of_wounding_(dmg)",
+            "Name": "Sword of Wounding (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "nycaloth_claw", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "telepathic_lens",
+            "Name": "Telepathic Lens",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mindwitness_main_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "tormentor's_cap",
+            "Name": "Tormentor's Cap",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "meenlock_head", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "traveller's_clogs",
+            "Name": "Traveller's Clogs",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "pegasus_hoof", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "treasure_compass",
+            "Name": "Treasure Compass",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "xorn_eye", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "tri-horn_shield",
+            "Name": "Tri-Horn Shield",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "triceratops_skull", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "trident,_+1_(dmg)",
+            "Name": "Trident, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gorgon_horn", "Quantity": "x1" },
+                { "ComponentId": "merrow_claw", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "troll_amulet",
+            "Name": "Troll Amulet",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "troll_heart", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "turned_soul_gem",
+            "Name": "Turned Soul Gem",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "soul_gem", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "unicorn_glue",
+            "Name": "Unicorn Glue",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "unicorn_hoof", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "unicorn's_charge",
+            "Name": "Unicorn's Charge",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "unicorn_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "vine_tunic",
+            "Name": "Vine Tunic",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "shambling_mound_vine", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "viper_strike",
+            "Name": "Viper Strike",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "guardian_naga_fang", "Quantity": "x1" },
+                { "ComponentId": "skeletal_naga_fang", "Quantity": "x1" },
+                { "ComponentId": "spirit_naga_fang", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wand_of_confusion",
+            "Name": "Wand of Confusion",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "umber_hulk_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wand_of_smiles_(xgte)",
+            "Name": "Wand of Smiles (XGtE)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "mirth_touched_smile", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wand_of_the_golden_ray",
+            "Name": "Wand of the Golden Ray",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "ki-rin_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wand_of_the_undergrowth",
+            "Name": "Wand of the Undergrowth",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "root-stem", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wand_of_the_war_mage,_+2_(dmg)",
+            "Name": "Wand of the War Mage, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "unicorn_horn", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "war_pick,_+1_(dmg)",
+            "Name": "War pick, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "gorgon_horn", "Quantity": "x1" },
+                { "ComponentId": "hook_horror_hook", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "warhammer,_+2_(dmg)",
+            "Name": "Warhammer, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "roc_beak", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "warhammer,_+3_(dmg)",
+            "Name": "Warhammer, +3 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "goristro_hoof", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "warming_waterskin",
+            "Name": "Warming Waterskin",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "fire_snake_scales", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "warning_scarf",
+            "Name": "Warning Scarf",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "owlbear_neck", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "whip_+1_(dmg)",
+            "Name": "Whip +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "barbed_devil_tail", "Quantity": "x1" },
+                { "ComponentId": "cloaker_tail", "Quantity": "x1" },
+                { "ComponentId": "manticore_tail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "whip_of_extended_reach",
+            "Name": "Whip of Extended Reach",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "morkoth_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "whip,_+1_(dmg)",
+            "Name": "Whip, +1 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "displacer_beast_tentacle", "Quantity": "x1" },
+                { "ComponentId": "grell_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "whip,_+2_(dmg)",
+            "Name": "Whip, +2 (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "froghemoth_tentacle", "Quantity": "x1" },
+                { "ComponentId": "neothelid_tentacle", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wings_of_flying_(dmg)",
+            "Name": "Wings of Flying (DMG)",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "deva_wing", "Quantity": "x1" },
+                { "ComponentId": "planetar_wing", "Quantity": "x1" },
+                { "ComponentId": "solar_wing", "Quantity": "x1" },
+                { "ComponentId": "wyvern_wing", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wings_of_the_guardian",
+            "Name": "Wings of the Guardian",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "sphinx_wing", "Quantity": "x1" }],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "withering_lenses",
+            "Name": "Withering Lenses",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "catoblepas_eye", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "wound_biter_weapon",
+            "Name": "Wound Biter Weapon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "horned_devil_tail", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "yeenoghu's_boon",
+            "Name": "Yeenoghu's Boon",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "demon_gnoll_heart", "Quantity": "x1" },
+                { "ComponentId": "shoosuva_heart", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item"
+        },
+        {
+            "Id": "yeenoghu's_wrath",
+            "Name": "Yeenoghu's Wrath",
+            "Crafter": "",
+            "Rarity": "Common",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "shoosuva_tail", "Quantity": "x1" }],
+            "Type": "Wondrous item"
         }
     ]
 }

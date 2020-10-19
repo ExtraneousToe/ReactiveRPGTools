@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Storage from "../utility/StorageUtil";
+import { getIdFromItemName } from "./craftableItemUtil";
 import "./hamundsTables.css";
 
 export function HarvestingTableDisplay(props) {
@@ -30,7 +31,7 @@ export function HarvestingTableDisplay(props) {
         let descriptionOut = [];
         let valueOut = "";
         let weightOut = "";
-        let craftingOut = "";
+        let craftingOut = [];
 
         if (item !== null && item !== undefined) {
             nameOut = item.Name;
@@ -64,7 +65,22 @@ export function HarvestingTableDisplay(props) {
 
             valueOut = item.ValueGP;
             weightOut = item.WeightLB;
-            craftingOut = item.CraftingUsage.join(" or ");
+
+            // craftingOut = item.CraftingUsage.join(" or ");
+            for (let k = 0; k < item.CraftingUsage.length; ++k) {
+                if (craftingOut.length !== 0) {
+                    craftingOut.push(<> or </>);
+                }
+                craftingOut.push(
+                    <a
+                        href={`/craftableitems/${getIdFromItemName(
+                            item.CraftingUsage[0]
+                        )}`}
+                    >
+                        {item.CraftingUsage[0]}
+                    </a>
+                );
+            }
         }
 
         if (row.Quantity !== "") {

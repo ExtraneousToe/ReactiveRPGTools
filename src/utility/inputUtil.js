@@ -98,6 +98,8 @@ export function StringInput(props) {
     let propKey = props.objKey;
     let propIdx = props.index;
 
+    let { disabled, ...otherProps } = props;
+
     const onChangeFunc = (e) => {
         if (propIdx !== undefined) {
             propObj[propKey][propIdx] = e.target.value;
@@ -109,7 +111,6 @@ export function StringInput(props) {
 
     let value = propObj[propKey];
     if (propIdx !== undefined) {
-        // value = JSON.stringify(propObj[propKey]); //[propIdx];
         value = propObj[propKey][propIdx];
     }
 
@@ -123,6 +124,7 @@ export function StringInput(props) {
                         style={{ width: "inherit" }}
                         value={value}
                         onChange={onChangeFunc}
+                        disabled={disabled}
                     />
                 </Col>
             </Row>

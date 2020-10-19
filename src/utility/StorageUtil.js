@@ -64,6 +64,7 @@ const Storage = {
                     Storage.craftableItemDict[id] = {
                         Id: id,
                         Name: name,
+                        Type: null,
                         Crafter: null,
                         Rarity: null,
                         RequiresAttunement: false,
@@ -71,22 +72,31 @@ const Storage = {
                         Materials: [
                             {
                                 ComponentId: harvestedItem.ReferenceId,
-                                Quantity: null,
+                                Quantity: "x1",
                             },
                         ],
                     };
                 } else {
-                    if (
-                        Storage.craftableItemDict[id].Materials.filter(
-                            (mat) =>
-                                mat.ReferenceId === harvestedItem.ReferenceId
-                        ).length === 0
-                    ) {
-                        Storage.craftableItemDict[id].Materials.push({
+                    let item = Storage.craftableItemDict[id];
+                    let filteredList = item.Materials.filter(
+                        (mat) => mat.ComponentId === harvestedItem.ReferenceId
+                    );
+                    let existingEntry =
+                        filteredList.length > 0 ? filteredList[0] : null;
+
+                    if (existingEntry === null) {
+                        item.Materials.push({
                             ComponentId: harvestedItem.ReferenceId,
-                            Quantity: null,
+                            Quantity: "x1",
                         });
+                    } else if (existingEntry.Quantity === null) {
+                        existingEntry.Quantity = "x1";
                     }
+
+                    if (item.Type === null || item.Type === undefined)
+                        item.Type = "Wondrous item";
+                    if (item.Crafter === null) item.Crafter = "";
+                    if (item.Rarity === null) item.Rarity = "";
                 }
             }
 
