@@ -1,9 +1,8 @@
 import React from "react";
 import { HarvestedItems } from "./pages/HarvestedItems";
+import { Home } from "./pages/Home";
 import { Monsters } from "./pages/Monsters";
-import { fileSaveAs } from "./utility/saveFile";
-import Storage from "./utility/StorageUtil";
-import { sortAscending } from "./utility/stringUtil";
+import { CraftableItems } from "./pages/CraftableItems";
 
 export const MENU = [
     {
@@ -13,59 +12,7 @@ export const MENU = [
         routePaths: ["/"],
         exact: true,
         renderFunction: (props) => {
-            return (
-                <div>
-                    <h1>Home</h1>
-                    <div>
-                        <button
-                            onClick={(e) => {
-                                e.preventDefault();
-
-                                let monsters = Object.values(
-                                    Storage.monsterDict
-                                );
-                                monsters.sort((a, b) =>
-                                    sortAscending(a.Name, b.Name)
-                                );
-
-                                let harvestedItems = Object.values(
-                                    Storage.harvestableItemDict
-                                );
-                                harvestedItems.sort((a, b) =>
-                                    sortAscending(a.ReferenceId, b.ReferenceId)
-                                );
-
-                                let trinketTables = Object.values(
-                                    Storage.trinketTableDict
-                                );
-                                trinketTables.sort((a, b) =>
-                                    sortAscending(
-                                        a.TrinketTableType,
-                                        b.TrinketTableType
-                                    )
-                                );
-
-                                fileSaveAs(
-                                    "system-state.json",
-                                    JSON.stringify({
-                                        Monsters: monsters,
-                                        HarvestedItems: harvestedItems,
-                                        TrinketTables: trinketTables,
-                                    })
-                                );
-                            }}
-                        >
-                            Save State
-                        </button>
-                    </div>
-                    <div>
-                        <input
-                            type="text"
-                            style={{ width: "100%", height: "4em" }}
-                        />
-                    </div>
-                </div>
-            );
+            return <Home {...props} />;
         },
     },
     {
@@ -96,6 +43,16 @@ export const MENU = [
         exact: false,
         renderFunction: (props) => {
             return <span>Trinket Tables</span>;
+        },
+    },
+    {
+        className: "text-dark",
+        linkName: "Craftable Items",
+        linkTarget: "/craftableitems",
+        routePaths: ["/craftableitems"],
+        exact: false,
+        renderFunction: (props) => {
+            return <CraftableItems {...props} />;
         },
     },
 ];

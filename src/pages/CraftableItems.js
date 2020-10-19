@@ -2,28 +2,30 @@ import React, { useState } from "react";
 import { matchPath } from "react-router";
 import { Col, Row } from "react-bootstrap";
 import { DisplayList, DisplayColumn } from "./DisplayList";
-import { HarvestedItemFilterBlock } from "../components/HarvestedItemFilterBlock";
-import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import Storage from "../utility/StorageUtil";
 import {
-    EditingHarvestedItemDisplay,
-    HarvestedItemDisplay,
-    getItemReference,
-} from "../utility/harvestedItemUtil";
+    getIdFromItem,
+    CraftableItemDisplay,
+    EditingCraftableItemDisplay,
+} from "../utility/craftableItemUtil";
+import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 
-export function HarvestedItems(props) {
+import "./Columnable.css";
+import "../LayoutControl/Layout.css";
+
+export function CraftableItems(props) {
     let [filterObj, setFilterObj] = useState({});
 
-    const pathWithId = "/harvesteditems/:id";
-    let harvestedItem = null;
+    const pathWithId = "/craftableitems/:id";
+    let craftableItem = null;
 
     // extract monster id from the path
     let match = matchPath(props.location.pathname, { path: pathWithId });
     if (match !== null) {
         // if there is an id, search for the monster
         let id = match.params.id;
-        if (Storage.harvestableItemDict[id] !== undefined) {
-            harvestedItem = Storage.harvestableItemDict[id];
+        if (Storage.craftableItemDict[id] !== undefined) {
+            craftableItem = Storage.craftableItemDict[id];
         }
     }
 
@@ -39,16 +41,19 @@ export function HarvestedItems(props) {
         ),
     ];
 
-    let harvestedOutput = ["Select an item from the list"];
+    let displayOutput = ["Select an item from the list"];
 
-    if (harvestedItem !== null) {
+    if (craftableItem !== null) {
         if (process.env.NODE_ENV === "development") {
-            harvestedOutput = [
-                <EditingHarvestedItemDisplay harvestedItem={harvestedItem} />,
+            displayOutput = [
+                <EditingCraftableItemDisplay
+                    craftableItem={craftableItem}
+                    key={0}
+                />,
             ];
         } else {
-            harvestedOutput = [
-                <HarvestedItemDisplay harvestedItem={harvestedItem} />,
+            displayOutput = [
+                <CraftableItemDisplay craftableItem={craftableItem} key={0} />,
             ];
         }
     }
@@ -57,16 +62,16 @@ export function HarvestedItems(props) {
         <>
             <Row className="h-100" xs={1} md={2}>
                 <Col className="border h-100">
-                    <HarvestedItemFilterBlock submitFilter={setFilterObj} />
+                    {/* <MonsterFilterBlock submitFilter={setFilterObj} /> */}
                     <DisplayList
                         headers={headers}
-                        items={Object.values(Storage.harvestableItemDict)}
+                        items={Object.values(Storage.craftableItemDict)}
                         filterObject={filterObj}
                         pathRoot={props.match.path}
-                        idFunction={getItemReference}
+                        idFunction={getIdFromItem}
                     />
                 </Col>
-                <Col className="border scrollableColumn">{harvestedOutput}</Col>
+                <Col className="border scrollableColumn">{displayOutput}</Col>
             </Row>
         </>
     );

@@ -1,6 +1,7 @@
 import Data from "../data/system-state.json";
 import { getItemReferenceFromName } from "./harvestedItemUtil";
 import { getIdFromMonster } from "./monsterUtil";
+import { getIdFromItemName } from "./craftableItemUtil";
 
 // let initialised = false;
 const Storage = {
@@ -10,11 +11,22 @@ const Storage = {
     monsterDict: {},
     harvestableItemDict: {},
     trinketTableDict: {},
+    craftableItemDict: {},
 
     Init: () => {
         if (Storage._init) {
             console.log("Storage already initialised");
             return;
+        }
+
+        for (
+            let idx = 0;
+            Data.CraftableItems !== undefined &&
+            idx < Data.CraftableItems.length;
+            ++idx
+        ) {
+            let craftableItem = Data.CraftableItems[idx];
+            Storage.craftableItemDict[craftableItem.Id] = craftableItem;
         }
 
         for (let idx = 0; idx < Data.HarvestedItems.length; ++idx) {
@@ -43,6 +55,39 @@ const Storage = {
                 harvestedItem.CraftingUsage = harvestedItem.CraftingUsage.filter(
                     (line) => line !== ""
                 );
+            }
+
+            for (let i = 0; i < harvestedItem.CraftingUsage.length; ++i) {
+                let name = harvestedItem.CraftingUsage[i];
+                let id = getIdFromItemName(name);
+                if (Storage.craftableItemDict[id] === undefined) {
+                    Storage.craftableItemDict[id] = {
+                        Id: id,
+                        Name: name,
+                        Crafter: null,
+                        Rarity: null,
+                        RequiresAttunement: false,
+                        Description: [],
+                        Materials: [
+                            {
+                                ComponentId: harvestedItem.ReferenceId,
+                                Quantity: null,
+                            },
+                        ],
+                    };
+                } else {
+                    if (
+                        Storage.craftableItemDict[id].Materials.filter(
+                            (mat) =>
+                                mat.ReferenceId === harvestedItem.ReferenceId
+                        ).length === 0
+                    ) {
+                        Storage.craftableItemDict[id].Materials.push({
+                            ComponentId: harvestedItem.ReferenceId,
+                            Quantity: null,
+                        });
+                    }
+                }
             }
 
             if (

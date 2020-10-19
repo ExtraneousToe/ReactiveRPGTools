@@ -27,7 +27,7 @@ export function NavMenu(props) {
             <Navbar className="border-bottom p-0">
                 <Container>
                     <NavbarBrand tag={Link} to="/">
-                        Reactive RPG {JSON.stringify(process.env.NODE_ENV)}
+                        Reactive RPG
                     </NavbarBrand>
                     <Container
                         className="d-sm-inline-flex flex-sm-row-reverse"

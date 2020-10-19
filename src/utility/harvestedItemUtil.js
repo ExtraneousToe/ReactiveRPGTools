@@ -21,7 +21,68 @@ function splitArray(val) {
     return val.split(ARRAY_CONC);
 }
 
-export class HarvestedItemDisplay extends React.Component {
+export function HarvestedItemDisplay(props) {
+    let hItem = props.harvestedItem;
+
+    return (
+        <>
+            {/* {JSON.stringify(hItem)} */}
+            {/* <Row>
+                <Col className="col-3 font-weight-bold">ReferenceId:</Col>
+                <Col>{hItem.ReferenceId}</Col>
+            </Row> */}
+            <Row>
+                <Col className="col-3 font-weight-bold">Name:</Col>
+                <Col>{hItem.Name}</Col>
+            </Row>
+            <Row>
+                <Col className="col-3 font-weight-bold">Value:</Col>
+                <Col>{hItem.ValueGP}</Col>
+            </Row>
+            <Row>
+                <Col className="col-3 font-weight-bold">Weight:</Col>
+                <Col>{hItem.WeightLB}</Col>
+            </Row>
+            <Row>
+                <Col className="col-3 font-weight-bold">Required Tools:</Col>
+                <Col>
+                    {hItem.RequiredToolNames.length === 0
+                        ? "-"
+                        : hItem.RequiredToolNames.join(" and ")}
+                </Col>
+            </Row>
+            <Row>
+                <Col className="col-3 font-weight-bold">CraftingUsage:</Col>
+                <Col>
+                    {hItem.CraftingUsage.length === 0
+                        ? "-"
+                        : hItem.CraftingUsage.join(" and ")}
+                    {/* {JSON.stringify(hItem.CraftingUsage)} */}
+                </Col>
+            </Row>
+            <Row>
+                <Col className="col-3 font-weight-bold">Description:</Col>
+                <Col>
+                    {hItem.Description.map((para, idx) => {
+                        return <p key={idx}>{para}</p>;
+                    })}
+                </Col>
+            </Row>
+            {hItem.UseText.length !== 0 && (
+                <Row>
+                    <Col className="col-3 font-weight-bold">UseText:</Col>
+                    <Col>
+                        {hItem.UseText.map((para, idx) => {
+                            return <p key={idx}>{para}</p>;
+                        })}
+                    </Col>
+                </Row>
+            )}
+        </>
+    );
+}
+
+export class EditingHarvestedItemDisplay extends React.Component {
     constructor(props) {
         super(props);
 
@@ -150,7 +211,7 @@ export class HarvestedItemDisplay extends React.Component {
                                 e.preventDefault();
                                 this.handleInput(e, key.key);
                             }}
-                            disabled={key === "ReferenceId"}
+                            disabled={key.key === "ReferenceId"}
                         />
                     </Col>
                 </Row>
@@ -161,62 +222,6 @@ export class HarvestedItemDisplay extends React.Component {
             <Container fluid>
                 <Form onSubmit={this.applyStateToItem}>
                     {output}
-                    {/* ReferenceId */}
-                    {/* <Row>
-                        <Col className="col-2 font-weight-bold">
-                            ReferenceId:{" "}
-                        </Col>
-                        <Col className="border">
-                            <input
-                                type="text"
-                                value={this.state["ReferenceId"]}
-                                style={{ width: "inherit" }}
-                                disabled
-                            />
-                        </Col>
-                    </Row> */}
-                    {/* Name */}
-                    {/* <Row>
-                        <Col className="col-2 font-weight-bold">Name: </Col>
-                        <Col className="border">
-                            <input
-                                type="text"
-                                value={this.state["Name"]}
-                                style={{ width: "inherit" }}
-                                onChange={(e) => {
-                                    this.handleInput(e, "Name");
-                                }}
-                            />
-                        </Col>
-                    </Row> */}
-                    {/* ValueGP */}
-                    {/* <Row>
-                        <Col className="col-2 font-weight-bold">ValueGP: </Col>
-                        <Col className="border">
-                            <input
-                                type="text"
-                                value={this.state["ValueGP"]}
-                                style={{ width: "inherit" }}
-                                onChange={(e) => {
-                                    this.handleInput(e, "ValueGP");
-                                }}
-                            />
-                        </Col>
-                    </Row> */}
-                    {/* WeightLB */}
-                    {/* <Row>
-                        <Col className="col-2 font-weight-bold">WeightLB: </Col>
-                        <Col className="border">
-                            <input
-                                type="text"
-                                value={this.state["WeightLB"]}
-                                style={{ width: "inherit" }}
-                                onChange={(e) => {
-                                    this.handleInput(e, "WeightLB");
-                                }}
-                            />
-                        </Col>
-                    </Row> */}
                     <input type="submit" value="Apply Changes" />
                 </Form>
             </Container>
