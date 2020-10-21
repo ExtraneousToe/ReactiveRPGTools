@@ -26,11 +26,12 @@ export function Monsters(props) {
 
     // extract monster id from the path
     let match = matchPath(props.location.pathname, { path: pathWithId });
+    let selectedId = "";
     if (match !== null) {
         // if there is an id, search for the monster
-        let id = match.params.id;
-        if (Storage.monsterDict[id] !== undefined) {
-            monster = Storage.monsterDict[id];
+        selectedId = match.params.id;
+        if (Storage.monsterDict[selectedId] !== undefined) {
+            monster = Storage.monsterDict[selectedId];
         }
     }
 
@@ -84,6 +85,7 @@ export function Monsters(props) {
                         filterObject={filterObj}
                         pathRoot={props.match.path}
                         idFunction={getIdFromMonster}
+                        selectedId={selectedId}
                     />
                 </Col>
                 <Col className="border scrollableColumn">

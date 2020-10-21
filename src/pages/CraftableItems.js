@@ -21,11 +21,12 @@ export function CraftableItems(props) {
 
     // extract monster id from the path
     let match = matchPath(props.location.pathname, { path: pathWithId });
+    let selectedId = "";
     if (match !== null) {
         // if there is an id, search for the monster
-        let id = match.params.id;
-        if (Storage.craftableItemDict[id] !== undefined) {
-            craftableItem = Storage.craftableItemDict[id];
+        selectedId = match.params.id;
+        if (Storage.craftableItemDict[selectedId] !== undefined) {
+            craftableItem = Storage.craftableItemDict[selectedId];
         }
     }
 
@@ -69,6 +70,7 @@ export function CraftableItems(props) {
                         filterObject={filterObj}
                         pathRoot={props.match.path}
                         idFunction={getIdFromItem}
+                        selectedId={selectedId}
                     />
                 </Col>
                 <Col className="border scrollableColumn">{displayOutput}</Col>

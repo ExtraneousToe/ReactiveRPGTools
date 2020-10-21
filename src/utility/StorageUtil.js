@@ -75,6 +75,7 @@ const Storage = {
                                 Quantity: "x1",
                             },
                         ],
+                        MaterialGrouping: "OR",
                     };
                 } else {
                     let item = Storage.craftableItemDict[id];
@@ -97,6 +98,11 @@ const Storage = {
                         item.Type = "Wondrous item";
                     if (item.Crafter === null) item.Crafter = "";
                     if (item.Rarity === null) item.Rarity = "";
+                    if (
+                        item.MaterialGrouping === null ||
+                        item.MaterialGrouping === undefined
+                    )
+                        item.MaterialGrouping = "OR";
                 }
             }
 

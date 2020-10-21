@@ -81,7 +81,11 @@ export function DisplayList(props) {
             );
         }
 
-        let pathRoute = `${props.pathRoot}/${props.idFunction(items[i])}`;
+        let desiredId = props.idFunction(items[i]);
+
+        let pathRoute = `${props.pathRoot}/${desiredId}`;
+
+        let activeName = props.selectedId === desiredId ? "active" : "";
 
         contentsRows.push(
             <li
@@ -90,6 +94,7 @@ export function DisplayList(props) {
                     history.push(pathRoute);
                     e.preventDefault();
                 }}
+                className={activeName}
             >
                 <Row>{innerCols}</Row>
             </li>

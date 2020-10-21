@@ -24719,7 +24719,7 @@
         {
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Whip +1 (DMG)"],
+            "CraftingUsage": ["Whip, +1 (DMG)"],
             "Name": "Barbed Devil Tail",
             "Description": [
                 "The barbed devil's tail is even deadlier than its razor sharp claws, and when swung at full force is said to crumple plate armour and pierce the flesh beneath. Thankfully, there is nothing stopping anyone else from taking this tail, crafting it into a whip, and using it for their own purposes."
@@ -25627,7 +25627,7 @@
         {
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Whip +1 (DMG)"],
+            "CraftingUsage": ["Whip, +1 (DMG)"],
             "Name": "Cloaker Tail",
             "Description": [
                 "The infamous cloaker tail, covered in dozens of razor sharp spines. Drow taskmasters have developed a technique of taking the tails, treating them with special oils, and reusing them as whips."
@@ -27453,7 +27453,7 @@
             "Name": "Golem Stone",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Breastplate, + 2"],
+            "CraftingUsage": ["Breastplate, +2 (PHB)"],
             "Description": [
                 "Although a stone golem may be defeated, it leaves behind a permanent change to the composition of the stone it was formed from. While still very durable, this stone has a certain flexibility and lightness to it that is unmatched by anything found in nature. This property allows for the crafting of certain items that would otherwise be unfeasible with regular stone."
             ],
@@ -27525,7 +27525,7 @@
             "Name": "Gorgon Plate",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Any heavy armour or shield, + 1 (DMG)"],
+            "CraftingUsage": ["Any heavy armour or shield, +1 (DMG)"],
             "Description": [
                 "The iron-like armour plating of a gorgon is incredibly hard and yet is supple and breathes like skin. It is thus a unique and useful material for making fine armours."
             ],
@@ -29116,7 +29116,7 @@
             "Name": "Manticore Tail",
             "UseText": [],
             "RequiredToolNames": [],
-            "CraftingUsage": ["Whip +1 (DMG)"],
+            "CraftingUsage": ["Whip, +1 (DMG)"],
             "Description": [
                 "Of all the natural weapons that a manticore possesses, its tail is probably its most feared. Many mountain expeditions have ended with its members impaled by dozens of razor sharp spikes."
             ],
@@ -34994,7 +34994,8 @@
             "Materials": [
                 { "ComponentId": "stegosaurus_ridge", "Quantity": "x4" }
             ],
-            "Type": "Heavy armor"
+            "Type": "Heavy armor",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "(wooden)_breastplate",
@@ -35004,7 +35005,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "treant_bark", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "[type]_dragon_arrow",
@@ -35024,7 +35026,8 @@
                 },
                 { "ComponentId": "young_[type]_dragon_tooth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "[type]_dragon_bolt",
@@ -35044,7 +35047,8 @@
                 },
                 { "ComponentId": "young_[type]_dragon_tooth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "[type]_dragon_scale_mail_(dmg)",
@@ -35067,7 +35071,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "[type]_dragon_wand",
@@ -35090,7 +35095,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "[type]_dragon's_mercy",
@@ -35117,7 +35123,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "[type]_dragon's_wrath",
@@ -35144,19 +35151,25 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "aboleth_amulet",
             "Name": "Aboleth Amulet",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Artificer",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This pale turquoise amulet seems to have a faint flicker of something moving in it, like seeing a creature in murky waters. While wearing this amulet, you gain telepathy out to a range of 120 ft., can understand and speak Deep Speech, and become proficient in Intelligence (History) checks if you weren’t proficient already.",
+                "You may also spend an action to target one creature you can see within 30 feet of you. That target must succeed on a DC 14 Wisdom saving throw or be magically charmed by you. This charm persists until either you or the target dies, or if you are on different planes of existence. You and the charmed target may communicate with each other telepathically over any distance so long as you are wearing and attuned to this item.",
+                "You may only have up to 3 targets charmed in this way at a time. If you successfully charm another target while you already have 3 targets charmed, the charm effect ends on the creature that you charmed first. Whenever the charmed target takes damage, they may repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from you. If a creature succeeds on either resisting the charm effect or if the charm effect on them ends, they become immune to this ability for the next 24 hours."
+            ],
             "Materials": [
                 { "ComponentId": "aboleth_brain_lobe", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_dragonkin",
@@ -35171,7 +35184,8 @@
             "Materials": [
                 { "ComponentId": "guard_drake_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_enslavement",
@@ -35183,7 +35197,8 @@
                 "While you are wearing this amulet, any charm effect that currently afflicts you is considered to have an infinite duration instead of its usual duration. Once this amulet has been worn for a cumulative total of 24 hours, it crumbles into dust and becomes worthless."
             ],
             "Materials": [{ "ComponentId": "neogi_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_imix",
@@ -35195,19 +35210,23 @@
                 "While wearing and attuned to this amulet, you gain 5 temporary hit points whenever you reduce an enemy to 0 hit points. In addition, any time you are forced to roll a Constitution saving throw to maintain control of a fire elemental or maintain concentration on a spell that deals fire damage, you do so at advantage."
             ],
             "Materials": [{ "ComponentId": "mark_of_imix", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_maglubiyet",
             "Name": "Amulet of Maglubiyet",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Thaumaturge",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While wearing this amulet, you gain the ability to spend your action and martial your allies with your resounding leadership. For 1 minute, you may utter a special command or warning whenever a non-hostile creature that you can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand you. A creature can benefit from only one of these effects at a time. This effect ends early if you are incapacitated."
+            ],
             "Materials": [
                 { "ComponentId": "mark_of_maglubiyet", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_secrets",
@@ -35220,7 +35239,8 @@
                 "In addition, you may use the amulet to cast the spell zone of truth without using a spell slot or requiring any components. The DC for the casting of this spell in this way is 8 + your Charisma modifier + your proficiency bonus, and you are exempt from the effects of the spell. Once you have used this ability 3 times in one day, you may not use it again until you finish a long rest."
             ],
             "Materials": [{ "ComponentId": "sphinx_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_telepathic_control",
@@ -35237,7 +35257,8 @@
             "Materials": [
                 { "ComponentId": "telepathic_gland", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_the_closed_heart",
@@ -35250,19 +35271,28 @@
                 "In addition, you gain the ability to spend your action to create a pulse of emotionally dampening mental energy in a 30-foot radius around yourself. Any creature in that radius that is under a charm or fear condition that would end on a successful saving throw may immediately attempt that saving throw, adding your Intelligence modifier in addition to their normal modifiers."
             ],
             "Materials": [{ "ComponentId": "alhoon_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_the_desert_tyrant",
             "Name": "Amulet of the Desert Tyrant",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Artificer",
+            "Rarity": "Legendary",
+            "RequiresAttunement": true,
+            "Description": [
+                "This item has 9 charges. While wearing this amulet you may spend an action and 1 or more charges to do any of the following:",
+                "- You may use the item to cast any of the following spells: spiritual weapon (2 charges, plus 1 additional charge for every level cast above 2nd), animate dead (3 charges plus 1 additional charge for every level cast above 3rd), guardian of faith (4 charges), insect plague (5 charges, plus 1 additional charge for every level cast above 5th), or harm (6 charges).",
+                "- You create a cloud of blinding dust and sand around yourself. Each creature within 5 feet of you must succeed on a DC 16 Constitution saving throw or be blinded until the end of their next turn (2 charges).",
+                "- You transform yourself into a whirlwind of sand and immediately move up to 60 feet and then revert to normal form. While in whirlwind form, you are immune to all damage, and you can’t be grappled, petrified, knocked prone, restrained or stunned. Equipment worn or carried by you remain in your possession (2 charges).",
+                "If you die while wearing this amulet, and if this amulet has at least 7 charges in it, the amulet will automatically expend 7 charges to create a new body for your soul to inhabit. This body is formed from dust in a space within 5 feet of the amulet over the course of 24 hours, upon which the amulet can be placed on the new body, allowing your soul to enter it and return to life. This new body is a duplicate of your original one at the moment of its death but with all wounds healed and all hit points restored. This ability fails if the amulet is destroyed or removed from your body during the 24 hours it is creating a new body.",
+                "This item regains 1d8+1 charges daily at dawn."
+            ],
             "Materials": [
                 { "ComponentId": "mummy_lord_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_the_forest",
@@ -35275,7 +35305,8 @@
                 "In addition, you may spend 10 minutes focusing on a square patch of soil that is 5 feet on each side. At the end of that 10 minutes, a tree magically grows from that patch of soil. The tree has a diameter of 5 feet and grows until it is 20 feet tall or reaches a solid object above it, whichever comes first. You automatically have an innate bond with this tree, and it disappears automatically 24 hours after it has been created. You may only have one of these trees at a time, attempting to create a new one while another already exists causes the earlier one to disappear early."
             ],
             "Materials": [{ "ComponentId": "wood_woad_eye", "Quantity": "x2" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_the_mind_flayer",
@@ -35284,7 +35315,8 @@
             "Rarity": "Rare",
             "RequiresAttunement": true,
             "Description": [
-                "While you are wearing this amulet, you may spend an action to designate up to 4 willing creatures within 30 feet of you as your thralls. So long as you and your thralls are on the same plane of existence, you may communicate with them telepathically. In addition, so long as you and at least one of your thralls are within 30 feet of each other, you both gain advantage on Intelligence saving throws, and if you suffer psychic damage, you may spend your reaction to force your thrall to suffer some, or all of that damage instead of you. You may only have up to 4 creatures as your thralls at a time. If you wish to add a new creature, you must spend an action breaking your connection to one of your old ones first.",
+                "While you are wearing this amulet, you may spend an action to designate up to 4 willing creatures within 30 feet of you as your thralls. So long as you and your thralls are on the same plane of existence, you may communicate with them telepathically.",
+                "In addition, so long as you and at least one of your thralls are within 30 feet of each other, you both gain advantage on Intelligence saving throws, and if you suffer psychic damage, you may spend your reaction to force your thrall to suffer some, or all of that damage instead of you. You may only have up to 4 creatures as your thralls at a time. If you wish to add a new creature, you must spend an action breaking your connection to one of your old ones first.",
                 "Curse: Using this amulet is a dangerous proposition due to its incredibly vile origins. Attuning to this amulet curses you until you are targeted by the remove curse spell or similar magic; removing this amulet fails to end the curse. While cursed, you automatically fail on saving throws imposed by members of the illithid race, including elder brains and intellect devourers."
             ],
             "Materials": [
@@ -35294,31 +35326,43 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_the_ocean_lord",
             "Name": "Amulet of the Ocean Lord",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Artificer",
+            "Rarity": "Legendary",
+            "RequiresAttunement": true,
+            "Description": [
+                "This item has 9 charges. While wearing this amulet, you may spend an action and 1 or more charges to do any of the following:",
+                "- You may cast any of the following spells without requiring any components or spell slots: conjure elemental (1 charge, water elementals only), chain lightning (1 charge), tsunami (2 charges), or control weather (2 charges). These spells use your spell DC. If you do not have one, the DC is equal to 8 + your Intelligence modifier.",
+                "- For the next hour, any aquatic creature within 6 miles of you that has an Intelligence score of 2 or lower are charmed by you and aggressive towards targets of your choosing. These creatures understand verbal commands you give them, and you telepathically understand basic ideas and images from them while they are within 30 feet of you (1 charge).",
+                "- While you are submerged in water, you may emit a magical pulse that allows you to sense the distance, direction, and shape of any solid object and creature that are both within 1 mile of you and within the same body of water as you (1 charge).",
+                "This item regains 1d8 charges daily at dawn."
+            ],
             "Materials": [
                 { "ComponentId": "kraken_brain_stem", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "amulet_of_the_trickster",
             "Name": "Amulet of the Trickster",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Artificer",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "When you kill a humanoid while wearing this amulet, you may spend your reaction to add an imprint of their identity to it. At any time afterwards, you may spend your action to polymorph yourself into any humanoid whose identity you have imprinted into this amulet. You gain the statistics of that creature, including their ability scores and any racial features, but you do not gain any of their class features. While polymorphed, you gain access to any memories that humanoid had at the time of their death, and your mannerisms and voice become indistinguishable to the real humanoid. This polymorph lasts for 1 hour, until your drop to 0 hit points or die, or if you end the effect early as an action. If the effect ends as a result of dropping to 0 hit points, any excess damage carries over to your normal form.",
+                "This polymorph ability may only be used once per dawn to polymorph into each identity you have imprinted. This item loses any imprinted identities it had if attunement to it is ever broken."
+            ],
             "Materials": [
                 { "ComponentId": "rakshasa_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "anathema_device",
@@ -35333,29 +35377,38 @@
             "Materials": [
                 { "ComponentId": "anathema_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "angel_robe",
             "Name": "Angel Robe",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Leatherworker",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "You gain a +1 bonus to AC while wearing this robe and all your weapon attacks are considered magical. In addition, you gain the ability to spend an action to polymorph yourself into a humanoid or beast that has a challenge rating equal to or lower than your character level, or back into your true form. You revert to your true form if you die or drop to 0 hit points. If the effect ends due to dropping to 0 hit points, any excess damage carries over to your true form. Any equipment you are wearing or carrying is absorbed or borne by the new form (your choice).",
+                "In a new form, you retain your statistics and ability to speak, but your AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and you gain any statistics and capabilities (except class features, legendary action, and lair actions) that the new form has but that you lack."
+            ],
             "Materials": [{ "ComponentId": "deva_skin", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "anti-magic_crystal",
             "Name": "Anti-Magic Crystal",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Artificer",
+            "Rarity": "Very Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This roughly basket sized crystal radiates a field of energy that disrupts the normal flow of the multiverse and prevents magical forces from acting in its proximity. This crystal creates an area of antimagic around itself, as in the antimagic field spell, in a 150-foot radius. This field passes through all solid objects except a layer of lead that is at least 1 inch thick.",
+                "This crystal cannot be deactivated (including in other antimagic fields) and only stops functioning if it is destroyed. The crystal has 30 hit points, 15 AC and is immune to poison and psychic damage."
+            ],
             "Materials": [
                 { "ComponentId": "beholder_main_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "anti-venom_(dmg)",
@@ -35365,17 +35418,32 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "stirgle_bile", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
-            "Id": "any_heavy_armour_or_shield,_+_1_(dmg)",
-            "Name": "Any heavy armour or shield, + 1 (DMG)",
+            "Id": "antimagic_shield",
+            "Name": "Antimagic Shield",
+            "Type": "Wondrous item",
             "Crafter": "",
-            "Rarity": "Common",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "flail_snail_shell", "Quantity": "x1" }
+            ],
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "any_heavy_armour_or_shield,_+1_(dmg)",
+            "Name": "Any heavy armour or shield, +1 (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "gorgon_plate", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_melee_bludgeoning_weapon,_+1_(dmg)",
@@ -35389,7 +35457,8 @@
                 { "ComponentId": "barlgura_hand", "Quantity": "x1" },
                 { "ComponentId": "brontosaurus_toe", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_melee_bludgeoning_weapon,_+2_(dmg)",
@@ -35399,7 +35468,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ki-rin_hoof", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_melee_piercing_or_slashing_weapon,_+1_(dmg)",
@@ -35411,7 +35481,8 @@
             "Materials": [
                 { "ComponentId": "draegloth_claw", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_melee_piercing_or_slashing_weapon,_+2_(dmg)",
@@ -35423,7 +35494,8 @@
             "Materials": [
                 { "ComponentId": "shoosuva_spike", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_melee_piercing_weapon,_+1_(dmg)",
@@ -35436,7 +35508,8 @@
                 { "ComponentId": "girallon_fang", "Quantity": "x1" },
                 { "ComponentId": "tanarukk_horn", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_melee_piercing_weapon,_+2_(dmg)",
@@ -35449,7 +35522,8 @@
                 { "ComponentId": "hezrou_claw", "Quantity": "x1" },
                 { "ComponentId": "purple_worm_tooth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_melee_slashing_weapon_except_whips,_+2_(dmg)",
@@ -35459,7 +35533,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "devourer_claw", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "any_piercing_weapon,_+2_(dmg)",
@@ -35471,7 +35546,8 @@
             "Materials": [
                 { "ComponentId": "nalfeshnee_tusk", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "armor_of_the_forest_sentinel",
@@ -35483,22 +35559,27 @@
             "Materials": [
                 { "ComponentId": "wood_woad_bark", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "armour_of_the_guardian",
             "Name": "Armour of the Guardian",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Blacksmith",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While wearing this armour, you gain a +1 bonus to AC. You also gain a special connection to the wearer of the amulet that was connected to the shield guardian that provided the breastplate to craft this armour. Whenever the wearer of that amulet takes damage and is within 60 feet of you, half of that damage (rounded up) is transferred to you.",
+                "In addition, whenever a creature makes an attack against the wearer of the amulet, you may use your reaction to grant a +2 bonus to the wearer’s AC if you are within 5 feet of them."
+            ],
             "Materials": [
                 {
                     "ComponentId": "shield_guardian_breastplate",
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Armour (breastplate)",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "arrow,_+1_(dmg)",
@@ -35509,9 +35590,12 @@
             "Description": [],
             "Materials": [
                 { "ComponentId": "hippogriff_feather", "Quantity": "x1" },
-                { "ComponentId": "plesiosaurus_tooth", "Quantity": "x1" }
+                { "ComponentId": "plesiosaurus_tooth", "Quantity": "x1" },
+                { "ComponentId": "barbed_devil_barb", "Quantity": "x1" },
+                { "ComponentId": "griffon_feather", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "arrow,_+2_(dmg)",
@@ -35521,44 +35605,55 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "hydra_tooth", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "bag_of_colding",
             "Name": "Bag of Colding",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Leatherworker",
+            "Rarity": "Uncommon",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This bag has a permanent enchantment on it that causes any organic material inside it to be kept in a state of preservation as if it had the spell gentle repose cast upon it. This effect wears off as soon as the item is removed from the bag, and the bag must be completely closed in order for its ability to function.",
+                "The bag is capable of holding up to 3 cubic feet of material inside it and its opening can open up to 1 foot in diameter."
+            ],
             "Materials": [
-                { "ComponentId": "frost_giant_tongue", "Quantity": "x1" },
+                { "ComponentId": "frost_giant_tongue", "Quantity": "x1/4" },
                 { "ComponentId": "ghast_hide", "Quantity": "x1" },
                 { "ComponentId": "ghoul_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "barbed_cloak",
             "Name": "Barbed Cloak",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Leatherworker",
+            "Rarity": "Uncommon",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "While you are wearing this cloak, you deal 1d10 piercing damage to any creature grappling you at the start of your turn."
+            ],
             "Materials": [{ "ComponentId": "barbed_hide", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "basilisk_gaze_poison",
             "Name": "Basilisk Gaze Poison",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Alchemist",
+            "Rarity": "Uncommon",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "A creature that drinks this poison must succeed on a DC 12 Constitution saving throw or become poisoned for 24 hours. While poisoned in this way, a creature magically turns to stone and is petrified. A creature remains petrified like this until either the 24 hours have passed, or until freed by the greater restoration spell or similar magic."
+            ],
             "Materials": [
                 { "ComponentId": "basilisk_bile", "Quantity": "x1" },
                 { "ComponentId": "basilisk_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "battleaxe,_+1_(dmg)",
@@ -35570,7 +35665,8 @@
             "Materials": [
                 { "ComponentId": "leucrotta_mouth_ridge", "Quantity": "x1" }
             ],
-            "Type": "Martial weapon, melee weapon"
+            "Type": "Martial weapon, melee weapon",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "bewildering_bagpipes",
@@ -35580,7 +35676,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "grung_bladder", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "big_catch_hook",
@@ -35592,7 +35689,8 @@
             "Materials": [
                 { "ComponentId": "sea_spawn_teeth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "bite_of_varpak",
@@ -35604,41 +35702,52 @@
             "Materials": [
                 { "ComponentId": "mark_of_varpak", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "black_heart",
             "Name": "Black Heart",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Thaumaturge",
+            "Rarity": "Very Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This item has an intrinsic link with the death knight from whom it was crafted. When held by a creature, it will beat when faced in the direction of that death knight if that death knight is still animate and on the same plane of existence as the holder. The frequency and intensity of its beats will also increase the closer it is to its death knight."
+            ],
             "Materials": [
                 { "ComponentId": "death_knight_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "blight_oil",
             "Name": "Blight Oil",
-            "Crafter": "",
+            "Crafter": "Alchemist",
             "Rarity": "Common",
             "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [{ "ComponentId": "blight_seeds", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Description": [
+                "This bottle contains enough oil to cover up to 10 square feet of surface area. Once this oil is rubbed into the surface of vegetation, it will soak half a foot into it. Vegetation soaked in this oil becomes as soft and malleable as wet clay and retains any physical manipulation done to it.",
+                "The oil dries after 10 minutes, causing the vegetation it was rubbed on to become solid again."
+            ],
+            "Materials": [{ "ComponentId": "blight_seeds", "Quantity": "x5" }],
+            "Type": "Oil",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "blinders_helm",
             "Name": "Blinders Helm",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Artificer",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While wearing this helmet, you gain a blindsight out to a range of 60 feet, and are immune to the blinded, and deafened conditions."
+            ],
             "Materials": [
                 { "ComponentId": "helmed_horror_helmet", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "bloodhunter's_lens",
@@ -35650,7 +35759,21 @@
             "Materials": [
                 { "ComponentId": "death_kiss_main_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "bolt,_+1_(dmg)",
+            "Name": "Bolt, +1 (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "barbed_devil_barb", "Quantity": "x1" }
+            ],
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "boots_of_iron_gait",
@@ -35660,7 +35783,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "redcap_boots", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "boots_of_speed_(dmg)",
@@ -35672,7 +35796,8 @@
             "Materials": [
                 { "ComponentId": "quickling_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "boots_of_stone_strength",
@@ -35682,7 +35807,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "korred_hoof", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "boots_of_the_winterlands_(dmg)",
@@ -35695,7 +35821,8 @@
                 { "ComponentId": "abominable_yeti_hide", "Quantity": "x1" },
                 { "ComponentId": "yeti_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "breastplate_of_the_boundary",
@@ -35707,41 +35834,51 @@
             "Materials": [
                 { "ComponentId": "devourer_ribcage", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
-            "Id": "breastplate,_+_2",
-            "Name": "Breastplate, + 2",
+            "Id": "breastplate,_+2_(phb)",
+            "Name": "Breastplate, +2 (PHB)",
+            "Type": "Wondrous item",
             "Crafter": "",
-            "Rarity": "Common",
+            "Rarity": "",
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "golem_stone", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "bronze_companion",
             "Name": "Bronze Companion",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Tinker",
+            "Rarity": "Uncommon",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This three-inch tall bronze statue is a perfect replica of any beast. When the command word is spoken, the statue comes to life and mimics the actions and behaviour of the animal it is modelled after. It possesses no other traits of its model animal, except flight which it can mimic up to a speed of 10 ft.",
+                "This statue is friendly towards whoever spoke its command word and obeys basic instructions given to it. The statue can make small noises mimicking its model animal and can carry a maximum weight of 1 pound.",
+                "If its command word is spoken again, the statue becomes inert once more."
+            ],
             "Materials": [
                 { "ComponentId": "spark_of_creation", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "camouflage_chitin",
             "Name": "Camouflage Chitin",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Blacksmith",
+            "Rarity": "Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This full chitin armour has an AC of 13 + Dexterity modifier (max 2). While wearing this armour, you may change its appearance to match the colour and texture of your surroundings. If you do so, you gain advantage on Dexterity (Stealth) checks made to hide."
+            ],
             "Materials": [
                 { "ComponentId": "thri-kreen_carapace", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Armour",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "camouflage_cloak",
@@ -35751,17 +35888,22 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "trapper_hide", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "canteen_of_last_resort",
             "Name": "Canteen of Last Resort",
-            "Crafter": "",
+            "Crafter": "Artificer",
             "Rarity": "Common",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This canteen resembles a gourd in the shape of an “8”, with the bottom sphere smaller than the top, and with two plugged openings on the top and bottom. When fertile soil is left in the top sphere, the canteen slowly extracts usable nutrients from it, which it filters into an edible slime in the bottom sphere.",
+                "The top sphere is capable of holding up to 3 pounds of fertile soil, which if left for at least 16 hours, produces enough slime to provide the nutritional requirements of an average humanoid for a day. This slime has a repugnant taste and expires if not eaten within 24 hours."
+            ],
             "Materials": [{ "ComponentId": "ankheg_gaster", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cap_of_aggression",
@@ -35771,51 +35913,74 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "redcap_cap", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cape_of_helping_hands",
             "Name": "Cape of Helping Hands",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Leatherworker",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This leather cape is formed from two enchanted sheets of leather, connected to a repurposed marilith spine running down the centre.",
+                "While wearing this cape, you may speak the command word as an action to animate the two sheets of leather which detach from the spine and form an extra set of arms and hands. You may control these arms and hands as if they were your own free hands, and they have a reach, strength, and dexterity equal to your regular arms and hands. You do not gain any extra attacks, and the rules for two-weapon fighting remain unchanged.",
+                "These extra hands remain for 1 hour or until you dismiss them by repeating the command word as an action. When they disappear, they cannot be used again for the next 1d6 hours."
+            ],
             "Materials": [
                 { "ComponentId": "marilith_spine", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "celestial_helm",
             "Name": "Celestial Helm",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [{ "ComponentId": "solar_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Crafter": "Artificer",
+            "Rarity": "Legendary",
+            "RequiresAttunement": true,
+            "Description": [
+                "This helm has 9 charges and regains 1d8 charges at dawn. While wearing this helm, you spend an action to expend 1 or more charges to do any of the following:",
+                "You, and any equipment you are wearing or carrying, teleport up to 120 feet to an unoccupied space you can see. (1 charge)",
+                "You emit a magical, divine energy. Each creature of your choice in a 10-foot radius centered on yourself must make a DC 20 Dexterity saving throw, taking 4d6 fire damage plus 4d6 radiant damage on a failed save, or half as much on a successful one. (1 charges)",
+                "You target one creature you can see within 30 feet. If the target can see, it must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the lesser restoration spell removes the blindness. (2 charges)",
+                "You release your held melee weapon to hover magically in an unoccupied space within 5 feet of you. If you can see the melee weapon, you can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to your hands. If the hovering sword is targeted by any effect, you are considered to be holding it. The hovering weapon falls if you die or take off the helmet. Otherwise, this effect lasts for 1 minute. This ability may only be used on one melee weapon at a time, any attempt to use it on another while one is already under its effect causes the original one to fall to the ground. (2 charges)"
+            ],
+            "Materials": [{ "ComponentId": "solar_eye", "Quantity": "x2" }],
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "chain_of_command",
             "Name": "Chain of Command",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Blacksmith",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "While holding this weapon, you may use this weapon to make grapple checks instead of using a free hand. While you have a creature grappled this way, you can't attack with this weapon.",
+                "If you have a creature grappled by this weapon, you may spend your action to force that creature to succeed on a DC 15 Wisdom saving throw or be charmed by you for 24 hours. While charmed, the creature obeys your verbal or telepathic commands to the best of its ability. If the creature suffers any harm or receives a command that would be hazardous to itself, it can repeat the saving throw, ending the effect on a success. If the creature successfully saves against this effect, or if the effect on it ends, it becomes immune to this effect for the next 24 hours.",
+                "You may only have one creature charmed at a time. If you charm another, the effect on the previous creature ends."
+            ],
             "Materials": [
                 { "ComponentId": "succubus-incubus_tail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Weapon (whip)",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "chain_of_entanglement",
             "Name": "Chain of Entanglement",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Artificer",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "You may use this weapon instead of your free hand when you make grapple checks. While you have a creature grappled this way, you cannot make attacks with this weapon.",
+                "Additionally, while holding this item, you may spend an action to speak this item’s command word and throw it into an unoccupied space within 5 feet of you. At this point, this weapon becomes magically animate and may attack and move freely for the next minute. As a bonus action on your turn, you may either mentally command the chain to move up to 20 feet in any direction or make an attack against a target within 10 feet of it. At the end of the minute or if you drop unconscious, the chain drops to the ground and this ability cannot be used again until the next dawn.",
+                "While animate, treat this weapon as if it had 14 Strength and a +2 proficiency bonus for the sake of attack rolls, damage rolls, and grapple checks."
+            ],
             "Materials": [{ "ComponentId": "living_chain", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "charlatan's_die_(xge)",
@@ -35827,89 +35992,124 @@
             "Materials": [
                 { "ComponentId": "cursed_knucklebones", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "charming_knife",
             "Name": "Charming Knife",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Blacksmith",
+            "Rarity": "Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "As an action, you may speak this weapon’s command word to activate its ability for the next minute. While this dagger’s ability is active, any damage it deals to a creature that is charmed by you does not count as damaging it or doing anything harmful to it for the sake of potentially ending the charm effect. Once this ability has been used once, it cannot be used again until the next dawn."
+            ],
             "Materials": [{ "ComponentId": "lamia_claw", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Weapon (dagger)",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "chest_burster",
             "Name": "Chest Burster",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Alchemist",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This insidious poison is riddled with tiny slaadi eggs, kept preserved inside the noxious solution that serves as this poison’s base. A creature that drinks a dose of this poison must succeed on a DC 14 Constitution saving throw or be infected with a disease – a miniscule slaad egg.",
+                "A humanoid host can carry only one slaad egg to term at a time. Over three months, the egg moves to the chest cavity, gestates, and forms a slaad tadpole. In the 24-hour period before giving birth, the host starts to feel unwell, its speed is halved, and it has disadvantage on attack rolls, ability checks, and saving throws. At birth, the tadpole chews its way through vital organs and out of the host's chest in 1 round, killing the host in the process.",
+                "If the disease is cured before the tadpole's emergence, the unborn slaad is disintegrated. This item contains enough poison for 3 doses."
+            ],
             "Materials": [
                 { "ComponentId": "slaad_egg_gland", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Poison",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "chimera_kite",
             "Name": "Chimera Kite",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Leatherworker",
+            "Rarity": "Rare",
             "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [
-                { "ComponentId": "chimera_dragon_wing", "Quantity": "x1" }
+            "Description": [
+                "This wondrous kite is normally kept folded up into a single neat pole. You may spend 1 minute unfolding the kite into its flight mode which possesses two great wings, a handle, and a leather harness for the user to strap themselves into. While in flight mode, a creature strapped into the harness can speak the command word to cause the kite to emit a magical burst of wind behind itself that propels it, and the creature strapped into it, up to 80 feet in the direction that it is facing. This ability may be used up to 3 times before the kite runs out of magical energy. The kite regains 1 use of this ability every 12 hours that it is not used.",
+                "While this kite is airborne and horizontal, it travels forward at a rate of 30 feet per round and descends at a rate of 10 feet per round. The user may change the direction they are flying by pulling on the handle.",
+                "If the harness is strapped to something that is heavier than 400 pounds, the harness will instead break when the command word is spoken, and the kite will fly away."
             ],
-            "Type": "Wondrous item"
+            "Materials": [
+                { "ComponentId": "chimera_dragon_wing", "Quantity": "x2" }
+            ],
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "chimera_trident",
             "Name": "Chimera Trident",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Blacksmith",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This trident’s three horns are made of a chimera’s goat horn, lion tooth, and dragon fang. This trident has three abilities, each of which may be used upon a successful melee weapon attack with this weapon.",
+                "- You force the creature you hit to succeed on a DC 15 Strength saving throw or be knocked prone.",
+                "- The next weapon attack by one of your allies that is made against the creature you hit is made with advantage so long as you are within melee range of that creature.",
+                "- You deal an additional 1d8 fire damage.",
+                "Once used, an individual ability may not be used again until the next dawn."
+            ],
             "Materials": [
                 { "ComponentId": "chimera_dragon_head", "Quantity": "x1" },
                 { "ComponentId": "chimera_goat_head", "Quantity": "x1" },
                 { "ComponentId": "chimera_lion_head", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Weapon (trident)",
+            "MaterialGrouping": "AND"
         },
         {
             "Id": "chuul's_caress_poison",
             "Name": "Chuul's Caress Poison",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Alchemist",
+            "Rarity": "Uncommon",
             "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [{ "ComponentId": "chuul_venom", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Description": [
+                "This poison can be used to coat up to 10 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 13 Constitution saving throw or become poisoned for 1 minute. While poisoned in this way, the creature is paralyzed. The creature can repeat the saving throw at the end of each of its turn, ending the effect on itself on a success."
+            ],
+            "Materials": [
+                { "ComponentId": "chuul_venom", "Quantity": "x1 vial" }
+            ],
+            "Type": "Poison",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cinder_shield",
             "Name": "Cinder Shield",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [
-                { "ComponentId": "salamander_scale", "Quantity": "x1" }
+            "Crafter": "Blacksmith",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "You have a +1 bonus to AC while wearing this shield. While wearing this shield, if you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage and if that damage type is fire, you may use your reaction to instead take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
             ],
-            "Type": "Wondrous item"
+            "Materials": [
+                {
+                    "ComponentId": "salamander_scale",
+                    "Quantity": "x1 large pouch"
+                }
+            ],
+            "Type": "Armour (shield)",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "clay_weapon",
             "Name": "Clay Weapon",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Blacksmith",
+            "Rarity": "Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "You gain a +1 to attack and damage rolls made with this weapon. While holding this weapon, you may spend an action to magically enhance your agility, giving you a +2 bonus to your AC, advantage on Dexterity saving throws, and the ability to make one basic melee weapon attack as a bonus action. This effect lasts until the end of your next turn. Once this ability has been used once, it cannot be used again until the end of your next short rest."
+            ],
             "Materials": [
                 { "ComponentId": "clay_golem_clay", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Weapon (any melee bludgeoning weapon)",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cleric's_bane_poison",
@@ -35919,7 +36119,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "yurtrus_ichor", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_billowing_(xge)",
@@ -35929,7 +36130,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "shimmer_cloth", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_displacement_(dmg)",
@@ -35942,41 +36144,51 @@
                 { "ComponentId": "cloaker_hide", "Quantity": "x1" },
                 { "ComponentId": "displacer_beast_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_distorted_time",
             "Name": "Cloak of Distorted Time",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Leatherworker",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "You gain advantage on initiative rolls you make while wearing this cloak. If initiative is rolled while you are wearing this robe, you may use your reaction to target up to 7 creatures that you can see within 60 feet of you. The creatures you target re-roll their initiative and keep the new ones."
+            ],
             "Materials": [{ "ComponentId": "sphinx_pelt", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_dragonflight",
             "Name": "Cloak of Dragonflight",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [
-                { "ComponentId": "adult_dragon_wing", "Quantity": "x1" },
-                { "ComponentId": "ancient_dragon_wing", "Quantity": "x1" },
-                { "ComponentId": "young_dragon_wing", "Quantity": "x1" }
+            "Crafter": "Leatherworker",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This long cloak resembles the leathery membranes of a dragon’s wings and shines the same shade as the dragon from whom it was crafted. While wearing this cloak, you may speak the command word to transform them into a pair of dragon wings on your back. They remains in this form for 6 hours or until you speak the command word again. The wings grant you a fly speed of 60 feet, and resistance to the damage type corresponding to the dragon from whom it was crafted. Once used, this ability cannot be used again until the next dawn."
             ],
-            "Type": "Wondrous item"
+            "Materials": [
+                { "ComponentId": "adult_dragon_wing", "Quantity": "x2" },
+                { "ComponentId": "ancient_dragon_wing", "Quantity": "x2" },
+                { "ComponentId": "young_dragon_wing", "Quantity": "x2" }
+            ],
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_magic_immunity",
             "Name": "Cloak of Magic Immunity",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Leatherworker",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This item has 10 charges. When you are subjected to a spell of 6th level or lower that you are aware of, you may spend your reaction to spend a number of charges equal to the level of that spell. If you do, you become immune to that spell’s effects, including any lasting effects of the spell such as the fire created by the wall of fire spell. This item regains all spent charges daily at dawn."
+            ],
             "Materials": [{ "ComponentId": "rakshasa_hide", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_mending_(xge)",
@@ -35986,7 +36198,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "shimmer_cloth", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_the_bat_(dmg)",
@@ -35996,7 +36209,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "vampire_hair", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloak_of_the_storm_spirit",
@@ -36008,19 +36222,24 @@
             "Materials": [
                 { "ComponentId": "storm_giant_spirit", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "cloud_step_oil",
             "Name": "Cloud Step Oil",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Alchemist",
+            "Rarity": "Very Rare",
             "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [
-                { "ComponentId": "cloud_giant_blood", "Quantity": "x1" }
+            "Description": [
+                "When some of this oil is poured out, it immediately has a reaction to the air around it and magically expands into a semi-solid cloud that is capable of floating while holding weight on top of it. Up to 50 pounds of weight per square foot can be placed on one of these clouds. If more weight than this is placed on it, that section of cloud disappears instantly. Clouds are self-supporting in the air but can also be used to make structures such as bridges using careful placement of the oil. Clouds weigh virtually nothing and can be moved around if external force is applied to them.",
+                "The clouds last for 1 hour after pouring, after which they disappear. One bottle of this oil is enough to create 500 square feet of clouds."
             ],
-            "Type": "Wondrous item"
+            "Materials": [
+                { "ComponentId": "cloud_giant_blood", "Quantity": "x1 vial" }
+            ],
+            "Type": "Oil",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "corruption_skull",
@@ -36032,29 +36251,42 @@
             "Materials": [
                 { "ComponentId": "annis_hag_skull", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "crown_of_celestial_rule",
             "Name": "Crown of Celestial Rule",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Thaumaturge",
+            "Rarity": "Legendary",
+            "RequiresAttunement": true,
+            "Description": [
+                "This crown either gleams white if it was crafted from a good-aligned empyrean or is a matte black if it was taken from an evil-aligned empyrean. This crown has 9 charges. While wearing this crown you may spend an action to expend 1 or more charges to do any of the following:",
+                "- You cast any of the following spells: greater restoration (5 charges), fire storm (7 charges), plane shift (7 charges, self only), earthquake (8 charges)",
+                "- You strike the ground, triggering an earth tremor. All other creatures on the ground within 60 feet of you must succeed on a DC 25 Strength saving throw or be knocked prone (2 charges).",
+                "- You bolster all nonhostile creatures within 120 feet of you until the end of your next turn. Bolstered creatures can’t be charmed or frightened, and they gain advantage on ability checks and saving throws until the end of your next turn (1 charge).",
+                "- You may make a ranged spell attack at a target within 600 feet. On a successful hit, you deal 7d6 damage of one of the following types (your choice): acid, cold, fire, force, lightning, radiant, or thunder. This ranged attack uses your normal spell attack modifier, or your Charisma modifier + your proficiency bonus, whichever one is higher (1 charge).",
+                "Additionally, if you fail a saving throw while wearing this crown, you may spend your reaction and 3 charges to succeed on that saving throw instead."
+            ],
             "Materials": [
                 { "ComponentId": "empyrean_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "crown_of_darkness",
             "Name": "Crown of Darkness",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
+            "Crafter": "Thaumaturge",
+            "Rarity": "Very Rare",
+            "RequiresAttunement": true,
+            "Description": [
+                "This crown has 9 charges. While wearing and attuned to this crown, and so long as you are not in bright light, you may spend an action to expend 1 or more of the crown’s charges to cast one of the following spells from it, with Intelligence as your spellcasting modifier: conjure animals (3 charges and may only summon swarms of rats, swarms of bats, or wolves), darkness (2 charges), invisibility (2 charges, plus 1 additional charge for every level above 2nd), spider climb (2 charge), gaseous form (3 charges), vampiric touch (3 charges, plus 1 additional charge for evert level cast above 3rd).",
+                "The crown recovers 1d8+1 charges at midnight. While wearing and attuned to the crown, you also gain advantage on any Dexterity (Stealth) checks made to hide in dim light or darkness, and darkvision out to 60 ft."
+            ],
             "Materials": [{ "ComponentId": "vampire_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "crown_of_limitless_knowledge",
@@ -36066,7 +36298,8 @@
             "Materials": [
                 { "ComponentId": "elder_brain_thalamus", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_desolation",
@@ -36076,17 +36309,23 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "mark_of_orcus", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_jealousy",
             "Name": "Curse of Jealousy",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Thaumaturge",
+            "Rarity": "Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This scroll contains blasphemous words written in a dark ink, that when read aloud can permanently alter the makeup of a magical object. You may spend 1 hour reading this scroll aloud while holding a magical item. At the end of that hour, that item permanently becomes a cursed item with a curse that reads as follows:",
+                "Curse: “When you attune to this item you become cursed. As long as you remain cursed, you feel a strong need to be around this item at all times and become reluctant to be more than 5 feet away from it at any given time. In addition, whenever you attempt to give an item belonging to you to someone else, you must succeed on a DC 12 Wisdom saving throw. If you fail, you find yourself unable to give that item away and your action is wasted.”",
+                "This curse ends permanently on both the item and the afflicted creature if the remove curse spell or similar magic is cast on the cursed item."
+            ],
             "Materials": [{ "ComponentId": "peryton_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_never-ending_fear",
@@ -36098,27 +36337,39 @@
             "Materials": [
                 { "ComponentId": "meenlock_spirit", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_nightmares",
             "Name": "Curse of Nightmares",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Thaumaturge",
+            "Rarity": "Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This scroll contains blasphemous words written in a dark ink, that when read aloud can permanently alter the makeup of a magical object. You may spend 1 hour reading this scroll aloud while holding a magical item. At the end of that hour, that item permanently becomes a cursed item with a curse that reads as follows:",
+                "Curse: “When you attune to this item you become cursed. As long as you remain cursed, you have a 20 per cent chance whenever you take a short or long rest to be wracked by terrible images and thoughts. When this occurs, you gain no benefit from finishing that short or long rest.”",
+                "This curse ends permanently on both the item and the afflicted creature if the remove curse spell or similar magic is cast on the cursed item."
+            ],
             "Materials": [{ "ComponentId": "rakshasa_claw", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_spite",
             "Name": "Curse of Spite",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Thaumaturge",
+            "Rarity": "Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This scroll contains blasphemous words written in a dark ink, that when read aloud can permanently alter the makeup of a magical object. You may spend 1 hour reading this scroll aloud while holding a magical item. At the end of that hour, that item permanently becomes a cursed item with a curse that reads as follows:",
+                "Curse: “A creature afflicted by this curse experiences intense feelings of spite towards every other living creature around them. If the cursed creature interacts with another humanoid creature for the first time, they must succeed on a DC 13 Wisdom saving throw or develop feelings of extreme hatred for that creature. If they fail by 5 or more, they are compelled to kill that creature at any cost. A creature that the cursed creature considers a friend may attempt to calm them down by succeeding on a DC 13 Charisma (Persuasion) check.",
+                "A creature that dies while under the effects of this curse has their soul transformed into a wraith instead of moving on to the afterlife. At this point, only a wish spell can change their soul back to its original state and allow it to move on.”",
+                "This curse ends permanently on both the item and the afflicted creature if the remove curse spell or similar magic is cast on the cursed item."
+            ],
             "Materials": [{ "ComponentId": "wraith_energy", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_sun's_bane",
@@ -36130,17 +36381,21 @@
             "Materials": [
                 { "ComponentId": "yeth_hound_fur", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_vanity",
             "Name": "Curse of Vanity",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Thaumaturge",
+            "Rarity": "Rare",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "This scroll contains blasphemous words written in a dark ink, that when read aloud can permanently alter the makeup of a magical object. You may spend 1 hour reading this scroll aloud while holding a magical item. At the end of that hour, that item permanently becomes a cursed item with a curse that reads as follows: “When you attune to this item you become cursed. Whenever you look at your own reflection while cursed, you must succeed on a DC 15 Wisdom saving throw or become stunned until you can no longer see your reflection. This curse ends permanently on both the item and the afflicted creature if the remove curse spell or similar magic is cast on the cursed item."
+            ],
             "Materials": [{ "ComponentId": "medusa_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_vengeance",
@@ -36152,7 +36407,8 @@
             "Materials": [
                 { "ComponentId": "echo_of_vengeance", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "curse_of_weakening",
@@ -36162,19 +36418,23 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "babau_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dagger_of_life_stealing",
             "Name": "Dagger of Life Stealing",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [
-                { "ComponentId": "vampire_spawn_fang", "Quantity": "x1" }
+            "Crafter": "Blacksmith",
+            "Rarity": "Uncommon",
+            "RequiresAttunement": true,
+            "Description": [
+                "When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 5 necrotic damage if it isn't a construct or an undead. You also gain 5 temporary hit points."
             ],
-            "Type": "Wondrous item"
+            "Materials": [
+                { "ComponentId": "vampire_spawn_fang", "Quantity": "x2" }
+            ],
+            "Type": "Weapon (dagger)",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dagger,_+1_(dmg)",
@@ -36185,9 +36445,11 @@
             "Description": [],
             "Materials": [
                 { "ComponentId": "allosaurus_claw", "Quantity": "x1" },
-                { "ComponentId": "bulette_teeth", "Quantity": "x1" }
+                { "ComponentId": "bulette_teeth", "Quantity": "x1" },
+                { "ComponentId": "vrock_talon", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "death_goggles",
@@ -36197,7 +36459,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "bodak_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "debilitating_whip",
@@ -36207,7 +36470,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "roper_tendril", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "decanter_of_endless_water",
@@ -36217,19 +36481,24 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "living_water", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "deception_skull",
             "Name": "Deception Skull",
-            "Crafter": "",
-            "Rarity": "Common",
+            "Crafter": "Artificer",
+            "Rarity": "Uncommon",
             "RequiresAttunement": false,
-            "Description": [],
+            "Description": [
+                "While holding this item, you may spend an action to mentally command this item to mimic an animal sound or humanoid voice that you have heard before. This item will continuously create those sounds for up to 10 minutes or until you spend an action while holding it to command it to stop.",
+                "These sounds are audible from up to 100 feet away, and creatures that hear the sound can tell they are imitations with a successful DC 14 Wisdom (Insight) check."
+            ],
             "Materials": [
                 { "ComponentId": "green_hag_skull", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "deceptive_eyepatch",
@@ -36241,7 +36510,8 @@
             "Materials": [
                 { "ComponentId": "cyclops_eyelid", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "demilich_censer",
@@ -36253,7 +36523,8 @@
             "Materials": [
                 { "ComponentId": "demilich_smoke", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "demon_bomb",
@@ -36263,7 +36534,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "balor_ash", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "demon_leather",
@@ -36273,7 +36545,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "glabrezu_skin", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "demon_light",
@@ -36285,7 +36558,8 @@
             "Materials": [
                 { "ComponentId": "nalfeshnee_eyes", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "demon_music_box",
@@ -36297,7 +36571,8 @@
             "Materials": [
                 { "ComponentId": "vrock_vocal_cords", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "demon_needle",
@@ -36309,7 +36584,8 @@
             "Materials": [
                 { "ComponentId": "chasme_proboscis", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "demon_vellum",
@@ -36319,7 +36595,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "babau_skin", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "devil_vellum",
@@ -36331,7 +36608,8 @@
             "Materials": [
                 { "ComponentId": "bone_devil_skin", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dino-helm",
@@ -36343,7 +36621,8 @@
             "Materials": [
                 { "ComponentId": "ankylosaurus_skull", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "divine_justice",
@@ -36353,7 +36632,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "planetar_bone", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "doublet_of_psionic_protection",
@@ -36365,7 +36645,8 @@
             "Materials": [
                 { "ComponentId": "neothelid_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dra-gone_paste/dragon_paste",
@@ -36377,7 +36658,8 @@
             "Materials": [
                 { "ComponentId": "guard_drake_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dracolich_censer",
@@ -36389,7 +36671,8 @@
             "Materials": [
                 { "ComponentId": "dracolich_bone", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dragon_bone_weapon",
@@ -36406,7 +36689,8 @@
                 },
                 { "ComponentId": "young_[type]_dragon_bone", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dragon_stone",
@@ -36418,7 +36702,8 @@
             "Materials": [
                 { "ComponentId": "ancient_dragon_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dragon_turtle_jelly",
@@ -36430,7 +36715,8 @@
             "Materials": [
                 { "ComponentId": "dragon_turtle_plastron", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "drone_producer",
@@ -36440,7 +36726,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "chasme_wing", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "drow_amulet",
@@ -36465,7 +36752,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "drow_poison",
@@ -36475,7 +36763,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "drow_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "drow_poison_(dmg)",
@@ -36488,7 +36777,8 @@
                 { "ComponentId": "chitine_blood", "Quantity": "x1" },
                 { "ComponentId": "choldrith_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dusk_armour",
@@ -36500,7 +36790,8 @@
             "Materials": [
                 { "ComponentId": "shadow_dragon_scale", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "dust_of_disappearance_(dmg)",
@@ -36510,7 +36801,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "sprite_wing", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "earhorn_of_hearing_(xge)",
@@ -36522,7 +36814,8 @@
             "Materials": [
                 { "ComponentId": "darkmantle_otolith", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "elemental_gem_(blue_sapphire)_(dmg)",
@@ -36532,7 +36825,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "mote_of_air", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "elemental_gem_(emerald)_(dmg)",
@@ -36542,7 +36836,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "mote_of_water", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "elemental_gem_(red_corundum)_(dmg)",
@@ -36558,7 +36853,8 @@
                 },
                 { "ComponentId": "mote_of_fire_(magmin)", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "elemental_gem_(yellow_diamond)_(dmg)",
@@ -36568,7 +36864,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "mote_of_earth", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "eye_drone",
@@ -36580,7 +36877,8 @@
             "Materials": [
                 { "ComponentId": "froghemoth_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "eye_of_the_eagle_(dmg)",
@@ -36590,7 +36888,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "griffon_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "eye_stalk_wand",
@@ -36602,7 +36901,8 @@
             "Materials": [
                 { "ComponentId": "beholder_eye_stalk", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "eyes_of_charming_(dmg)",
@@ -36615,7 +36915,8 @@
                 { "ComponentId": "dryad_eye", "Quantity": "x1" },
                 { "ComponentId": "succubus-incubus_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "eyes_of_the_eagle_(dmg)",
@@ -36627,7 +36928,8 @@
             "Materials": [
                 { "ComponentId": "hippogriff_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "faerie_dragon_dust",
@@ -36639,7 +36941,8 @@
             "Materials": [
                 { "ComponentId": "faerie_dragon_wing", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fear_skull",
@@ -36649,7 +36952,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "sea_hag_skull", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fiend_censer",
@@ -36659,7 +36963,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "imp_head", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fiend_fuel",
@@ -36671,7 +36976,8 @@
             "Materials": [
                 { "ComponentId": "spine_devil_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "figurine_of_wondrous_power_(obsidian_statue)_(dmg)",
@@ -36683,7 +36989,8 @@
             "Materials": [
                 { "ComponentId": "nightmare_hoof", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "filter_rag",
@@ -36695,7 +37002,8 @@
             "Materials": [
                 { "ComponentId": "catoblepas_fur", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fire_arrow",
@@ -36707,7 +37015,8 @@
             "Materials": [
                 { "ComponentId": "spined_devil_spine", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fire_bolt",
@@ -36719,7 +37028,8 @@
             "Materials": [
                 { "ComponentId": "spined_devil_spine", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fire_dagger",
@@ -36731,7 +37041,8 @@
             "Materials": [
                 { "ComponentId": "salamander_fang", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fire_flash_armor",
@@ -36743,7 +37054,8 @@
             "Materials": [
                 { "ComponentId": "fire_giant_shield_scrap", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "flail,_+1_(dmg)",
@@ -36753,9 +37065,12 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [
-                { "ComponentId": "catoblepas_tail", "Quantity": "x1" }
+                { "ComponentId": "catoblepas_tail", "Quantity": "x1" },
+                { "ComponentId": "clump_of_beard_lashes", "Quantity": "x1" },
+                { "ComponentId": "flail_snail_flail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "flask_of_storms",
@@ -36770,7 +37085,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "floating_oil",
@@ -36780,7 +37096,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "gas_spore_gas", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "fomorian_crystal",
@@ -36790,7 +37107,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "fomorian_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "frostbite_armour",
@@ -36802,7 +37120,8 @@
             "Materials": [
                 { "ComponentId": "ice_devil_carapace", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "frostbite_weapon",
@@ -36814,7 +37133,8 @@
             "Materials": [
                 { "ComponentId": "ice_devil_mandible", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "frostclaw_weapon",
@@ -36824,7 +37144,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "yeti_claw", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "frostclaw_weapon,_+1",
@@ -36836,7 +37157,8 @@
             "Materials": [
                 { "ComponentId": "abominable_yeti_claw", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "frozen_skull",
@@ -36848,7 +37170,8 @@
             "Materials": [
                 { "ComponentId": "bheur_hag_skull", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "gargoyle_wing_cloak",
@@ -36860,7 +37183,8 @@
             "Materials": [
                 { "ComponentId": "gargoyle_wings", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "gauntlets_of_ogre_power_(dmg)",
@@ -36869,8 +37193,12 @@
             "Rarity": "Common",
             "RequiresAttunement": false,
             "Description": [],
-            "Materials": [{ "ComponentId": "oni_hand", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Materials": [
+                { "ComponentId": "oni_hand", "Quantity": "x1" },
+                { "ComponentId": "ogre_hand", "Quantity": "x1" }
+            ],
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "gem_of_teleportation",
@@ -36882,7 +37210,8 @@
             "Materials": [
                 { "ComponentId": "yugoloth_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "gem_of_the_underdark",
@@ -36892,7 +37221,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "grick_pearl", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "glaive,_+2_(dmg)",
@@ -36904,7 +37234,8 @@
             "Materials": [
                 { "ComponentId": "tyrannosaurus_rex_claw", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "glass_oil",
@@ -36916,7 +37247,8 @@
             "Materials": [
                 { "ComponentId": "flail_snail_slime_gland", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "glutton_cutlery",
@@ -36928,7 +37260,8 @@
             "Materials": [
                 { "ComponentId": "nalfeshnee_teeth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "goblin_effigy",
@@ -36938,7 +37271,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "barghest_fur", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "goggles_of_night_(dmg)",
@@ -36948,7 +37282,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "oni_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "golden_sun_armor",
@@ -36958,7 +37293,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ki-rin_scales", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "golem_companion",
@@ -36985,7 +37321,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "greataxe,_+1_(dmg)",
@@ -36998,7 +37335,8 @@
                 { "ComponentId": "allosaurus_jaw", "Quantity": "x1" },
                 { "ComponentId": "leucrotta_mouth_ridge", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "greataxe,_+2_(dmg)",
@@ -37011,7 +37349,8 @@
                 { "ComponentId": "death_tyrant_jaw", "Quantity": "x1" },
                 { "ComponentId": "tyrannosaurus_rex_jawbone", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "greatclub,_+1_(dmg)",
@@ -37021,7 +37360,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "gorgon_hoof", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "grell_jerkin",
@@ -37031,7 +37371,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "grell_hide", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "grick_hide_cloak",
@@ -37044,7 +37385,8 @@
                 { "ComponentId": "alpha_grick_hide", "Quantity": "x1" },
                 { "ComponentId": "grick_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "gut_rot",
@@ -37056,7 +37398,8 @@
             "Materials": [
                 { "ComponentId": "violet_fungus_stalk", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "hair_tonic",
@@ -37066,7 +37409,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "satyr_hair", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "halberd,_+3_(dmg)",
@@ -37078,7 +37422,8 @@
             "Materials": [
                 { "ComponentId": "pit_fiend_claw", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "hand_of_undeath",
@@ -37088,7 +37433,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "wight_hand", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "harpy_harp",
@@ -37100,7 +37446,8 @@
             "Materials": [
                 { "ComponentId": "harpy_vocal_cords", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "harpy_ink",
@@ -37110,7 +37457,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "harpy_egg", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "hat_of_disguise_(dmg)",
@@ -37122,7 +37470,8 @@
             "Materials": [
                 { "ComponentId": "doppelganger_face", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "heart_scales",
@@ -37132,7 +37481,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ki-rin_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "heavy_armor,_+1_(dmg)",
@@ -37144,7 +37494,8 @@
             "Materials": [
                 { "ComponentId": "tlincalli_chitin", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_abyssal_domination",
@@ -37156,7 +37507,8 @@
             "Materials": [
                 { "ComponentId": "pit_fiend_head", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_hypnotism",
@@ -37166,7 +37518,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ultroloth_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_mind_trapping",
@@ -37176,7 +37529,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "alhoon_brain", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_telepathy_(dmg)",
@@ -37188,7 +37542,8 @@
             "Materials": [
                 { "ComponentId": "doppelganger_brain", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_the_cryptkeeper",
@@ -37200,7 +37555,8 @@
             "Materials": [
                 { "ComponentId": "spawn_of_kyuss_brain", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_the_illithid",
@@ -37212,7 +37568,8 @@
             "Materials": [
                 { "ComponentId": "mind_flayer_brain", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_the_minotaur",
@@ -37222,7 +37579,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "minotaur_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_the_ulitharid",
@@ -37234,7 +37592,8 @@
             "Materials": [
                 { "ComponentId": "ulitharid_brain", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helm_of_transmission",
@@ -37244,7 +37603,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ettin_head", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "helmet_of_stone_dreams",
@@ -37259,7 +37619,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "horn_of_fear",
@@ -37271,7 +37632,8 @@
             "Materials": [
                 { "ComponentId": "yeth_hound_voice_box", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "horn_of_the_ancient_roar",
@@ -37283,7 +37645,8 @@
             "Materials": [
                 { "ComponentId": "androsphinx_vocal_cords", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "horn_of_the_fiendish_voice",
@@ -37296,7 +37659,8 @@
                 { "ComponentId": "glabrezu_horn", "Quantity": "x1" },
                 { "ComponentId": "horned_devil_horn", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "idea_bulb",
@@ -37308,7 +37672,8 @@
             "Materials": [
                 { "ComponentId": "cranium_rat_brain", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "infernal_wings",
@@ -37328,7 +37693,8 @@
                 { "ComponentId": "devil_wings_(pit_fiend)", "Quantity": "x1" },
                 { "ComponentId": "nycaloth_wing", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "ink_of_secret_knowledge",
@@ -37340,7 +37706,8 @@
             "Materials": [
                 { "ComponentId": "alhoon_tentacle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "instrument_of_harmony",
@@ -37350,7 +37717,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "unicorn_hair", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "interrogator's_web",
@@ -37362,7 +37730,8 @@
             "Materials": [
                 { "ComponentId": "elder_brain_white_matter", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "iron_bands_of_bilarro_(dmg)",
@@ -37372,7 +37741,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "living_chain", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "javelin,_+1_(dmg)",
@@ -37382,7 +37752,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "gorgon_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "kraken_bolt",
@@ -37392,7 +37763,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "kraken_tooth", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "kraken_paint",
@@ -37402,7 +37774,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "kraken_ink", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "kraken_shield",
@@ -37414,7 +37787,8 @@
             "Materials": [
                 { "ComponentId": "kraken_crown_scale", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "kraken_tunic",
@@ -37424,7 +37798,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "kraken_hide", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lance_(dmg)",
@@ -37436,7 +37811,8 @@
             "Materials": [
                 { "ComponentId": "pteranodon_beak", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lance_(phb)",
@@ -37448,7 +37824,8 @@
             "Materials": [
                 { "ComponentId": "quetzalcoatlus_beak", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lance,_+1_(dmg)",
@@ -37458,7 +37835,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "gorgon_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "leather_armor_(phb)",
@@ -37470,7 +37848,8 @@
             "Materials": [
                 { "ComponentId": "dimetrodon_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "leeching_whip",
@@ -37482,7 +37861,8 @@
             "Materials": [
                 { "ComponentId": "death_kiss_tentacle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lens_of_forgotten_history",
@@ -37492,7 +37872,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "aboleth_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lens_of_insight",
@@ -37502,7 +37883,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "nothic_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lenses_of_hypnosis",
@@ -37512,7 +37894,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "morkoth_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lenses_of_secrets",
@@ -37524,7 +37907,8 @@
             "Materials": [
                 { "ComponentId": "gynosphinx_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lenses_of_the_oasis",
@@ -37534,7 +37918,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "lamia_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lesser_eye_stalk_wand",
@@ -37547,7 +37932,8 @@
                 { "ComponentId": "gauth_eyestalk", "Quantity": "x1" },
                 { "ComponentId": "spectator_eye_stalk", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lich_censer",
@@ -37557,7 +37943,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "lich_dust", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lightning_oil",
@@ -37569,7 +37956,8 @@
             "Materials": [
                 { "ComponentId": "lightning_sack", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "living_chalk",
@@ -37581,7 +37969,8 @@
             "Materials": [
                 { "ComponentId": "enchanted_pumice", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "living_dentures",
@@ -37593,7 +37982,8 @@
             "Materials": [
                 { "ComponentId": "gibbering_mouther_teeth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "living_lamp",
@@ -37605,7 +37995,8 @@
             "Materials": [
                 { "ComponentId": "fire_giant_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "longbow,_+1_(dmg)",
@@ -37615,7 +38006,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "centaur_tail", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "loupe_of_the_depths",
@@ -37625,7 +38017,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "kraken_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "lycan_gas",
@@ -37637,7 +38030,8 @@
             "Materials": [
                 { "ComponentId": "lycanthrope_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "magical_dowsing_rod",
@@ -37649,7 +38043,8 @@
             "Materials": [
                 { "ComponentId": "arcana_ganglia", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "magmin_pan",
@@ -37659,7 +38054,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "magma_shell", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "manticore_cloak",
@@ -37671,7 +38067,8 @@
             "Materials": [
                 { "ComponentId": "manticore_wing", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mask_of_clouds",
@@ -37683,7 +38080,8 @@
             "Materials": [
                 { "ComponentId": "smiling_one_mask", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mask_of_fear",
@@ -37695,7 +38093,8 @@
             "Materials": [
                 { "ComponentId": "chain_devil_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "maul,_+1_(dmg)",
@@ -37705,7 +38104,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "gorgon_hoof", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "medusa_whip",
@@ -37715,7 +38115,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "medusa_hair", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "melee_piercing_weapon,_+1_(dmg)",
@@ -37725,7 +38126,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "babau_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "merrow_amulet",
@@ -37735,7 +38137,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "merrow_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "metal_detector",
@@ -37747,7 +38150,8 @@
             "Materials": [
                 { "ComponentId": "rust_monster_antenna", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mezzoloth_mail",
@@ -37759,7 +38163,8 @@
             "Materials": [
                 { "ComponentId": "mezzoloth_chitin", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mimic_oil",
@@ -37769,7 +38174,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "mimic_gel", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mind_hook",
@@ -37781,7 +38187,8 @@
             "Materials": [
                 { "ComponentId": "neothelid_hook", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mind_whip",
@@ -37795,7 +38202,8 @@
                 { "ComponentId": "mindwitness_tentacle", "Quantity": "x1" },
                 { "ComponentId": "ulitharid_tentacle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mind_whip,_+1",
@@ -37807,7 +38215,8 @@
             "Materials": [
                 { "ComponentId": "elder_brain_tentacle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "minor_eye_stalk_wand",
@@ -37819,7 +38228,8 @@
             "Materials": [
                 { "ComponentId": "gazer_eyestalk", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "minotaur_compass",
@@ -37831,7 +38241,8 @@
             "Materials": [
                 { "ComponentId": "minotaur_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mirror_of_insecurity",
@@ -37843,7 +38254,8 @@
             "Materials": [
                 { "ComponentId": "vargouille_jaw", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "monocle_of_focus",
@@ -37853,7 +38265,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "cyclops_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mood_cap",
@@ -37865,7 +38278,8 @@
             "Materials": [
                 { "ComponentId": "flumph_membrane", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "moon_muzzle_mixture",
@@ -37877,7 +38291,8 @@
             "Materials": [
                 { "ComponentId": "lycanthrope_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "morningstar,_+1_(dmg)",
@@ -37887,9 +38302,11 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [
-                { "ComponentId": "leucrotta_mouth_ridge", "Quantity": "x1" }
+                { "ComponentId": "leucrotta_mouth_ridge", "Quantity": "x1" },
+                { "ComponentId": "flail_snail_flail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mount_barding_(phb)",
@@ -37901,7 +38318,8 @@
             "Materials": [
                 { "ComponentId": "hadrosaurus_skull", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mummy_rot_juice",
@@ -37911,7 +38329,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "mummy_dust", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "mutated_eye_stalk_wand",
@@ -37923,7 +38342,8 @@
             "Materials": [
                 { "ComponentId": "mindwitness_eye_stalk", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "necrotic_cloak",
@@ -37933,7 +38353,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "devourer_skin", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "negative_energy_crystal",
@@ -37945,7 +38366,8 @@
             "Materials": [
                 { "ComponentId": "death_tyrant_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "night_hag_dreamcatcher",
@@ -37957,7 +38379,8 @@
             "Materials": [
                 { "ComponentId": "night_hag_hair", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "nightmare_skull",
@@ -37969,7 +38392,8 @@
             "Materials": [
                 { "ComponentId": "night_hag_skull", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "obfuscation_pigments",
@@ -37981,7 +38405,8 @@
             "Materials": [
                 { "ComponentId": "displacer_beast_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "ocean_master_paint",
@@ -37993,7 +38418,8 @@
             "Materials": [
                 { "ComponentId": "dragon_turtle_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "oil_of_etherealness_(dmg)",
@@ -38005,7 +38431,8 @@
             "Materials": [
                 { "ComponentId": "ectoplasmic_trail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "oni_amulet",
@@ -38015,7 +38442,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "oni_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "otyugh_whip",
@@ -38027,7 +38455,8 @@
             "Materials": [
                 { "ComponentId": "otyugh_tentacle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "paralysing_dust",
@@ -38040,7 +38469,8 @@
                 { "ComponentId": "ghast_claws", "Quantity": "x1" },
                 { "ComponentId": "ghoul_claws", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "petrifying_dagger",
@@ -38052,7 +38482,8 @@
             "Materials": [
                 { "ComponentId": "cockatrice_beak", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "philter_of_love_(dmg)",
@@ -38066,7 +38497,8 @@
                 { "ComponentId": "lamia_blood", "Quantity": "x1" },
                 { "ComponentId": "succubus-incubus_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "pillow_of_perfect_rest",
@@ -38078,7 +38510,8 @@
             "Materials": [
                 { "ComponentId": "couatl_feather", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "pipes_of_haunting_(dmg)",
@@ -38091,7 +38524,8 @@
                 { "ComponentId": "banshee_remnant", "Quantity": "x1" },
                 { "ComponentId": "xvart_tongue", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "plate_armour,_+1_(dmg)",
@@ -38103,7 +38537,21 @@
             "Materials": [
                 { "ComponentId": "umber_hulk_carapace", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "plate_armour,_+3_(dmg)",
+            "Name": "Plate Armour, +3 (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "iron_golem_iron", "Quantity": "x1" }
+            ],
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "poison_lung",
@@ -38115,7 +38563,8 @@
             "Materials": [
                 { "ComponentId": "poison_canister", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "portable_mouth",
@@ -38127,7 +38576,8 @@
             "Materials": [
                 { "ComponentId": "maw_demon_teeth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_boundless_intellect",
@@ -38139,7 +38589,8 @@
             "Materials": [
                 { "ComponentId": "elder_brain_fluid", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_bravery",
@@ -38151,7 +38602,8 @@
             "Materials": [
                 { "ComponentId": "bearded_devil_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_celestial_might",
@@ -38163,7 +38615,8 @@
             "Materials": [
                 { "ComponentId": "empyrean_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_corrupted_strength",
@@ -38176,7 +38629,8 @@
                 { "ComponentId": "annis_hag_hair", "Quantity": "x1" },
                 { "ComponentId": "bheur_hag_hair", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_desecration",
@@ -38186,7 +38640,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "cursed_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_detect_thoughts_(dmg)",
@@ -38196,7 +38651,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "flumph_brain", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_digestion",
@@ -38208,7 +38664,8 @@
             "Materials": [
                 { "ComponentId": "leucrotta_bile", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_dragonstrength",
@@ -38232,7 +38689,8 @@
                 },
                 { "ComponentId": "young_[type]_dragon_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_elemental_tempering",
@@ -38245,7 +38703,8 @@
                 { "ComponentId": "adult_remorhaz_blood", "Quantity": "x1" },
                 { "ComponentId": "young_remorhaz_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_fire_resistance_(dmg)",
@@ -38258,7 +38717,8 @@
                 { "ComponentId": "barbed_devil_blood", "Quantity": "x1" },
                 { "ComponentId": "nightmare_ashes", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_flying_(dmg)",
@@ -38271,7 +38731,8 @@
                 { "ComponentId": "pegasus_wing", "Quantity": "x1" },
                 { "ComponentId": "peryton_wing", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(cloud)",
@@ -38283,7 +38744,8 @@
             "Materials": [
                 { "ComponentId": "cloud_giant_fingernail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(fire)",
@@ -38295,7 +38757,8 @@
             "Materials": [
                 { "ComponentId": "fire_giant_fingernail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(frost)",
@@ -38307,7 +38770,8 @@
             "Materials": [
                 { "ComponentId": "frost_giant_fingernail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(hill)",
@@ -38319,7 +38783,8 @@
             "Materials": [
                 { "ComponentId": "hill_giant_fingernail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(hill)_(dmg)",
@@ -38331,7 +38796,8 @@
             "Materials": [
                 { "ComponentId": "ettin_fingernail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(stone)",
@@ -38343,7 +38809,8 @@
             "Materials": [
                 { "ComponentId": "stone_giant_fingernail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(storm)",
@@ -38355,7 +38822,8 @@
             "Materials": [
                 { "ComponentId": "storm_giant_fingernail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_giant_strength_(storm)_(dmg)",
@@ -38367,7 +38835,8 @@
             "Materials": [
                 { "ComponentId": "mote_of_storm_giant", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_growth_(dmg)",
@@ -38379,7 +38848,8 @@
             "Materials": [
                 { "ComponentId": "duergar_brainstem", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_healing_(dmg)",
@@ -38389,7 +38859,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "troll_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_infernal_vitality",
@@ -38401,7 +38872,8 @@
             "Materials": [
                 { "ComponentId": "pit_fiend_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_invisibility_(dmg)",
@@ -38413,7 +38885,8 @@
             "Materials": [
                 { "ComponentId": "duergar_brainstem", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_lightning_blood",
@@ -38425,7 +38898,8 @@
             "Materials": [
                 { "ComponentId": "death_kiss_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_liquid_form",
@@ -38437,7 +38911,8 @@
             "Materials": [
                 { "ComponentId": "slithering_tracker_slime", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_magical_madness",
@@ -38449,7 +38924,8 @@
             "Materials": [
                 { "ComponentId": "kuo-toa_archpriest_brain", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_mind_flayer_resistance",
@@ -38461,7 +38937,8 @@
             "Materials": [
                 { "ComponentId": "grimlock_brain", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_ogre_strength",
@@ -38473,7 +38950,8 @@
             "Materials": [
                 { "ComponentId": "half-ogre_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_poison_(dmg)",
@@ -38483,7 +38961,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "quasit_venom", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_poison_immunity",
@@ -38493,7 +38972,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "yuan-ti_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_poison_resistance_(dmg)",
@@ -38505,7 +38985,8 @@
             "Materials": [
                 { "ComponentId": "quaggoth_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_pollution_breathing",
@@ -38515,7 +38996,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "hezrou_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_radiant_resistance_(dmg)",
@@ -38525,7 +39007,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "darkling_ash", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_rage",
@@ -38535,7 +39018,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "barlgura_bile", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_rapport",
@@ -38547,7 +39031,8 @@
             "Materials": [
                 { "ComponentId": "rapport_spores", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_reflexes",
@@ -38559,7 +39044,8 @@
             "Materials": [
                 { "ComponentId": "marilith_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_ruined_flesh",
@@ -38571,7 +39057,8 @@
             "Materials": [
                 { "ComponentId": "fomorian_growth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_sensing",
@@ -38581,7 +39068,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "kuo-toa_brain", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_sickness",
@@ -38591,7 +39079,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "manes_vapour", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_sloth",
@@ -38603,7 +39092,8 @@
             "Materials": [
                 { "ComponentId": "horned_devil_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_speak_with_plants",
@@ -38613,7 +39103,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "blight_pollen", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_stamina",
@@ -38623,7 +39114,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "pegasus_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_superior_healing_(dmg)",
@@ -38640,7 +39132,8 @@
                 { "ComponentId": "oni_blood", "Quantity": "x1" },
                 { "ComponentId": "shambling_mound_mulch", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_the_sahuagin",
@@ -38652,7 +39145,8 @@
             "Materials": [
                 { "ComponentId": "sahuagin_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_the_sea",
@@ -38662,7 +39156,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "kraken_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_the_siege",
@@ -38674,7 +39169,8 @@
             "Materials": [
                 { "ComponentId": "goristro_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_vigor",
@@ -38684,7 +39180,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ki-rin_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_vitality",
@@ -38694,7 +39191,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "unicorn_blood", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_water_breathing_(dmg)",
@@ -38709,7 +39207,8 @@
                 { "ComponentId": "sea_hag_hair", "Quantity": "x1" },
                 { "ComponentId": "sea_spawn_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_winter's_rest",
@@ -38725,7 +39224,8 @@
                 },
                 { "ComponentId": "yeti_eye_(yeti)", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "potion_of_winterbite",
@@ -38737,7 +39237,8 @@
             "Materials": [
                 { "ComponentId": "ice_devil_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "purple_piercer",
@@ -38749,7 +39250,8 @@
             "Materials": [
                 { "ComponentId": "purple_worm_stinger", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "radiant_oil",
@@ -38761,7 +39263,8 @@
             "Materials": [
                 { "ComponentId": "darkling_elder_tattoo", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "raxivort's_boon",
@@ -38773,7 +39276,8 @@
             "Materials": [
                 { "ComponentId": "mark_of_raxivort", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "remorhaz_plate",
@@ -38785,7 +39289,8 @@
             "Materials": [
                 { "ComponentId": "young_remorhaz_carapace", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "remorhaz_plate,_+1",
@@ -38797,7 +39302,8 @@
             "Materials": [
                 { "ComponentId": "adult_remorhaz_carapace", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "repelling_candle",
@@ -38807,7 +39313,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ogre_fat", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "reversal_boots",
@@ -38817,7 +39324,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "girallon_foot", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "ring_of_spell_storing_(dmg)",
@@ -38829,7 +39337,8 @@
             "Materials": [
                 { "ComponentId": "spell_storing_plate", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "ring_of_storm_giant_growth",
@@ -38841,7 +39350,21 @@
             "Materials": [
                 { "ComponentId": "roc_heart_piece", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "robe_of_scintillating_colors_(dmg)",
+            "Name": "Robe of Scintillating Colors (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "flail_snail_shell", "Quantity": "x1" }
+            ],
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "rope_of_climbing_(dmg)",
@@ -38853,7 +39376,8 @@
             "Materials": [
                 { "ComponentId": "cave_fisher_filament", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "salamander_fire",
@@ -38865,7 +39389,8 @@
             "Materials": [
                 { "ComponentId": "salamander_blood", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "security_antenna",
@@ -38877,7 +39402,8 @@
             "Materials": [
                 { "ComponentId": "remorhaz_antenna", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "sensory_collar",
@@ -38889,7 +39415,8 @@
             "Materials": [
                 { "ComponentId": "otyugh_telepathy_ganglia", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "serpent_shield",
@@ -38904,7 +39431,8 @@
                     "Quantity": "x1"
                 }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shadow_amulet",
@@ -38916,7 +39444,8 @@
             "Materials": [
                 { "ComponentId": "demonic_imprint", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shadow_dye",
@@ -38926,7 +39455,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "liquid_shadow", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shadow_hunter_bow",
@@ -38938,7 +39468,8 @@
             "Materials": [
                 { "ComponentId": "yeth_hound_spine", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shadow_spikes",
@@ -38950,7 +39481,8 @@
             "Materials": [
                 { "ComponentId": "shadow_mastiff_teeth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shadow_wing_cape",
@@ -38962,7 +39494,8 @@
             "Materials": [
                 { "ComponentId": "shadowdragon_wing", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shadowflame_oil",
@@ -38974,7 +39507,8 @@
             "Materials": [
                 { "ComponentId": "shadowflame_ember", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shell_of_hearing",
@@ -38986,7 +39520,8 @@
             "Materials": [
                 { "ComponentId": "hook_horror_cochlea", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shield_of_reflection",
@@ -38998,7 +39533,8 @@
             "Materials": [
                 { "ComponentId": "spectator_main_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shield_of_reflection,_+1",
@@ -39010,7 +39546,8 @@
             "Materials": [
                 { "ComponentId": "morkoth_gladius", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shield,_+3_(dmg)",
@@ -39020,9 +39557,14 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [
-                { "ComponentId": "dragon_turtle_shell_shard", "Quantity": "x1" }
+                {
+                    "ComponentId": "dragon_turtle_shell_shard",
+                    "Quantity": "x1"
+                },
+                { "ComponentId": "iron_golem_iron", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "shortbow,_+1_(dmg)",
@@ -39032,7 +39574,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "centaur_tail", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "sickle_(dmg)",
@@ -39044,7 +39587,8 @@
             "Materials": [
                 { "ComponentId": "deinonychus_sickle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "sickle_of_chaos",
@@ -39056,7 +39600,8 @@
             "Materials": [
                 { "ComponentId": "blue_slaad_claw", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "sickle,_+1_(dmg)",
@@ -39068,7 +39613,8 @@
             "Materials": [
                 { "ComponentId": "umber_hulk_mandibles", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "siege_dust",
@@ -39078,7 +39624,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "goristro_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "silhouette_shawl",
@@ -39090,7 +39637,8 @@
             "Materials": [
                 { "ComponentId": "shadow_mastiff_fur", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "skull_of_revelation",
@@ -39100,7 +39648,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "flameskull", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "slaad_doublet",
@@ -39110,7 +39659,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "slaad_hide", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "snap_tongue_attachment",
@@ -39122,7 +39672,8 @@
             "Materials": [
                 { "ComponentId": "froghemoth_tongue", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "soul_render",
@@ -39132,7 +39683,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "barghest_fang", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "spear,_+1_(dmg)",
@@ -39145,7 +39697,8 @@
                 { "ComponentId": "bulette_teeth", "Quantity": "x1" },
                 { "ComponentId": "gorgon_horn", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "spectral_gauntlets",
@@ -39155,7 +39708,21 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "spirit_echo", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "spellguard_shield_(dmg)",
+            "Name": "Spellguard Shield (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [
+                { "ComponentId": "flail_snail_shell", "Quantity": "x1" }
+            ],
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "staff_of_multiplied_recovery",
@@ -39167,7 +39734,8 @@
             "Materials": [
                 { "ComponentId": "hydra_spinal_cord", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "staff_of_split_control",
@@ -39179,7 +39747,8 @@
             "Materials": [
                 { "ComponentId": "anathema_spine", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "staff_of_the_woodlands_(dmg)",
@@ -39189,7 +39758,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "treant_root", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "stinger_whip",
@@ -39202,7 +39772,8 @@
                 { "ComponentId": "bone_devil_tail", "Quantity": "x1" },
                 { "ComponentId": "tlincalli_tail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "stone_anvil",
@@ -39214,7 +39785,8 @@
             "Materials": [
                 { "ComponentId": "stone_giant_molar", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "stone_cleaver_weapon",
@@ -39227,7 +39799,8 @@
                 { "ComponentId": "bulette_claw", "Quantity": "x1" },
                 { "ComponentId": "xorn_tooth", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "stone_swim_armor",
@@ -39237,7 +39810,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "xorn_shell", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "stone_swim_armour",
@@ -39250,7 +39824,8 @@
                 { "ComponentId": "bulette_hide", "Quantity": "x1" },
                 { "ComponentId": "korred_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "storm_caller",
@@ -39262,7 +39837,8 @@
             "Materials": [
                 { "ComponentId": "lightning_sack", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "storm_pole",
@@ -39274,7 +39850,8 @@
             "Materials": [
                 { "ComponentId": "storm_giant_spine", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "studded_leather_armour_(dmg)",
@@ -39287,7 +39864,19 @@
                 { "ComponentId": "ankylosaurus_hide", "Quantity": "x1" },
                 { "ComponentId": "lizardfolk_hide", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "studded_leather_armour,_+1_(dmg)",
+            "Name": "Studded Leather Armour, +1 (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "minotaur_hide", "Quantity": "x1" }],
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "studded_leather_armour,_+2_(dmg)",
@@ -39299,7 +39888,19 @@
             "Materials": [
                 { "ComponentId": "marilith_snake_leather", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "studded_leather_armour,_+3_(dmg)",
+            "Name": "Studded Leather Armour, +3 (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "marble_skin", "Quantity": "x1" }],
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "stunning_lens",
@@ -39311,7 +39912,8 @@
             "Materials": [
                 { "ComponentId": "gauth_main_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "sun_stream_bow",
@@ -39321,7 +39923,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ki-rin_fur", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "swarm_charms",
@@ -39333,7 +39936,8 @@
             "Materials": [
                 { "ComponentId": "swarm_mentality", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "sword_of_life_stealing_(dmg)",
@@ -39343,7 +39947,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "vampire_fang", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "sword_of_wounding_(dmg)",
@@ -39353,7 +39958,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "nycaloth_claw", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "telepathic_lens",
@@ -39365,7 +39971,8 @@
             "Materials": [
                 { "ComponentId": "mindwitness_main_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "tormentor's_cap",
@@ -39375,7 +39982,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "meenlock_head", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "traveller's_clogs",
@@ -39385,7 +39993,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "pegasus_hoof", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "treasure_compass",
@@ -39395,7 +40004,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "xorn_eye", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "tri-horn_shield",
@@ -39407,7 +40017,8 @@
             "Materials": [
                 { "ComponentId": "triceratops_skull", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "trident,_+1_(dmg)",
@@ -39420,7 +40031,8 @@
                 { "ComponentId": "gorgon_horn", "Quantity": "x1" },
                 { "ComponentId": "merrow_claw", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "troll_amulet",
@@ -39430,7 +40042,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "troll_heart", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "turned_soul_gem",
@@ -39440,7 +40053,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "soul_gem", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "unicorn_glue",
@@ -39450,7 +40064,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "unicorn_hoof", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "unicorn's_charge",
@@ -39460,7 +40075,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "unicorn_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "vine_tunic",
@@ -39472,7 +40088,8 @@
             "Materials": [
                 { "ComponentId": "shambling_mound_vine", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "viper_strike",
@@ -39486,7 +40103,8 @@
                 { "ComponentId": "skeletal_naga_fang", "Quantity": "x1" },
                 { "ComponentId": "spirit_naga_fang", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wand_of_confusion",
@@ -39498,7 +40116,8 @@
             "Materials": [
                 { "ComponentId": "umber_hulk_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wand_of_smiles_(xgte)",
@@ -39510,7 +40129,8 @@
             "Materials": [
                 { "ComponentId": "mirth_touched_smile", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wand_of_the_golden_ray",
@@ -39520,7 +40140,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "ki-rin_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wand_of_the_undergrowth",
@@ -39530,7 +40151,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "root-stem", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wand_of_the_war_mage,_+2_(dmg)",
@@ -39540,7 +40162,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "unicorn_horn", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "war_pick,_+1_(dmg)",
@@ -39553,7 +40176,19 @@
                 { "ComponentId": "gorgon_horn", "Quantity": "x1" },
                 { "ComponentId": "hook_horror_hook", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
+        },
+        {
+            "Id": "warhammer,_+1_(dmg)",
+            "Name": "Warhammer, +1 (DMG)",
+            "Type": "Wondrous item",
+            "Crafter": "",
+            "Rarity": "",
+            "RequiresAttunement": false,
+            "Description": [],
+            "Materials": [{ "ComponentId": "gorgon_hoof", "Quantity": "x1" }],
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "warhammer,_+2_(dmg)",
@@ -39563,7 +40198,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "roc_beak", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "warhammer,_+3_(dmg)",
@@ -39573,7 +40209,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "goristro_hoof", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "warming_waterskin",
@@ -39585,7 +40222,8 @@
             "Materials": [
                 { "ComponentId": "fire_snake_scales", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "warning_scarf",
@@ -39595,21 +40233,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "owlbear_neck", "Quantity": "x1" }],
-            "Type": "Wondrous item"
-        },
-        {
-            "Id": "whip_+1_(dmg)",
-            "Name": "Whip +1 (DMG)",
-            "Crafter": "",
-            "Rarity": "Common",
-            "RequiresAttunement": false,
-            "Description": [],
-            "Materials": [
-                { "ComponentId": "barbed_devil_tail", "Quantity": "x1" },
-                { "ComponentId": "cloaker_tail", "Quantity": "x1" },
-                { "ComponentId": "manticore_tail", "Quantity": "x1" }
-            ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "whip_of_extended_reach",
@@ -39621,7 +40246,8 @@
             "Materials": [
                 { "ComponentId": "morkoth_tentacle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "whip,_+1_(dmg)",
@@ -39632,9 +40258,14 @@
             "Description": [],
             "Materials": [
                 { "ComponentId": "displacer_beast_tentacle", "Quantity": "x1" },
-                { "ComponentId": "grell_tentacle", "Quantity": "x1" }
+                { "ComponentId": "grell_tentacle", "Quantity": "x1" },
+                { "ComponentId": "barbed_devil_tail", "Quantity": "x1" },
+                { "ComponentId": "cloaker_tail", "Quantity": "x1" },
+                { "ComponentId": "flail_snail_flail", "Quantity": "x1" },
+                { "ComponentId": "manticore_tail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "whip,_+2_(dmg)",
@@ -39647,7 +40278,8 @@
                 { "ComponentId": "froghemoth_tentacle", "Quantity": "x1" },
                 { "ComponentId": "neothelid_tentacle", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wings_of_flying_(dmg)",
@@ -39662,7 +40294,8 @@
                 { "ComponentId": "solar_wing", "Quantity": "x1" },
                 { "ComponentId": "wyvern_wing", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wings_of_the_guardian",
@@ -39672,7 +40305,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "sphinx_wing", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "withering_lenses",
@@ -39684,7 +40318,8 @@
             "Materials": [
                 { "ComponentId": "catoblepas_eye", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "wound_biter_weapon",
@@ -39696,7 +40331,8 @@
             "Materials": [
                 { "ComponentId": "horned_devil_tail", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "yeenoghu's_boon",
@@ -39709,7 +40345,8 @@
                 { "ComponentId": "demon_gnoll_heart", "Quantity": "x1" },
                 { "ComponentId": "shoosuva_heart", "Quantity": "x1" }
             ],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         },
         {
             "Id": "yeenoghu's_wrath",
@@ -39719,7 +40356,8 @@
             "RequiresAttunement": false,
             "Description": [],
             "Materials": [{ "ComponentId": "shoosuva_tail", "Quantity": "x1" }],
-            "Type": "Wondrous item"
+            "Type": "Wondrous item",
+            "MaterialGrouping": "OR"
         }
     ]
 }

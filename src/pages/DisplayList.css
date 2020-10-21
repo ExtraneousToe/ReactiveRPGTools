@@ -23,6 +23,7 @@
 
 .element-list li.active {
     background-color: rgb(75, 75, 75);
+    color: aliceblue;
 }
 
 .list-header.active {

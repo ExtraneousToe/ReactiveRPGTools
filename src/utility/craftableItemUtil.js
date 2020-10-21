@@ -5,6 +5,7 @@ import {
     CheckboxInput,
     SelectInput,
     ArrayInput,
+    RadioButtonInput,
 } from "./inputUtil";
 import Storage from "../utility/StorageUtil";
 
@@ -31,7 +32,7 @@ export function CraftableItemDisplay(props) {
     let finalMaterialOutput = [];
     for (let i = 0; i < materialOutput.length; ++i) {
         if (finalMaterialOutput.length !== 0) {
-            finalMaterialOutput.push(" or ");
+            finalMaterialOutput.push(" " + craftableItem.MaterialGrouping + "");
         }
         finalMaterialOutput.push(materialOutput[i]);
     }
@@ -133,38 +134,49 @@ export class EditingCraftableItemDisplay extends React.Component {
                 <StringInput object={craftableItem} objKey="Id" disabled />
                 <StringInput object={craftableItem} objKey="Name" />
                 <StringInput object={craftableItem} objKey="Type" />
-                <SelectInput
-                    object={craftableItem}
-                    objKey="Crafter"
-                    options={[
-                        "Alchemist",
-                        "Artificer",
-                        "Blacksmith",
-                        "Leatherworker",
-                        "Tinker",
-                        "Thaumaturge",
-                    ]}
-                />
-                <SelectInput
-                    object={craftableItem}
-                    objKey="Rarity"
-                    options={[
-                        "",
-                        "Common",
-                        "Uncommon",
-                        "Rare",
-                        "Very Rare",
-                        "Legendary",
-                    ]}
-                />
                 <CheckboxInput
                     object={craftableItem}
                     objKey="RequiresAttunement"
                 />
+                <Row>
+                    <Col>
+                        <RadioButtonInput // SelectInput
+                            object={craftableItem}
+                            objKey="Crafter"
+                            options={[
+                                "Alchemist",
+                                "Artificer",
+                                "Blacksmith",
+                                "Leatherworker",
+                                "Tinker",
+                                "Thaumaturge",
+                            ]}
+                        />
+                    </Col>
+                    <Col>
+                        <RadioButtonInput //SelectInput
+                            object={craftableItem}
+                            objKey="Rarity"
+                            options={[
+                                "Mundane",
+                                "Common",
+                                "Uncommon",
+                                "Rare",
+                                "Very Rare",
+                                "Legendary",
+                            ]}
+                        />
+                    </Col>
+                </Row>
                 <ArrayInput
                     object={craftableItem}
                     objKey="Description"
                     subType={StringInput}
+                />
+                <SelectInput
+                    object={craftableItem}
+                    objKey="MaterialGrouping"
+                    options={["OR", "AND"]}
                 />
                 <ArrayInput
                     object={craftableItem}

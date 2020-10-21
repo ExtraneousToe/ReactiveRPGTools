@@ -6,13 +6,12 @@ export function ArrayInput(props) {
     let propObj = props.object;
     let propKey = props.objKey;
 
-    // const onChangeFunc = (e) => {
-    //     propObj[propKey] = e.target.value;
-    //     setRedraw(!redraw);
-    // };
-
     const addLine = (e) => {
         propObj[propKey].push("");
+        setRedraw(!redraw);
+    };
+    const insertLine = (e, tarIndex) => {
+        propObj[propKey].splice(tarIndex, 0, "");
         setRedraw(!redraw);
     };
 
@@ -25,7 +24,15 @@ export function ArrayInput(props) {
     for (let i = 0; i < propObj[propKey].length; ++i) {
         arrayLines.push(
             <Row key={i}>
-                <Col className="col-1">
+                <Col className="col-2 border">
+                    <button
+                        onClick={(e) => {
+                            insertLine(e, i);
+                        }}
+                        // disabled={i === 0}
+                    >
+                        ^
+                    </button>
                     <button
                         onClick={(e) => {
                             removeLine(e, i);
@@ -33,12 +40,21 @@ export function ArrayInput(props) {
                     >
                         -
                     </button>
+                    <button
+                        onClick={(e) => {
+                            insertLine(e, i + 1);
+                        }}
+                        // disabled={i === propObj[propKey].length - 1}
+                    >
+                        v
+                    </button>
                 </Col>
                 <Col>
                     <props.subType
                         object={propObj}
                         objKey={propKey}
                         index={i}
+                        hideLabel={true}
                     />
                 </Col>
             </Row>
@@ -48,10 +64,12 @@ export function ArrayInput(props) {
     return (
         <>
             <Row>
-                <Col className="col-3">{propKey}: </Col> <Col></Col>
+                <Col className="col-3">
+                    {propKey}: <button onClick={addLine}>+</button>
+                </Col>
             </Row>
+
             {arrayLines}
-            <button onClick={addLine}>+</button>
         </>
     );
 }
@@ -92,13 +110,51 @@ export function SelectInput(props) {
     );
 }
 
+export function RadioButtonInput(props) {
+    let [redraw, setRedraw] = useState(true);
+    let propObj = props.object;
+    let propKey = props.objKey;
+
+    const onChangeFunc = (e) => {
+        if (e.target.checked) {
+            propObj[propKey] = e.target.value;
+            setRedraw(!redraw);
+        }
+    };
+
+    let options = props.options.map((opt, idx) => {
+        return (
+            <div>
+                <input
+                    type="radio"
+                    value={opt}
+                    key={idx}
+                    name={propKey}
+                    id={opt}
+                    checked={propObj[propKey] === opt}
+                    onChange={onChangeFunc}
+                />{" "}
+                <label for={opt}>{opt}</label>
+            </div>
+        );
+    });
+
+    return (
+        <>
+            <Row className="border">
+                <Col className="col-3">{propKey}: </Col> <Col>{options}</Col>
+            </Row>
+        </>
+    );
+}
+
 export function StringInput(props) {
     let [redraw, setRedraw] = useState(true);
     let propObj = props.object;
     let propKey = props.objKey;
     let propIdx = props.index;
 
-    let { disabled, ...otherProps } = props;
+    let { disabled, hideLabel, ...otherProps } = props;
 
     const onChangeFunc = (e) => {
         if (propIdx !== undefined) {
@@ -117,7 +173,7 @@ export function StringInput(props) {
     return (
         <>
             <Row>
-                <Col className="col-3">{propKey}: </Col>{" "}
+                {!hideLabel && <Col className="col-3">{propKey}: </Col>}
                 <Col>
                     <input
                         type="text"
