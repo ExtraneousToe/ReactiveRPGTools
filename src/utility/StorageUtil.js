@@ -64,10 +64,11 @@ const Storage = {
                     Storage.craftableItemDict[id] = {
                         Id: id,
                         Name: name,
-                        Type: null,
-                        Crafter: null,
-                        Rarity: null,
+                        Type: "",
+                        Crafter: "",
+                        Rarity: "",
                         RequiresAttunement: false,
+                        AttunementNote: "",
                         Description: [],
                         Materials: [
                             {
@@ -101,8 +102,15 @@ const Storage = {
                     if (
                         item.MaterialGrouping === null ||
                         item.MaterialGrouping === undefined
-                    )
+                    ) {
                         item.MaterialGrouping = "OR";
+                    }
+                    if (
+                        item.AttunementNote === null ||
+                        item.AttunementNote === undefined
+                    ) {
+                        item.AttunementNote = "";
+                    }
                 }
             }
 

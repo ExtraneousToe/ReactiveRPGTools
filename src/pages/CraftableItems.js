@@ -45,7 +45,7 @@ export function CraftableItems(props) {
     let displayOutput = ["Select an item from the list"];
 
     if (craftableItem !== null) {
-        if (process.env.NODE_ENV === "development") {
+        if (false && process.env.NODE_ENV === "development") {
             displayOutput = [
                 <EditingCraftableItemDisplay
                     craftableItem={craftableItem}

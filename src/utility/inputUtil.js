@@ -5,13 +5,15 @@ export function ArrayInput(props) {
     let [redraw, setRedraw] = useState(true);
     let propObj = props.object;
     let propKey = props.objKey;
+    let defaultInsert = props.defaultInsert;
+    if (defaultInsert === undefined) defaultInsert = "";
 
     const addLine = (e) => {
-        propObj[propKey].push("");
+        propObj[propKey].push(defaultInsert);
         setRedraw(!redraw);
     };
     const insertLine = (e, tarIndex) => {
-        propObj[propKey].splice(tarIndex, 0, "");
+        propObj[propKey].splice(tarIndex, 0, defaultInsert);
         setRedraw(!redraw);
     };
 

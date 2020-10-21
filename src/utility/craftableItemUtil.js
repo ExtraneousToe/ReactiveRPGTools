@@ -7,7 +7,8 @@ import {
     ArrayInput,
     RadioButtonInput,
 } from "./inputUtil";
-import Storage from "../utility/StorageUtil";
+import Storage from "./StorageUtil";
+import { ModularDescription } from "./descriptionUtil";
 
 export function getIdFromItemName(name) {
     return name.toLowerCase().replace(/\s+/g, "_");
@@ -32,7 +33,9 @@ export function CraftableItemDisplay(props) {
     let finalMaterialOutput = [];
     for (let i = 0; i < materialOutput.length; ++i) {
         if (finalMaterialOutput.length !== 0) {
-            finalMaterialOutput.push(" " + craftableItem.MaterialGrouping + "");
+            finalMaterialOutput.push(
+                " " + craftableItem.MaterialGrouping + " "
+            );
         }
         finalMaterialOutput.push(materialOutput[i]);
     }
@@ -71,7 +74,12 @@ export function CraftableItemDisplay(props) {
                 <Col>
                     {craftableItem.Description.length > 0 &&
                         craftableItem.Description.map((para, idx) => {
-                            return <p key={idx}>{para}</p>;
+                            return (
+                                <ModularDescription
+                                    key={idx}
+                                    description={para}
+                                />
+                            );
                         })}
                 </Col>
             </Row>
@@ -134,10 +142,21 @@ export class EditingCraftableItemDisplay extends React.Component {
                 <StringInput object={craftableItem} objKey="Id" disabled />
                 <StringInput object={craftableItem} objKey="Name" />
                 <StringInput object={craftableItem} objKey="Type" />
-                <CheckboxInput
-                    object={craftableItem}
-                    objKey="RequiresAttunement"
-                />
+                <Row>
+                    <Col>
+                        <CheckboxInput
+                            object={craftableItem}
+                            objKey="RequiresAttunement"
+                        />
+                    </Col>
+                    <Col>
+                        <StringInput
+                            object={craftableItem}
+                            objKey="AttunementNote"
+                            hideLabel={true}
+                        />
+                    </Col>
+                </Row>
                 <Row>
                     <Col>
                         <RadioButtonInput // SelectInput
@@ -164,6 +183,7 @@ export class EditingCraftableItemDisplay extends React.Component {
                                 "Rare",
                                 "Very Rare",
                                 "Legendary",
+                                "Mixed",
                             ]}
                         />
                     </Col>
@@ -182,6 +202,7 @@ export class EditingCraftableItemDisplay extends React.Component {
                     object={craftableItem}
                     objKey="Materials"
                     subType={MaterialInput}
+                    defaultInsert={{ ComponentId: "", Quantity: "" }}
                 />
             </Container>
         );
