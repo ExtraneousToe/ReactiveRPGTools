@@ -75,6 +75,7 @@ export function HarvestingTableDisplay(props) {
 				}
 				craftingOut.push(
 					<NavLink
+						key={k}
 						tag={Link}
 						to={`/craftableitems/${getIdFromItemName(
 							item.CraftingUsage[0]
