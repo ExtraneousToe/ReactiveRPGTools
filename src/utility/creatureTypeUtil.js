@@ -4,64 +4,64 @@ import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 const SWARM_REGEX = /swarm:(\w)/i;
 
 export function CreatureTypeList(props) {
-    return <>{getCreatureTypeDisplayString(props.creatureType)}</>;
+  return <>{getCreatureTypeDisplayString(props.creatureType)}</>;
 }
 
 export function getCreatureTypeDisplayString(creatureType) {
-    let cType = creatureType;
+  let cType = creatureType;
 
-    if (cType === null || cType === undefined) {
-        return "-";
+  if (!cType) {
+    return "-";
+  } else {
+    let crOut = "";
+
+    let matches = SWARM_REGEX.exec(cType.tags.toString());
+    if (matches !== null && matches.length > 0) {
+      let size = "";
+      switch (matches[1]) {
+        case "T":
+          size = "tiny";
+          break;
+        case "M":
+          size = "medium";
+          break;
+        default:
+          size = "[unknown size]";
+          break;
+      }
+      crOut = `swarm of ${size} ${cType.type}s`;
     } else {
-        let crOut = "";
+      crOut = cType.type;
 
-        let matches = SWARM_REGEX.exec(cType.Tags.toString());
-        if (matches !== null && matches.length > 0) {
-            let size = "";
-            switch (matches[1]) {
-                case "T":
-                    size = "tiny";
-                    break;
-                case "M":
-                    size = "medium";
-                    break;
-                default:
-                    size = "[unknown size]";
-                    break;
-            }
-            crOut = `swarm of ${size} ${cType.Type}s`;
-        } else {
-            crOut = cType.Type;
-
-            if (cType.Tags.length !== 0) {
-                crOut += ` (${cType.Tags.join(", ")})`;
-            }
-        }
-
-        return crOut;
+      if (cType.tags.length !== 0) {
+        crOut += ` (${cType.tags.join(", ")})`;
+      }
     }
+
+    return crOut;
+  }
 }
 
 export function sortCreatureTypeAsc(a, b) {
-    let outVal = sortStrAsc(a.Type, b.Type);
+  let outVal = sortStrAsc(a.type, b.type);
+
+  if (outVal !== 0) {
+    return outVal;
+  }
+
+  outVal = a.tags.length - b.tags.length;
+
+  if (outVal !== 0) {
+    return outVal;
+  }
+
+  for (let i = 0; i < a.tags.length; ++i) {
+    outVal = sortStrAsc(a.tags[i], b.tags[i]);
 
     if (outVal !== 0) {
-        return outVal;
+      return outVal;
     }
+  }
 
-    outVal = a.Tags.length - b.Tags.length;
-
-    if (outVal !== 0) {
-        return outVal;
-    }
-
-    for (let i = 0; i < a.Tags.length; ++i) {
-        outVal = sortStrAsc(a.Tags[i], b.Tags[i]);
-
-        if (outVal !== 0) {
-            return outVal;
-        }
-    }
-
-    return 0;
+  return 0;
 }

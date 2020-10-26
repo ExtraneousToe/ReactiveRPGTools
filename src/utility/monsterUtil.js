@@ -1,3 +1,8 @@
 export function getIdFromMonster(monster) {
-    return monster.Name.replace(/\s+/g, "_").replace(/[()]/g, "").toLowerCase();
+  let idReplaceRegex = /[\s'\-()]/g;
+  return (
+    monster.name.replace(idReplaceRegex, "") +
+    "_" +
+    monster.source
+  ).toLowerCase();
 }

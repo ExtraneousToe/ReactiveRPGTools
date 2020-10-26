@@ -11,87 +11,98 @@ import { MonsterDisplay } from "../components/MonsterDisplay";
 
 import { CARD_SIZES } from "../data/referenceCardSizes";
 import {
-    CreatureTypeList,
-    sortCreatureTypeAsc,
+  CreatureTypeList,
+  sortCreatureTypeAsc,
 } from "../utility/creatureTypeUtil";
 import { MonsterFilterBlock } from "../components/MonsterFilterBlock";
 import "./Columnable.css";
 import "../LayoutControl/Layout.css";
 
 export function Monsters(props) {
-    let [filterObj, setFilterObj] = useState({});
+  let [filterObj, setFilterObj] = useState({});
 
-    const pathWithId = "/monsters/:id";
-    let monster = null;
+  const pathWithId = "/monsters/:id";
+  let monster = null;
 
-    // extract monster id from the path
-    let match = matchPath(props.location.pathname, { path: pathWithId });
-    let selectedId = "";
-    if (match !== null) {
-        // if there is an id, search for the monster
-        selectedId = match.params.id;
-        if (Storage.monsterDict[selectedId] !== undefined) {
-            monster = Storage.monsterDict[selectedId];
-        }
+  // extract monster id from the path
+  let match = matchPath(props.location.pathname, { path: pathWithId });
+  let selectedId = "";
+  if (match !== null) {
+    // if there is an id, search for the monster
+    selectedId = match.params.id;
+    if (Storage.monsterDict[selectedId] !== undefined) {
+      monster = Storage.monsterDict[selectedId];
     }
+  }
 
-    const headers = [
-        new DisplayColumn(
-            "Name",
-            (item) => {
-                return <>{item["Name"]}</>;
-            },
-            (a, b) => {
-                return sortStrAsc(a.Name, b.Name);
-            }
-        ),
-        new DisplayColumn(
-            "Type",
-            (item) => {
-                return <CreatureTypeList creatureType={item["CreatureType"]} />;
-            },
-            (a, b) => {
-                return sortCreatureTypeAsc(a.CreatureType, b.CreatureType);
-            }
-        ),
-        new DisplayColumn(
-            "CR",
-            (item) => {
-                return <CRList cr={item["ChallengeRating"]} />;
-            },
-            (a, b) => {
-                return sortCRAsc(a.ChallengeRating, b.ChallengeRating);
-            }
-        ),
-        new DisplayColumn(
-            "Card Size",
-            (item) => {
-                return <>{CARD_SIZES[item["ReferenceCardSize"]]}</>;
-            },
-            (a, b) => {
-                return a.ReferenceCardSize - b.ReferenceCardSize;
-            }
-        ),
-    ];
+  const headers = [
+    new DisplayColumn(
+      "Name",
+      (item) => {
+        return <>{item["name"]}</>;
+      },
+      (a, b) => {
+        return sortStrAsc(a.name, b.name);
+      }
+    ),
+    new DisplayColumn(
+      "Type",
+      (item) => {
+        return <CreatureTypeList creatureType={item["type"]} />;
+      },
+      (a, b) => {
+        return sortCreatureTypeAsc(a.creatureType, b.creatureType);
+      }
+    ),
+    new DisplayColumn(
+      "CR",
+      (item) => {
+        return <CRList cr={item["challengeRating"]} />;
+      },
+      (a, b) => {
+        return sortCRAsc(a.challengeRating, b.challengeRating);
+      }
+    ),
+    new DisplayColumn(
+      "Card Size",
+      (item) => {
+        return <>{CARD_SIZES[item["cardSize"]]}</>;
+      },
+      (a, b) => {
+        return a.cardSize - b.cardSize;
+      }
+    ),
+    new DisplayColumn(
+      "Source",
+      (item) => {
+        return <>{item["source"]}</>;
+      },
+      (a, b) => {
+        return sortStrAsc(a.source, b.source);
+      }
+    ),
+  ];
 
-    return (
-        <>
-            <Row className="h-100" xs={1} md={2}>
-                <Col className="border h-100">
-                    <MonsterFilterBlock submitFilter={setFilterObj} />
-                    <DisplayList
-                        headers={headers}
-                        items={Object.values(Storage.monsterDict)}
-                        filterObject={filterObj}
-                        pathRoot={props.match.path}
-                        idFunction={getIdFromMonster}
-                        selectedId={selectedId}
-                    />
-                </Col>
-                <Col className="border scrollableColumn">
-                    <MonsterDisplay monster={monster} />
-                </Col>
-            </Row>
-        </>
-    );
+  let list = Object.values(Storage.monsterDict);
+
+  return (
+    <>
+      <Row className="h-100" xs={1} md={2}>
+        <Col className="border h-100">
+          <MonsterFilterBlock submitFilter={setFilterObj} />
+          <DisplayList
+            headers={headers}
+            items={list}
+            filterObject={filterObj}
+            pathRoot={props.match.path}
+            idFunction={(mon) => mon.id}
+            selectedId={selectedId}
+          />
+        </Col>
+        <Col className="border scrollableColumn">
+          <MonsterDisplay monster={monster} selectedId={selectedId} />
+        </Col>
+      </Row>
+    </>
+  );
 }
