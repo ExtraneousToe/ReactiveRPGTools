@@ -103,7 +103,7 @@ export function MonsterDisplay(props) {
       disp: simpleJoinFunction,
     },
     {
-      key: "immunities",
+      key: "immunity",
       header: "Immunities",
       disp: simpleJoinFunction,
     },

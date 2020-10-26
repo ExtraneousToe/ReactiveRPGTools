@@ -83,12 +83,13 @@ export class Monster {
       size: fiveEState.size, // creatureSize,
       creatureType: feType, // creatureType,
       stats: new StatsBlock(
-        fiveEState.str,
-        fiveEState.dex,
-        fiveEState.con,
-        fiveEState.int,
-        fiveEState.wis,
-        fiveEState.cha
+        fiveEState
+        // fiveEState.str,
+        // fiveEState.dex,
+        // fiveEState.con,
+        // fiveEState.int,
+        // fiveEState.wis,
+        // fiveEState.cha
       ), // stats,
       armorClass: feACLines, // armorClass,
       challengeRating: feCR, // challengeRating,
@@ -351,8 +352,6 @@ class SpeedBlock {
   }
 
   get simpleDisplay() {
-    //return JSON.stringify(this);
-
     let strOut = `${this.walk.ft} ft.`;
 
     SPEED_KEYS.forEach((val) => {
@@ -364,7 +363,6 @@ class SpeedBlock {
     return strOut;
   }
 }
-//SpeedBlock.prototype.defineProperty("canHover", { enumerable: false });
 
 class SpeedEntry {
   constructor(inObj) {
@@ -387,7 +385,7 @@ class SpeedEntry {
 }
 
 class StatsBlock {
-  constructor(str, dex, con, int, wis, cha) {
+  constructor({ str, dex, con, int, wis, cha }) {
     this.str = str;
     this.dex = dex;
     this.con = con;
