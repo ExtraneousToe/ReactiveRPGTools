@@ -8,7 +8,7 @@ import Storage from "../utility/StorageUtil";
 import { TrinketTableDisplay } from "../utility/trinketTableUtil";
 import { HarvestingTableDisplay } from "../utility/harvestingTableUtil";
 import { stripTags } from "../utility/stringUtil";
-import { ModularDescription } from "../utility/descriptionUtil";
+// import { ModularDescription } from "../utility/descriptionUtil";
 import { DynamicRender } from "./RenderBlocks";
 
 const COMBAT_TAB_KEY = "combat";
@@ -207,9 +207,9 @@ function ACHPSpeed(props) {
 function SkillsAndSavesBlock(props) {
   let monster = props.monster;
 
-  let testFunction = function (mon) {
-    return JSON.stringify(mon[this.key]);
-  };
+  // let testFunction = function (mon) {
+  //   return JSON.stringify(mon[this.key]);
+  // };
   let keyValueFunction = function (mon) {
     return Object.keys(mon[this.key])
       .map((inKey) => inKey + " " + mon[this.key][inKey])
@@ -289,9 +289,9 @@ function SpellcastingBlock(props) {
   var { name, headerEntries, spells, will, daily } = entry;
 
   var output = [];
-
+  var idx = 0;
   if (headerEntries && headerEntries.length > 0) {
-    for (var idx = 0; idx < headerEntries.length; ++idx) {
+    for (idx = 0; idx < headerEntries.length; ++idx) {
       if (idx === 0) {
         output.push(
           <div key={idx}>
@@ -319,7 +319,7 @@ function SpellcastingBlock(props) {
   if (daily) {
     let dailyKeys = Object.keys(daily);
 
-    for (var idx = 0; idx < dailyKeys.length; ++idx) {
+    for (idx = 0; idx < dailyKeys.length; ++idx) {
       let [num, each] = dailyKeys[idx].split("");
       let lead = `${num}/day${each ? " each" : ""}`;
 
@@ -335,7 +335,7 @@ function SpellcastingBlock(props) {
     let spellKeys = Object.keys(spells);
     let spellsBlock = spells;
 
-    for (var idx = 0; idx < spellKeys.length; ++idx) {
+    for (idx = 0; idx < spellKeys.length; ++idx) {
       let { slots, spells } = spellsBlock[spellKeys[idx]];
 
       let numCount = "";

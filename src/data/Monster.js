@@ -366,7 +366,7 @@ class SpeedBlock {
 
 class SpeedEntry {
   constructor(inObj) {
-    if (typeof inObj === "number" || inObj == 0) {
+    if (typeof inObj === "number" || inObj === 0) {
       this.ft = inObj;
       this.condition = null;
     } else {
