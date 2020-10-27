@@ -28,8 +28,6 @@ export class DisplayColumn {
 }
 
 export function DisplayList(props) {
-  let history = useHistory();
-
   // headers should be a collection of DisplayColumn instances
   let headers = props.headers;
   let items = props.items;
@@ -72,45 +70,21 @@ export function DisplayList(props) {
   let contentsRows = [];
   let itemLen = items.length;
   for (let i = 0; i < itemLen; ++i) {
-    contentsRows.push(
+    contentsRows.push();
+  }
+
+  contentsRows = items.map((item, idx) => {
+    return (
       <DisplayListRow
-        key={`row-${i}`}
+        key={`row-${props.idFunction(item)}`}
         headers={headers}
-        item={items[i]}
+        item={item}
         idFunction={props.idFunction}
-        selectedId={props.selectedId}
         pathRoot={props.pathRoot}
+        isSelected={props.idFunction(item) === props.selectedId}
       />
     );
-
-    // let innerCols = [];
-
-    // let headerLen = headers.length;
-    // for (let h = 0; h < headerLen; ++h) {
-    //   let headerObj = headers[h];
-
-    //   innerCols.push(<Col key={h}>{headerObj.listDisplayFunc(items[i])}</Col>);
-    // }
-
-    // let desiredId = props.idFunction(items[i]);
-
-    // let pathRoute = `${props.pathRoot}/${desiredId}`;
-
-    // let activeName = props.selectedId === desiredId ? "active" : "";
-
-    // contentsRows.push(
-    //   <li
-    //     key={desiredId}
-    //     onClick={(e) => {
-    //       history.push(pathRoute);
-    //       e.preventDefault();
-    //     }}
-    //     className={activeName}
-    //   >
-    //     <Row>{innerCols}</Row>
-    //   </li>
-    // );
-  }
+  });
 
   return (
     <>
@@ -124,26 +98,27 @@ export function DisplayList(props) {
 function DisplayListRow(props) {
   let history = useHistory();
 
-  let { headers, item, idFunction, pathRoot, selectedId } = props;
+  let { headers, item, idFunction, pathRoot, isSelected } = props;
 
   let innerCols = [];
+
+  let desiredId = idFunction(item);
 
   let headerLen = headers.length;
   for (let h = 0; h < headerLen; ++h) {
     let headerObj = headers[h];
 
-    innerCols.push(<Col key={h}>{headerObj.listDisplayFunc(item)}</Col>);
+    innerCols.push(
+      <Col key={`${desiredId}-${h}`}>{headerObj.listDisplayFunc(item)}</Col>
+    );
   }
-
-  let desiredId = idFunction(item);
 
   let pathRoute = `${pathRoot}/${desiredId}`;
 
-  let activeName = selectedId === desiredId ? "active" : "";
+  let activeName = isSelected ? "active" : "";
 
   return (
     <li
-      key={desiredId}
       onClick={(e) => {
         history.push(pathRoute);
         e.preventDefault();
