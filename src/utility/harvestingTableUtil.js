@@ -7,151 +7,152 @@ import { NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 
 export function HarvestingTableDisplay(props) {
-	let challengeRating = props.challengeRating;
-	let creatureType = props.creatureType;
-	let harvestingTable = props.harvestingTable;
+  let challengeRating = props.challengeRating;
+  let creatureType = props.creatureType;
+  let harvestingTable = props.harvestingTable;
 
-	let rowsOut = [];
+  if (!harvestingTable) return <></>;
 
-	rowsOut.push(
-		<Row className="text-center hamund-header" key={-1}>
-			<Col className="col-1">DC</Col>
-			<Col className="col-2 text-left">Item</Col>
-			<Col className="">Description</Col>
-			<Col className="col-1">Value</Col>
-			<Col className="col-1">Weight</Col>
-			<Col className="col-2">Crafting</Col>
-		</Row>
-	);
+  let rowsOut = [];
 
-	for (let i = 0; i < harvestingTable.Rows.length; ++i) {
-		let row = harvestingTable.Rows[i];
+  // rowsOut.push(<>{JSON.stringify(harvestingTable)}</>);
 
-		let item = Storage.harvestableItemDict[row.ItemNameRef];
+  rowsOut.push(
+    <Row className="text-center hamund-header" key={-1}>
+      <Col className="col-1">DC</Col>
+      <Col className="col-2 text-left">Item</Col>
+      <Col className="">Description</Col>
+      <Col className="col-1">Value</Col>
+      <Col className="col-1">Weight</Col>
+      <Col className="col-2">Crafting</Col>
+    </Row>
+  );
 
-		let nameOut = row.ItemNameRef;
-		let descriptionOut = [];
-		let valueOut = "";
-		let weightOut = "";
-		let craftingOut = [];
+  for (let i = 0; i < harvestingTable.rows.length; ++i) {
+    let row = harvestingTable.rows[i];
 
-		if (item !== null && item !== undefined) {
-			nameOut = item.Name;
+    let item = Storage.harvestableItemDict[row.itemNameReference];
 
-			let lines = 0;
+    let nameOut = row.itemNameReference;
+    let descriptionOut = [];
+    let valueOut = "";
+    let weightOut = "";
+    let craftingOut = [];
 
-			for (let j = 0; j < item.Description.length; ++j) {
-				descriptionOut.push(<p key={lines++}>{item.Description[j]}</p>);
-			}
+    if (item !== null && item !== undefined) {
+      nameOut = item.name;
 
-			// output tools, if any
-			if (
-				item.RequiredToolNames !== undefined &&
-				item.RequiredToolNames.length > 0
-			) {
-				descriptionOut.push(
-					<p key={lines++} className="font-weight-bold">
-						Requires{" "}
-						{item.RequiredToolNames.join(" and ").toLowerCase()}.
-					</p>
-				);
-			}
+      let lines = 0;
 
-			for (let j = 0; j < item.UseText.length; ++j) {
-				descriptionOut.push(
-					<p key={lines++}>
-						{j === 0 && <b>Use: </b>} {item.UseText[j]}
-					</p>
-				);
-			}
+      for (let j = 0; j < item.description.length; ++j) {
+        descriptionOut.push(<p key={lines++}>{item.description[j]}</p>);
+      }
 
-			valueOut = item.ValueGP;
-			weightOut = item.WeightLB;
+      // output tools, if any
+      if (
+        item.requiredToolNames !== undefined &&
+        item.requiredToolNames.length > 0
+      ) {
+        descriptionOut.push(
+          <p key={lines++} className="font-weight-bold">
+            Requires {item.requiredToolNames.join(" and ").toLowerCase()}.
+          </p>
+        );
+      }
 
-			// craftingOut = item.CraftingUsage.join(" or ");
-			for (let k = 0; k < item.CraftingUsage.length; ++k) {
-				if (craftingOut.length !== 0) {
-					craftingOut.push(<> or </>);
-				}
-				craftingOut.push(
-					<NavLink
-						key={k}
-						tag={Link}
-						to={`/craftableitems/${getIdFromItemName(
-							item.CraftingUsage[0]
-						)}`}
-					>
-						{item.CraftingUsage[0]}
-					</NavLink>
-				);
-			}
-		}
+      for (let j = 0; j < item.useText.length; ++j) {
+        descriptionOut.push(
+          <p key={lines++}>
+            {j === 0 && <b>Use: </b>} {item.useText[j]}
+          </p>
+        );
+      }
 
-		if (row.Quantity !== "") {
-			nameOut += ` (${row.Quantity})`;
-		}
-		if (row.Notes !== "") {
-			nameOut += ` (${row.Notes})`;
-		}
+      valueOut = item.value;
+      weightOut = item.weight;
 
-		rowsOut.push(
-			<Row key={i} className="hamund-row">
-				<Col className="col-1 text-center">{row.DifficultyClass}</Col>
-				<Col className="col-2">{nameOut}</Col>
-				<Col className="">{descriptionOut}</Col>
-				<Col className="col-1">{valueOut}</Col>
-				<Col className="col-1">{weightOut}</Col>
-				<Col className="col-2">{craftingOut}</Col>
-			</Row>
-		);
-	}
+      // craftingOut = item.CraftingUsage.join(" or ");
+      for (let k = 0; k < item.craftingUsage.length; ++k) {
+        if (craftingOut.length !== 0) {
+          craftingOut.push(<> or </>);
+        }
+        craftingOut.push(
+          <NavLink
+            key={k}
+            tag={Link}
+            to={`/craftableitems/${getIdFromItemName(item.craftingUsage[k])}`}
+          >
+            {item.craftingUsage[k]}
+          </NavLink>
+        );
+      }
+    }
 
-	let skill = "";
+    if (row.quantity !== "") {
+      nameOut += ` (${row.quantity})`;
+    }
+    if (row.notes !== "") {
+      nameOut += ` (${row.notes})`;
+    }
 
-	switch (creatureType.Type) {
-		case "aberration":
-		case "celestial":
-		case "elemental":
-		case "fey":
-		case "fiend":
-		case "undead":
-			skill = "Arcana";
-			break;
-		case "beast":
-		case "dragon":
-		case "monstrosity":
-		case "plant":
-			skill = "Nature";
-			break;
-		case "construct":
-		case "ooze":
-			skill = "Investigation";
-			break;
-		case "giant":
-		case "humanoid":
-			skill = "Medicine";
-			break;
-		default:
-			skill = "[" + creatureType.Type + "]";
-			break;
-	}
+    rowsOut.push(
+      <Row key={i} className="hamund-row">
+        <Col className="col-1 text-center">{row.difficultyClass}</Col>
+        <Col className="col-2">{nameOut}</Col>
+        <Col className="">{descriptionOut}</Col>
+        <Col className="col-1">{valueOut}</Col>
+        <Col className="col-1">{weightOut}</Col>
+        <Col className="col-2">{craftingOut}</Col>
+      </Row>
+    );
+  }
 
-	let apprasialTarget = "unknown";
+  let skill = "";
 
-	if (challengeRating !== null) {
-		apprasialTarget = 8 + challengeRating.CR;
-	}
+  switch (creatureType.type) {
+    case "aberration":
+    case "celestial":
+    case "elemental":
+    case "fey":
+    case "fiend":
+    case "undead":
+      skill = "Arcana";
+      break;
+    case "beast":
+    case "dragon":
+    case "monstrosity":
+    case "plant":
+      skill = "Nature";
+      break;
+    case "construct":
+    case "ooze":
+      skill = "Investigation";
+      break;
+    case "giant":
+    case "humanoid":
+      skill = "Medicine";
+      break;
+    default:
+      skill = "[" + creatureType.type + "]";
+      break;
+  }
 
-	return (
-		<Container>
-			<Row>
-				<b>Relevant skill:</b>&nbsp;{skill}
-			</Row>
-			<Row>
-				<b>Appraisal Target:</b>&nbsp;{apprasialTarget}
-			</Row>
-			<div className="border" />
-			<Container className="hamund-table">{rowsOut}</Container>
-		</Container>
-	);
+  let apprasialTarget = "unknown";
+
+  if (challengeRating !== null) {
+    apprasialTarget = 8 + challengeRating.cr;
+  }
+
+  return (
+    <Container>
+      <Row>
+        <b>Relevant skill:</b>&nbsp;{skill}
+      </Row>
+      <Row>
+        <b>Appraisal Target:</b>&nbsp;{apprasialTarget}
+      </Row>
+      <div className="border" />
+      <Container className="hamund-table">{rowsOut}</Container>
+    </Container>
+  );
 }

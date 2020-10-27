@@ -41,7 +41,7 @@ export function DisplayList(props) {
   for (let i = 0; i < headers.length; ++i) {
     headerRowContents.push(
       <Col
-        key={i}
+        key={`dl-h-col-${i}`}
         onClick={(e) => {
           e.preventDefault();
 
@@ -70,40 +70,87 @@ export function DisplayList(props) {
   items.sort(headers[sortByIdx].sortFunc(sortAscending));
 
   let contentsRows = [];
-  for (let i = 0; i < items.length; ++i) {
-    let innerCols = [];
-
-    for (let h = 0; h < headers.length; ++h) {
-      let headerObj = headers[h];
-
-      innerCols.push(<Col key={h}>{headerObj.listDisplayFunc(items[i])}</Col>);
-    }
-
-    let desiredId = props.idFunction(items[i]);
-
-    let pathRoute = `${props.pathRoot}/${desiredId}`;
-
-    let activeName = props.selectedId === desiredId ? "active" : "";
-
+  let itemLen = items.length;
+  for (let i = 0; i < itemLen; ++i) {
     contentsRows.push(
-      <li
-        key={i}
-        onClick={(e) => {
-          history.push(pathRoute);
-          e.preventDefault();
-        }}
-        className={activeName}
-      >
-        <Row>{innerCols}</Row>
-      </li>
+      <DisplayListRow
+        key={`row-${i}`}
+        headers={headers}
+        item={items[i]}
+        idFunction={props.idFunction}
+        selectedId={props.selectedId}
+        pathRoot={props.pathRoot}
+      />
     );
+
+    // let innerCols = [];
+
+    // let headerLen = headers.length;
+    // for (let h = 0; h < headerLen; ++h) {
+    //   let headerObj = headers[h];
+
+    //   innerCols.push(<Col key={h}>{headerObj.listDisplayFunc(items[i])}</Col>);
+    // }
+
+    // let desiredId = props.idFunction(items[i]);
+
+    // let pathRoute = `${props.pathRoot}/${desiredId}`;
+
+    // let activeName = props.selectedId === desiredId ? "active" : "";
+
+    // contentsRows.push(
+    //   <li
+    //     key={desiredId}
+    //     onClick={(e) => {
+    //       history.push(pathRoute);
+    //       e.preventDefault();
+    //     }}
+    //     className={activeName}
+    //   >
+    //     <Row>{innerCols}</Row>
+    //   </li>
+    // );
   }
 
   return (
     <>
-      <span>{items.length}</span>
+      {/* <span>{items.length}</span> */}
       <Row className="mx-0">{headerRowContents}</Row>
       <ul className="element-list">{contentsRows}</ul>
     </>
+  );
+}
+
+function DisplayListRow(props) {
+  let history = useHistory();
+
+  let { headers, item, idFunction, pathRoot, selectedId } = props;
+
+  let innerCols = [];
+
+  let headerLen = headers.length;
+  for (let h = 0; h < headerLen; ++h) {
+    let headerObj = headers[h];
+
+    innerCols.push(<Col key={h}>{headerObj.listDisplayFunc(item)}</Col>);
+  }
+
+  let desiredId = idFunction(item);
+
+  let pathRoute = `${pathRoot}/${desiredId}`;
+
+  let activeName = selectedId === desiredId ? "active" : "";
+
+  return (
+    <li
+      key={desiredId}
+      onClick={(e) => {
+        history.push(pathRoute);
+        e.preventDefault();
+      }}
+      className={activeName}
+    >
+      <Row>{innerCols}</Row>
+    </li>
   );
 }

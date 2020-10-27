@@ -8,6 +8,8 @@ import Storage from "../utility/StorageUtil";
 import { TrinketTableDisplay } from "../utility/trinketTableUtil";
 import { HarvestingTableDisplay } from "../utility/harvestingTableUtil";
 import { stripTags } from "../utility/stringUtil";
+import { ModularDescription } from "../utility/descriptionUtil";
+import { DynamicRender } from "./RenderBlocks";
 
 const COMBAT_TAB_KEY = "combat";
 const TABLES_TAB_KEY = "tables";
@@ -16,7 +18,7 @@ const HARVESTING_TAB_KEY = "harvesting";
 const TRINKET_TAB_KEY = "trinkets";
 
 export function MonsterDisplay(props) {
-  let [tabKey, setTabKey] = useState(TABLES_TAB_KEY);
+  let [tabKey, setTabKey] = useState(COMBAT_TAB_KEY);
   let [tablesTabKey, setTablesTabKey] = useState(HARVESTING_TAB_KEY);
   let monster = props.monster;
 
@@ -32,6 +34,135 @@ export function MonsterDisplay(props) {
   let typeOut = getCreatureTypeDisplayString(monster.type);
   let cardSize = monster.cardSize;
 
+  let traitsAndSpellcastingOut = [];
+  monster.traits.forEach((entry) => {
+    traitsAndSpellcastingOut.push(<DynamicRender entry={entry} />);
+  });
+  monster.spellcasting.forEach((entry) => {
+    traitsAndSpellcastingOut.push(<SpellcastingBlock spellcasting={entry} />);
+  });
+  if (traitsAndSpellcastingOut.length > 0) {
+    traitsAndSpellcastingOut.push(
+      <div key="traitsBorder" className="border" />
+    );
+  }
+
+  let actionsOut = [];
+  monster.actions.forEach((entry) => {
+    actionsOut.push(<DynamicRender entry={entry} />);
+  });
+  if (actionsOut.length > 0) {
+    actionsOut.push(<div key="actionBorder" className="border" />);
+  }
+
+  let reactionsOut = [];
+  monster.reactions.forEach((entry) => {
+    reactionsOut.push(<DynamicRender entry={entry} />);
+  });
+  if (reactionsOut.length > 0) {
+    reactionsOut.push(<div key="reactionBorder" className="border" />);
+  }
+
+  let subMonster = Storage.subStateMonsterDict[monster.id];
+
+  let harvestingTable =
+    subMonster !== undefined && subMonster.harvestingTableGroup !== null
+      ? Storage.harvestingTableDict[subMonster.harvestingTableGroup]
+      : null;
+  let trinketTable =
+    subMonster !== undefined && subMonster.trinketTableType !== null
+      ? Storage.trinketTableDict[subMonster.trinketTableType]
+      : null;
+
+  let hasHarvestingTable = harvestingTable !== null;
+  let hasTrinketTable = trinketTable !== null;
+
+  let hasTables = hasHarvestingTable || hasTrinketTable;
+
+  if (!hasTables) {
+    if (tabKey === TABLES_TAB_KEY) {
+      tabKey = COMBAT_TAB_KEY;
+    }
+  } else {
+    if (!hasHarvestingTable && tablesTabKey === HARVESTING_TAB_KEY) {
+      tablesTabKey = TRINKET_TAB_KEY;
+    } else if (!hasTrinketTable && tablesTabKey === TRINKET_TAB_KEY) {
+      tablesTabKey = HARVESTING_TAB_KEY;
+    }
+  }
+  //tabKey = COMBAT_TAB_KEY;
+
+  return (
+    <>
+      <Row>
+        <Col>
+          <h4>{nameOut}</h4>
+          <div>
+            <i>
+              {typeOut}, {"<<"}ALIGNMENT{">>"}
+            </i>
+          </div>
+          <div>
+            <b>Card Size: </b>
+            {CARD_SIZES[cardSize]}
+          </div>
+        </Col>
+        <Col className="text-right">
+          <div>
+            <b>Source</b>
+            <div>{monster.source}</div>
+            {monster.otherSources.length > 0 && (
+              <i>
+                {monster.otherSources.map((oSrc) => oSrc.source).join(", ")}
+              </i>
+            )}
+          </div>
+        </Col>
+      </Row>
+      <Tabs activeKey={tabKey} onSelect={(k) => setTabKey(k)}>
+        <Tab eventKey={COMBAT_TAB_KEY} title="Combat">
+          <ACHPSpeed monster={monster} />
+          <StatBlock statBlock={monster.stats} />
+          <div className="border" />
+          <SkillsAndSavesBlock monster={monster} />
+          {traitsAndSpellcastingOut}
+          {actionsOut}
+          {reactionsOut}
+        </Tab>
+        <Tab eventKey={TABLES_TAB_KEY} title="Tables" disabled={!hasTables}>
+          <Tabs activeKey={tablesTabKey} onSelect={(k) => setTablesTabKey(k)}>
+            <Tab
+              eventKey={HARVESTING_TAB_KEY}
+              title="Harvesting"
+              disabled={!hasHarvestingTable}
+            >
+              {
+                <HarvestingTableDisplay
+                  challengeRating={monster.challengeRating}
+                  creatureType={monster.type}
+                  harvestingTable={harvestingTable}
+                />
+              }
+              {/* {JSON.stringify(monster.HarvestingTable)} */}
+            </Tab>
+            <Tab
+              eventKey={TRINKET_TAB_KEY}
+              title="Trinkets"
+              disabled={!hasTrinketTable}
+            >
+              <TrinketTableDisplay trinketTable={trinketTable} />
+            </Tab>
+          </Tabs>
+        </Tab>
+      </Tabs>
+      {/* <div className="border" /> */}
+      {/* {JSON.stringify(monster)} */}
+    </>
+  );
+}
+
+function ACHPSpeed(props) {
+  let monster = props.monster;
   let topBlock = [];
 
   let acOut = (
@@ -70,9 +201,11 @@ export function MonsterDisplay(props) {
   );
   topBlock.push(<div key="borderTop" className="border" />);
 
-  let statsOut = [];
-  statsOut.push(<StatBlock statBlock={monster.stats} />);
-  statsOut.push(<div key="borderStats" className="border" />);
+  return <>{topBlock}</>;
+}
+
+function SkillsAndSavesBlock(props) {
+  let monster = props.monster;
 
   let testFunction = function (mon) {
     return JSON.stringify(mon[this.key]);
@@ -85,7 +218,6 @@ export function MonsterDisplay(props) {
   let simpleJoinFunction = function (mon) {
     return mon[this.key].join(", ");
   };
-
   const SSE_PAIRS = [
     {
       key: "saves",
@@ -148,159 +280,94 @@ export function MonsterDisplay(props) {
     skillsSavesEtcOut.push(<div className="border" />);
   }
 
-  let traitsAndSpellcastingOut = [];
-  monster.traits.forEach((entry) => {
-    traitsAndSpellcastingOut.push(
-      <>
-        <b>{entry.name}</b>:{" "}
-        {entry.entries.map((val) => (
-          <p>{val}</p>
-        ))}
-      </>
-    );
-  });
-  monster.spellcasting.forEach((entry) => {
-    traitsAndSpellcastingOut.push(
-      <>
-        <b>{entry.name}</b>:{" "}
-        {entry.headerEntries.map((val, idx) => (
-          <p key={idx}>{val}</p>
-        ))}
-        {Object.keys(entry.spells).map((val, idx) => {
-          var row = entry.spells[val];
-          return (
-            <div key={idx}>
-              {val === "0" ? "Cantrips" : val} (
-              {row.slots ? row.slots + " slots" : "at will"}):{" "}
-              {row.spells.map(stripTags).join(", ")}
-            </div>
-          );
-        })}
-        {entry.footerEntries &&
-          entry.footerEntries.map((val, idx) => <p key={idx}>{val}</p>)}
-      </>
-    );
-  });
-  if (traitsAndSpellcastingOut.length > 0) {
-    traitsAndSpellcastingOut.push(
-      <div key="traitsBorder" className="border" />
-    );
-  }
+  return <>{skillsSavesEtcOut}</>;
+}
 
-  let actionsOut = [];
-  monster.actions.forEach((entry) => {
-    actionsOut.push(
-      <>
-        <b>{entry.name}</b>:{" "}
-        {entry.entries.map((val) => (
-          <p>{val}</p>
-        ))}
-      </>
-    );
-  });
-  if (actionsOut.length > 0) {
-    actionsOut.push(<div key="actionBorder" className="border" />);
-  }
+function SpellcastingBlock(props) {
+  var entry = props.spellcasting;
 
-  let reactionsOut = [];
-  monster.reactions.forEach((entry) => {
-    reactionsOut.push(
-      <>
-        <b>{entry.name}</b>:{" "}
-        {entry.entries.map((val) => (
-          <p>{val}</p>
-        ))}
-      </>
-    );
-  });
-  if (reactionsOut.length > 0) {
-    reactionsOut.push(<div key="reactionBorder" className="border" />);
-  }
+  var { name, headerEntries, spells, will, daily } = entry;
 
-  let hasHarvestingTable =
-    monster.harvestingTable && monster.harvestingTable.rows.length > 0;
-  let hasTrinketTable = monster.trinketTableType !== null;
+  var output = [];
 
-  let hasTables = hasHarvestingTable || hasTrinketTable;
-
-  if (!hasTables) {
-    if (tabKey === TABLES_TAB_KEY) {
-      tabKey = COMBAT_TAB_KEY;
+  if (headerEntries && headerEntries.length > 0) {
+    for (var idx = 0; idx < headerEntries.length; ++idx) {
+      if (idx === 0) {
+        output.push(
+          <div key={idx}>
+            <b>{name}.</b> {headerEntries[idx]}
+          </div>
+        );
+      } else {
+        output.push(<div key={idx}>{headerEntries[idx]}</div>);
+      }
     }
   } else {
-    if (!hasHarvestingTable && tablesTabKey === HARVESTING_TAB_KEY) {
-      tablesTabKey = TRINKET_TAB_KEY;
-    } else if (!hasTrinketTable && tablesTabKey === TRINKET_TAB_KEY) {
-      tablesTabKey = HARVESTING_TAB_KEY;
+    output.push(
+      <div key={"name"}>
+        <b>{name}.</b>
+      </div>
+    );
+  }
+
+  if (will && will.length > 0) {
+    output.push(
+      <div key={"will"}>At will: {will.map(stripTags).join(", ")}</div>
+    );
+  }
+
+  if (daily) {
+    let dailyKeys = Object.keys(daily);
+
+    for (var idx = 0; idx < dailyKeys.length; ++idx) {
+      let [num, each] = dailyKeys[idx].split("");
+      let lead = `${num}/day${each ? " each" : ""}`;
+
+      output.push(
+        <div key={"will"}>
+          {lead}: {daily[dailyKeys[idx]].map(stripTags).join(", ")}
+        </div>
+      );
     }
   }
 
-  return (
-    <>
-      <Row>
-        <Col>
-          <h4>{nameOut}</h4>
-          <div>
-            <i>
-              {typeOut}, {"<<"}ALIGNMENT{">>"}
-            </i>
-          </div>
-          <div>
-            <b>Card Size: </b>
-            {CARD_SIZES[cardSize]}
-          </div>
-        </Col>
-        <Col className="text-right">
-          <div>
-            <b>Source</b>
-            <div>{monster.source}</div>
-            {monster.otherSources.length > 0 && (
-              <i>
-                {monster.otherSources.map((oSrc) => oSrc.source).join(", ")}
-              </i>
-            )}
-          </div>
-        </Col>
-      </Row>
-      <Tabs activeKey={tabKey} onSelect={(k) => setTabKey(k)}>
-        <Tab eventKey={COMBAT_TAB_KEY} title="Combat">
-          {topBlock}
-          {statsOut}
-          {skillsSavesEtcOut}
-          {traitsAndSpellcastingOut}
-          {actionsOut}
-          {reactionsOut}
-        </Tab>
-        <Tab eventKey={TABLES_TAB_KEY} title="Tables" disabled={!hasTables}>
-          <Tabs activeKey={tablesTabKey} onSelect={(k) => setTablesTabKey(k)}>
-            <Tab
-              eventKey={HARVESTING_TAB_KEY}
-              title="Harvesting"
-              disabled={!hasHarvestingTable}
-            >
-              {/* <HarvestingTableDisplay
-                challengeRating={monster.challengeRating}
-                creatureType={monster.creatureType}
-                harvestingTable={monster.harvestingTable}
-              /> */}
-              {/* {JSON.stringify(monster.HarvestingTable)} */}
-            </Tab>
-            <Tab
-              eventKey={TRINKET_TAB_KEY}
-              title="Trinkets"
-              disabled={!hasTrinketTable}
-            >
-              {/* <TrinketTableDisplay
-                trinketTable={
-                  Storage.trinketTableDict[monster.trinketTableType]
-                }
-              /> */}
-            </Tab>
-          </Tabs>
-        </Tab>
-      </Tabs>
-      {/* <div className="border" /> */}
-      {/* {JSON.stringify(monster)} */}
-    </>
-  );
+  if (spells) {
+    let spellKeys = Object.keys(spells);
+    let spellsBlock = spells;
+
+    for (var idx = 0; idx < spellKeys.length; ++idx) {
+      let { slots, spells } = spellsBlock[spellKeys[idx]];
+
+      let numCount = "";
+      if (slots !== undefined) {
+        numCount = `${slots} slot${Number.parseInt(slots) > 1 ? "s" : ""}`;
+      } else {
+        numCount = "at will";
+      }
+
+      let spellLevel = Number.parseInt(spellKeys[idx]);
+      if (spellLevel === 0) {
+        spellLevel = "Cantrips";
+      } else if (spellLevel >= 4) {
+        spellLevel = `${spellLevel}th level`;
+      } else if (spellLevel === 1) {
+        spellLevel = `${spellLevel}st level`;
+      } else if (spellLevel === 2) {
+        spellLevel = `${spellLevel}nd level`;
+      } else if (spellLevel === 3) {
+        spellLevel = `${spellLevel}rd level`;
+      }
+
+      let lead = `${spellLevel} (${numCount}): `;
+
+      output.push(
+        <div key={"will"}>
+          {lead}
+          {spells.map(stripTags).join(", ")}
+        </div>
+      );
+    }
+  }
+
+  return <>{output}</>;
 }

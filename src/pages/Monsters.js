@@ -66,10 +66,23 @@ export function Monsters(props) {
     new DisplayColumn(
       "Card Size",
       (item) => {
-        return <>{CARD_SIZES[item["cardSize"]]}</>;
+        var subMon = Storage.subStateMonsterDict[item.id];
+        return <>{subMon ? CARD_SIZES[subMon.cardSize] : "-"}</>;
       },
       (a, b) => {
-        return a.cardSize - b.cardSize;
+        var subMonA = Storage.subStateMonsterDict[a.id];
+        var subMonB = Storage.subStateMonsterDict[b.id];
+
+        if (subMonA && subMonB) {
+          return subMonA.cardSize - subMonB.cardSize;
+        } else if (subMonA && !subMonB) {
+          return -1;
+        } else if (!subMonA && subMonB) {
+          return 1;
+        } else {
+          // TODO: Fix this
+          return -1;
+        }
       }
     ),
     new DisplayColumn(
@@ -100,7 +113,7 @@ export function Monsters(props) {
           />
         </Col>
         <Col className="border scrollableColumn">
-          <MonsterDisplay monster={monster} selectedId={selectedId} />
+          {/* <MonsterDisplay monster={monster} selectedId={selectedId} /> */}
         </Col>
       </Row>
     </>

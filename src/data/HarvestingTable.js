@@ -18,7 +18,7 @@ export class HarvestingTable {
 
   constructor({ name, rows }) {
     this.name = name;
-    this.rows = rows;
+    this.rows = rows.map((r) => new HarvestingTableRow(r));
   }
 }
 

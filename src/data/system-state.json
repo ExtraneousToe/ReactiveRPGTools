@@ -19526,29 +19526,29 @@
       "requiredToolNames": ["Spirit paper"]
     },
     {
-      "name": "Leucrota Bile",
+      "name": "Leucrotta Bile",
       "value": "2 gp",
       "weight": "1 lb",
       "craftingUsage": ["Potion of Digestion"],
       "description": [
-        "Leucrota bile is unlike that of any other mortal creature and is more akin to that of a demon. Capable of digesting the undigestible, once diluted and mixed with neutralising agents, the bile makes for a useful potion for the survivalist adventurer."
+        "Leucrotta bile is unlike that of any other mortal creature and is more akin to that of a demon. Capable of digesting the undigestible, once diluted and mixed with neutralising agents, the bile makes for a useful potion for the survivalist adventurer."
       ],
       "useText": [],
       "requiredToolNames": []
     },
     {
-      "name": "Leucrota Hide",
+      "name": "Leucrotta Hide",
       "value": "20 gp",
       "weight": "20 lb",
       "craftingUsage": [],
       "description": [
-        "A leucrota's hide is as odious and oily as a blanket belonging to a wandering vagrant. Even leatherworkers that have developed a resistance to the horrid stench of the tannery cannot stomach being near a leucrota. Still, with extensive treatment and the strategic use of perfumes, a leucrota hide makes for an excellent rainskin due to its natural oils."
+        "A leucrotta's hide is as odious and oily as a blanket belonging to a wandering vagrant. Even leatherworkers that have developed a resistance to the horrid stench of the tannery cannot stomach being near a leucrotta. Still, with extensive treatment and the strategic use of perfumes, a leucrotta hide makes for an excellent rainskin due to its natural oils."
       ],
       "useText": [],
       "requiredToolNames": []
     },
     {
-      "name": "Leucrota Mouth Ridge",
+      "name": "Leucrotta Mouth Ridge",
       "value": "60 gp",
       "weight": "4 lb",
       "craftingUsage": [
@@ -19557,7 +19557,7 @@
         "Morningstar, +1 (DMG)"
       ],
       "description": [
-        "Rather than individual teeth, a leucrota simply has a bony ridge that runs around the circumference of its mouth. This mouth ridge is said to be as strong as adamantium, and indeed has been shown to be strong enough to tear through steel and rock alike."
+        "Rather than individual teeth, a leucrotta simply has a bony ridge that runs around the circumference of its mouth. This mouth ridge is said to be as strong as adamantium, and indeed has been shown to be strong enough to tear through steel and rock alike."
       ],
       "useText": [],
       "requiredToolNames": []

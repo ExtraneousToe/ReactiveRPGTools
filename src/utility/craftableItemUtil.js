@@ -15,24 +15,26 @@ export function getIdFromItemName(name) {
 }
 
 export function getIdFromItem(item) {
-  if (item.Id !== undefined) return item.Id;
-  else return getIdFromItemName(item.Name);
+  if (item.id !== undefined) return item.id;
+  else return getIdFromItemName(item.name);
 }
 
 export function CraftableItemDisplay(props) {
   let craftableItem = props.craftableItem;
 
-  let materialOutput = craftableItem.Materials.map((mat, idx) => {
+  let materialOutput = craftableItem.materials.map((mat, idx) => {
+    let matItem = Storage.harvestableItemDict[mat.componentId];
+
     return (
       <span key={idx}>
-        {Storage.harvestableItemDict[mat.ComponentId].Name} ({mat.Quantity})
+        {matItem ? matItem.name : mat.componentId} ({mat.quantity})
       </span>
     );
   });
   let finalMaterialOutput = [];
   for (let i = 0; i < materialOutput.length; ++i) {
     if (finalMaterialOutput.length !== 0) {
-      finalMaterialOutput.push(" " + craftableItem.MaterialGrouping + " ");
+      finalMaterialOutput.push(" " + craftableItem.materialGrouping + " ");
     }
     finalMaterialOutput.push(materialOutput[i]);
   }
@@ -40,24 +42,24 @@ export function CraftableItemDisplay(props) {
   return (
     <>
       <Row>
-        <Col className="font-weight-bold">{craftableItem.Name}</Col>
+        <Col className="font-weight-bold">{craftableItem.name}</Col>
       </Row>
       <Row>
         <Col>
           <i>
-            {craftableItem.Type},{" "}
-            {(craftableItem.Rarity !== null
-              ? craftableItem.Rarity
+            {craftableItem.type},{" "}
+            {(craftableItem.rarity !== null
+              ? craftableItem.rarity
               : ""
             ).toLowerCase()}{" "}
-            {craftableItem.RequiresAttunement && "(requires attunement)"}
+            {craftableItem.requiresAttunement && "(requires attunement)"}
           </i>
         </Col>
       </Row>
       <Row>
         <Col>
           <i>
-            Crafted by: {finalMaterialOutput} ({craftableItem.Crafter})
+            Crafted by: {finalMaterialOutput} ({craftableItem.crafter})
           </i>
         </Col>
       </Row>
@@ -67,8 +69,8 @@ export function CraftableItemDisplay(props) {
       </Row>
       <Row>
         <Col>
-          {craftableItem.Description.length > 0 &&
-            craftableItem.Description.map((para, idx) => {
+          {craftableItem.description.length > 0 &&
+            craftableItem.description.map((para, idx) => {
               return <ModularDescription key={idx} description={para} />;
             })}
         </Col>

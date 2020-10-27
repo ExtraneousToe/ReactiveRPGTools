@@ -1,9 +1,5 @@
 import Data from "../data/system-state.json";
 import Index from "../data/bestiary/index.json";
-//import Index_MM from "../data/bestiary/bestiary-mm.json";
-import { getItemReferenceFromName } from "./harvestedItemUtil";
-import { getIdFromMonster } from "./monsterUtil";
-import { getIdFromItemName } from "./craftableItemUtil";
 import { Monster } from "../data/Monster";
 import { HarvestingTable } from "../data/HarvestingTable";
 import { TrinketTable } from "../data/TrinketTable";
@@ -87,13 +83,12 @@ const Storage = {
 
   // dictionaries
   monsterDict: {},
-
   subStateMonsterDict: {},
   harvestingTableDict: {},
-
   harvestableItemDict: {},
   trinketTableDict: {},
   craftableItemDict: {},
+
   processingKeys: [],
   processedKeys: [],
 
@@ -109,33 +104,9 @@ const Storage = {
       await Load5eMonsterFile({ key: key, fileName: Index[key] });
     }
 
-    // for (let idx = 0; idx < Data.TrinketTables.length; ++idx) {
-    //   let trinketTable = TrinketTable.fromOld(Data.TrinketTables[idx]);
-    //   Storage.trinketTableDict[trinketTable.trinketTableType] = trinketTable;
-    // }
-    for (let idx = 0; idx < Data.trinketTables.length; ++idx) {
-      let trinketTable = new TrinketTable(Data.trinketTables[idx]);
-      Storage.trinketTableDict[trinketTable.trinketTableType] = trinketTable;
-    }
-
-    // for (let idx = 0; idx < Data.Monsters.length; ++idx) {
-    //   let monster = Data.Monsters[idx];
-
-    //   let harvestingTable =
-    //     monster.HarvestingTable.Rows.length > 0
-    //       ? HarvestingTable.fromOld(monster)
-    //       : null;
-    //   monster = new SubStateMonster(monster, harvestingTable);
-
-    //   Storage.subStateMonsterDict[getIdFromMonster(monster)] = monster;
-    //   if (harvestingTable) {
-    //     Storage.harvestingTableDict[harvestingTable.name] = harvestingTable;
-    //   }
-    // }
-
     for (let idx = 0; idx < Data.monsters.length; ++idx) {
-      let monster = Data.monsters[idx];
-      Storage.subStateMonsterDict[getIdFromMonster(monster)] = monster;
+      let monster = new SubStateMonster(Data.monsters[idx]);
+      Storage.subStateMonsterDict[monster.id] = monster;
     }
 
     for (let idx = 0; idx < Data.harvestingTables.length; ++idx) {
@@ -143,25 +114,21 @@ const Storage = {
       Storage.harvestingTableDict[harvestingTable.name] = harvestingTable;
     }
 
-    // for (let idx = 0; idx < Data.CraftableItems.length; ++idx) {
-    //   let craftableItem = CraftableItem.fromOld(Data.CraftableItems[idx]);
-    //   Storage.craftableItemDict[craftableItem.id] = craftableItem;
-    // }
+    for (let idx = 0; idx < Data.harvestedItems.length; ++idx) {
+      let harvestedItem = new HarvestedItem(Data.harvestedItems[idx]);
+      Storage.harvestableItemDict[harvestedItem.id] = harvestedItem;
+    }
+
+    for (let idx = 0; idx < Data.trinketTables.length; ++idx) {
+      let trinketTable = new TrinketTable(Data.trinketTables[idx]);
+      Storage.trinketTableDict[trinketTable.trinketTableType] = trinketTable;
+    }
 
     for (let idx = 0; idx < Data.craftableItems.length; ++idx) {
       let craftableItem = new CraftableItem(Data.craftableItems[idx]);
       Storage.craftableItemDict[craftableItem.id] = craftableItem;
     }
 
-    // for (let idx = 0; idx < Data.HarvestedItems.length; ++idx) {
-    //   let harvestedItem = HarvestedItem.fromOld(Data.HarvestedItems[idx]);
-    //   Storage.harvestableItemDict[harvestedItem.id] = harvestedItem;
-    // }
-
-    for (let idx = 0; idx < Data.harvestedItems.length; ++idx) {
-      let harvestedItem = new HarvestedItem(Data.harvestedItems[idx]);
-      Storage.harvestableItemDict[harvestedItem.id] = harvestedItem;
-    }
     Storage._init = true;
   },
 };
@@ -182,5 +149,13 @@ class SubStateMonster {
     this.source = source;
     this.trinketTableType = trinketTableType;
     this.harvestingTableGroup = harvestingTableGroup;
+  }
+
+  get id() {
+    return (
+      this.name.replace(/[\s'\-()]/g, "") +
+      "_" +
+      this.source
+    ).toLowerCase();
   }
 }

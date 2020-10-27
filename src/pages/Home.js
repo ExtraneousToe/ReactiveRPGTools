@@ -13,7 +13,7 @@ export function Home(props) {
             e.preventDefault();
 
             let monsters = Object.values(Storage.subStateMonsterDict);
-            monsters.sort((a, b) => sortAscending(a.name, b.name));
+            monsters.sort((a, b) => sortAscending(a.id, b.id));
 
             let harvestedItems = Object.values(Storage.harvestableItemDict);
             harvestedItems.sort((a, b) => sortAscending(a.id, b.id));
