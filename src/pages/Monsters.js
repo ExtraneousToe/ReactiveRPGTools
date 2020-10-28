@@ -7,7 +7,7 @@ import Storage from "../utility/StorageUtil";
 // import { getIdFromMonster } from "../utility/monsterUtil";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import { sortAscending as sortCRAsc } from "../utility/challengeRatingUtil";
-// import { MonsterDisplay } from "../components/MonsterDisplay";
+import { MonsterDisplay } from "../components/MonsterDisplay";
 
 import { CARD_SIZES } from "../data/referenceCardSizes";
 import {
@@ -22,7 +22,7 @@ export function Monsters(props) {
   let [filterObj, setFilterObj] = useState({});
 
   const pathWithId = "/monsters/:id";
-  //let monster = null;
+  let monster = null;
 
   // extract monster id from the path
   let match = matchPath(props.location.pathname, { path: pathWithId });
@@ -31,7 +31,7 @@ export function Monsters(props) {
     // if there is an id, search for the monster
     selectedId = match.params.id;
     if (Storage.monsterDict[selectedId] !== undefined) {
-      // monster = Storage.monsterDict[selectedId];
+      monster = Storage.monsterDict[selectedId];
     }
   }
 
@@ -113,7 +113,7 @@ export function Monsters(props) {
           />
         </Col>
         <Col className="border scrollableColumn">
-          {/* <MonsterDisplay monster={monster} selectedId={selectedId} /> */}
+          <MonsterDisplay monster={monster} selectedId={selectedId} />
         </Col>
       </Row>
     </>

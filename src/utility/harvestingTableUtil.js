@@ -74,7 +74,7 @@ export function HarvestingTableDisplay(props) {
       // craftingOut = item.CraftingUsage.join(" or ");
       for (let k = 0; k < item.craftingUsage.length; ++k) {
         if (craftingOut.length !== 0) {
-          craftingOut.push(<> or </>);
+          craftingOut.push(<span key={"or-" + k}> or </span>);
         }
         craftingOut.push(
           <NavLink

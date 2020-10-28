@@ -8,8 +8,7 @@ import Storage from "../utility/StorageUtil";
 import { TrinketTableDisplay } from "../utility/trinketTableUtil";
 import { HarvestingTableDisplay } from "../utility/harvestingTableUtil";
 import { stripTags } from "../utility/stringUtil";
-// import { ModularDescription } from "../utility/descriptionUtil";
-import { DynamicRender } from "./RenderBlocks";
+import { DynamicRender, SpellcastingBlock } from "./RenderBlocks";
 
 const COMBAT_TAB_KEY = "combat";
 const TABLES_TAB_KEY = "tables";
@@ -35,11 +34,13 @@ export function MonsterDisplay(props) {
   let cardSize = monster.cardSize;
 
   let traitsAndSpellcastingOut = [];
-  monster.traits.forEach((entry) => {
-    traitsAndSpellcastingOut.push(<DynamicRender entry={entry} />);
+  monster.traits.forEach((entry, i) => {
+    traitsAndSpellcastingOut.push(<DynamicRender toRender={entry} key={i} />);
   });
-  monster.spellcasting.forEach((entry) => {
-    traitsAndSpellcastingOut.push(<SpellcastingBlock spellcasting={entry} />);
+  monster.spellcasting.forEach((entry, i) => {
+    traitsAndSpellcastingOut.push(
+      <SpellcastingBlock spellcasting={entry} key={i} />
+    );
   });
   if (traitsAndSpellcastingOut.length > 0) {
     traitsAndSpellcastingOut.push(
@@ -48,16 +49,16 @@ export function MonsterDisplay(props) {
   }
 
   let actionsOut = [];
-  monster.actions.forEach((entry) => {
-    actionsOut.push(<DynamicRender entry={entry} />);
+  monster.actions.forEach((entry, i) => {
+    actionsOut.push(<DynamicRender toRender={entry} key={i} />);
   });
   if (actionsOut.length > 0) {
     actionsOut.push(<div key="actionBorder" className="border" />);
   }
 
   let reactionsOut = [];
-  monster.reactions.forEach((entry) => {
-    reactionsOut.push(<DynamicRender entry={entry} />);
+  monster.reactions.forEach((entry, i) => {
+    reactionsOut.push(<DynamicRender toRender={entry} key={i} />);
   });
   if (reactionsOut.length > 0) {
     reactionsOut.push(<div key="reactionBorder" className="border" />);
@@ -271,103 +272,14 @@ function SkillsAndSavesBlock(props) {
     }
   });
   skillsSavesEtcOut.push(
-    <div>
+    <div key="cr">
       <b>Challenge Rating: </b>
       {getChallengeRatingDisplayString(monster.challengeRating)}
     </div>
   );
   if (skillsSavesEtcOut.length > 0) {
-    skillsSavesEtcOut.push(<div className="border" />);
+    skillsSavesEtcOut.push(<div key="border" className="border" />);
   }
 
   return <>{skillsSavesEtcOut}</>;
-}
-
-function SpellcastingBlock(props) {
-  var entry = props.spellcasting;
-
-  var { name, headerEntries, spells, will, daily } = entry;
-
-  var output = [];
-  var idx = 0;
-  if (headerEntries && headerEntries.length > 0) {
-    for (idx = 0; idx < headerEntries.length; ++idx) {
-      if (idx === 0) {
-        output.push(
-          <div key={idx}>
-            <b>{name}.</b> {headerEntries[idx]}
-          </div>
-        );
-      } else {
-        output.push(<div key={idx}>{headerEntries[idx]}</div>);
-      }
-    }
-  } else {
-    output.push(
-      <div key={"name"}>
-        <b>{name}.</b>
-      </div>
-    );
-  }
-
-  if (will && will.length > 0) {
-    output.push(
-      <div key={"will"}>At will: {will.map(stripTags).join(", ")}</div>
-    );
-  }
-
-  if (daily) {
-    let dailyKeys = Object.keys(daily);
-
-    for (idx = 0; idx < dailyKeys.length; ++idx) {
-      let [num, each] = dailyKeys[idx].split("");
-      let lead = `${num}/day${each ? " each" : ""}`;
-
-      output.push(
-        <div key={"will"}>
-          {lead}: {daily[dailyKeys[idx]].map(stripTags).join(", ")}
-        </div>
-      );
-    }
-  }
-
-  if (spells) {
-    let spellKeys = Object.keys(spells);
-    let spellsBlock = spells;
-
-    for (idx = 0; idx < spellKeys.length; ++idx) {
-      let { slots, spells } = spellsBlock[spellKeys[idx]];
-
-      let numCount = "";
-      if (slots !== undefined) {
-        numCount = `${slots} slot${Number.parseInt(slots) > 1 ? "s" : ""}`;
-      } else {
-        numCount = "at will";
-      }
-
-      let spellLevel = Number.parseInt(spellKeys[idx]);
-      if (spellLevel === 0) {
-        spellLevel = "Cantrips";
-      } else if (spellLevel >= 4) {
-        spellLevel = `${spellLevel}th level`;
-      } else if (spellLevel === 1) {
-        spellLevel = `${spellLevel}st level`;
-      } else if (spellLevel === 2) {
-        spellLevel = `${spellLevel}nd level`;
-      } else if (spellLevel === 3) {
-        spellLevel = `${spellLevel}rd level`;
-      }
-
-      let lead = `${spellLevel} (${numCount}): `;
-
-      output.push(
-        <div key={"will"}>
-          {lead}
-          {spells.map(stripTags).join(", ")}
-        </div>
-      );
-    }
-  }
-
-  return <>{output}</>;
 }
