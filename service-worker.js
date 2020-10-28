@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ReactiveRPGTools/precache-manifest.592b4e33a9c3f68c42ae213f3de70bd7.js"
+  "/ReactiveRPGTools/precache-manifest.979f7926e13802d30be453b76dc5fb1a.js"
 );
 
 self.addEventListener('message', (event) => {

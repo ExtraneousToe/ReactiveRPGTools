@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ca666186dfc73f9c95bd7fcfc01e495",
+    "revision": "225359777cbab77a0f8e619ab16e6193",
     "url": "/ReactiveRPGTools/index.html"
   },
   {
