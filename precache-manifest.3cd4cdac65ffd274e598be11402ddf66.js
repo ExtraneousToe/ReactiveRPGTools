@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e1c285eb724739105b6b07bac763dee",
+    "revision": "5ac221f868114dc6ff2668c754d20462",
     "url": "/ReactiveRPGTools/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactiveRPGTools/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "24d5eaf877a4b0c5146b",
+    "revision": "be75310cf9217670f3fb",
     "url": "/ReactiveRPGTools/static/css/main.a966b445.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactiveRPGTools/static/js/2.9ad4fc8f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "24d5eaf877a4b0c5146b",
-    "url": "/ReactiveRPGTools/static/js/main.df438c02.chunk.js"
+    "revision": "be75310cf9217670f3fb",
+    "url": "/ReactiveRPGTools/static/js/main.c4a3eec8.chunk.js"
   },
   {
     "revision": "b0680bd056c7de6ce22d",
