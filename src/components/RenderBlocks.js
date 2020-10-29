@@ -39,10 +39,15 @@ export function DynamicRender(props) {
 }
 
 function ListRender(props) {
-  let { type, style, items, ...others } = props.list;
+  let {
+    //type,
+    style,
+    items,
+    //...others
+  } = props.list;
 
   return (
-    <ul>
+    <ul className={style}>
       {items.map((it, idx) => (
         <DynamicRender toRender={it} key={idx} />
       ))}
@@ -51,7 +56,12 @@ function ListRender(props) {
 }
 
 function ItemRender(props) {
-  let { type, name, entry, ...others } = props.item;
+  let {
+    //type,
+    name,
+    entry,
+    //...others
+  } = props.item;
 
   return (
     <li>
@@ -63,28 +73,43 @@ function ItemRender(props) {
 export function SpellcastingBlock(props) {
   var entry = props.spellcasting;
 
-  var { name, headerEntries, spells, will, daily } = entry;
+  var { name, headerEntries, spells, will, daily, footerEntries } = entry;
 
   var output = [];
   var idx = 0;
   if (headerEntries && headerEntries.length > 0) {
-    for (idx = 0; idx < headerEntries.length; ++idx) {
-      if (idx === 0) {
-        output.push(
-          <div key={idx}>
-            <b>{stripTags(name)}.</b> {stripTags(headerEntries[idx])}
-          </div>
-        );
-      } else {
-        output.push(<div key={idx}>{stripTags(headerEntries[idx])}</div>);
-      }
-    }
-  } else {
     output.push(
-      <div key={"name"}>
-        <b>{stripTags(name)}.</b>
+      <div key={"header"}>
+        {headerEntries.map((head, idx) => {
+          if (idx === 0) {
+            return (
+              <div key={idx}>
+                <b>{stripTags(name)}.</b> {stripTags(head)}
+              </div>
+            );
+          } else {
+            return <div key={idx}>{stripTags(head)}</div>;
+          }
+        })}
       </div>
     );
+    //   for (idx = 0; idx < headerEntries.length; ++idx) {
+    //     if (idx === 0) {
+    //       output.push(
+    //         <div key={idx}>
+    //           <b>{stripTags(name)}.</b> {stripTags(headerEntries[idx])}
+    //         </div>
+    //       );
+    //     } else {
+    //       output.push(<div key={idx}>{stripTags(headerEntries[idx])}</div>);
+    //     }
+    //   }
+    // } else {
+    //   output.push(
+    //     <div key={"header"}>
+    //       <b>{stripTags(name)}.</b>
+    //     </div>
+    //   );
   }
 
   if (will && will.length > 0) {
@@ -103,7 +128,7 @@ export function SpellcastingBlock(props) {
       let lead = `${num}/day${each ? " each" : ""}`;
 
       output.push(
-        <div key={"will"}>
+        <div key={"daily"}>
           <i>{lead}:</i> {daily[dailyKeys[idx]].map(stripTags).join(", ")}
         </div>
       );
@@ -140,7 +165,7 @@ export function SpellcastingBlock(props) {
       let lead = `${spellLevel} (${numCount}): `;
 
       output.push(
-        <div key={"will"}>
+        <div key={`spells-${idx}`}>
           <i>{lead}</i>
           {spells.map(stripTags).join(", ")}
         </div>
@@ -148,5 +173,15 @@ export function SpellcastingBlock(props) {
     }
   }
 
-  return <>{output}</>;
+  if (footerEntries && footerEntries.length > 0) {
+    output.push(
+      <div key="footer">
+        {footerEntries.map((foot, idx) => {
+          return <div key={idx}>{stripTags(foot)}</div>;
+        })}
+      </div>
+    );
+  }
+
+  return <div key={name}>{output}</div>;
 }

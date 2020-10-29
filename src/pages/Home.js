@@ -1,14 +1,14 @@
 import React from "react";
-import { fileSaveAs } from "../utility/saveFile";
-import Storage from "../utility/StorageUtil";
-import { sortAscending } from "../utility/stringUtil";
+// import { fileSaveAs } from "../utility/saveFile";
+// import Storage from "../utility/StorageUtil";
+// import { sortAscending } from "../utility/stringUtil";
 
 export function Home(props) {
   return (
     <div>
       <h1>Home</h1>
       <div>
-        <button
+        {/* <button
           onClick={(e) => {
             e.preventDefault();
 
@@ -42,11 +42,11 @@ export function Home(props) {
           }}
         >
           Save State
-        </button>
+        </button> */}
       </div>
-      <div>
+      {/* <div>
         <input type="text" style={{ width: "100%", height: "4em" }} />
-      </div>
+      </div> */}
       {/* <div>{JSON.stringify(props)}</div> */}
       {/* <div>{JSON.stringify(process.env)}</div> */}
     </div>

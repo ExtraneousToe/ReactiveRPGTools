@@ -2,21 +2,16 @@ import React, { useState } from "react";
 import { matchPath } from "react-router";
 import { Col, Row } from "react-bootstrap";
 import { DisplayList, DisplayColumn } from "./DisplayList";
-import { CRList } from "../components/ChallengeRatingDisplay";
 import Storage from "../utility/StorageUtil";
-// import { getIdFromMonster } from "../utility/monsterUtil";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
-import { sortAscending as sortCRAsc } from "../utility/challengeRatingUtil";
+import { ChallengeRating, CreatureType } from "../data/Monster";
 import { MonsterDisplay } from "../components/MonsterDisplay";
 
 import { CARD_SIZES } from "../data/referenceCardSizes";
-import {
-  CreatureTypeList,
-  sortCreatureTypeAsc,
-} from "../utility/creatureTypeUtil";
 import { MonsterFilterBlock } from "../components/MonsterFilterBlock";
 import "./Columnable.css";
 import "../LayoutControl/Layout.css";
+import Sources from "../data/sources.json";
 
 export function Monsters(props) {
   let [filterObj, setFilterObj] = useState({});
@@ -48,19 +43,22 @@ export function Monsters(props) {
     new DisplayColumn(
       "Type",
       (item) => {
-        return <CreatureTypeList creatureType={item["type"]} />;
+        return <>{item["type"].displayString}</>;
       },
       (a, b) => {
-        return sortCreatureTypeAsc(a.creatureType, b.creatureType);
+        return CreatureType.sortAscending(a.type, b.type);
       }
     ),
     new DisplayColumn(
       "CR",
       (item) => {
-        return <CRList cr={item["challengeRating"]} />;
+        return <>{item.challengeRating.displayString}</>;
       },
       (a, b) => {
-        return sortCRAsc(a.challengeRating, b.challengeRating);
+        return ChallengeRating.sortAscending(
+          a.challengeRating,
+          b.challengeRating
+        );
       }
     ),
     new DisplayColumn(
@@ -88,7 +86,7 @@ export function Monsters(props) {
     new DisplayColumn(
       "Source",
       (item) => {
-        return <>{item["source"]}</>;
+        return <span title={Sources[item["source"]]}>{item["source"]}</span>;
       },
       (a, b) => {
         return sortStrAsc(a.source, b.source);

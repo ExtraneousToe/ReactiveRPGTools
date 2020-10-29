@@ -1,3 +1,17 @@
+// eslint-disable-next-line
+Array.prototype.last =
+  Array.prototype.last ||
+  function (arg) {
+    if (arg !== undefined) this[this.length - 1] = arg;
+    else return this[this.length - 1];
+  };
+// eslint-disable-next-line
+String.prototype.last =
+  String.prototype.last ||
+  function () {
+    return this[this.length - 1];
+  };
+
 export function sortAscending(a, b) {
   let x = a.toLowerCase();
   let y = b.toLowerCase();
@@ -261,7 +275,7 @@ const _stripTagLayer = function (str) {
               const [
                 compactText,
                 /*areaId,*/ flags,
-                ...others
+                //...others
               ] = splitTagByPipe(text);
 
               return flags && flags.includes("x")

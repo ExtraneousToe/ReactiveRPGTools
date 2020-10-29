@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import { getCreatureTypeDisplayString } from "../utility/creatureTypeUtil";
 import { CARD_SIZES } from "../data/referenceCardSizes";
 
 function BlockRow_Text(key, label, value, setter) {
@@ -88,7 +87,7 @@ export function MonsterFilterBlock(props) {
     }
     if (typeField !== "") {
       obj.Type = (obj) => {
-        let crString = getCreatureTypeDisplayString(obj.type);
+        let crString = obj.type.displayString;
         return crString.toLowerCase().match(typeField.toLowerCase());
       };
     }

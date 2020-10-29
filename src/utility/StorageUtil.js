@@ -68,7 +68,7 @@ async function Load5eMonsterFile({ key, fileName }) {
       }
     } catch (err) {
       console.error(
-        `Loading on monster: ${mon.name} in file: ${fileName} failed.`
+        `Loading on monster: ${mon.name} in file: ${fileName} failed.\n${err}`
       );
     }
   }

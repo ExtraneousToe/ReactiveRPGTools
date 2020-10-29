@@ -1,3 +1,5 @@
+import { sortAscending as sortStrAsc } from "../utility/stringUtil";
+
 export class Monster {
   static from5eSource(fiveEState) {
     let feType = null;
@@ -7,10 +9,20 @@ export class Monster {
         feType = new CreatureType({ type: fiveEState.type });
         break;
       case "object":
-        feType = new CreatureType({
-          type: fiveEState.type.type,
-          tags: fiveEState.type.tags,
-        });
+        let { type, tags, swarmSize } = fiveEState.type;
+
+        let inObj = {
+          type: type,
+          swarmSize: swarmSize,
+        };
+        if (tags) {
+          inObj.tags = tags.map((tg) =>
+            typeof tg === "string" ? { tag: tg, prefix: "" } : tg
+          );
+        }
+
+        feType = new CreatureType(inObj);
+
         break;
       default:
         console.log(
@@ -28,14 +40,10 @@ export class Monster {
         feCR = new ChallengeRating({ cr: fiveEState.cr });
         break;
       case "object":
-        feCR = new ChallengeRating({
-          cr: fiveEState.cr.cr,
-          lair: fiveEState.cr.lair,
-          coven: fiveEState.cr.coven,
-        });
+        feCR = new ChallengeRating(fiveEState.cr);
         break;
       case "undefined":
-        feCR = new ChallengeRating({});
+        feCR = new ChallengeRating({ cr: "-" });
         break;
       default:
         console.log(
@@ -75,12 +83,21 @@ export class Monster {
       feACLines.push(new ArmorClass(acObj));
     }
 
+    let feAlignment = [];
+    if (!fiveEState.alignment) {
+      // nothing
+    } else if (fiveEState.alignment.every((ent) => typeof ent === "string")) {
+      feAlignment.push(new Alignment({ alignment: fiveEState.alignment }));
+    } else {
+      feAlignment = fiveEState.alignment.map((ali) => new Alignment(ali));
+    }
+
     return new Monster({
       name: fiveEState.name, //   name,
       referenceCardSize: 0, // referenceCardSize,
       source: fiveEState.source, // source,
       otherSources: fiveEState.otherSources, // otherSources,
-      size: fiveEState.size, // creatureSize,
+      creatureSize: fiveEState.size, // creatureSize,
       creatureType: feType, // creatureType,
       stats: new StatsBlock(
         fiveEState
@@ -107,7 +124,7 @@ export class Monster {
       saves: fiveEState.save, // saves,
       skills: fiveEState.skill, // skills,
       senses: fiveEState.senses, // senses,
-      alignment: fiveEState.alignment, // alignment
+      alignment: feAlignment, // alignment
       resistances: fiveEState.resist, // resistances
       immunities: fiveEState.immune, // immunity
       conditionImmunities: fiveEState.conditionImmune, // conditionImmunities
@@ -119,106 +136,6 @@ export class Monster {
       legendaryHeader: fiveEState.legendaryHeader, //legendaryHeader
       legendaryActions: fiveEState.legendary, //legendaryActions
     });
-  }
-
-  static fromCombinedSources(oldState, fiveEState) {
-    let feType = null;
-
-    switch (typeof fiveEState.type) {
-      case "string":
-        feType = new CreatureType({ type: fiveEState.type });
-        break;
-      case "object":
-        feType = new CreatureType({
-          type: fiveEState.type.type,
-          tags: fiveEState.type.tags,
-        });
-        break;
-      default:
-        console.log(`Unhandled creatureType type: ${typeof fiveEState.type}`);
-        break;
-    }
-
-    let feCR = null;
-
-    switch (typeof fiveEState.cr) {
-      case "string":
-        feCR = new ChallengeRating({ cr: fiveEState.cr });
-        break;
-      case "object":
-        feCR = new ChallengeRating({
-          cr: fiveEState.cr.cr,
-          lair: fiveEState.cr.lair,
-          coven: fiveEState.cr.coven,
-        });
-        break;
-      default:
-        console.log(`Unhandled CR type: ${typeof fiveEState.type}`);
-        break;
-    }
-
-    let feACLines = [];
-    for (let i = 0; i < fiveEState.ac.length; ++i) {
-      let line = fiveEState.ac[i];
-      let acObj = {};
-
-      switch (typeof fiveEState.cr) {
-        case "number":
-          acObj.ac = line;
-          break;
-        case "string":
-          acObj.ac = Number(line);
-          break;
-        case "object":
-          acObj.ac = line.ac;
-          acObj.from = line.from;
-          break;
-        default:
-          console.log(`Unhandled AC type: ${typeof fiveEState.type}`);
-          break;
-      }
-
-      feACLines.push(new ArmorClass(acObj));
-    }
-
-    return new Monster(
-      fiveEState.name, //   name,
-      oldState ? oldState.referenceCardSize : 0, // referenceCardSize,
-      fiveEState.source, // source,
-      fiveEState.otherSources, // otherSources,
-      fiveEState.size, // creatureSize,
-      feType, // creatureType,
-      new StatsBlock(
-        fiveEState.str,
-        fiveEState.dex,
-        fiveEState.con,
-        fiveEState.int,
-        fiveEState.wis,
-        fiveEState.cha
-      ), // stats,
-      feACLines, // armorClass,
-      feCR, // challengeRating,
-      new HealthBlock(fiveEState.hp), // health,
-      fiveEState.passive, // passivePerc,
-      fiveEState.languages, // languages,
-      new SpeedBlock(fiveEState.speed), // speed,
-      fiveEState.save, // saves,
-      fiveEState.skill, // skills,
-      fiveEState.senses, // senses,
-      fiveEState.alignment, // alignment
-      fiveEState.resist, // resistance
-      fiveEState.immune, // immunity
-      fiveEState.conditionImmune, // condition immunity
-      [], //traits, //traits
-      [], //spellcasting, //spellcasting
-      [], //actions, //actions
-      [], //reactions, //reactions
-      [], //environments, //environments
-      [], //legendaryHeader, //legendaryHeader
-      [], //legendaryActions, //legendaryActions
-      oldState ? new HarvestingTable(oldState.HarvestingTable) : null, // harvestingTable
-      oldState ? oldState.TrinketTableType : null // trinketTableType
-    );
   }
 
   constructor({
@@ -290,6 +207,62 @@ export class Monster {
       this.source
     ).toLowerCase();
   }
+
+  static stringFromSize(size) {
+    switch (size) {
+      case "T":
+        return "Tiny";
+      case "S":
+        return "Small";
+      case "M":
+        return "Medium";
+      case "L":
+        return "Large";
+      case "H":
+        return "Huge";
+      case "G":
+        return "Gargantuan";
+      default:
+        return `?[${size}]?`;
+    }
+  }
+}
+
+class Alignment {
+  constructor({ alignment, chance = 100 }) {
+    this.alignment = alignment;
+    this.chance = chance;
+  }
+
+  get convertedString() {
+    let str = this.alignment
+      .map((k) => {
+        switch (k) {
+          case "N":
+            return "neutral";
+          case "C":
+            return "chaotic";
+          case "G":
+            return "good";
+          case "L":
+            return "lawful";
+          case "E":
+            return "evil";
+          case "A":
+            return "any alignment";
+          case "U":
+            return "unaligned";
+          default:
+            return `?${k}?`;
+        }
+      })
+      .join(" ");
+
+    if (this.chance !== 100) {
+      str += ` (${this.chance}%)`;
+    }
+    return str;
+  }
 }
 
 // Monster Bits
@@ -301,7 +274,6 @@ class ArmorClass {
   }
 
   get simpleDisplay() {
-    //return JSON.stringify(this);
     var strOut = this.ac;
 
     if (this.from) {
@@ -314,22 +286,115 @@ class ArmorClass {
   }
 }
 
-class CreatureType {
-  constructor({ type, tags }) {
+export class CreatureType {
+  constructor({ type, tags, swarmSize }) {
     this.type = type;
     this.tags = tags || [];
+    this.swarmSize = swarmSize;
+  }
+
+  get displayString() {
+    let str = this.type;
+
+    if (this.swarmSize) {
+      return `Swarm of ${Monster.stringFromSize(
+        this.swarmSize
+      ).toLowerCase()} ${this.type}${this.type !== "undead" ? "s" : ""}`;
+    }
+
+    if (this.tags.length > 0) {
+      str += ` (${this.tags
+        .map((tg) => {
+          var tagOut = tg.tag;
+          if (tg.prefix) tagOut = tg.prefix + " " + tagOut;
+          return tagOut;
+        })
+        .join(", ")})`;
+    }
+
+    return str;
+  }
+
+  static sortAscending(a, b) {
+    let outVal = sortStrAsc(a.type, b.type);
+
+    if (outVal !== 0) {
+      return outVal;
+    }
+
+    outVal = a.tags.length - b.tags.length;
+
+    if (outVal !== 0) {
+      return outVal;
+    }
+
+    for (let i = 0; i < a.tags.length; ++i) {
+      outVal = sortStrAsc(a.tags[i].tag, b.tags[i].tag);
+
+      if (outVal !== 0) {
+        return outVal;
+      }
+    }
+
+    return 0;
   }
 }
 
-class ChallengeRating {
+export class ChallengeRating {
+  static sortAscending(a, b) {
+    if (a === null) return -1;
+    if (b === null) return 1;
+
+    let out = a.cr - b.cr;
+
+    if (out !== 0) {
+      return out;
+    }
+
+    out = a.lair - b.lair;
+
+    if (out !== 0) {
+      return out;
+    }
+
+    out = a.coven - b.coven;
+
+    return out;
+  }
+
   constructor({ cr, lair, coven }) {
     this.cr = cr || null;
     var matches = /\d+\/(\d+)/g.exec(this.cr);
     if (matches !== null && matches.length > 0) {
       this.cr = 1 / Number.parseInt(matches[1]);
     } else this.cr = Number.parseInt(this.cr);
+    if (Number.isNaN(this.cr)) {
+      this.cr = -1;
+    }
     this.lair = lair || null;
     this.coven = coven || null;
+  }
+
+  get displayString() {
+    if (this.cr === -1) {
+      return "-";
+    }
+
+    let crOut = this.cr;
+
+    if (typeof crOut === "number" && crOut < 1 && crOut !== 0) {
+      crOut = `1/${1 / crOut}`;
+    }
+
+    if (this.coven !== null) {
+      crOut += ` (${this.coven} in coven)`;
+    }
+
+    if (this.lair !== null) {
+      crOut += ` (${this.lair} in lair)`;
+    }
+
+    return crOut;
   }
 }
 
@@ -340,7 +405,7 @@ class HealthBlock {
   }
 }
 
-const SPEED_KEYS = ["fly", "climb", "swim", "burrow"];
+const SPEED_KEYS = ["walk", "fly", "climb", "swim", "burrow"];
 class SpeedBlock {
   constructor({ walk, fly, climb, swim, burrow, canHover }) {
     this.walk = walk !== undefined ? new SpeedEntry(walk) : null;
@@ -352,13 +417,15 @@ class SpeedBlock {
   }
 
   get simpleDisplay() {
-    let strOut = `${this.walk.ft} ft.`;
-
-    SPEED_KEYS.forEach((val) => {
+    let strOut = SPEED_KEYS.map((val) => {
       if (this[val]) {
-        strOut += `, ${val} ${this[val].simpleDisplay}`;
+        if (val !== "walk") return `${val} ${this[val].simpleDisplay}`;
+        else return `${this[val].simpleDisplay}`;
       }
-    });
+      return "";
+    })
+      .filter((spd) => spd)
+      .join(", ");
 
     return strOut;
   }
@@ -392,24 +459,5 @@ class StatsBlock {
     this.int = int;
     this.wis = wis;
     this.cha = cha;
-  }
-}
-
-// HarvestingTables
-class HarvestingTable {
-  constructor(inObj) {
-    this.rows = [];
-    for (let i = 0; i < inObj.rows; ++i) {
-      this.rows.push(new HarvestingTableRow(inObj.rows[i]));
-    }
-  }
-}
-
-class HarvestingTableRow {
-  constructor(inObj) {
-    this.dc = inObj.DifficultyClass;
-    this.itemNameRef = inObj.ItemNameRef;
-    this.qty = inObj.Quantity;
-    this.notes = inObj.Notes;
   }
 }

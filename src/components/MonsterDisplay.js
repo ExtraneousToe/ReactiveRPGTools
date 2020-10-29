@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { StatBlock } from "../utility/statsUtil";
-import { getCreatureTypeDisplayString } from "../utility/creatureTypeUtil";
-import { getChallengeRatingDisplayString } from "../utility/challengeRatingUtil";
 import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import { CARD_SIZES } from "../data/referenceCardSizes";
 import Storage from "../utility/StorageUtil";
@@ -9,6 +7,8 @@ import { TrinketTableDisplay } from "../utility/trinketTableUtil";
 import { HarvestingTableDisplay } from "../utility/harvestingTableUtil";
 import { stripTags } from "../utility/stringUtil";
 import { DynamicRender, SpellcastingBlock } from "./RenderBlocks";
+import { stringFromSize } from "../utility/monsterUtil";
+import Sources from "../data/sources.json";
 
 const COMBAT_TAB_KEY = "combat";
 const TABLES_TAB_KEY = "tables";
@@ -30,8 +30,11 @@ export function MonsterDisplay(props) {
   }
 
   let nameOut = monster.name;
-  let typeOut = getCreatureTypeDisplayString(monster.type);
-  let cardSize = monster.cardSize;
+  let typeOut = monster.type.displayString;
+
+  let subMonster = Storage.subStateMonsterDict[monster.id];
+
+  let cardSize = subMonster ? CARD_SIZES[subMonster.cardSize] : "-";
 
   let traitsAndSpellcastingOut = [];
   monster.traits.forEach((entry, i) => {
@@ -39,7 +42,10 @@ export function MonsterDisplay(props) {
   });
   monster.spellcasting.forEach((entry, i) => {
     traitsAndSpellcastingOut.push(
-      <SpellcastingBlock spellcasting={entry} key={i} />
+      <SpellcastingBlock
+        spellcasting={entry}
+        key={entry.name ? entry.name : i}
+      />
     );
   });
   if (traitsAndSpellcastingOut.length > 0) {
@@ -63,8 +69,6 @@ export function MonsterDisplay(props) {
   if (reactionsOut.length > 0) {
     reactionsOut.push(<div key="reactionBorder" className="border" />);
   }
-
-  let subMonster = Storage.subStateMonsterDict[monster.id];
 
   let harvestingTable =
     subMonster !== undefined && subMonster.harvestingTableGroup !== null
@@ -93,39 +97,58 @@ export function MonsterDisplay(props) {
   }
   //tabKey = COMBAT_TAB_KEY;
 
+  let otherSourcesOut = monster.otherSources.map((oSrc, idx) => {
+    let line = <span title={Sources[oSrc.source]}>{oSrc.source}</span>;
+    if (idx !== 0) {
+      return [<>{", "}</>, line];
+    } else {
+      return line;
+    }
+  });
+
   return (
     <>
       <Row>
-        <Col>
+        <Col sm="9">
           <h4>{nameOut}</h4>
           <div>
             <i>
-              {typeOut}, {"<<"}ALIGNMENT{">>"}
+              {stringFromSize(monster.size)} {typeOut}
+              {monster.alignment.length && (
+                <span>
+                  ,{" "}
+                  {monster.alignment
+                    .map((ali) => ali.convertedString)
+                    .join(" or ")}
+                </span>
+              )}
             </i>
           </div>
           <div>
             <b>Card Size: </b>
-            {CARD_SIZES[cardSize]}
+            {cardSize}
           </div>
         </Col>
         <Col className="text-right">
           <div>
             <b>Source</b>
-            <div>{monster.source}</div>
-            {monster.otherSources.length > 0 && (
-              <i>
-                {monster.otherSources.map((oSrc) => oSrc.source).join(", ")}
-              </i>
-            )}
+            <div title={Sources[monster.source]}>{monster.source}</div>
+            {otherSourcesOut.length > 0 && <i>{otherSourcesOut}</i>}
           </div>
         </Col>
       </Row>
       <Tabs activeKey={tabKey} onSelect={(k) => setTabKey(k)}>
         <Tab eventKey={COMBAT_TAB_KEY} title="Combat">
-          <ACHPSpeed monster={monster} />
-          <StatBlock statBlock={monster.stats} />
+          <div>
+            <ACHPSpeed monster={monster} />
+          </div>
+          <div>
+            <StatBlock statBlock={monster.stats} />
+          </div>
           <div className="border" />
-          <SkillsAndSavesBlock monster={monster} />
+          <div>
+            <SkillsAndSavesBlock monster={monster} />
+          </div>
           {traitsAndSpellcastingOut}
           {actionsOut}
           {reactionsOut}
@@ -171,7 +194,7 @@ function ACHPSpeed(props) {
       {monster.armorClass
         .map((ac) => {
           if (ac.from) {
-            return ac.ac + " (" + stripTags(ac.from) + ")";
+            return ac.ac + " (" + ac.from.map(stripTags).join(", ") + ")";
           } else if (ac.condition) {
             return ac.ac + " " + stripTags(ac.condition);
           } else return ac.ac;
@@ -274,7 +297,7 @@ function SkillsAndSavesBlock(props) {
   skillsSavesEtcOut.push(
     <div key="cr">
       <b>Challenge Rating: </b>
-      {getChallengeRatingDisplayString(monster.challengeRating)}
+      {monster.challengeRating.displayString}
     </div>
   );
   if (skillsSavesEtcOut.length > 0) {
