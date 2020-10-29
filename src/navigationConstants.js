@@ -1,7 +1,7 @@
 import React from "react";
 import { HarvestedItems } from "./pages/HarvestedItems";
 import { Home } from "./pages/Home";
-import { Monsters } from "./pages/Monsters";
+import Monsters from "./pages/Monsters";
 import { CraftableItems } from "./pages/CraftableItems";
 
 export const MENU = [

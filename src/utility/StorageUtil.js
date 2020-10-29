@@ -5,6 +5,8 @@ import { HarvestingTable } from "../data/HarvestingTable";
 import { TrinketTable } from "../data/TrinketTable";
 import { CraftableItem } from "../data/CraftableItem";
 import { HarvestedItem } from "../data/HarvestedItem";
+import { addMonsters, addSubMonsters } from "../redux/actions";
+import store from "../redux/store";
 
 const $ = window.$;
 
@@ -92,6 +94,8 @@ const Storage = {
   processingKeys: [],
   processedKeys: [],
 
+  delayedMonsters: [],
+
   Init: async () => {
     if (Storage._init) {
       console.log("Storage already initialised");
@@ -128,6 +132,9 @@ const Storage = {
       let craftableItem = new CraftableItem(Data.craftableItems[idx]);
       Storage.craftableItemDict[craftableItem.id] = craftableItem;
     }
+
+    store.dispatch(addSubMonsters(Object.values(Storage.subStateMonsterDict)));
+    store.dispatch(addMonsters(Object.values(Storage.monsterDict)));
 
     Storage._init = true;
   },

@@ -13,7 +13,10 @@ import "./Columnable.css";
 import "../LayoutControl/Layout.css";
 import Sources from "../data/sources.json";
 
-export function Monsters(props) {
+import { connect } from "react-redux";
+import { getMonsterDict, getSubMonsterDict } from "../redux/selectors";
+
+function Monsters(props) {
   let [filterObj, setFilterObj] = useState({});
 
   const pathWithId = "/monsters/:id";
@@ -94,7 +97,8 @@ export function Monsters(props) {
     ),
   ];
 
-  let list = Object.values(Storage.monsterDict);
+  //let list = Object.values(Storage.monsterDict);
+  let list = Object.values(props.monsterDict);
 
   return (
     <>
@@ -117,3 +121,10 @@ export function Monsters(props) {
     </>
   );
 }
+
+const monstersSelector = (state) => ({
+  monsterDict: getMonsterDict(state),
+  subMonsterDict: getSubMonsterDict(state),
+});
+
+export default connect(monstersSelector)(Monsters);
