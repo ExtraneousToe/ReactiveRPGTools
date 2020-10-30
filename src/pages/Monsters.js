@@ -19,7 +19,7 @@ import { getMonsterDict, getSubMonsterDict } from "../redux/selectors";
 import { selectMonster } from "../redux/actions";
 
 function Monsters(props) {
-  //let [filterObj, setFilterObj] = useState({});
+  let [filterObj, setFilterObj] = useState({});
 
   const pathWithId = "/monsters/:id";
   let monster = null;
@@ -40,21 +40,14 @@ function Monsters(props) {
     <>
       <Row className="h-100" xs={1} md={2}>
         <Col className="border h-100">
-          {/* <MonsterFilterBlock submitFilter={setFilterObj} /> */}
+          <MonsterFilterBlock submitFilter={setFilterObj} />
           <MonsterDisplayList
-            //filterObject={filterObj}
-            filterObject={{}}
+            filterObject={filterObj}
             pathRoot={props.match.path}
-            //idFunction={(mon) => mon.id}
-            //selectedId={selectedId}
           />
         </Col>
         <Col className="border scrollableColumn">
-          <MonsterDisplay
-            monster={monster}
-            //monster={null}
-            //selectedId={selectedId}
-          />
+          <MonsterDisplay monster={monster} />
         </Col>
       </Row>
     </>
