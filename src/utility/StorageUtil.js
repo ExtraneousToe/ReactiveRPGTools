@@ -23,10 +23,14 @@ async function Load5eMonsterFile({ key, fileName }) {
 
   // check if already processed or already being processed
   if (Storage.processedKeys.includes(localKey.toLowerCase())) {
-    console.log(`[${localKey}] already done.`);
+    if (process.env.NODE_ENV === "development") {
+      console.log(`[${localKey}] already done.`);
+    }
     return;
   } else if (Storage.processingKeys.includes(localKey.toLowerCase())) {
-    console.log(`[${localKey}] being processed.`);
+    if (process.env.NODE_ENV === "development") {
+      console.log(`[${localKey}] being processed.`);
+    }
     return;
   }
 
@@ -41,9 +45,11 @@ async function Load5eMonsterFile({ key, fileName }) {
     if (meta.dependencies && meta.dependencies.monster) {
       for (let jdx = 0; jdx < meta.dependencies.monster.length; ++jdx) {
         var depKey = meta.dependencies.monster[jdx];
-        console.log(
-          `Starting on key[${depKey.toLowerCase()}] required as a dependency of [${localKey.toLowerCase()}]`
-        );
+        if (process.env.NODE_ENV === "development") {
+          console.log(
+            `Starting on key[${depKey.toLowerCase()}] required as a dependency of [${localKey.toLowerCase()}]`
+          );
+        }
         await Load5eMonsterFile({
           key: depKey,
           fileName: `bestiary-${depKey.toLowerCase()}.json`,
@@ -64,16 +70,20 @@ async function Load5eMonsterFile({ key, fileName }) {
 
     try {
       mon = Monster.from5eSource(mon);
-
       if (!Storage.monsterDict[mon.id]) {
         Storage.monsterDict[mon.id] = mon;
       }
     } catch (err) {
-      console.error(
-        `Loading on monster: ${mon.name} in file: ${fileName} failed.\n${err}`
-      );
+      if (process.env.NODE_ENV === "development") {
+        console.error(
+          `Loading on monster: ${mon.name} in file: ${fileName} failed.\n${err}`
+        );
+      }
     }
   }
+
+  // dispatch after each file
+  //store.dispatch(addMonsters(foundMonsters));
 
   console.log(`${localKey} processed.`);
   Storage.processedKeys.push(localKey.toLowerCase());
@@ -98,12 +108,16 @@ const Storage = {
 
   Init: async () => {
     if (Storage._init) {
-      console.log("Storage already initialised");
+      if (process.env.NODE_ENV === "development") {
+        console.log("Storage already initialised");
+      }
       return;
     }
 
     for (let key in Index) {
-      console.log(`${key} :: ${Index[key]}`);
+      if (process.env.NODE_ENV === "development") {
+        console.log(`${key} :: ${Index[key]}`);
+      }
 
       await Load5eMonsterFile({ key: key, fileName: Index[key] });
     }

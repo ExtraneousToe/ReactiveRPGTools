@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { matchPath } from "react-router";
 import { Col, Row } from "react-bootstrap";
 import { DisplayList, DisplayColumn } from "./DisplayList";
+import MonsterDisplayList from "./MonsterDisplayList";
 import Storage from "../utility/StorageUtil";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import { ChallengeRating, CreatureType } from "../data/Monster";
-import { MonsterDisplay } from "../components/MonsterDisplay";
+import MonsterDisplay from "../components/MonsterDisplay";
 
 import { CARD_SIZES } from "../data/referenceCardSizes";
 import { MonsterFilterBlock } from "../components/MonsterFilterBlock";
@@ -15,9 +16,10 @@ import Sources from "../data/sources.json";
 
 import { connect } from "react-redux";
 import { getMonsterDict, getSubMonsterDict } from "../redux/selectors";
+import { selectMonster } from "../redux/actions";
 
 function Monsters(props) {
-  let [filterObj, setFilterObj] = useState({});
+  //let [filterObj, setFilterObj] = useState({});
 
   const pathWithId = "/monsters/:id";
   let monster = null;
@@ -28,94 +30,31 @@ function Monsters(props) {
   if (match !== null) {
     // if there is an id, search for the monster
     selectedId = match.params.id;
-    if (Storage.monsterDict[selectedId] !== undefined) {
-      monster = Storage.monsterDict[selectedId];
+    //props.selectMonster(selectedId);
+    if (props.monsterDict[selectedId] !== undefined) {
+      monster = props.monsterDict[selectedId];
     }
   }
-
-  const headers = [
-    new DisplayColumn(
-      "Name",
-      (item) => {
-        return <>{item["name"]}</>;
-      },
-      (a, b) => {
-        return sortStrAsc(a.name, b.name);
-      }
-    ),
-    new DisplayColumn(
-      "Type",
-      (item) => {
-        return <>{item["type"].displayString}</>;
-      },
-      (a, b) => {
-        return CreatureType.sortAscending(a.type, b.type);
-      }
-    ),
-    new DisplayColumn(
-      "CR",
-      (item) => {
-        return <>{item.challengeRating.displayString}</>;
-      },
-      (a, b) => {
-        return ChallengeRating.sortAscending(
-          a.challengeRating,
-          b.challengeRating
-        );
-      }
-    ),
-    new DisplayColumn(
-      "Card Size",
-      (item) => {
-        var subMon = Storage.subStateMonsterDict[item.id];
-        return <>{subMon ? CARD_SIZES[subMon.cardSize] : "-"}</>;
-      },
-      (a, b) => {
-        var subMonA = Storage.subStateMonsterDict[a.id];
-        var subMonB = Storage.subStateMonsterDict[b.id];
-
-        if (subMonA && subMonB) {
-          return subMonA.cardSize - subMonB.cardSize;
-        } else if (subMonA && !subMonB) {
-          return -1;
-        } else if (!subMonA && subMonB) {
-          return 1;
-        } else {
-          // TODO: Fix this
-          return -1;
-        }
-      }
-    ),
-    new DisplayColumn(
-      "Source",
-      (item) => {
-        return <span title={Sources[item["source"]]}>{item["source"]}</span>;
-      },
-      (a, b) => {
-        return sortStrAsc(a.source, b.source);
-      }
-    ),
-  ];
-
-  //let list = Object.values(Storage.monsterDict);
-  let list = Object.values(props.monsterDict);
 
   return (
     <>
       <Row className="h-100" xs={1} md={2}>
         <Col className="border h-100">
-          <MonsterFilterBlock submitFilter={setFilterObj} />
-          <DisplayList
-            headers={headers}
-            items={list}
-            filterObject={filterObj}
+          {/* <MonsterFilterBlock submitFilter={setFilterObj} /> */}
+          <MonsterDisplayList
+            //filterObject={filterObj}
+            filterObject={{}}
             pathRoot={props.match.path}
-            idFunction={(mon) => mon.id}
-            selectedId={selectedId}
+            //idFunction={(mon) => mon.id}
+            //selectedId={selectedId}
           />
         </Col>
         <Col className="border scrollableColumn">
-          <MonsterDisplay monster={monster} selectedId={selectedId} />
+          <MonsterDisplay
+            monster={monster}
+            //monster={null}
+            //selectedId={selectedId}
+          />
         </Col>
       </Row>
     </>
@@ -127,4 +66,6 @@ const monstersSelector = (state) => ({
   subMonsterDict: getSubMonsterDict(state),
 });
 
-export default connect(monstersSelector)(Monsters);
+export default connect(monstersSelector, (disp) => ({
+  selectMonster: (monId) => disp(selectMonster(monId)),
+}))(Monsters);

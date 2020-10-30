@@ -29,7 +29,6 @@
     "build": "rimraf ./build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve:dev": "http-server public",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

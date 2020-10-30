@@ -20,7 +20,7 @@ export const addSubMonsters = (subMonsters) => ({
   payload: subMonsters,
 });
 
-export const selectMonster = (monster) => ({
+export const selectMonster = (monsterId) => ({
   type: TYPES.SELECT_MONSTER,
-  payload: monster,
+  payload: monsterId,
 });

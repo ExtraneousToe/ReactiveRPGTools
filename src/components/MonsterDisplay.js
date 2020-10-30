@@ -10,13 +10,16 @@ import { DynamicRender, SpellcastingBlock } from "./RenderBlocks";
 import { stringFromSize } from "../utility/monsterUtil";
 import Sources from "../data/sources.json";
 
+import { connect } from "react-redux";
+import { getMonsterDict, getSubMonsterDict } from "../redux/selectors";
+
 const COMBAT_TAB_KEY = "combat";
 const TABLES_TAB_KEY = "tables";
 
 const HARVESTING_TAB_KEY = "harvesting";
 const TRINKET_TAB_KEY = "trinkets";
 
-export function MonsterDisplay(props) {
+function MonsterDisplay(props) {
   let [tabKey, setTabKey] = useState(COMBAT_TAB_KEY);
   let [tablesTabKey, setTablesTabKey] = useState(HARVESTING_TAB_KEY);
   let monster = props.monster;
@@ -98,9 +101,13 @@ export function MonsterDisplay(props) {
   //tabKey = COMBAT_TAB_KEY;
 
   let otherSourcesOut = monster.otherSources.map((oSrc, idx) => {
-    let line = <span title={Sources[oSrc.source]}>{oSrc.source}</span>;
+    let line = (
+      <span key={idx} title={Sources[oSrc.source]}>
+        {oSrc.source}
+      </span>
+    );
     if (idx !== 0) {
-      return [<>{", "}</>, line];
+      return [<span key={idx + ","}>{", "}</span>, line];
     } else {
       return line;
     }
@@ -306,3 +313,10 @@ function SkillsAndSavesBlock(props) {
 
   return <>{skillsSavesEtcOut}</>;
 }
+
+const monstersSelector = (state) => ({
+  monsterDict: getMonsterDict(state),
+  subMonsterDict: getSubMonsterDict(state),
+});
+
+export default connect(monstersSelector)(MonsterDisplay);

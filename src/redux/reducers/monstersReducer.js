@@ -3,10 +3,34 @@ import TYPES from "../actionTypes";
 const initialState = {
   monsterDict: {},
   subMonsterDict: {},
+  selectedMonsterId: "",
+  previousMonsterId: "",
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
+    case TYPES.SELECT_MONSTER: {
+      let selectedMonsterId = action.payload;
+
+      if (state.selectedMonsterId === selectedMonsterId) {
+        if (state.previousMonsterId !== selectedMonsterId) {
+          return {
+            ...state,
+            previousMonsterId: state.selectedMonsterId,
+            selectedMonsterId,
+          };
+        }
+        return state;
+      }
+
+      console.log(`${TYPES.SELECT_MONSTER}: ${selectedMonsterId}`);
+
+      return {
+        ...state,
+        previousMonsterId: state.selectedMonsterId,
+        selectedMonsterId,
+      };
+    }
     case TYPES.ADD_MONSTER: {
       const { id } = action.payload;
       if (state.monsterDict[id]) {
