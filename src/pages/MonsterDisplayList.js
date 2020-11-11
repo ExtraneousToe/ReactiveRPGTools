@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useHistory } from "react-router";
 import { Row, Col } from "react-bootstrap";
 import "./DisplayList.css";
@@ -16,6 +16,7 @@ import "./Columnable.css";
 import "../LayoutControl/Layout.css";
 import { selectMonster } from "../redux/actions";
 import { FixedSizeList as List } from "react-window";
+import { AppTheme } from "../themeContext";
 
 class DisplayColumn {
   constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
@@ -172,12 +173,14 @@ function MonsterDisplayList(props) {
 
   // console.log(`contentsRows.length: ${contentsRows.length}`);
 
+  const appTheme = useContext(AppTheme);
+
   return (
     <>
       <Row className="mx-0">{headerRowContents}</Row>
       <List
         tag="ul"
-        className="element-list"
+        className={`element-list ${appTheme.theme.styleName}`}
         height={500}
         width={"100%"}
         itemCount={items.length}

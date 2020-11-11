@@ -15,14 +15,26 @@
 .element-list li.even {
   background-color: rgb(231, 231, 231);
 }
+.element-list.night li.even {
+  background-color: rgb(68, 68, 68);
+}
 
 .element-list li:hover {
   background-color: darkgray;
-  color: black;
+  color: rgb(0, 0, 0);
+}
+.element-list.night li:hover {
+  background-color: darkgray;
+  color: rgb(255, 255, 0);
 }
 
 .element-list li.active {
   background-color: rgb(75, 75, 75);
+  color: aliceblue;
+}
+
+.element-list.night li.active {
+  background-color: rgb(128, 128, 128);
   color: aliceblue;
 }
 
