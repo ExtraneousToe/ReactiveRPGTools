@@ -9,13 +9,12 @@ import {
   EditingCraftableItemDisplay,
 } from "../utility/craftableItemUtil";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
+import { ModularDisplayList, MDColumn } from "../components/ModularDisplayList";
 
 import "../css/Columnable.css";
 import "../css/Layout.css";
 
 export function CraftableItems(props) {
-  // let [filterObj, setFilterObj] = useState({});
-
   const pathWithId = "/craftableitems/:id";
   let craftableItem = null;
 

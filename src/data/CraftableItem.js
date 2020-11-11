@@ -1,20 +1,6 @@
-export class CraftableItem {
-  static fromOld(oldItem) {
-    return new CraftableItem({
-      name: oldItem.Name,
-      crafter: oldItem.Crafter,
-      rarity: oldItem.Rarity,
-      requiresAttunement: oldItem.RequiresAttunement,
-      description: oldItem.Description,
-      materials: oldItem.Materials.map((matRow) => {
-        return { componentId: matRow.ComponentId, quantity: matRow.Quantity };
-      }),
-      type: oldItem.Type,
-      materialGrouping: oldItem.MaterialGrouping,
-      attunementNote: oldItem.AttunementNote,
-    });
-  }
+import BaseDataItem from "./BaseDataItem";
 
+export class CraftableItem extends BaseDataItem {
   constructor({
     name,
     crafter,
@@ -26,6 +12,7 @@ export class CraftableItem {
     materialGrouping,
     attunementNote,
   }) {
+    super();
     this.name = name;
     this.crafter = crafter;
     this.rarity = rarity;
@@ -39,5 +26,9 @@ export class CraftableItem {
 
   get id() {
     return this.name.toLowerCase().replace(/\s+/g, "_");
+  }
+
+  doSimpleFilter(filterString) {
+    return this.name.toLowerCase().includes(filterString.toLowerCase());
   }
 }

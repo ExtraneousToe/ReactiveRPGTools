@@ -2,7 +2,33 @@ import React, { useContext, useState } from "react";
 import { useHistory } from "react-router";
 import { FixedSizeList as List } from "react-window";
 import { Row, Col } from "reactstrap";
+import BaseDataItem from "../data/BaseDataItem";
 import AppTheme from "../themeContext";
+import PropTypes from "prop-types";
+
+export class MDColumn {
+  constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
+    this.colDisplay = colDisplay;
+    this.listDisplayFunc = listDisplayFunc;
+    this.ascendingSortFunction = ascendingSortFunction;
+
+    this.sortFunc = this.sortFunc.bind(this);
+    this.sortAscending = this.sortAscending.bind(this);
+    this.sortDescending = this.sortDescending.bind(this);
+  }
+
+  sortFunc(isAscending) {
+    return isAscending ? this.sortAscending : this.sortDescending;
+  }
+
+  sortAscending(a, b) {
+    return this.ascendingSortFunction(a, b);
+  }
+
+  sortDescending(a, b) {
+    return -this.ascendingSortFunction(a, b);
+  }
+}
 
 export function ModularDisplayList(props) {
   let {
@@ -27,6 +53,8 @@ export function ModularDisplayList(props) {
     };
   }
 
+  items = items.filter((i) => i.doSimpleFilter(simpleFilter));
+
   items.sort(headers[sortByIdx].sortFunc(sortAscending));
 
   return (
@@ -40,9 +68,7 @@ export function ModularDisplayList(props) {
           }}
         />
       </Row>
-      <Row>
-        <CustomFilterSlot />
-      </Row>
+      <Row>{CustomFilterSlot && <CustomFilterSlot />}</Row>
       <Row className="mx-0">
         {headers.map((h, idx) => {
           return (
@@ -80,34 +106,11 @@ export function ModularDisplayList(props) {
     </>
   );
 }
+
 ModularDisplayList.propTypes = {
   ListItemSlot: PropTypes.element,
   CustomFilterSlot: PropTypes.element,
   headers: PropTypes.arrayOf(MDColumn),
-  items: PropTypes.array,
+  items: PropTypes.arrayOf(BaseDataItem),
   height: PropTypes.number,
 };
-
-export class MDColumn {
-  constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
-    this.colDisplay = colDisplay;
-    this.listDisplayFunc = listDisplayFunc;
-    this.ascendingSortFunction = ascendingSortFunction;
-
-    this.sortFunc = this.sortFunc.bind(this);
-    this.sortAscending = this.sortAscending.bind(this);
-    this.sortDescending = this.sortDescending.bind(this);
-  }
-
-  sortFunc(isAscending) {
-    return isAscending ? this.sortAscending : this.sortDescending;
-  }
-
-  sortAscending(a, b) {
-    return this.ascendingSortFunction(a, b);
-  }
-
-  sortDescending(a, b) {
-    return -this.ascendingSortFunction(a, b);
-  }
-}

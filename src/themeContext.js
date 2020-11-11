@@ -19,3 +19,5 @@ export const AppTheme = React.createContext({
   theme: themes.dark,
   cycleTheme: (currentState) => {},
 });
+
+export default AppTheme;

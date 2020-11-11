@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container } from "react-bootstrap";
 import { NavMenu } from "./NavMenu";
-import { AppTheme } from "../themeContext";
+import AppTheme from "../themeContext";
 
 import "../css/Layout.css";
 import "../css/App.css";

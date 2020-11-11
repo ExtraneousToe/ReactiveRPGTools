@@ -1,6 +1,7 @@
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
+import BaseDataItem from "./BaseDataItem";
 
-export class Monster {
+export class Monster extends BaseDataItem {
   static from5eSource(fiveEState) {
     let feType = null;
 
@@ -169,6 +170,7 @@ export class Monster {
     harvestingTable,
     trinketTableType,
   }) {
+    super();
     this.name = name;
     this.cardSize = referenceCardSize;
     this.source = source;
@@ -225,6 +227,13 @@ export class Monster {
       default:
         return `?[${size}]?`;
     }
+  }
+
+  doSimpleFilter(filterString) {
+    return (
+      this.name.toLowerCase().includes(filterString) ||
+      this.type.displayString().toLowerCase().includes(filterString)
+    );
   }
 }
 
