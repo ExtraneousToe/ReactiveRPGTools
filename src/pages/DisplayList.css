@@ -2,7 +2,7 @@
   list-style: none;
   padding-left: 0px;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   border: 1px solid lightgray;
   font-size: 0.75em;
   max-height: calc(100% - 150px);
@@ -12,7 +12,7 @@
   border-bottom: 1px solid gray;
 }
 
-.element-list li:nth-child(even) {
+.element-list li.even {
   background-color: rgb(231, 231, 231);
 }
 

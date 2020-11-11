@@ -46,7 +46,7 @@ function Monsters(props) {
             pathRoot={props.match.path}
           />
         </Col>
-        <Col className="border scrollableColumn">
+        <Col className="border ">
           <MonsterDisplay monster={monster} />
         </Col>
       </Row>

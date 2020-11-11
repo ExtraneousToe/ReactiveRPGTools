@@ -1,12 +1,13 @@
 .viewportWrapper {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .mainContentWrapper {
-    height: calc(100% - 50px);
-    padding: 0 5%;
+  height: calc(100% - 50px);
+  padding: 0 5%;
 }

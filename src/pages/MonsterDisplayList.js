@@ -15,6 +15,7 @@ import Sources from "../data/sources.json";
 import "./Columnable.css";
 import "../LayoutControl/Layout.css";
 import { selectMonster } from "../redux/actions";
+import { FixedSizeList as List } from "react-window";
 
 class DisplayColumn {
   constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
@@ -48,6 +49,7 @@ const listSelector = (store) => ({
 export default connect(listSelector)(MonsterDisplayList);
 
 function MonsterDisplayList(props) {
+  let history = useHistory();
   // headers should be a collection of DisplayColumn instances
   let items = Object.values(props.monsterDict);
   let headers = [
@@ -168,12 +170,45 @@ function MonsterDisplayList(props) {
     );
   });
 
+  console.log(`contentsRows.length: ${contentsRows.length}`);
+
   return (
     <>
       {/* <span>{items.length}</span> */}
       <Row className="mx-0">{headerRowContents}</Row>
-      <ul className="element-list">{contentsRows}</ul>
+      {/* <ul className="element-list">{contentsRows}</ul> */}
+      <List
+        tag="ul"
+        className="element-list"
+        height={500}
+        width={"100%"}
+        itemCount={items.length}
+        itemData={{ items, headers, pathRoot: props.pathRoot, history }}
+        itemSize={40}
+        headers={headers}
+        style={{ overflowX: "hidden" }}
+      >
+        {/* {contentsRows} */}
+        {ListRow}
+      </List>
     </>
+  );
+}
+
+function ListRow(props) {
+  const { index, data, style } = props;
+  let item = data.items[index];
+  // return <div style={style}>{Object.keys(props).join(",")}</div>;
+  return (
+    <DisplayListRow
+      key={`row-${item.id}`}
+      headers={data.headers}
+      item={item}
+      pathRoot={data.pathRoot}
+      style={style}
+      history={data.history}
+      index={index}
+    />
   );
 }
 
@@ -196,26 +231,13 @@ const areMergedPropsEqual = (next, prev) => {
           previousMonsterId: props.previousMonsterId,
         })}]`
       );
-      // console.log(
-      //   `${name}: ${Object.keys(props)
-      //     .map((it) => `[${it}, ${[props[it]]}]`)
-      //     .join(", ")}`
-      // );
     };
     printMergeProps("next", next);
     printMergeProps("prev", prev);
   }
 
-  // return false;
-
   let itemChanged = prev.item.id !== next.item.id;
   let selectedChanged = prev.selectedMonsterId !== next.selectedMonsterId;
-
-  // return (
-  //   itemChanged ||
-  //   next.item.id === next.selectedMonsterId ||
-  //   next.item.id === next.previousMonsterId
-  // );
 
   if (selectedChanged && itemChanged) {
     return false; // redraw
@@ -248,42 +270,54 @@ const DisplayListRow = connect(
     pure: true,
     areMergedPropsEqual,
   }
-)(function (props) {
-  let history = useHistory();
+)(
+  class DisplayListRowInner extends React.PureComponent {
+    render() {
+      let history = this.props.history; //useHistory();
 
-  let { headers, item, pathRoot, selectedMonsterId } = props;
+      let {
+        headers,
+        item,
+        pathRoot,
+        selectedMonsterId,
+        index,
+        style,
+      } = this.props;
 
-  let isSelected = item.id === selectedMonsterId;
+      let isSelected = item.id === selectedMonsterId;
 
-  let innerCols = [
-    //  <Col key="id">{selectedMonsterId + "|" + item.id}</Col>
-  ];
+      let innerCols = [
+        //  <Col key="id">{selectedMonsterId + "|" + item.id}</Col>
+      ];
 
-  let desiredId = item.id;
+      let desiredId = item.id;
 
-  let headerLen = headers.length;
-  for (let h = 0; h < headerLen; ++h) {
-    let headerObj = headers[h];
+      let headerLen = headers.length;
+      for (let h = 0; h < headerLen; ++h) {
+        let headerObj = headers[h];
 
-    innerCols.push(
-      <Col key={`${desiredId}-${h}`}>{headerObj.listDisplayFunc(item)}</Col>
-    );
+        innerCols.push(
+          <Col key={`${desiredId}-${h}`}>{headerObj.listDisplayFunc(item)}</Col>
+        );
+      }
+
+      let pathRoute = `${pathRoot}/${desiredId}`;
+
+      let activeName = isSelected ? "active" : "";
+
+      return (
+        <li
+          onClick={(e) => {
+            history.push(pathRoute);
+            this.props.selectMonster(desiredId);
+            e.preventDefault();
+          }}
+          className={activeName + (index % 2 === 0 ? " even" : "")}
+          style={style}
+        >
+          <Row>{innerCols}</Row>
+        </li>
+      );
+    }
   }
-
-  let pathRoute = `${pathRoot}/${desiredId}`;
-
-  let activeName = isSelected ? "active" : "";
-
-  return (
-    <li
-      onClick={(e) => {
-        history.push(pathRoute);
-        props.selectMonster(desiredId);
-        e.preventDefault();
-      }}
-      className={activeName}
-    >
-      <Row>{innerCols}</Row>
-    </li>
-  );
-});
+);
