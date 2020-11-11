@@ -152,27 +152,6 @@ function MonsterDisplayList(props) {
 
   items.sort(headers[sortByIdx].sortFunc(sortAscending));
 
-  // let contentsRows = [];
-  // let itemLen = items.length;
-  // for (let i = 0; i < itemLen; ++i) {
-  //   contentsRows.push();
-  // }
-
-  // contentsRows = items.map((item, idx) => {
-  //   return (
-  //     <DisplayListRow
-  //       key={`row-${item.id}`}
-  //       headers={headers}
-  //       item={item}
-  //       // idFunction={props.idFunction}
-  //       pathRoot={props.pathRoot}
-  //       //isSelected={props.idFunction(item) === props.selectedId}
-  //     />
-  //   );
-  // });
-
-  // console.log(`contentsRows.length: ${contentsRows.length}`);
-
   const appTheme = useContext(AppTheme);
 
   return (

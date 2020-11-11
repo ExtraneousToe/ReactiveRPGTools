@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Storage from "../utility/StorageUtil";
 import { getIdFromItemName } from "./craftableItemUtil";
 import "./hamundsTables.css";
 import { NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
+import { AppTheme } from "../themeContext";
 
 export function HarvestingTableDisplay(props) {
+  const appTheme = useContext(AppTheme);
+
   let challengeRating = props.challengeRating;
   let creatureType = props.creatureType;
   let harvestingTable = props.harvestingTable;
@@ -18,7 +21,10 @@ export function HarvestingTableDisplay(props) {
   // rowsOut.push(<>{JSON.stringify(harvestingTable)}</>);
 
   rowsOut.push(
-    <Row className="text-center hamund-header" key={-1}>
+    <Row
+      className={`text-center hamund-header ${appTheme.theme.styleName}`}
+      key={-1}
+    >
       <Col className="col-1">DC</Col>
       <Col className="col-2 text-left">Item</Col>
       <Col className="">Description</Col>
@@ -96,7 +102,7 @@ export function HarvestingTableDisplay(props) {
     }
 
     rowsOut.push(
-      <Row key={i} className="hamund-row">
+      <Row key={i} className={`hamund-row ${appTheme.theme.styleName}`}>
         <Col className="col-1 text-center">{row.difficultyClass}</Col>
         <Col className="col-2">{nameOut}</Col>
         <Col className="">{descriptionOut}</Col>

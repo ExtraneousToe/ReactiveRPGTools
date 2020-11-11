@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useHistory } from "react-router";
 import { Row, Col } from "react-bootstrap";
 import "./DisplayList.css";
+
+import { FixedSizeList as List } from "react-window";
+import { AppTheme } from "../themeContext";
 
 export class DisplayColumn {
   constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
@@ -31,6 +34,7 @@ export function DisplayList(props) {
   // headers should be a collection of DisplayColumn instances
   let headers = props.headers;
   let items = props.items;
+  let history = useHistory();
 
   let [sortByIdx, setSortByIdx] = useState(0);
   let [sortAscending, setSortAscending] = useState(true);
@@ -67,38 +71,86 @@ export function DisplayList(props) {
 
   items.sort(headers[sortByIdx].sortFunc(sortAscending));
 
-  let contentsRows = [];
-  let itemLen = items.length;
-  for (let i = 0; i < itemLen; ++i) {
-    contentsRows.push();
-  }
+  // let contentsRows = [];
+  // let itemLen = items.length;
+  // for (let i = 0; i < itemLen; ++i) {
+  //   contentsRows.push();
+  // }
 
-  contentsRows = items.map((item, idx) => {
-    return (
-      <DisplayListRow
-        key={`row-${props.idFunction(item)}`}
-        headers={headers}
-        item={item}
-        idFunction={props.idFunction}
-        pathRoot={props.pathRoot}
-        isSelected={props.idFunction(item) === props.selectedId}
-      />
-    );
-  });
+  // contentsRows = items.map((item, idx) => {
+  //   return (
+  //     <DisplayListRow
+  //       key={`row-${props.idFunction(item)}`}
+  //       headers={headers}
+  //       item={item}
+  //       idFunction={props.idFunction}
+  //       pathRoot={props.pathRoot}
+  //       isSelected={props.idFunction(item) === props.selectedId}
+  //     />
+  //   );
+  // });
+
+  const appTheme = useContext(AppTheme);
 
   return (
     <>
       {/* <span>{items.length}</span> */}
       <Row className="mx-0">{headerRowContents}</Row>
-      <ul className="element-list">{contentsRows}</ul>
+      {/* <ul className="element-list">{contentsRows}</ul> */}
+      <List
+        // tag="ul"
+        className={`element-list ${appTheme.theme.styleName}`}
+        height={500}
+        width={"100%"}
+        itemCount={items.length}
+        itemData={{
+          items,
+          headers,
+          pathRoot: props.pathRoot,
+          history,
+          idFunction: props.idFunction,
+          selectedId: props.selectedId,
+        }}
+        itemSize={25}
+        headers={headers}
+        style={{ overflowX: "hidden" }}
+      >
+        {ListRow}
+      </List>
     </>
   );
 }
 
-function DisplayListRow(props) {
-  let history = useHistory();
+function ListRow(props) {
+  const { index, data, style } = props;
+  let item = data.items[index];
+  // return <div style={style}>{Object.keys(props).join(",")}</div>;
+  return (
+    <DisplayListRow
+      key={`row-${data.idFunction(item)}`}
+      headers={data.headers}
+      item={item}
+      idFunction={data.idFunction}
+      pathRoot={data.pathRoot}
+      isSelected={data.idFunction(item) === data.selectedId}
+      history={data.history}
+      index={index}
+      style={style}
+    />
+  );
+}
 
-  let { headers, item, idFunction, pathRoot, isSelected } = props;
+function DisplayListRow(props) {
+  let {
+    headers,
+    item,
+    idFunction,
+    pathRoot,
+    isSelected,
+    style,
+    index,
+    history,
+  } = props;
 
   let innerCols = [];
 
@@ -123,7 +175,8 @@ function DisplayListRow(props) {
         history.push(pathRoute);
         e.preventDefault();
       }}
-      className={activeName}
+      className={activeName + (index % 2 === 0 ? " even" : "")}
+      style={style}
     >
       <Row>{innerCols}</Row>
     </li>

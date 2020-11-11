@@ -10,13 +10,7 @@ export function Layout(props) {
   const context = useContext(AppTheme);
 
   return (
-    <div
-      className={`viewportWrapper ${context.theme.styleName}`}
-      //   style={{
-      //     background: context.theme.background,
-      //     color: context.theme.foreground,
-      //   }}
-    >
+    <div className={`viewportWrapper ${context.theme.styleName}`}>
       <NavMenu toggleTheme={props.toggleTheme} />
       <Container fluid className="mainContentWrapper">
         {props.children}
