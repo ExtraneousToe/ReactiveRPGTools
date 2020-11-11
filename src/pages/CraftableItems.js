@@ -1,7 +1,7 @@
 import React from "react";
 import { matchPath } from "react-router";
 import { Col, Row } from "react-bootstrap";
-import { DisplayList, DisplayColumn } from "./DisplayList";
+import { DisplayList, DisplayColumn } from "../components/DisplayList";
 import Storage from "../utility/StorageUtil";
 import {
   getIdFromItem,
@@ -10,8 +10,8 @@ import {
 } from "../utility/craftableItemUtil";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 
-import "./Columnable.css";
-import "../LayoutControl/Layout.css";
+import "../css/Columnable.css";
+import "../css/Layout.css";
 
 export function CraftableItems(props) {
   // let [filterObj, setFilterObj] = useState({});

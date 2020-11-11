@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router";
 import { Row, Col } from "react-bootstrap";
-import "./DisplayList.css";
+import "../css/DisplayList.css";
 
 import { FixedSizeList as List } from "react-window";
 import { AppTheme } from "../themeContext";

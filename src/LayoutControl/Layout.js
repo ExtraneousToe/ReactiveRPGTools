@@ -3,8 +3,8 @@ import { Container } from "react-bootstrap";
 import { NavMenu } from "./NavMenu";
 import { AppTheme } from "../themeContext";
 
-import "./Layout.css";
-import "../App.css";
+import "../css/Layout.css";
+import "../css/App.css";
 
 export function Layout(props) {
   const context = useContext(AppTheme);

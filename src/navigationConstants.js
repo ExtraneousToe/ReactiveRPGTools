@@ -1,7 +1,7 @@
 import React from "react";
-import { HarvestedItems } from "./pages/HarvestedItems";
 import { Home } from "./pages/Home";
 import Monsters from "./pages/Monsters";
+import { HarvestedItems } from "./pages/HarvestedItems";
 import { CraftableItems } from "./pages/CraftableItems";
 
 export const MENU = [
@@ -35,16 +35,6 @@ export const MENU = [
       return <HarvestedItems {...props} />;
     },
   },
-  // {
-  //     className: "text-dark",
-  //     linkName: "Trinket Tables",
-  //     linkTarget: "/trinkettables",
-  //     routePaths: ["/trinkettables"],
-  //     exact: false,
-  //     renderFunction: (props) => {
-  //         return <span>Trinket Tables</span>;
-  //     },
-  // },
   {
     className: "",
     linkName: "Craftable Items",

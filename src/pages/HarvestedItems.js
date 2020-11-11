@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { matchPath } from "react-router";
 import { Col, Row } from "react-bootstrap";
-import { DisplayList, DisplayColumn } from "./DisplayList";
+import { DisplayList, DisplayColumn } from "../components/DisplayList";
 import { HarvestedItemFilterBlock } from "../components/HarvestedItemFilterBlock";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import Storage from "../utility/StorageUtil";

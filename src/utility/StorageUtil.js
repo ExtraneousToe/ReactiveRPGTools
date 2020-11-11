@@ -5,7 +5,14 @@ import { HarvestingTable } from "../data/HarvestingTable";
 import { TrinketTable } from "../data/TrinketTable";
 import { CraftableItem } from "../data/CraftableItem";
 import { HarvestedItem } from "../data/HarvestedItem";
-import { addMonsters, addSubMonsters } from "../redux/actions";
+import {
+  addCraftableItems,
+  addHarvestedItems,
+  addHarvestingTables,
+  addMonsters,
+  addSubMonsters,
+  addTrinketTables,
+} from "../redux/actions";
 import store from "../redux/store";
 
 const $ = window.$;
@@ -82,9 +89,6 @@ async function Load5eMonsterFile({ key, fileName }) {
     }
   }
 
-  // dispatch after each file
-  //store.dispatch(addMonsters(foundMonsters));
-
   console.log(`${localKey} processed.`);
   Storage.processedKeys.push(localKey.toLowerCase());
 }
@@ -114,19 +118,6 @@ const Storage = {
       return;
     }
 
-    for (let key in Index) {
-      if (process.env.NODE_ENV === "development") {
-        console.log(`${key} :: ${Index[key]}`);
-      }
-
-      await Load5eMonsterFile({ key: key, fileName: Index[key] });
-    }
-
-    for (let idx = 0; idx < Data.monsters.length; ++idx) {
-      let monster = new SubStateMonster(Data.monsters[idx]);
-      Storage.subStateMonsterDict[monster.id] = monster;
-    }
-
     for (let idx = 0; idx < Data.harvestingTables.length; ++idx) {
       let harvestingTable = new HarvestingTable(Data.harvestingTables[idx]);
       Storage.harvestingTableDict[harvestingTable.name] = harvestingTable;
@@ -147,8 +138,39 @@ const Storage = {
       Storage.craftableItemDict[craftableItem.id] = craftableItem;
     }
 
+    store.dispatch(
+      addHarvestingTables(Object.values(Storage.harvestingTableDict))
+    );
+    store.dispatch(
+      addHarvestedItems(Object.values(Storage.harvestableItemDict))
+    );
+    store.dispatch(addTrinketTables(Object.values(Storage.trinketTableDict)));
+    store.dispatch(addCraftableItems(Object.values(Storage.craftableItemDict)));
+
+    // TODO: Uncomment the below to 'clean house'
+    // delete Storage.harvestingTableDict;
+    // delete Storage.harvestableItemDict;
+    // delete Storage.trinketTableDict;
+    // delete Storage.craftableItemDict;
+
+    for (let key in Index) {
+      if (process.env.NODE_ENV === "development") {
+        console.log(`${key} :: ${Index[key]}`);
+      }
+
+      await Load5eMonsterFile({ key: key, fileName: Index[key] });
+    }
+
+    for (let idx = 0; idx < Data.monsters.length; ++idx) {
+      let monster = new SubStateMonster(Data.monsters[idx]);
+      Storage.subStateMonsterDict[monster.id] = monster;
+    }
+
     store.dispatch(addSubMonsters(Object.values(Storage.subStateMonsterDict)));
     store.dispatch(addMonsters(Object.values(Storage.monsterDict)));
+
+    delete Storage.monsterDict;
+    delete Storage.subStateMonsterDict;
 
     Storage._init = true;
   },

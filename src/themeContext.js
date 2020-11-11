@@ -17,5 +17,5 @@ export const themes = Object.freeze({
 
 export const AppTheme = React.createContext({
   theme: themes.dark,
-  cycleTheme: () => {},
+  cycleTheme: (currentState) => {},
 });

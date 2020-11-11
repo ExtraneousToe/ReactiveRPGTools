@@ -4,7 +4,6 @@ const initialState = {
   monsterDict: {},
   subMonsterDict: {},
   selectedMonsterId: "",
-  previousMonsterId: "",
 };
 
 export default function (state = initialState, action) {
@@ -13,13 +12,6 @@ export default function (state = initialState, action) {
       let selectedMonsterId = action.payload;
 
       if (state.selectedMonsterId === selectedMonsterId) {
-        if (state.previousMonsterId !== selectedMonsterId) {
-          return {
-            ...state,
-            previousMonsterId: state.selectedMonsterId,
-            selectedMonsterId,
-          };
-        }
         return state;
       }
 
@@ -27,7 +19,6 @@ export default function (state = initialState, action) {
 
       return {
         ...state,
-        previousMonsterId: state.selectedMonsterId,
         selectedMonsterId,
       };
     }

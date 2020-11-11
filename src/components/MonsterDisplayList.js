@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useHistory } from "react-router";
 import { Row, Col } from "react-bootstrap";
-import "./DisplayList.css";
 import { connect } from "react-redux";
 import {
   getMonsterDict,
@@ -12,11 +11,14 @@ import { CARD_SIZES } from "../data/referenceCardSizes";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import { ChallengeRating, CreatureType } from "../data/Monster";
 import Sources from "../data/sources.json";
-import "./Columnable.css";
-import "../LayoutControl/Layout.css";
 import { selectMonster } from "../redux/actions";
 import { FixedSizeList as List } from "react-window";
 import { AppTheme } from "../themeContext";
+
+// css-imports
+import "../css/Columnable.css";
+import "../css/DisplayList.css";
+import "../css/Layout.css";
 
 class DisplayColumn {
   constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
@@ -165,7 +167,7 @@ function MonsterDisplayList(props) {
         itemCount={items.length}
         itemData={{ items, headers, pathRoot: props.pathRoot, history }}
         itemSize={40}
-        headers={headers}
+        // headers={headers}
         style={{ overflowX: "hidden" }}
       >
         {ListRow}
@@ -192,9 +194,7 @@ function ListRow(props) {
 }
 
 const idSelector = (store) => ({
-  //selectedMonsterId: getSelectedMonsterId(store),
   selectedMonsterId: getSelectedMonsterId(store),
-  previousMonsterId: store.monsters.previousMonsterId,
 });
 
 const dispatchProps = (disp) => ({
@@ -202,19 +202,6 @@ const dispatchProps = (disp) => ({
 });
 
 const areMergedPropsEqual = (next, prev) => {
-  if (prev.item.id === "aboleth_mm") {
-    const printMergeProps = (name, props) => {
-      console.log(
-        `${name}: ${props.item.id} [${JSON.stringify({
-          selectedMonsterId: props.selectedMonsterId,
-          previousMonsterId: props.previousMonsterId,
-        })}]`
-      );
-    };
-    printMergeProps("next", next);
-    printMergeProps("prev", prev);
-  }
-
   let itemChanged = prev.item.id !== next.item.id;
   let selectedChanged = prev.selectedMonsterId !== next.selectedMonsterId;
 

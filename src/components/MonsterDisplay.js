@@ -35,7 +35,8 @@ function MonsterDisplay(props) {
   let nameOut = monster.name;
   let typeOut = monster.type.displayString;
 
-  let subMonster = Storage.subStateMonsterDict[monster.id];
+  // TODO: Connect this component
+  let subMonster = undefined; //Storage.subStateMonsterDict[monster.id];
 
   let cardSize = subMonster ? CARD_SIZES[subMonster.cardSize] : "-";
 

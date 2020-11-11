@@ -39,7 +39,9 @@ export function NavMenu(props) {
         {...appTheme.theme.navbarLightDark}
         color={appTheme.theme.navbarColour}
       >
-        <button onClick={props.toggleTheme}>Toggle theme</button>
+        <button onClick={() => appTheme.cycleTheme(appTheme)}>
+          Toggle theme
+        </button>
         <Container>
           <NavbarBrand tag={Link} to="/">
             Reactive RPG

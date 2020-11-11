@@ -1,7 +1,9 @@
+// css-import
 import "bootstrap/dist/css/bootstrap.css";
+import "./css/index.css";
+// js-imports
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -12,19 +14,20 @@ import store from "./redux/store";
 const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
 const rootElement = document.getElementById("root");
 
-Storage.Init().then(() => {
-  // ReactDOM.render(
-  //   <React.StrictMode>
-  //     <Provider store={store}>
-  //       <Router basename={baseUrl}>
-  //         <App />
-  //       </Router>
-  //     </Provider>
-  //   </React.StrictMode>,
-  //   rootElement
-  // );
-});
+// Storage.Init().then(() => {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       <Provider store={store}>
+//         <Router basename={baseUrl}>
+//           <App />
+//         </Router>
+//       </Provider>
+//     </React.StrictMode>,
+//     rootElement
+//   );
+// });
 
+Storage.Init();
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
