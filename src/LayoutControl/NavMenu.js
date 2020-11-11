@@ -1,42 +1,60 @@
-import React from "react";
-import { Container, Navbar } from "react-bootstrap";
-import { NavbarBrand, NavItem, NavLink } from "reactstrap";
+import React, { useContext } from "react";
+import {
+  Container,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 import { Link } from "react-router-dom";
 
 import { MENU } from "../navigationConstants";
+import { AppTheme } from "../themeContext";
 
 export function NavMenu(props) {
-    let navOutput = [];
-    for (let i = 0; i < MENU.length; ++i) {
-        let linkDeets = MENU[i];
-        navOutput.push(
-            <NavItem key={i}>
-                <NavLink
-                    tag={Link}
-                    className={linkDeets.className}
-                    to={linkDeets.linkTarget}
-                >
-                    {linkDeets.linkName}
-                </NavLink>
-            </NavItem>
-        );
-    }
+  const appTheme = useContext(AppTheme);
 
-    return (
-        <header>
-            <Navbar className="border-bottom p-0">
-                <Container>
-                    <NavbarBrand tag={Link} to="/">
-                        Reactive RPG
-                    </NavbarBrand>
-                    <Container
-                        className="d-sm-inline-flex flex-sm-row-reverse"
-                        navbar="true"
-                    >
-                        <ul className="navbar-nav flex-grow">{navOutput}</ul>
-                    </Container>
-                </Container>
-            </Navbar>
-        </header>
+  let navOutput = [];
+  for (let i = 0; i < MENU.length; ++i) {
+    let linkDeets = MENU[i];
+    navOutput.push(
+      <NavItem key={i} nav>
+        <NavLink
+          tag={Link}
+          className={linkDeets.className + " " + appTheme.theme.navbarTextClass}
+          to={linkDeets.linkTarget}
+        >
+          {linkDeets.linkName}
+        </NavLink>
+      </NavItem>
     );
+  }
+
+  return (
+    <header>
+      <Navbar
+        className="border-bottom p-0"
+        expand
+        {...appTheme.theme.navbarLightDark}
+        color={appTheme.theme.navbarColour}
+      >
+        <button onClick={props.toggleTheme}>Toggle theme</button>
+        <Container>
+          <NavbarBrand tag={Link} to="/">
+            Reactive RPG
+          </NavbarBrand>
+          <Nav
+            navbar
+            className="d-sm-inline-flex flex-sm-row"
+            //className="mr-auto"
+          >
+            {/* <ul className="navbar-nav flex-grow"> */}
+            {navOutput}
+            {/* </ul> */}
+          </Nav>
+        </Container>
+      </Navbar>
+    </header>
+  );
 }

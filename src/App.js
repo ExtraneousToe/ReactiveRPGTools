@@ -1,28 +1,45 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import { Layout } from "./LayoutControl/Layout";
-import "./App.css";
 
 import { MENU } from "./navigationConstants";
+import { AppTheme, themes } from "./themeContext";
 function App() {
-    let routeOpts = [];
-    for (let i = 0; i < MENU.length; ++i) {
-        let linkDeets = MENU[i];
-        routeOpts.push(
-            <Route
-                key={i}
-                path={linkDeets.routePaths[0]}
-                render={(props) => linkDeets.renderFunction(props)}
-                exact={linkDeets.exact}
-            />
-        );
+  const appTheme = useContext(AppTheme);
+  const [themeState, setThemeState] = useState(appTheme);
+
+  const toggleTheme = () => {
+    const newTheme = { ...themeState };
+
+    if (themeState.theme === themes.light) {
+      newTheme.theme = themes.dark;
+    } else {
+      newTheme.theme = themes.light;
     }
 
-    return (
-        <Layout>
-            <Switch>{routeOpts}</Switch>
-        </Layout>
+    setThemeState(newTheme);
+  };
+
+  let routeOpts = [];
+  for (let i = 0; i < MENU.length; ++i) {
+    let linkDeets = MENU[i];
+    routeOpts.push(
+      <Route
+        key={i}
+        path={linkDeets.routePaths[0]}
+        render={(props) => linkDeets.renderFunction(props)}
+        exact={linkDeets.exact}
+      />
     );
+  }
+
+  return (
+    <AppTheme.Provider value={themeState}>
+      <Layout toggleTheme={toggleTheme}>
+        <Switch>{routeOpts}</Switch>
+      </Layout>
+    </AppTheme.Provider>
+  );
 }
 
 export default App;

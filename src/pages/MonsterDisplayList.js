@@ -151,32 +151,30 @@ function MonsterDisplayList(props) {
 
   items.sort(headers[sortByIdx].sortFunc(sortAscending));
 
-  let contentsRows = [];
-  let itemLen = items.length;
-  for (let i = 0; i < itemLen; ++i) {
-    contentsRows.push();
-  }
+  // let contentsRows = [];
+  // let itemLen = items.length;
+  // for (let i = 0; i < itemLen; ++i) {
+  //   contentsRows.push();
+  // }
 
-  contentsRows = items.map((item, idx) => {
-    return (
-      <DisplayListRow
-        key={`row-${item.id}`}
-        headers={headers}
-        item={item}
-        // idFunction={props.idFunction}
-        pathRoot={props.pathRoot}
-        //isSelected={props.idFunction(item) === props.selectedId}
-      />
-    );
-  });
+  // contentsRows = items.map((item, idx) => {
+  //   return (
+  //     <DisplayListRow
+  //       key={`row-${item.id}`}
+  //       headers={headers}
+  //       item={item}
+  //       // idFunction={props.idFunction}
+  //       pathRoot={props.pathRoot}
+  //       //isSelected={props.idFunction(item) === props.selectedId}
+  //     />
+  //   );
+  // });
 
-  console.log(`contentsRows.length: ${contentsRows.length}`);
+  // console.log(`contentsRows.length: ${contentsRows.length}`);
 
   return (
     <>
-      {/* <span>{items.length}</span> */}
       <Row className="mx-0">{headerRowContents}</Row>
-      {/* <ul className="element-list">{contentsRows}</ul> */}
       <List
         tag="ul"
         className="element-list"
@@ -188,7 +186,6 @@ function MonsterDisplayList(props) {
         headers={headers}
         style={{ overflowX: "hidden" }}
       >
-        {/* {contentsRows} */}
         {ListRow}
       </List>
     </>

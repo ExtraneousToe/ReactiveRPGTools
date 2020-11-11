@@ -6,7 +6,7 @@ import { CraftableItems } from "./pages/CraftableItems";
 
 export const MENU = [
   {
-    className: "text-dark",
+    className: "",
     linkName: "Home",
     linkTarget: "/",
     routePaths: ["/"],
@@ -16,7 +16,7 @@ export const MENU = [
     },
   },
   {
-    className: "text-dark",
+    className: "",
     linkName: "Monsters",
     linkTarget: "/monsters",
     routePaths: ["/monsters"],
@@ -26,7 +26,7 @@ export const MENU = [
     },
   },
   {
-    className: "text-dark",
+    className: "",
     linkName: "Harvested Items",
     linkTarget: "/harvesteditems",
     routePaths: ["/harvesteditems"],
@@ -46,7 +46,7 @@ export const MENU = [
   //     },
   // },
   {
-    className: "text-dark",
+    className: "",
     linkName: "Craftable Items",
     linkTarget: "/craftableitems",
     routePaths: ["/craftableitems"],
