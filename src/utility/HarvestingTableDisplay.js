@@ -1,13 +1,20 @@
 import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Storage from "../utility/StorageUtil";
-// import { getIdFromItemName } from "./craftableItemUtil";
+import Storage from "./StorageUtil";
 import "./hamundsTables.css";
 import { NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 import { AppTheme } from "../themeContext";
+import { connect } from "react-redux";
+import { getCraftableItemDict, getHarvestedItemDict } from "../redux/selectors";
 
-export function HarvestingTableDisplay(props) {
+const selectors = (store) => ({
+  harvestedItemDict: getHarvestedItemDict(store),
+  craftableItemDict: getCraftableItemDict(store),
+});
+export default connect(selectors)(HarvestingTableDisplay);
+
+function HarvestingTableDisplay(props) {
   const appTheme = useContext(AppTheme);
 
   let challengeRating = props.challengeRating;
@@ -17,8 +24,6 @@ export function HarvestingTableDisplay(props) {
   if (!harvestingTable) return <></>;
 
   let rowsOut = [];
-
-  // rowsOut.push(<>{JSON.stringify(harvestingTable)}</>);
 
   rowsOut.push(
     <Row
@@ -37,7 +42,7 @@ export function HarvestingTableDisplay(props) {
   for (let i = 0; i < harvestingTable.rows.length; ++i) {
     let row = harvestingTable.rows[i];
 
-    let item = Storage.harvestedItemDict[row.itemNameReference];
+    let item = props.harvestedItemDict[row.itemNameReference];
 
     let nameOut = row.itemNameReference;
     let descriptionOut = [];
@@ -87,9 +92,10 @@ export function HarvestingTableDisplay(props) {
             key={k}
             tag={Link}
             // TODO: Fix this
-            // to={`/craftableitems/${getIdFromItemName(item.craftingUsage[k])}`}
+            to={`/craftableitems/${item.craftingUsage[k]}`}
           >
-            {item.craftingUsage[k]}
+            {props.craftableItemDict[item.craftingUsage[k]] &&
+              props.craftableItemDict[item.craftingUsage[k]].name}
           </NavLink>
         );
       }

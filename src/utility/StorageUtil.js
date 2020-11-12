@@ -5,6 +5,7 @@ import { HarvestingTable } from "../data/HarvestingTable";
 import { TrinketTable } from "../data/TrinketTable";
 import { CraftableItem } from "../data/CraftableItem";
 import { HarvestedItem } from "../data/HarvestedItem";
+import { SubStateMonster } from "../data/SubStateMonster";
 import {
   addCraftableItems,
   addHarvestedItems,
@@ -176,27 +177,3 @@ const Storage = {
 
 window.storage = Storage;
 export default Storage;
-
-class SubStateMonster {
-  constructor({
-    name,
-    cardSize,
-    source,
-    trinketTableType,
-    harvestingTableGroup,
-  }) {
-    this.name = name;
-    this.cardSize = cardSize;
-    this.source = source;
-    this.trinketTableType = trinketTableType;
-    this.harvestingTableGroup = harvestingTableGroup;
-  }
-
-  get id() {
-    return (
-      this.name.replace(/[\s'\-()]/g, "") +
-      "_" +
-      this.source
-    ).toLowerCase();
-  }
-}

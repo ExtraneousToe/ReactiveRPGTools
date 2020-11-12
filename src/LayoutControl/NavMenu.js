@@ -19,7 +19,7 @@ export function NavMenu(props) {
   for (let i = 0; i < MENU.length; ++i) {
     let linkDeets = MENU[i];
     navOutput.push(
-      <NavItem key={i} nav>
+      <NavItem key={i} nav="true">
         <NavLink
           tag={Link}
           className={linkDeets.className + " " + appTheme.theme.navbarTextClass}

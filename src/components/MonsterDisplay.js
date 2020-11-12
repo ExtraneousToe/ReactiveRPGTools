@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import { StatBlock } from "../utility/statsUtil";
 import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import { CARD_SIZES } from "../data/referenceCardSizes";
-import Storage from "../utility/StorageUtil";
 import { TrinketTableDisplay } from "../utility/trinketTableUtil";
-import { HarvestingTableDisplay } from "../utility/harvestingTableUtil";
+import HarvestingTableDisplay from "../utility/HarvestingTableDisplay";
 import { stripTags } from "../utility/stringUtil";
 import { DynamicRender, SpellcastingBlock } from "./RenderBlocks";
 import { stringFromSize } from "../utility/monsterUtil";
 import Sources from "../data/sources.json";
 
 import { connect } from "react-redux";
-import { getMonsterDict, getSubMonsterDict } from "../redux/selectors";
+import {
+  getHarvestingTableDict,
+  getMonsterDict,
+  getSubMonsterDict,
+  getTrinketTableDict,
+} from "../redux/selectors";
 
 const COMBAT_TAB_KEY = "combat";
 const TABLES_TAB_KEY = "tables";
@@ -76,11 +80,11 @@ function MonsterDisplay(props) {
 
   let harvestingTable =
     subMonster !== undefined && subMonster.harvestingTableGroup !== null
-      ? Storage.harvestingTableDict[subMonster.harvestingTableGroup]
+      ? props.harvestingTableDict[subMonster.harvestingTableGroup]
       : null;
   let trinketTable =
     subMonster !== undefined && subMonster.trinketTableType !== null
-      ? Storage.trinketTableDict[subMonster.trinketTableType]
+      ? props.trinketTableDict[subMonster.trinketTableType]
       : null;
 
   let hasHarvestingTable = harvestingTable !== null;
@@ -250,6 +254,30 @@ function SkillsAndSavesBlock(props) {
   let simpleJoinFunction = function (mon) {
     return mon[this.key].join(", ");
   };
+  let resistImmuneFunction = function (type) {
+    return function (mon) {
+      return mon[this.key]
+        .map((val) => {
+          switch (typeof val) {
+            case "string":
+              return val;
+            case "object": {
+              let out = "";
+              if (val[type]) {
+                if (typeof val[type] === "string") {
+                  out = val[type];
+                } else {
+                  out = val[type].join(", ");
+                }
+              }
+
+              return `${out} ${val.note}`;
+            }
+          }
+        })
+        .join(", ");
+    };
+  };
   const SSE_PAIRS = [
     {
       key: "saves",
@@ -264,12 +292,12 @@ function SkillsAndSavesBlock(props) {
     {
       key: "resistances",
       header: "Resistances",
-      disp: simpleJoinFunction,
+      disp: resistImmuneFunction("resist"),
     },
     {
-      key: "immunity",
+      key: "immunities",
       header: "Immunities",
-      disp: simpleJoinFunction,
+      disp: resistImmuneFunction("immune"),
     },
     {
       key: "conditionImmunities",
@@ -318,6 +346,8 @@ function SkillsAndSavesBlock(props) {
 const monstersSelector = (state) => ({
   monsterDict: getMonsterDict(state),
   subMonsterDict: getSubMonsterDict(state),
+  harvestingTableDict: getHarvestingTableDict(state),
+  trinketTableDict: getTrinketTableDict(state),
 });
 
 export default connect(monstersSelector)(MonsterDisplay);

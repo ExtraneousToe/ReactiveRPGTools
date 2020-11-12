@@ -25303,7 +25303,8 @@
   ],
   "craftableItems": [
     {
-      "name": "(Bone) Plate Armor (PHB)",
+      "name": "(Bone) Plate Armor",
+      "source": "PHB",
       "crafter": "Blacksmith",
       "rarity": "Mundane",
       "requiresAttunement": false,
@@ -25315,6 +25316,7 @@
     },
     {
       "name": "(Wooden) Breastplate",
+      "source": "PHB",
       "crafter": "Blacksmith",
       "rarity": "Mundane",
       "requiresAttunement": false,
@@ -25326,6 +25328,7 @@
     },
     {
       "name": "[Type] Dragon's Mercy",
+      "source": "HH1",
       "crafter": "Alchemist",
       "rarity": "Mixed",
       "requiresAttunement": false,
@@ -25356,6 +25359,7 @@
     },
     {
       "name": "[Type] Dragon's Wrath",
+      "source": "HH1",
       "crafter": "Alchemist",
       "rarity": "Mixed",
       "requiresAttunement": false,
@@ -25387,6 +25391,7 @@
     },
     {
       "name": "[Type] Dragon Arrow",
+      "source": "HH1",
       "crafter": "Blacksmith",
       "rarity": "Mixed",
       "requiresAttunement": false,
@@ -25414,6 +25419,7 @@
     },
     {
       "name": "[Type] Dragon Bolt",
+      "source": "HH1",
       "crafter": "Blacksmith",
       "rarity": "Mixed",
       "requiresAttunement": false,
@@ -25440,7 +25446,8 @@
       "attunementNote": ""
     },
     {
-      "name": "[Type] Dragon Scale Mail (DMG)",
+      "name": "[Type] Dragon Scale Mail",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Very Rare",
       "requiresAttunement": true,
@@ -25456,6 +25463,7 @@
     },
     {
       "name": "[Type] Dragon Wand",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Mixed",
       "requiresAttunement": false,
@@ -25483,6 +25491,7 @@
     },
     {
       "name": "Aboleth Amulet",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Very Rare",
       "requiresAttunement": true,
@@ -25498,6 +25507,7 @@
     },
     {
       "name": "Amulet of Dragonkin",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Common",
       "requiresAttunement": false,
@@ -25512,6 +25522,7 @@
     },
     {
       "name": "Amulet of Enslavement",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25525,6 +25536,7 @@
     },
     {
       "name": "Amulet of Imix",
+      "source": "HH1",
       "crafter": "Thaumaturge",
       "rarity": "Rare",
       "requiresAttunement": true,
@@ -25538,6 +25550,7 @@
     },
     {
       "name": "Amulet of Maglubiyet",
+      "source": "HH1",
       "crafter": "Thaumaturge",
       "rarity": "Rare",
       "requiresAttunement": true,
@@ -25551,6 +25564,7 @@
     },
     {
       "name": "Amulet of Secrets",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Very Rare",
       "requiresAttunement": true,
@@ -25565,6 +25579,7 @@
     },
     {
       "name": "Amulet of Telepathic Control",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Very Rare",
       "requiresAttunement": true,
@@ -25586,6 +25601,7 @@
     },
     {
       "name": "Amulet of the Closed Heart",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Rare",
       "requiresAttunement": true,
@@ -25600,6 +25616,7 @@
     },
     {
       "name": "Amulet of the Desert Tyrant",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Legendary",
       "requiresAttunement": true,
@@ -25623,6 +25640,7 @@
     },
     {
       "name": "Amulet of the Forest",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Rare",
       "requiresAttunement": true,
@@ -25637,6 +25655,7 @@
     },
     {
       "name": "Amulet of the Mind Flayer",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Rare",
       "requiresAttunement": true,
@@ -25655,6 +25674,7 @@
     },
     {
       "name": "Amulet of the Ocean Lord",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Legendary",
       "requiresAttunement": true,
@@ -25677,6 +25697,7 @@
     },
     {
       "name": "Amulet of the Trickster",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Very Rare",
       "requiresAttunement": true,
@@ -25691,6 +25712,7 @@
     },
     {
       "name": "Anathema Device",
+      "source": "HH1",
       "crafter": "Tinker",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25705,6 +25727,7 @@
     },
     {
       "name": "Angel Robe",
+      "source": "HH1",
       "crafter": "Leatherworker",
       "rarity": "Rare",
       "requiresAttunement": true,
@@ -25719,6 +25742,7 @@
     },
     {
       "name": "Anti-Magic Crystal",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Very Rare",
       "requiresAttunement": false,
@@ -25733,6 +25757,7 @@
     },
     {
       "name": "Antimagic Shield",
+      "source": "HH1",
       "crafter": "Blacksmith",
       "rarity": "Very Rare",
       "requiresAttunement": true,
@@ -25755,7 +25780,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Antitoxin (DMG)",
+      "name": "Antitoxin",
+      "source": "DMG",
       "crafter": "Alchemist",
       "rarity": "Mundane",
       "requiresAttunement": false,
@@ -25766,7 +25792,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any melee bludgeoning weapon, +1 (DMG)",
+      "name": "Any melee bludgeoning weapon, +1",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Uncommon",
       "requiresAttunement": false,
@@ -25781,7 +25808,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any melee bludgeoning weapon, +2 (DMG)",
+      "name": "Any melee bludgeoning weapon, +2",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25792,7 +25820,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any melee piercing or slashing weapon, +1 (DMG)",
+      "name": "Any melee piercing or slashing weapon, +1",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Uncommon",
       "requiresAttunement": false,
@@ -25803,7 +25832,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any melee piercing or slashing weapon, +2 (DMG)",
+      "name": "Any melee piercing or slashing weapon, +2",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25814,7 +25844,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any melee piercing weapon, +1 (DMG)",
+      "name": "Any melee piercing weapon, +1",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Uncommon",
       "requiresAttunement": false,
@@ -25828,7 +25859,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any melee piercing weapon, +2 (DMG)",
+      "name": "Any melee piercing weapon, +2",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25842,7 +25874,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any melee slashing weapon except whips, +2 (DMG)",
+      "name": "Any melee slashing weapon except whips, +2",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25853,7 +25886,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Any piercing weapon, +2 (DMG)",
+      "name": "Any piercing weapon, +2",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25865,6 +25899,7 @@
     },
     {
       "name": "Armor of the Forest Sentinel",
+      "source": "HH1",
       "crafter": "Artificer",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25879,6 +25914,7 @@
     },
     {
       "name": "Armour of the Guardian",
+      "source": "HH1",
       "crafter": "Blacksmith",
       "rarity": "Rare",
       "requiresAttunement": true,
@@ -25894,7 +25930,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Arrow, +1 (DMG)",
+      "name": "Arrow, +1",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Uncommon",
       "requiresAttunement": false,
@@ -25910,7 +25947,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Arrow, +2 (DMG)",
+      "name": "Arrow, +2",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Rare",
       "requiresAttunement": false,
@@ -25922,6 +25960,7 @@
     },
     {
       "name": "Bag of Colding",
+      "source": "HH1",
       "crafter": "Leatherworker",
       "rarity": "Uncommon",
       "requiresAttunement": false,
@@ -25940,6 +25979,7 @@
     },
     {
       "name": "Barbed Cloak",
+      "source": "HH1",
       "crafter": "Leatherworker",
       "rarity": "Uncommon",
       "requiresAttunement": false,
@@ -25953,6 +25993,7 @@
     },
     {
       "name": "Basilisk Gaze Poison",
+      "source": "HH1",
       "crafter": "Alchemist",
       "rarity": "Uncommon",
       "requiresAttunement": false,
@@ -25965,7 +26006,8 @@
       "attunementNote": ""
     },
     {
-      "name": "Battleaxe, +1 (DMG)",
+      "name": "Battleaxe, +1",
+      "source": "DMG",
       "crafter": "Blacksmith",
       "rarity": "Uncommon",
       "requiresAttunement": false,
