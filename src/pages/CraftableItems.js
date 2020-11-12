@@ -1,3 +1,6 @@
+import "../css/Columnable.css";
+import "../css/Layout.css";
+
 import React from "react";
 import { matchPath } from "react-router";
 import { Col, Row } from "reactstrap";
@@ -5,9 +8,6 @@ import CraftableItemDisplay from "../components/CraftableItemDisplay";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import { ModularDisplayList, MDColumn } from "../components/ModularDisplayList";
 import { getCraftableItemDict } from "../redux/selectors";
-
-import "../css/Columnable.css";
-import "../css/Layout.css";
 import { connect } from "react-redux";
 
 const selectors = (store) => ({
@@ -56,12 +56,9 @@ function CraftableItems(props) {
     <>
       <Row className="h-100" xs={1} md={2}>
         <Col className="border h-100">
-          {/* <MonsterFilterBlock submitFilter={setFilterObj} /> */}
-          {/* <DisplayList */}
           <ModularDisplayList
             headers={headers}
             items={Object.values(props.craftableItemDict)}
-            filterObject={{}}
             pathRoot={props.match.path}
             selectedId={selectedId}
             height={600}

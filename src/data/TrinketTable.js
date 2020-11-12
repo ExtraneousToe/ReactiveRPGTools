@@ -16,7 +16,7 @@ export class TrinketTable extends BaseDataItem {
   //   });
   // }
 
-  constructor({ trinketTableType, rows, source = "HH1" }) {
+  constructor({ trinketTableType, rows, source }) {
     super(undefined, source);
     this.trinketTableType = trinketTableType;
     this.rows = rows.map((r) => new TrinketTableRow(r));

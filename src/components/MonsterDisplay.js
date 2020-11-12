@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { StatBlock } from "../utility/statsUtil";
 import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import { CARD_SIZES } from "../data/referenceCardSizes";
-import { TrinketTableDisplay } from "../utility/trinketTableUtil";
-import HarvestingTableDisplay from "../utility/HarvestingTableDisplay";
+import { TrinketTableDisplay } from "./TrinketTableDisplay";
+import HarvestingTableDisplay from "./HarvestingTableDisplay";
 import { stripTags } from "../utility/stringUtil";
 import { DynamicRender, SpellcastingBlock } from "./RenderBlocks";
 import { stringFromSize } from "../utility/monsterUtil";
@@ -273,6 +273,8 @@ function SkillsAndSavesBlock(props) {
 
               return `${out} ${val.note}`;
             }
+            default:
+              return JSON.stringify(val);
           }
         })
         .join(", ");

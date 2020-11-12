@@ -1,5 +1,8 @@
-import React, { useContext, useState } from "react";
-import { useHistory } from "react-router";
+import "../css/Columnable.css";
+import "../css/DisplayList.css";
+import "../css/Layout.css";
+
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { connect } from "react-redux";
 import {
@@ -12,37 +15,7 @@ import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import { ChallengeRating, CreatureType } from "../data/Monster";
 import Sources from "../data/sources.json";
 import { selectMonster } from "../redux/actions";
-import { FixedSizeList as List } from "react-window";
-import { AppTheme } from "../themeContext";
-
-// css-imports
-import "../css/Columnable.css";
-import "../css/DisplayList.css";
-import "../css/Layout.css";
-
-class DisplayColumn {
-  constructor(colDisplay, listDisplayFunc, ascendingSortFunction) {
-    this.colDisplay = colDisplay;
-    this.listDisplayFunc = listDisplayFunc;
-    this.ascendingSortFunction = ascendingSortFunction;
-
-    this.sortFunc = this.sortFunc.bind(this);
-    this.sortAscending = this.sortAscending.bind(this);
-    this.sortDescending = this.sortDescending.bind(this);
-  }
-
-  sortFunc(isAscending) {
-    return isAscending ? this.sortAscending : this.sortDescending;
-  }
-
-  sortAscending(a, b) {
-    return this.ascendingSortFunction(a, b);
-  }
-
-  sortDescending(a, b) {
-    return -this.ascendingSortFunction(a, b);
-  }
-}
+import { ModularDisplayList, MDColumn } from "../components/ModularDisplayList";
 
 const listSelector = (store) => ({
   monsterDict: getMonsterDict(store),
@@ -52,11 +25,13 @@ const listSelector = (store) => ({
 export default connect(listSelector)(MonsterDisplayList);
 
 function MonsterDisplayList(props) {
-  let history = useHistory();
+  let [sortByIdx, setSortByIdx] = useState(0);
+  let [sortAscending, setSortAscending] = useState(true);
+
   // headers should be a collection of DisplayColumn instances
   let items = Object.values(props.monsterDict);
   let headers = [
-    new DisplayColumn(
+    new MDColumn(
       "Name",
       (item) => {
         return <>{item["name"]}</>;
@@ -65,7 +40,7 @@ function MonsterDisplayList(props) {
         return sortStrAsc(a.name, b.name);
       }
     ),
-    new DisplayColumn(
+    new MDColumn(
       "Type",
       (item) => {
         return <>{item["type"].displayString}</>;
@@ -74,7 +49,7 @@ function MonsterDisplayList(props) {
         return CreatureType.sortAscending(a.type, b.type);
       }
     ),
-    new DisplayColumn(
+    new MDColumn(
       "CR",
       (item) => {
         return <>{item.challengeRating.displayString}</>;
@@ -86,7 +61,7 @@ function MonsterDisplayList(props) {
         );
       }
     ),
-    new DisplayColumn(
+    new MDColumn(
       "Card Size",
       (item) => {
         var subMon = props.subMonsterDict[item.id];
@@ -108,7 +83,7 @@ function MonsterDisplayList(props) {
         }
       }
     ),
-    new DisplayColumn(
+    new MDColumn(
       "Source",
       (item) => {
         return <span title={Sources[item["source"]]}>{item["source"]}</span>;
@@ -118,9 +93,6 @@ function MonsterDisplayList(props) {
       }
     ),
   ];
-
-  let [sortByIdx, setSortByIdx] = useState(0);
-  let [sortAscending, setSortAscending] = useState(true);
 
   let headerRowContents = [];
   for (let i = 0; i < headers.length; ++i) {
@@ -145,33 +117,19 @@ function MonsterDisplayList(props) {
     );
   }
 
-  let filterObject = props.filterObject;
-  let filterKeys = Object.keys(filterObject);
-
-  for (let i = 0; i < filterKeys.length; ++i) {
-    items = items.filter(filterObject[filterKeys[i]]);
-  }
-
   items.sort(headers[sortByIdx].sortFunc(sortAscending));
-
-  const appTheme = useContext(AppTheme);
 
   return (
     <>
-      <Row className="mx-0">{headerRowContents}</Row>
-      <List
-        tag="ul"
-        className={`element-list ${appTheme.theme.styleName}`}
-        height={500}
-        width={"100%"}
-        itemCount={items.length}
-        itemData={{ items, headers, pathRoot: props.pathRoot, history }}
+      <ModularDisplayList
+        headers={headers}
+        items={items}
+        pathRoot={props.pathRoot}
+        selectedId={props.selectedId}
+        height={600}
         itemSize={40}
-        // headers={headers}
-        style={{ overflowX: "hidden" }}
-      >
-        {ListRow}
-      </List>
+        ListItemSlot={ListRow}
+      />
     </>
   );
 }

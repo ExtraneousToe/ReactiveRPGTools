@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "./hamundsTables.css";
+import { Container, Row, Col } from "reactstrap";
+import "../css/HamundsTables.css";
 
 export function TrinketTableDisplay(props) {
   let trinketTable = props.trinketTable;
@@ -32,5 +32,9 @@ export function TrinketTableDisplay(props) {
     );
   }
 
-  return <Container className="hamund-table">{rowsOut}</Container>;
+  return (
+    <Container className="hamund-table" fluid>
+      {rowsOut}
+    </Container>
+  );
 }

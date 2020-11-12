@@ -222,7 +222,7 @@ export class Monster extends BaseDataItem {
   doSimpleFilter(filterString) {
     return (
       super.doSimpleFilter(filterString) ||
-      this.type.displayString().toLowerCase().includes(filterString)
+      this.type.displayString.toLowerCase().includes(filterString)
     );
   }
 }

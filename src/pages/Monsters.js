@@ -1,25 +1,23 @@
-import React, { useState } from "react";
-import { matchPath } from "react-router";
-import { Col, Row } from "react-bootstrap";
-// import { DisplayList, DisplayColumn } from "./DisplayList";
-import MonsterDisplayList from "../components/MonsterDisplayList";
-// import Storage from "../utility/StorageUtil";
-// import { sortAscending as sortStrAsc } from "../utility/stringUtil";
-// import { ChallengeRating, CreatureType } from "../data/Monster";
-import MonsterDisplay from "../components/MonsterDisplay";
-
-// import { CARD_SIZES } from "../data/referenceCardSizes";
-import { MonsterFilterBlock } from "../components/MonsterFilterBlock";
 import "../css/Columnable.css";
 import "../css/Layout.css";
-// import Sources from "../data/sources.json";
+
+import React from "react";
+import { matchPath } from "react-router";
+import { Col, Row } from "react-bootstrap";
+import MonsterDisplayList from "../components/MonsterDisplayList";
+import MonsterDisplay from "../components/MonsterDisplay";
 
 import { connect } from "react-redux";
 import { getMonsterDict, getSubMonsterDict } from "../redux/selectors";
 
-function Monsters(props) {
-  let [filterObj, setFilterObj] = useState({});
+const monstersSelector = (state) => ({
+  monsterDict: getMonsterDict(state),
+  subMonsterDict: getSubMonsterDict(state),
+});
 
+export default connect(monstersSelector)(Monsters);
+
+function Monsters(props) {
   const pathWithId = "/monsters/:id";
   let monster = null;
 
@@ -38,10 +36,11 @@ function Monsters(props) {
     <>
       <Row className="h-100" xs={1} md={2}>
         <Col className="border h-100">
-          <MonsterFilterBlock submitFilter={setFilterObj} />
+          {/* <MonsterFilterBlock submitFilter={setFilterObj} /> */}
           <MonsterDisplayList
-            filterObject={filterObj}
+            // filterObject={filterObj}
             pathRoot={props.match.path}
+            selectedId={selectedId}
           />
         </Col>
         <Col className="border">
@@ -51,10 +50,3 @@ function Monsters(props) {
     </>
   );
 }
-
-const monstersSelector = (state) => ({
-  monsterDict: getMonsterDict(state),
-  subMonsterDict: getSubMonsterDict(state),
-});
-
-export default connect(monstersSelector)(Monsters);

@@ -9,15 +9,12 @@ export class HarvestedItem extends BaseDataItem {
     description,
     useText,
     requiredToolNames,
-    source = "HH1",
+    source,
   }) {
     super(name, source);
     this.value = value;
     this.weight = weight;
-    this.craftingUsage = craftingUsage.map((cu) => {
-      if (/hh\d$/i.test(cu)) return cu;
-      else return BaseDataItem.convertToId(cu, "HH1");
-    });
+    this.craftingUsage = craftingUsage;
     this.description = description;
     this.useText = useText;
     this.requiredToolNames = requiredToolNames;

@@ -1,7 +1,7 @@
+import "../css/HamundsTables.css";
+
 import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Storage from "./StorageUtil";
-import "./hamundsTables.css";
 import { NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 import { AppTheme } from "../themeContext";

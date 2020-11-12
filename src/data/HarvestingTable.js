@@ -18,7 +18,7 @@ export class HarvestingTable extends BaseDataItem {
   //   });
   // }
 
-  constructor({ name, rows, source = "HH1" }) {
+  constructor({ name, rows, source }) {
     super(name, source);
     this.rows = rows.map((r) => new HarvestingTableRow(r));
   }
@@ -27,11 +27,7 @@ export class HarvestingTable extends BaseDataItem {
 class HarvestingTableRow {
   constructor({ difficultyClass, itemNameReference, quantity, notes }) {
     this.difficultyClass = difficultyClass;
-    if (/hh\d$/i.test(itemNameReference)) {
-      this.itemNameReference = itemNameReference;
-    } else {
-      this.itemNameReference = itemNameReference.replace(/[_-]/g, "") + `_hh1`;
-    }
+    this.itemNameReference = itemNameReference;
     this.quantity = quantity;
     this.notes = notes;
   }

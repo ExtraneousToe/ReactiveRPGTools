@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import { matchPath } from "react-router";
-import { Col, Row } from "react-bootstrap";
-import { DisplayList, DisplayColumn } from "../components/DisplayList";
-import { HarvestedItemFilterBlock } from "../components/HarvestedItemFilterBlock";
+import { Col, Row } from "reactstrap";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
-import Storage from "../utility/StorageUtil";
-import {
-  EditingHarvestedItemDisplay,
-  HarvestedItemDisplay,
-  getItemReference,
-} from "../utility/harvestedItemUtil";
+import HarvestedItemDisplay from "../components/HarvestedItemDisplay";
 
-export function HarvestedItems(props) {
-  let [filterObj, setFilterObj] = useState({});
+import { ModularDisplayList, MDColumn } from "../components/ModularDisplayList";
+import { connect } from "react-redux";
+import { getHarvestedItemDict } from "../redux/selectors";
 
+const selectors = (store) => ({
+  harvestedItemDict: getHarvestedItemDict(store),
+});
+
+export default connect(selectors)(HarvestedItems);
+
+function HarvestedItems(props) {
   const pathWithId = "/harvesteditems/:id";
   let harvestedItem = null;
 
@@ -23,13 +24,13 @@ export function HarvestedItems(props) {
   if (match !== null) {
     // if there is an id, search for the monster
     selectedId = match.params.id;
-    if (Storage.harvestedItemDict[selectedId] !== undefined) {
-      harvestedItem = Storage.harvestedItemDict[selectedId];
+    if (props.harvestedItemDict[selectedId] !== undefined) {
+      harvestedItem = props.harvestedItemDict[selectedId];
     }
   }
 
   const headers = [
-    new DisplayColumn(
+    new MDColumn(
       "Name",
       (item) => {
         return <>{item["name"]}</>;
@@ -43,29 +44,20 @@ export function HarvestedItems(props) {
   let harvestedOutput = ["Select an item from the list"];
 
   if (harvestedItem !== null) {
-    if (false && process.env.NODE_ENV === "development") {
-      harvestedOutput = [
-        <EditingHarvestedItemDisplay harvestedItem={harvestedItem} />,
-      ];
-    } else {
-      harvestedOutput = [
-        <HarvestedItemDisplay harvestedItem={harvestedItem} />,
-      ];
-    }
+    harvestedOutput = [<HarvestedItemDisplay harvestedItem={harvestedItem} />];
   }
 
   return (
     <>
       <Row className="h-100" xs={1} md={2}>
         <Col className="border h-100">
-          <HarvestedItemFilterBlock submitFilter={setFilterObj} />
-          <DisplayList
+          <ModularDisplayList
             headers={headers}
-            items={Object.values(Storage.harvestedItemDict)}
-            filterObject={filterObj}
+            items={Object.values(props.harvestedItemDict)}
             pathRoot={props.match.path}
-            idFunction={getItemReference}
             selectedId={selectedId}
+            height={600}
+            itemSize={25}
           />
         </Col>
         <Col className="border scrollableColumn">{harvestedOutput}</Col>
