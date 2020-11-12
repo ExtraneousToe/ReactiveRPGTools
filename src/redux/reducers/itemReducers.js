@@ -2,12 +2,14 @@ import TYPES from "../actionTypes";
 
 const initialState = {
   harvestedItemDict: {},
+  selectedHarvestedItemId: "",
   craftableItemDict: {},
+  selectedCraftableItemId: "",
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case TYPES.ADD_HARVESTED_ITEM: {
+    case TYPES.SELECT_HARVESTED_ITEM: {
       // TODO: ?
       return null;
     }

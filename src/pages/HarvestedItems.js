@@ -23,8 +23,8 @@ export function HarvestedItems(props) {
   if (match !== null) {
     // if there is an id, search for the monster
     selectedId = match.params.id;
-    if (Storage.harvestableItemDict[selectedId] !== undefined) {
-      harvestedItem = Storage.harvestableItemDict[selectedId];
+    if (Storage.harvestedItemDict[selectedId] !== undefined) {
+      harvestedItem = Storage.harvestedItemDict[selectedId];
     }
   }
 
@@ -61,7 +61,7 @@ export function HarvestedItems(props) {
           <HarvestedItemFilterBlock submitFilter={setFilterObj} />
           <DisplayList
             headers={headers}
-            items={Object.values(Storage.harvestableItemDict)}
+            items={Object.values(Storage.harvestedItemDict)}
             filterObject={filterObj}
             pathRoot={props.match.path}
             idFunction={getItemReference}

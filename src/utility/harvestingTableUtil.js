@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Storage from "../utility/StorageUtil";
-import { getIdFromItemName } from "./craftableItemUtil";
+// import { getIdFromItemName } from "./craftableItemUtil";
 import "./hamundsTables.css";
 import { NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
@@ -37,7 +37,7 @@ export function HarvestingTableDisplay(props) {
   for (let i = 0; i < harvestingTable.rows.length; ++i) {
     let row = harvestingTable.rows[i];
 
-    let item = Storage.harvestableItemDict[row.itemNameReference];
+    let item = Storage.harvestedItemDict[row.itemNameReference];
 
     let nameOut = row.itemNameReference;
     let descriptionOut = [];
@@ -86,7 +86,8 @@ export function HarvestingTableDisplay(props) {
           <NavLink
             key={k}
             tag={Link}
-            to={`/craftableitems/${getIdFromItemName(item.craftingUsage[k])}`}
+            // TODO: Fix this
+            // to={`/craftableitems/${getIdFromItemName(item.craftingUsage[k])}`}
           >
             {item.craftingUsage[k]}
           </NavLink>

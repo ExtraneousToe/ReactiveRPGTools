@@ -1,32 +1,48 @@
 import React from "react";
-// import { fileSaveAs } from "../utility/saveFile";
+import { fileSaveAs } from "../utility/saveFile";
 // import Storage from "../utility/StorageUtil";
-// import { sortAscending } from "../utility/stringUtil";
+import { sortAscending } from "../utility/stringUtil";
+import { connect } from "react-redux";
+import {
+  getSubMonsterDict,
+  getHarvestedItemDict,
+  getHarvestingTableDict,
+  getTrinketTableDict,
+  getCraftableItemDict,
+} from "../redux/selectors";
 
-export function Home(props) {
+export default connect((store) => ({
+  subStateMonsterDict: getSubMonsterDict(store),
+  harvestedItemDict: getHarvestedItemDict(store),
+  harvestingTableDict: getHarvestingTableDict(store),
+  trinketTableDict: getTrinketTableDict(store),
+  craftableItemDict: getCraftableItemDict(store),
+}))(Home);
+
+function Home(props) {
   return (
     <div>
       <h1>Home</h1>
       <div>
-        {/* <button
+        <button
           onClick={(e) => {
             e.preventDefault();
 
-            let monsters = Object.values(Storage.subStateMonsterDict);
+            let monsters = Object.values(props.subStateMonsterDict);
             monsters.sort((a, b) => sortAscending(a.id, b.id));
 
-            let harvestedItems = Object.values(Storage.harvestableItemDict);
+            let harvestedItems = Object.values(props.harvestedItemDict);
             harvestedItems.sort((a, b) => sortAscending(a.id, b.id));
 
-            let harvestingTables = Object.values(Storage.harvestingTableDict);
+            let harvestingTables = Object.values(props.harvestingTableDict);
             harvestingTables.sort((a, b) => sortAscending(a.name, b.name));
 
-            let trinketTables = Object.values(Storage.trinketTableDict);
+            let trinketTables = Object.values(props.trinketTableDict);
             trinketTables.sort((a, b) =>
               sortAscending(a.trinketTableType, b.trinketTableType)
             );
 
-            let craftableItems = Object.values(Storage.craftableItemDict);
+            let craftableItems = Object.values(props.craftableItemDict);
             craftableItems.sort((a, b) => sortAscending(a.id, b.id));
 
             fileSaveAs(
@@ -42,7 +58,7 @@ export function Home(props) {
           }}
         >
           Save State
-        </button> */}
+        </button>
       </div>
       {/* <div>
         <input type="text" style={{ width: "100%", height: "4em" }} />

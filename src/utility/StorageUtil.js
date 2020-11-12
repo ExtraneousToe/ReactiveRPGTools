@@ -101,7 +101,7 @@ const Storage = {
   monsterDict: {},
   subStateMonsterDict: {},
   harvestingTableDict: {},
-  harvestableItemDict: {},
+  harvestedItemDict: {},
   trinketTableDict: {},
   craftableItemDict: {},
 
@@ -125,7 +125,7 @@ const Storage = {
 
     for (let idx = 0; idx < Data.harvestedItems.length; ++idx) {
       let harvestedItem = new HarvestedItem(Data.harvestedItems[idx]);
-      Storage.harvestableItemDict[harvestedItem.id] = harvestedItem;
+      Storage.harvestedItemDict[harvestedItem.id] = harvestedItem;
     }
 
     for (let idx = 0; idx < Data.trinketTables.length; ++idx) {
@@ -141,17 +141,15 @@ const Storage = {
     store.dispatch(
       addHarvestingTables(Object.values(Storage.harvestingTableDict))
     );
-    store.dispatch(
-      addHarvestedItems(Object.values(Storage.harvestableItemDict))
-    );
+    store.dispatch(addHarvestedItems(Object.values(Storage.harvestedItemDict)));
     store.dispatch(addTrinketTables(Object.values(Storage.trinketTableDict)));
     store.dispatch(addCraftableItems(Object.values(Storage.craftableItemDict)));
 
     // TODO: Uncomment the below to 'clean house'
     // delete Storage.harvestingTableDict;
-    // delete Storage.harvestableItemDict;
+    // delete Storage.harvestedItemDict;
     // delete Storage.trinketTableDict;
-    // delete Storage.craftableItemDict;
+    delete Storage.craftableItemDict;
 
     for (let key in Index) {
       if (process.env.NODE_ENV === "development") {

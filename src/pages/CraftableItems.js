@@ -1,20 +1,22 @@
 import React from "react";
 import { matchPath } from "react-router";
-import { Col, Row } from "react-bootstrap";
-import { DisplayList, DisplayColumn } from "../components/DisplayList";
-import Storage from "../utility/StorageUtil";
-import {
-  getIdFromItem,
-  CraftableItemDisplay,
-  EditingCraftableItemDisplay,
-} from "../utility/craftableItemUtil";
+import { Col, Row } from "reactstrap";
+import CraftableItemDisplay from "../components/CraftableItemDisplay";
 import { sortAscending as sortStrAsc } from "../utility/stringUtil";
 import { ModularDisplayList, MDColumn } from "../components/ModularDisplayList";
+import { getCraftableItemDict } from "../redux/selectors";
 
 import "../css/Columnable.css";
 import "../css/Layout.css";
+import { connect } from "react-redux";
 
-export function CraftableItems(props) {
+const selectors = (store) => ({
+  craftableItemDict: getCraftableItemDict(store),
+});
+
+export default connect(selectors)(CraftableItems);
+
+function CraftableItems(props) {
   const pathWithId = "/craftableitems/:id";
   let craftableItem = null;
 
@@ -24,13 +26,14 @@ export function CraftableItems(props) {
   if (match !== null) {
     // if there is an id, search for the monster
     selectedId = match.params.id;
-    if (Storage.craftableItemDict[selectedId] !== undefined) {
-      craftableItem = Storage.craftableItemDict[selectedId];
+    if (props.craftableItemDict[selectedId] !== undefined) {
+      craftableItem = props.craftableItemDict[selectedId];
     }
   }
 
   const headers = [
-    new DisplayColumn(
+    // new DisplayColumn(
+    new MDColumn(
       "Name",
       (item) => {
         return <>{item["name"]}</>;
@@ -44,15 +47,9 @@ export function CraftableItems(props) {
   let displayOutput = ["Select an item from the list"];
 
   if (craftableItem !== null) {
-    if (false && process.env.NODE_ENV === "development") {
-      displayOutput = [
-        <EditingCraftableItemDisplay craftableItem={craftableItem} key={0} />,
-      ];
-    } else {
-      displayOutput = [
-        <CraftableItemDisplay craftableItem={craftableItem} key={0} />,
-      ];
-    }
+    displayOutput[0] = (
+      <CraftableItemDisplay craftableItem={craftableItem} key={0} />
+    );
   }
 
   return (
@@ -60,13 +57,15 @@ export function CraftableItems(props) {
       <Row className="h-100" xs={1} md={2}>
         <Col className="border h-100">
           {/* <MonsterFilterBlock submitFilter={setFilterObj} /> */}
-          <DisplayList
+          {/* <DisplayList */}
+          <ModularDisplayList
             headers={headers}
-            items={Object.values(Storage.craftableItemDict)}
+            items={Object.values(props.craftableItemDict)}
             filterObject={{}}
             pathRoot={props.match.path}
-            idFunction={getIdFromItem}
             selectedId={selectedId}
+            height={600}
+            itemSize={25}
           />
         </Col>
         <Col className="border scrollableColumn">{displayOutput}</Col>

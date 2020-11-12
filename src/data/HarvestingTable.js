@@ -1,23 +1,25 @@
-export class HarvestingTable {
-  static fromOld(oldMonster) {
-    if (!oldMonster.HarvestingTable.Rows) return null;
+import BaseDataItem from "./BaseDataItem";
 
-    return new HarvestingTable({
-      name: oldMonster.Name,
-      rows: oldMonster.HarvestingTable.Rows.map(
-        (row) =>
-          new HarvestingTableRow({
-            difficultyClass: row.DifficultyClass,
-            itemNameReference: row.ItemNameRef,
-            quantity: row.Quantity,
-            notes: row.Notes,
-          })
-      ),
-    });
-  }
+export class HarvestingTable extends BaseDataItem {
+  // static fromOld(oldMonster) {
+  //   if (!oldMonster.HarvestingTable.Rows) return null;
 
-  constructor({ name, rows }) {
-    this.name = name;
+  //   return new HarvestingTable({
+  //     name: oldMonster.Name,
+  //     rows: oldMonster.HarvestingTable.Rows.map(
+  //       (row) =>
+  //         new HarvestingTableRow({
+  //           difficultyClass: row.DifficultyClass,
+  //           itemNameReference: row.ItemNameRef,
+  //           quantity: row.Quantity,
+  //           notes: row.Notes,
+  //         })
+  //     ),
+  //   });
+  // }
+
+  constructor({ name, rows, source = "HH#" }) {
+    super(name, source);
     this.rows = rows.map((r) => new HarvestingTableRow(r));
   }
 }

@@ -30,6 +30,43 @@ export class MDColumn {
   }
 }
 
+export function DefaultModularRow(props) {
+  const { index, data, style } = props;
+  const { headers, pathRoot, selectedId, history } = data;
+  const item = data.items[index];
+
+  let innerCols = [];
+
+  let desiredId = item.id;
+  const isSelected = selectedId === desiredId;
+
+  let headerLen = headers.length;
+  for (let h = 0; h < headerLen; ++h) {
+    let headerObj = headers[h];
+
+    innerCols.push(
+      <Col key={`${desiredId}-${h}`}>{headerObj.listDisplayFunc(item)}</Col>
+    );
+  }
+
+  let pathRoute = `${pathRoot}/${desiredId}`;
+
+  let activeName = isSelected ? "active" : "";
+
+  return (
+    <li
+      onClick={(e) => {
+        history.push(pathRoute);
+        e.preventDefault();
+      }}
+      className={activeName + (index % 2 === 0 ? " even" : "")}
+      style={style}
+    >
+      <Row>{innerCols}</Row>
+    </li>
+  );
+}
+
 export function ModularDisplayList(props) {
   let {
     ListItemSlot,
@@ -38,6 +75,9 @@ export function ModularDisplayList(props) {
     items,
     pathRoot,
     height,
+    selectedId,
+    itemSize,
+    //...otherProps
   } = props;
   const appTheme = useContext(AppTheme);
   let history = useHistory();
@@ -48,9 +88,10 @@ export function ModularDisplayList(props) {
   // TODO: Filter items in the list against a simple string filter
 
   if (!ListItemSlot) {
-    ListItemSlot = function ({ style, index }) {
-      return <div style={style}>Row: {index}</div>;
-    };
+    ListItemSlot = DefaultModularRow;
+    // function ({ style, index }) {
+    //   return <div style={style}>Row: {index}</div>;
+    // };
   }
 
   items = items.filter((i) => i.doSimpleFilter(simpleFilter));
@@ -59,16 +100,20 @@ export function ModularDisplayList(props) {
 
   return (
     <>
-      <Row>
+      <Row className="mx-0 w-100">
         <input
           placeholder="Filter"
+          type="text"
           value={simpleFilter}
+          style={{
+            width: "100%",
+          }}
           onInput={(e) => {
             setSimpleFilter(e.target.value);
           }}
         />
       </Row>
-      <Row>{CustomFilterSlot && <CustomFilterSlot />}</Row>
+      <Row className="mx-0">{CustomFilterSlot && <CustomFilterSlot />}</Row>
       <Row className="mx-0">
         {headers.map((h, idx) => {
           return (
@@ -96,8 +141,8 @@ export function ModularDisplayList(props) {
         height={height}
         width={"100%"}
         itemCount={items.length}
-        itemData={{ items, headers, pathRoot, history }}
-        itemSize={40}
+        itemData={{ items, headers, pathRoot, history, selectedId }}
+        itemSize={itemSize}
         headers={headers}
         style={{ overflowX: "hidden" }}
       >

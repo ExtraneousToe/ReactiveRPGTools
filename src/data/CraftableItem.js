@@ -11,9 +11,9 @@ export class CraftableItem extends BaseDataItem {
     type,
     materialGrouping,
     attunementNote,
+    source = "HH#",
   }) {
-    super();
-    this.name = name;
+    super(name, source);
     this.crafter = crafter;
     this.rarity = rarity;
     this.requiresAttunement = requiresAttunement;
@@ -22,13 +22,5 @@ export class CraftableItem extends BaseDataItem {
     this.type = type;
     this.materialGrouping = materialGrouping;
     this.attunementNote = attunementNote;
-  }
-
-  get id() {
-    return this.name.toLowerCase().replace(/\s+/g, "_");
-  }
-
-  doSimpleFilter(filterString) {
-    return this.name.toLowerCase().includes(filterString.toLowerCase());
   }
 }

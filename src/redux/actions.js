@@ -58,6 +58,11 @@ export const addHarvestedItems = (harvestedItems) => ({
   payload: harvestedItems,
 });
 
+export const selectHarvestedItem = (harvestedItemId) => ({
+  type: TYPES.SELECT_HARVESTED_ITEM,
+  payload: harvestedItemId,
+});
+
 export const addCraftableItem = (craftableItem) => ({
   type: TYPES.ADD_CRAFTABLE_ITEM,
   payload: craftableItem,
@@ -66,4 +71,9 @@ export const addCraftableItem = (craftableItem) => ({
 export const addCraftableItems = (craftableItems) => ({
   type: TYPES.ADD_CRAFTABLE_ITEMS,
   payload: craftableItems,
+});
+
+export const selectCraftableItem = (craftableItemId) => ({
+  type: TYPES.SELECT_CRAFTABLE_ITEM,
+  payload: craftableItemId,
 });

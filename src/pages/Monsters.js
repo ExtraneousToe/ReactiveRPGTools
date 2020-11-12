@@ -16,7 +16,6 @@ import "../css/Layout.css";
 
 import { connect } from "react-redux";
 import { getMonsterDict, getSubMonsterDict } from "../redux/selectors";
-import { selectMonster } from "../redux/actions";
 
 function Monsters(props) {
   let [filterObj, setFilterObj] = useState({});
@@ -30,7 +29,6 @@ function Monsters(props) {
   if (match !== null) {
     // if there is an id, search for the monster
     selectedId = match.params.id;
-    //props.selectMonster(selectedId);
     if (props.monsterDict[selectedId] !== undefined) {
       monster = props.monsterDict[selectedId];
     }
@@ -59,6 +57,4 @@ const monstersSelector = (state) => ({
   subMonsterDict: getSubMonsterDict(state),
 });
 
-export default connect(monstersSelector, (disp) => ({
-  selectMonster: (monId) => disp(selectMonster(monId)),
-}))(Monsters);
+export default connect(monstersSelector)(Monsters);

@@ -13,8 +13,10 @@ const TYPES = Object.freeze({
   // item related
   ADD_HARVESTED_ITEM: "items/add-harvested-item",
   ADD_HARVESTED_ITEMS: "items/add-harvested-items",
+  SELECT_HARVESTED_ITEM: "items/select-harvested-item",
   ADD_CRAFTABLE_ITEM: "items/add-craftable-item",
   ADD_CRAFTABLE_ITEMS: "items/add-craftable-items",
+  SELECT_CRAFTABLE_ITEM: "items/select-craftable-item",
 });
 
 export default TYPES;

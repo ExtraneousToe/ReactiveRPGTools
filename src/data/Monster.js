@@ -170,10 +170,8 @@ export class Monster extends BaseDataItem {
     harvestingTable,
     trinketTableType,
   }) {
-    super();
-    this.name = name;
+    super(name, source);
     this.cardSize = referenceCardSize;
-    this.source = source;
     this.otherSources = otherSources || [];
     this.size = creatureSize;
     this.type = creatureType;
@@ -202,14 +200,6 @@ export class Monster extends BaseDataItem {
     this.trinketTableType = trinketTableType || null;
   }
 
-  get id() {
-    return (
-      this.name.replace(/[\s'\-()]/g, "") +
-      "_" +
-      this.source
-    ).toLowerCase();
-  }
-
   static stringFromSize(size) {
     switch (size) {
       case "T":
@@ -231,7 +221,7 @@ export class Monster extends BaseDataItem {
 
   doSimpleFilter(filterString) {
     return (
-      this.name.toLowerCase().includes(filterString) ||
+      super.doSimpleFilter(filterString) ||
       this.type.displayString().toLowerCase().includes(filterString)
     );
   }
