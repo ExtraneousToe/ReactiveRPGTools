@@ -12,7 +12,7 @@
   user-select: none;
   color: blue;
 }
-.clickable.night {
+.night .clickable {
   color: yellow;
 }
 
@@ -20,6 +20,6 @@
   color: green;
 }
 
-.clickable.night:hover {
+.night .clickable:hover {
   color: green;
 }

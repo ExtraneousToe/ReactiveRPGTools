@@ -8,6 +8,7 @@ import {
   stripTags,
   tokeniseByTags,
 } from "../utility/stringUtil";
+import { DynamicRender } from "./RenderBlocks";
 
 export default withRouter(TrinketTableDisplay);
 
@@ -75,7 +76,10 @@ function TrinketTableDisplay(props) {
                 key={`tt-r-rolled-${rolled.result}-${trinketTable.id}-${arrayCopy.length}`}
               >
                 <Col className="col-1 text-center">{row.d8Roll}</Col>
-                <Col>{rollableTokenisedLine(row.descriptionLine)}</Col>
+                <Col>
+                  {/* {rollableTokenisedLine(row.descriptionLine)} */}
+                  {<DynamicRender toRender={row.descriptionLine} />}
+                </Col>
                 <Col className="col-1">{row.value}</Col>
                 <Col className="col-1">{row.weight}</Col>
               </Row>

@@ -1,12 +1,15 @@
 import React from "react";
-import { stripTags } from "../utility/stringUtil";
+import { convertToHTML, stripTags } from "../utility/stringUtil";
 
 export function DynamicRender(props) {
   let toRender = props.toRender;
   let { name, entries, type } = toRender;
 
   if (typeof toRender === "string") {
-    return <>{stripTags(toRender)}</>;
+    // return <>{stripTags(toRender)}</>;
+    return (
+      <span dangerouslySetInnerHTML={{ __html: convertToHTML(toRender) }} />
+    );
   }
 
   if (type === undefined) {
@@ -17,7 +20,10 @@ export function DynamicRender(props) {
             <div key={idx}>
               {idx === 0 && (
                 <>
-                  <b>{stripTags(name)}.</b>{" "}
+                  <b>
+                    {/* {stripTags(name)} */}
+                    <DynamicRender toRender={name} />.
+                  </b>{" "}
                 </>
               )}
               <DynamicRender toRender={ent} />
