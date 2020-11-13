@@ -1,4 +1,5 @@
 import React from "react";
+import { stripTags } from "./stringUtil";
 
 export function ModularDescription(props) {
   let desc = props.description;
@@ -22,13 +23,13 @@ export function ModularDescription(props) {
 }
 
 function SimpleDescription(props) {
-  return <p>{props.description}</p>;
+  return <p>{stripTags(props.description)}</p>;
 }
 
 function ItemDescription(props) {
   return (
     <p>
-      <b>{props.description.name}</b> {props.description.entry}
+      <b>{props.description.name}</b> {stripTags(props.description.entry)}
     </p>
   );
 }

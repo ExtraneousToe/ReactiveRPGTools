@@ -111,6 +111,9 @@ export function ModularDisplayList(props) {
           onInput={(e) => {
             setSimpleFilter(e.target.value);
           }}
+          onChange={(e) => {
+            setSimpleFilter(e.target.value);
+          }}
         />
       </Row>
       <Row className="mx-0">{CustomFilterSlot && <CustomFilterSlot />}</Row>
@@ -153,7 +156,7 @@ export function ModularDisplayList(props) {
 }
 
 ModularDisplayList.propTypes = {
-  ListItemSlot: PropTypes.element,
+  ListItemSlot: PropTypes.func,
   CustomFilterSlot: PropTypes.element,
   headers: PropTypes.arrayOf(MDColumn),
   items: PropTypes.arrayOf(BaseDataItem),

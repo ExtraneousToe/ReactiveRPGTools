@@ -1,3 +1,8 @@
+import "../css/App.css";
+import React, { useContext, useState } from "react";
+import { DiceRoll } from "rpg-dice-roller";
+import AppTheme from "../themeContext";
+
 // eslint-disable-next-line
 Array.prototype.last =
   Array.prototype.last ||
@@ -362,4 +367,83 @@ export function stripTags(str) {
     console.error(`On [${str}]: ${err}`);
     return str;
   }
+}
+
+function execDiceRegex(line) {
+  return /\{@dice (.*?)\}/gi.exec(line);
+}
+
+function stringToken(cnt) {
+  return {
+    type: "string",
+    cnt,
+  };
+}
+function rollableToken(cnt) {
+  return {
+    type: "rollable",
+    cnt,
+  };
+}
+
+export function tokeniseByTags(inputString) {
+  const outputTokens = [];
+  let workingLine = inputString;
+
+  let matches = execDiceRegex(workingLine);
+  let matchIndex = -1;
+  let preString, postString;
+
+  if (matches === null) {
+    outputTokens.push(stringToken(workingLine));
+    return outputTokens;
+  }
+
+  while (matches !== null) {
+    // index of the match
+    matchIndex = workingLine.indexOf(matches[0]);
+    // split up the string
+    preString = workingLine.substr(0, matchIndex);
+    const formula = matches[1];
+    postString = workingLine.substr(matchIndex + matches[0].length);
+
+    outputTokens.push(stringToken(preString));
+    outputTokens.push(rollableToken(formula));
+
+    workingLine = postString;
+    matches = execDiceRegex(workingLine);
+  }
+
+  outputTokens.push(stringToken(workingLine));
+
+  return outputTokens;
+}
+
+export function RollableSpan(props) {
+  const { formula } = props;
+  let [rolledResult, setRolledResult] = useState("");
+  const appTheme = useContext(AppTheme);
+
+  return (
+    <span
+      onClick={() => {
+        const res = new DiceRoll(formula).total;
+        setRolledResult(res);
+      }}
+      className={`clickable ${appTheme.theme.styleName}`}
+    >
+      {rolledResult !== "" ? `[${rolledResult}]` : formula}
+    </span>
+  );
+}
+
+export function rollableTokenisedLine(line) {
+  return tokeniseByTags(line).map((tok, idx) => {
+    switch (tok.type) {
+      case "string":
+        return <span key={idx}>{tok.cnt}</span>;
+      case "rollable":
+        return <RollableSpan key={idx} formula={tok.cnt} />;
+    }
+  });
 }

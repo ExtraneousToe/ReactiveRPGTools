@@ -1,4 +1,5 @@
 import BaseDataItem from "./BaseDataItem";
+import { DiceRoll } from "rpg-dice-roller";
 
 export class TrinketTable extends BaseDataItem {
   // static fromOld({ TrinketTableType, Rows }) {
@@ -24,6 +25,12 @@ export class TrinketTable extends BaseDataItem {
 
   get id() {
     return BaseDataItem.convertToId(this.trinketTableType, this.source);
+  }
+
+  roll() {
+    let roller = new DiceRoll("d8");
+
+    return { result: roller.total, row: this.rows[roller.total - 1] };
   }
 }
 

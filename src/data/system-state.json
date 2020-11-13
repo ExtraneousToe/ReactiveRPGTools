@@ -15950,7 +15950,7 @@
         "This item can only be harvested if the myconid being harvested still had use of its animating spores ability. The animating spores of a myconid sovereign holds a strange place between schools of magic. Holding characterstics of necromantic, enchantment, and transfiguration, these spores continue to vex even the foremost scholars of the day."
       ],
       "useText": [
-        "As an action, you may sprinkle these spores over the corpse of a humanoid or a Large or smaller beast within 5 feet. In 24 hours, the corpse rises as a spore servant (refer to the Monster Manual for the statblock). The corpse stays animated for 1d4+1 weeks or until destroyed, and it can't be animated again in this way."
+        "As an action, you may sprinkle these spores over the corpse of a humanoid or a Large or smaller beast within 5 feet. In 24 hours, the corpse rises as a spore servant (refer to the Monster Manual for the statblock). The corpse stays animated for {@dice 1d4+1} weeks or until destroyed, and it can't be animated again in this way."
       ],
       "requiredToolNames": []
     },
@@ -15964,7 +15964,7 @@
         "Ankhegs are well known for their incredibly potent digestive fluids that dissolve their prey. As such, alchemists find ankheg bile to be a particularly useful ingredient when creating their own acidic concoctions."
       ],
       "useText": [
-        "As an action you may make a ranged weapon attack to throw this vial at a target within 20 feet, shattering it on impact. Make a ranged attack against the target, treating the vial as an improvised object. On a hit, the target suffers 1d6 acid damage."
+        "As an action you may make a ranged weapon attack to throw this vial at a target within 20 feet, shattering it on impact. Make a ranged attack against the target, treating the vial as an improvised object. On a hit, the target suffers {@dice 1d6} acid damage."
       ],
       "requiredToolNames": []
     },
@@ -16088,7 +16088,7 @@
         "Despite their learned and sophisticated nature, an arcanaloth is more than capable of killing a mortal in close combat as they are using their spells. This is partly in thanks to the poison glands they possess under their claws, which add a touch of death to their razor sharp strikes."
       ],
       "useText": [
-        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 14 Constitution saving throw, taking 3d6 poison damage on a failed save, or half that on a successful saving throw."
+        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 14 Constitution saving throw, taking {@dice 3d6} poison damage on a failed save, or half that on a successful saving throw."
       ],
       "requiredToolNames": []
     },
@@ -16202,7 +16202,7 @@
         "The incorporeal banshee leaves very little behind except the last whispers of its terrible wail. With some spirit paper, a good harvester can collect the echo of this wail before it vanishes forever and use it in times of desperation. Requires spirit paper."
       ],
       "useText": [
-        "You may spend an action to tear this item open and release the banshee wail kept within. All creatures within 30 feet of you that can hear must make a DC 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 3d6 psychic damage. This wail has no effect on constructs and undead."
+        "You may spend an action to tear this item open and release the banshee wail kept within. All creatures within 30 feet of you that can hear must make a DC 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes {@dice 3d6} psychic damage. This wail has no effect on constructs and undead."
       ],
       "requiredToolNames": ["Spirit paper"]
     },
@@ -16302,7 +16302,7 @@
         "Barghests have an odd reaction to fire that transports them back to their home plane of Gehenna if they are engulfed in it for any period of time. This property extends to pristine samples of their fur, which can create a portal when used as tinder. Be warned though, that using said portal will still be quite painful. Alternatively, it can be used to make a macabre magical doll that is useful for goblinbased distractions."
       ],
       "useText": [
-        "If a small bag of barghest fur is thrown into a fire larger than 10 feet high or wide, the fur is instantly disintegrated and the fire transforms into a portal to a random location on the plane of Gehenna for the next minute, or until the fire is extinguished. Anything entering the portal automatically suffers 4d8 fire damage from the heat of the original flame."
+        "If a small bag of barghest fur is thrown into a fire larger than 10 feet high or wide, the fur is instantly disintegrated and the fire transforms into a portal to a random location on the plane of Gehenna for the next minute, or until the fire is extinguished. Anything entering the portal automatically suffers {@dice 4d8} fire damage from the heat of the original flame."
       ],
       "requiredToolNames": []
     },
@@ -16452,7 +16452,7 @@
       "craftingUsage": ["eyestalkwand_hh1"],
       "description": [
         "While the eye stalks of the beholder may be severed from its body, they still retain some of the magical energy that allowed them to fire powerful rays at their enemies. Skilled artificers can take these stalks and use them as the cores of magical wands that emit the same types of rays they emitted in life. Alternatively, four of the intact stalks may be used as part of a ritual to summon a spectator.",
-        "If a player harvests an eye stalk, roll 1d10. The type of eye stalk they receive corresponds to the number rolled, as described in the beholder statblock."
+        "If a player harvests an eye stalk, roll {@dice 1d10}. The type of eye stalk they receive corresponds to the number rolled, as described in the beholder statblock."
       ],
       "useText": [],
       "requiredToolNames": []
@@ -17560,10 +17560,10 @@
       "craftingUsage": [],
       "description": [
         "The blood of an angel flows with radiant energy that brings life to all it touches (it clearly didn't work hard enough for its original owner though). Many of the most desperate people actively seek angels in an attempt to harvest their blood as a panacea, without putting much thought into the worse fate that awaits them should they succeed.",
-        "Use: When you drink this blood, you regain 4d8+2 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+        "Use: When you drink this blood, you regain {@dice 4d8+2} hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
       ],
       "useText": [
-        "When you drink this blood, you regain 4d8+2 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+        "When you drink this blood, you regain {@dice 4d8+2} hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
       ],
       "requiredToolNames": []
     },
@@ -17745,7 +17745,7 @@
         "The blood of the doppelganger is unnervingly slick and in its natural state carries the same rainbow sheen as a puddle of oil. When it is being held, it changes colour to match the blood of the creature holding it."
       ],
       "useText": [
-        "When you drink a vial of this blood that has had a drop of a humanoid's blood mixed into it, you polymorph into a form identical to that humanoid for the next 1d4 hours. Your statistics, other than your size remain the same in that form. Any equipment you are carrying or wearing is not transformed. You revert to your true form at the end of the duration or if you die."
+        "When you drink a vial of this blood that has had a drop of a humanoid's blood mixed into it, you polymorph into a form identical to that humanoid for the next {@dice 1d4} hours. Your statistics, other than your size remain the same in that form. Any equipment you are carrying or wearing is not transformed. You revert to your true form at the end of the duration or if you die."
       ],
       "requiredToolNames": []
     },
@@ -17873,7 +17873,7 @@
         "Drider poison is just as deadly as those of the cave spiders it emulates. By removing the gland from under the drider's tongue however, this poison can be extracted and put to better use."
       ],
       "useText": [
-        "Can coat up to 5 pieces of slashing or piercing ammunition or 1 slashing or piercing weapon for 10 minutes. Applying the poison takes 1 minute. Any creature successfully hit receives an additional 2d8 poison damage."
+        "Can coat up to 5 pieces of slashing or piercing ammunition or 1 slashing or piercing weapon for 10 minutes. Applying the poison takes 1 minute. Any creature successfully hit receives an additional {@dice 2d8} poison damage."
       ],
       "requiredToolNames": []
     },
@@ -18207,7 +18207,7 @@
         "Although the erinyes is a master warrior whose swordplay is matched by few mortals, they are not above poisoning their weapons to further tip the scales in their favour."
       ],
       "useText": [
-        "Can coat up to 10 pieces of ammunition or 1 melee weapon for 1 hour. Applying the poison takes 1 minute. Any creature successfully hit must succeed a DC 14 Constitution saving throw or suffer 3d8 poison damage and be poisoned. The poison lasts until it is removed by the lesser restoration spell or similar magic."
+        "Can coat up to 10 pieces of ammunition or 1 melee weapon for 1 hour. Applying the poison takes 1 minute. Any creature successfully hit must succeed a DC 14 Constitution saving throw or suffer {@dice 3d8} poison damage and be poisoned. The poison lasts until it is removed by the lesser restoration spell or similar magic."
       ],
       "requiredToolNames": []
     },
@@ -18387,7 +18387,7 @@
         "The flumph is mostly harmless and overall friendly. Even their self defense method is mostly harmless; an obnoxious smelling fluid that sends most other creatures scurrying away."
       ],
       "useText": [
-        "As an action, you may throw the vial of flumph spray up to 20 feet away, shattering it on impact. Each creature within 5 feet of the target location must succeed on a DC 10 Dexterity saving throw or be coated in a foul-smelling liquid. A coated creature exudes a horrible stench for 1d4 hours. The coated creature is poisoned as long as the stench lasts, and other creatures are poisoned while within 5 feet of the coated creature. A creature can remove the stench on itself by using a short rest to bathe in water, alcohol, or vinegar."
+        "As an action, you may throw the vial of flumph spray up to 20 feet away, shattering it on impact. Each creature within 5 feet of the target location must succeed on a DC 10 Dexterity saving throw or be coated in a foul-smelling liquid. A coated creature exudes a horrible stench for {@dice 1d4} hours. The coated creature is poisoned as long as the stench lasts, and other creatures are poisoned while within 5 feet of the coated creature. A creature can remove the stench on itself by using a short rest to bathe in water, alcohol, or vinegar."
       ],
       "requiredToolNames": []
     },
@@ -18546,7 +18546,7 @@
       "weight": "6 lb",
       "craftingUsage": ["lessereyestalkwandgauth_hh1"],
       "description": [
-        "The eye stalks of a gauth are not as powerful as that of a beholder, but they still have some use when harvested and processed by a skilled artificer. If a player harvests an eye stalk, roll 1d6. The type of eye stalk they receive corresponds to the number rolled, as described in the gauth's statblock."
+        "The eye stalks of a gauth are not as powerful as that of a beholder, but they still have some use when harvested and processed by a skilled artificer. If a player harvests an eye stalk, roll {@dice 1d6}. The type of eye stalk they receive corresponds to the number rolled, as described in the gauth's statblock."
       ],
       "useText": [],
       "requiredToolNames": []
@@ -18573,7 +18573,7 @@
         "Gauths boast the rather annoying ability to literally consume magic and magical energy. Some believe that this is related to the magic nullification ability of a beholder's main eye, but this is still merely conjecture. Either way, allowing a gauth near your magical sword is a surefire way to end up with a relatively useless hunk of metal."
       ],
       "useText": [
-        "You may spend an action to rupture this stomach and spill the contents onto a magical item, causing it to lose all magical properties for 24 hours, as well as 1d4 charges if it is a charged item. This ability does not function on artefacts or items with the legendary rarity."
+        "You may spend an action to rupture this stomach and spill the contents onto a magical item, causing it to lose all magical properties for 24 hours, as well as {@dice 1d4} charges if it is a charged item. This ability does not function on artefacts or items with the legendary rarity."
       ],
       "requiredToolNames": []
     },
@@ -18584,7 +18584,7 @@
       "weight": "1 lb",
       "craftingUsage": ["minoreyestalkwand_hh1"],
       "description": [
-        "The tiny stalks of a gazer are incredibly difficult to harvest undamaged, and the wands they create are just as fragile. They are best treated as weapons of last resort for a mage that is out of options. If a player harvests an eye stalk, roll 1d4. The type of eye stalk they receive corresponds to the number rolled, as described in the gazer's statblock."
+        "The tiny stalks of a gazer are incredibly difficult to harvest undamaged, and the wands they create are just as fragile. They are best treated as weapons of last resort for a mage that is out of options. If a player harvests an eye stalk, roll {@dice 1d4}. The type of eye stalk they receive corresponds to the number rolled, as described in the gazer's statblock."
       ],
       "useText": [],
       "requiredToolNames": []
@@ -18613,7 +18613,7 @@
         "The gelatinous residue from a gelatinous cube carries much of the same acidic properties from its original form. Unlike samples taken from other oozes, the gelatinous cube's acid is difficult to identify when mixed with other liquids, making it the substance of choice among assassins with a subtler touch."
       ],
       "useText": [
-        "Drinking the gelatinous residue automatically deals 6d6 acid damage to the drinker. The gelatinous residue may be mixed with up to 5 oz. of other liquid and still retain this property. A DC 15 Wisdom (Perception) check can identify a liquid that has had gelatinous residue mixed into it."
+        "Drinking the gelatinous residue automatically deals {@dice 6d6} acid damage to the drinker. The gelatinous residue may be mixed with up to 5 oz. of other liquid and still retain this property. A DC 15 Wisdom (Perception) check can identify a liquid that has had gelatinous residue mixed into it."
       ],
       "requiredToolNames": ["Enchanted vial"]
     },
@@ -19299,7 +19299,7 @@
         "The heart of an orc touched by Gruumsh is considerably larger than a regular one. Many would find the consumption of this heart to be barbaric, but it would be no more barbaric than what the original owner of this heart has done."
       ],
       "useText": [
-        "As an action you may consume this heart. For the next 10 minutes, you deal an extra 1d8 damage when you hit with a weapon attack. This benefit can not be taken by any character with Elvish ancestry."
+        "As an action you may consume this heart. For the next 10 minutes, you deal an extra {@dice 1d8} damage when you hit with a weapon attack. This benefit can not be taken by any character with Elvish ancestry."
       ],
       "requiredToolNames": []
     },
@@ -19411,7 +19411,7 @@
         "Not to be confused with the notorious \"hag eye\" amulet given by hags to their servants, however the two are tightly linked. Despite being severed from its socket, this eye still seems to glare as it did in life."
       ],
       "useText": [
-        "As an action you may concentrate on the hag eyeball while it is in your hand. While doing so, you may utilise that hag's hag eye that same way they would have used it in life. If the hag eye is destroyed while you are concentrating on the hag eyeball, you suffer 3d10 psychic damage and are blinded for 24 hours."
+        "As an action you may concentrate on the hag eyeball while it is in your hand. While doing so, you may utilise that hag's hag eye that same way they would have used it in life. If the hag eye is destroyed while you are concentrating on the hag eyeball, you suffer {@dice 3d10} psychic damage and are blinded for 24 hours."
       ],
       "requiredToolNames": []
     },
@@ -19913,7 +19913,7 @@
         "The stinger of an imp can be surprisingly dangerous if one receives a full dose of the venom within."
       ],
       "useText": [
-        "Can coat up to 5 pieces of ammunition or 1 melee weapon for 10 minutes. Applying the poison takes 1 minute. Any creature successfully hit must make a DC 11 Constitution saving throw, taking 3d6 poison damage on a failed save, or half as much damage on a successful one."
+        "Can coat up to 5 pieces of ammunition or 1 melee weapon for 10 minutes. Applying the poison takes 1 minute. Any creature successfully hit must make a DC 11 Constitution saving throw, taking {@dice 3d6} poison damage on a failed save, or half as much damage on a successful one."
       ],
       "requiredToolNames": []
     },
@@ -19939,7 +19939,7 @@
         "The mesmerising eyes of a jackalwere are able to lure unwary travellers into a slumber, and many commonfolk that live in areas frequented by jackalweres make a habit of looking down when speaking to strangers."
       ],
       "useText": [
-        "If you cast the sleep spell you may use a jackalwere eye as a material component. If you do so, you roll an additional 1d8 when determining the amount of hit points affected. You may only use one jackalwere eye at a time, and once used, a jackelware eye loses its magic and becomes useless."
+        "If you cast the sleep spell you may use a jackalwere eye as a material component. If you do so, you roll an additional {@dice 1d8} when determining the amount of hit points affected. You may only use one jackalwere eye at a time, and once used, a jackelware eye loses its magic and becomes useless."
       ],
       "requiredToolNames": []
     },
@@ -20389,7 +20389,7 @@
         "This large, but surprisingly light leathery sack is located at the back of the behir's cavernous mouth, and is roughly the size of a picnic basket. Inside is a mixture of chemicals, fluids and enzymes that when exposed to the open air, erupts in a destructive crackle of lightning. While extremely dangerous, alchemists and weaponsmiths alike will crawl over themselves to obtain some of this powerful energy."
       ],
       "useText": [
-        "The lightning sack can be thrown by itself up to a range of 20 feet. If thrown, the lightning sack will explode on impact, dealing 4d10 lightning damage to all creatures in a 10 foot radius, or half that on a successful DC 14 Dexterity saving throw."
+        "The lightning sack can be thrown by itself up to a range of 20 feet. If thrown, the lightning sack will explode on impact, dealing {@dice 4d10} lightning damage to all creatures in a 10 foot radius, or half that on a successful DC 14 Dexterity saving throw."
       ],
       "requiredToolNames": []
     },
@@ -20761,7 +20761,7 @@
         "Dendar, the serpent goddess of nightmares, is revered by the aptly named nightmare speakers. She casts a pallor over sleeping mortals, inducing nightmares in them so that she may consume them in her never-ending hunger. Her most devout priestesses receive her mark so that they may call more nightmares into existence for her to devour."
       ],
       "useText": [
-        "You may use this mark in place of the usual material components when you cast the sleep spell. If you do so, any creature that you successfully put to sleep in this way also suffers 1d10 psychic damage at the end of every turn they spend asleep. This damage does not wake up the sleeping creature. Once this ability has been used 3 times, this mark crumbles into dust and becomes worthless."
+        "You may use this mark in place of the usual material components when you cast the sleep spell. If you do so, any creature that you successfully put to sleep in this way also suffers {@dice 1d10} psychic damage at the end of every turn they spend asleep. This damage does not wake up the sleeping creature. Once this ability has been used 3 times, this mark crumbles into dust and becomes worthless."
       ],
       "requiredToolNames": []
     },
@@ -21259,7 +21259,7 @@
       "craftingUsage": ["mutatedeyestalkwand_hh1"],
       "description": [
         "The eye stalks of a mindwitness are irrevocably changed by the corruption of an elder brain to favor psionic abilities. That said, they are still useful for crafting magical wands, and depending on what your desired effect is, could be considered even better than a normal beholder's.",
-        "If a player harvests an eye stalk, roll 1d6. The type of eye stalk they receive corresponds to the number rolled, as described in the mindwitness' statblock."
+        "If a player harvests an eye stalk, roll {@dice 1d6}. The type of eye stalk they receive corresponds to the number rolled, as described in the mindwitness' statblock."
       ],
       "useText": [],
       "requiredToolNames": []
@@ -21456,7 +21456,7 @@
         "A will-o'-wisp is a malevolent being comprised almost entirely of necrotic energy resembling a ball of light. Upon dispersal of their form, some of this energy can still be harvested and used for other necrotic purposes."
       ],
       "useText": [
-        "As an action, you may sprinkle this item over one creature within 5 feet of you that has 0 hit points and is still alive. The target must succeed on a DC 10 Constitution saving throw or die. If they die, you regain 3d6 hit points."
+        "As an action, you may sprinkle this item over one creature within 5 feet of you that has 0 hit points and is still alive. The target must succeed on a DC 10 Constitution saving throw or die. If they die, you regain {@dice 3d6} hit points."
       ],
       "requiredToolNames": ["Enchanted vial"]
     },
@@ -21570,7 +21570,7 @@
         "The heart of a guardian naga may be taken by force, but it is only useful when given freely by the benevolent creatures. When eaten, the recipient gains the naga's rejuvenation ability for at least one death. In exchange, the naga's own cycle of rebirth is temporarily halted. A guardian naga only does this when it sees great potential in a mortal creature and wishes to be a part of that creature fulfilling their destiny."
       ],
       "useText": [
-        "If the naga heart is taken and eaten under the free and willing permission of the guardian naga, the eater temporarily gains the ability to return to life after death. If the eater dies, they will return to life in 1d6 days and regain all hit points, missing body parts, and be cured of all non-magical diseases. Only a wish spell can prevent this trait from functioning. In addition, the naga from whom the heart was taken loses its rejuvenation ability until the creature that ate their heart returns to life for the first time using this ability. After the eater returns to life for the first time using this ability, they lose this ability."
+        "If the naga heart is taken and eaten under the free and willing permission of the guardian naga, the eater temporarily gains the ability to return to life after death. If the eater dies, they will return to life in {@dice 1d6} days and regain all hit points, missing body parts, and be cured of all non-magical diseases. Only a wish spell can prevent this trait from functioning. In addition, the naga from whom the heart was taken loses its rejuvenation ability until the creature that ate their heart returns to life for the first time using this ability. After the eater returns to life for the first time using this ability, they lose this ability."
       ],
       "requiredToolNames": []
     },
@@ -21684,7 +21684,7 @@
         "A neogi is deadly even as soon as it is born; it has to be in order to kill all of its siblings and survive its first day of existence. As part of this, a hatchling comes into the world with its poison glands fully formed and productive. Funnily enough, this sometimes results in entire egg clutches dying as the victor of the hatching melee succumbs to the poison of their defeated broodmates."
       ],
       "useText": [
-        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must succeed on a DC 10 Constitution saving throw or take 2d6 poison damage and become poisoned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must succeed on a DC 10 Constitution saving throw or take {@dice 2d6} poison damage and become poisoned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
       ],
       "requiredToolNames": []
     },
@@ -21698,7 +21698,7 @@
         "A grown neogi's poison is even deadlier than it was when it was young. Used for more than just fighting siblings and hunting prey, the poison is also used to weaken potential slaves. Neogi slave drivers have been known to extract their own poison and dilute it into the food they give to slaves in order to keep them discombobulated and docile."
       ],
       "useText": [
-        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must succeed on a DC 10 Constitution saving throw or take 4d6 poison damage and become poisoned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must succeed on a DC 10 Constitution saving throw or take {@dice 4d6} poison damage and become poisoned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
       ],
       "requiredToolNames": []
     },
@@ -21712,7 +21712,7 @@
         "A neothelid's brain is pitiful in many ways. While it once held the potential for vast intelligence, it has become extremely limited due to its unnatural growth. Its psionic abilities however are still extremely powerful and are unchecked by any semblance of reason or strategy from the creature. In many ways, the neothelid is simply a tortured creature, given power it cannot control and perhaps does not even want. When used by an experienced spellcaster however, this power can be given direction and wielded with much greater purpose."
       ],
       "useText": [
-        "When you cast the confusion spell, you may use this brain instead of the spell's usual material component. If you do so, instead of rolling 1d10 at the start of an affected creature's turn to determine their behavior, you may choose the result instead."
+        "When you cast the confusion spell, you may use this brain instead of the spell's usual material component. If you do so, instead of rolling {@dice 1d10} at the start of an affected creature's turn to determine their behavior, you may choose the result instead."
       ],
       "requiredToolNames": []
     },
@@ -21726,7 +21726,7 @@
         "The highly acidic contents of a neothelid's digestive tract are capable of melting through metal and flesh alike. Strangely enough however, it is completely unreactive when it comes into contact with brain matter. While this does allow the neothelid to consume their prey's brains intact, it does beg the question of how they actually end up digesting them once they've been swallowed."
       ],
       "useText": [
-        "As an action you may throw this sack at a point you can see within 20 feet of you, bursting on impact. All creatures within 5 feet of that point must succeed on a DC 18 Dexterity saving throw, taking 10d6 acid damage on a failed save, or half as much damage on a successful one."
+        "As an action you may throw this sack at a point you can see within 20 feet of you, bursting on impact. All creatures within 5 feet of that point must succeed on a DC 18 Dexterity saving throw, taking {@dice 10d6} acid damage on a failed save, or half as much damage on a successful one."
       ],
       "requiredToolNames": []
     },
@@ -21824,7 +21824,7 @@
         "A nilbog's spirit is almost impossible to pin down for even the most skilled occultists. The most one can hope to do is catch an echo of it using a ream of spirit paper. This echo is almost as illusive and slippery as the real spirit, and dissipates too easily to be used for crafting, making it a strictly single use item."
       ],
       "useText": [
-        "If you cast the sanctuary spell, you may expend this item as a material component instead of the usual material component. If you do so, the first time the creature protected by your sanctuary spell receives damage from another creature, they may spend their reaction to reduce that damage to 0 and recover 1d6 hit points instead."
+        "If you cast the sanctuary spell, you may expend this item as a material component instead of the usual material component. If you do so, the first time the creature protected by your sanctuary spell receives damage from another creature, they may spend their reaction to reduce that damage to 0 and recover {@dice 1d6} hit points instead."
       ],
       "requiredToolNames": []
     },
@@ -22060,7 +22060,7 @@
         "An otyugh's saliva is not actually poisonous, but it is loaded with so much bacteria and disease that it may as well be."
       ],
       "useText": [
-        "This saliva can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 15 Constitution saving throw against disease or become poisoned until the disease is cured. For every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 1d10 on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."
+        "This saliva can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 15 Constitution saving throw against disease or become poisoned until the disease is cured. For every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by {@dice 1d10} on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."
       ],
       "requiredToolNames": []
     },
@@ -22292,7 +22292,7 @@
         "A pit fiend's venom is one of the most insidious of all the fiends. Besides the horrible pain they inflict on their victim, its corrupting influence even blocks out magical assistance, keeping wounds open and bleeding even in the face of divine help."
       ],
       "useText": [
-        "Can be used to up to 15 pieces of slashing or piercing ammunition or 1 slashing or piercing weapon for 1 hour. Applying takes 1 minute. Any creature successfully hit must succeed on a DC 21 Constitution saving throw or become poisoned. While poisoned in this way, the target can't regain hit points, and it takes 6d6 poison damage at the start of each of its turns. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        "Can be used to up to 15 pieces of slashing or piercing ammunition or 1 slashing or piercing weapon for 1 hour. Applying takes 1 minute. Any creature successfully hit must succeed on a DC 21 Constitution saving throw or become poisoned. While poisoned in this way, the target can't regain hit points, and it takes {@dice 6d6} poison damage at the start of each of its turns. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
       ],
       "requiredToolNames": []
     },
@@ -22306,7 +22306,7 @@
         "The ubiquitous dust dropped by the wings of pixies. Incredibly magical, yet volatile, it is virtually impossible for a non-pixie to determine what will happen when sprinkled on a creature."
       ],
       "useText": [
-        "As an action, you may sprinkle some pixie dust on a creature next to you. If sprinkled on an unwilling creature, they may resist any resulting effect by succeeding on a DC 12 Wisdom saving throw. If sprinkled on a willing creature, or an unwilling creature that failed their saving throw, roll 1d10 and consult the pixie dust effect table for the result. If the result would involve a saving throw, the DC is 12. A small pouch of pixie dust has enough dust in it for 3 uses."
+        "As an action, you may sprinkle some pixie dust on a creature next to you. If sprinkled on an unwilling creature, they may resist any resulting effect by succeeding on a DC 12 Wisdom saving throw. If sprinkled on a willing creature, or an unwilling creature that failed their saving throw, roll {@dice 1d10} and consult the pixie dust effect table for the result. If the result would involve a saving throw, the DC is 12. A small pouch of pixie dust has enough dust in it for 3 uses."
       ],
       "requiredToolNames": []
     },
@@ -22320,7 +22320,7 @@
         "The blood of an angel flows with radiant energy that brings life to all it touches (it clearly didn't work hard enough for its original owner though). Many of the most desperate people actively seek angels in an attempt to harvest their blood as a panacea, without putting much thought into the worse fate that awaits them should they succeed."
       ],
       "useText": [
-        "When you drink this blood, you regain 6d8+3 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+        "When you drink this blood, you regain {@dice 6d8+3} hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
       ],
       "requiredToolNames": []
     },
@@ -22396,7 +22396,7 @@
         "The confused energy of a poltergeist manifests itself in psychic outbursts capable of throwing full grown men and full sets of furniture across rooms. Upon a poltergeist's dispersal, a sheet of spirit paper can capture some of this errant energy to be used later for one's own mayhem and mischief."
       ],
       "useText": [
-        "As an action, this paper may be attached to a target Medium or smaller creature or a target unattended object that weighs less than or equal to 150 pounds. Upon speaking a chosen command word or after a designated amount of time, the creature or object that this paper is attached to is hurled 30 feet in the direction away from the paper. If the paper is attached to a creature, they may roll a DC 13 Strength saving throw to avoid this forced movement. If the hurled target comes into contact with a hard surface or heavy object, the target takes 1d6 damage per 10 feet moved. This item may be used up to 3 times before it runs out of energy and become useless."
+        "As an action, this paper may be attached to a target Medium or smaller creature or a target unattended object that weighs less than or equal to 150 pounds. Upon speaking a chosen command word or after a designated amount of time, the creature or object that this paper is attached to is hurled 30 feet in the direction away from the paper. If the paper is attached to a creature, they may roll a DC 13 Strength saving throw to avoid this forced movement. If the hurled target comes into contact with a hard surface or heavy object, the target takes {@dice 1d6} damage per 10 feet moved. This item may be used up to 3 times before it runs out of energy and become useless."
       ],
       "requiredToolNames": ["Spirit paper"]
     },
@@ -22448,7 +22448,7 @@
         "The incredibly corrosive bile of a purple worm is coveted by miners for being able to literally eat through rocks that would otherwise take weeks of work to break through. Just be careful when harvesting it, however, you don't want to be known as the fool who was eaten by an already slain purple worm."
       ],
       "useText": [
-        "As an action you may make a ranged weapon attack to throw a vial of purple worm bile at a target within 20 feet, shattering it on impact. Make a ranged attack against the target, treating the vial as an improvised object. On a hit, the target suffers 5d6 acid damage."
+        "As an action you may make a ranged weapon attack to throw a vial of purple worm bile at a target within 20 feet, shattering it on impact. Make a ranged attack against the target, treating the vial as an improvised object. On a hit, the target suffers {@dice 5d6} acid damage."
       ],
       "requiredToolNames": []
     },
@@ -23006,7 +23006,7 @@
         "The heart of a lizardfolk touched by Sess'Inek is as fetid and rotten as the swamp its owner lives in. This black organ pumps a stinking ichor through a lizardfolk's body, making them stronger and more vicious than its brethren. Eating it can bestow a temporary boon to a normal humanoid, but it is advised only to those with a strong will."
       ],
       "useText": [
-        "As an action, you may eat this item. Upon doing so, you gain the following abilities for the next hour: you are able to hold your breath for 15 minutes, you are immune to the frightened condition, your AC raises to 15 if it was lower than that as your skin becomes scaly, and once per turn, you may deal an extra 3d6 damage on a successful melee weapon attack, and gain temporary hit points equal to the extra damage dealt. Upon eating this item, you must also succeed on a DC 13 Wisdom saving throw or become berserk. While berserk, you must attempt to make a melee weapon attack against the closest creature to you, and/or move as close to them as possible. You remain berserk until the rest of the effects of eating this item also end."
+        "As an action, you may eat this item. Upon doing so, you gain the following abilities for the next hour: you are able to hold your breath for 15 minutes, you are immune to the frightened condition, your AC raises to 15 if it was lower than that as your skin becomes scaly, and once per turn, you may deal an extra {@dice 3d6} damage on a successful melee weapon attack, and gain temporary hit points equal to the extra damage dealt. Upon eating this item, you must also succeed on a DC 13 Wisdom saving throw or become berserk. While berserk, you must attempt to make a melee weapon attack against the closest creature to you, and/or move as close to them as possible. You remain berserk until the rest of the effects of eating this item also end."
       ],
       "requiredToolNames": []
     },
@@ -23094,7 +23094,7 @@
         "Shadows barely have a corporeal form, and any that could be considered such is quickly dispersed once their animating force has been defeated. Some of it can be trapped inside a sheet of spirit paper, however, to be used to vex the unwary."
       ],
       "useText": [
-        "If this item is left in the shadow of an incapacitated creature for at least 10 minutes, that creature's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. This effect lasts until the spell lesser restoration or similar magic is used to remove this effect. If a non-evil humanoid dies while suffering from this effect, a new shadow rises from the corpse 1d4 hours later. Once this item has been used once, it loses all magical properties."
+        "If this item is left in the shadow of an incapacitated creature for at least 10 minutes, that creature's Strength score is reduced by {@dice 1d4}. The target dies if this reduces its Strength to 0. This effect lasts until the spell lesser restoration or similar magic is used to remove this effect. If a non-evil humanoid dies while suffering from this effect, a new shadow rises from the corpse {@dice 1d4} hours later. Once this item has been used once, it loses all magical properties."
       ],
       "requiredToolNames": ["Spirit paper"]
     },
@@ -23360,7 +23360,7 @@
         "The blood of an angel flows with radiant energy that brings life to all it touches (it clearly didn't work hard enough for its original owner though). Many of the most desperate people actively seek angels in an attempt to harvest their blood as a panacea, without putting much thought into the worse fate that awaits them should they succeed."
       ],
       "useText": [
-        "When you drink this blood, you regain 8d8+4 hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
+        "When you drink this blood, you regain {@dice 8d8+4} hit points and are freed from any curse (except the curse of the fallen), disease, poison, blindness, and deafness."
       ],
       "requiredToolNames": []
     },
@@ -23446,7 +23446,7 @@
       "craftingUsage": ["lessereyestalkwandspectator_hh1"],
       "description": [
         "The stalks of the spectator are less powerful than those of the beholder it consumed to be summoned. However, their potential to be made into wands by artificers are the same. When crafted properly, they continue to contain an arcane charge that allows them to discharge the same types of magical rays they did in life.",
-        "If a player harvests an eye stalk, roll 1d4. The type of eye stalk they receive corresponds to the number rolled, as described in the spectator statblock."
+        "If a player harvests an eye stalk, roll {@dice 1d4}. The type of eye stalk they receive corresponds to the number rolled, as described in the spectator statblock."
       ],
       "useText": [],
       "requiredToolNames": []
@@ -23473,7 +23473,7 @@
         "A specter is a being of pure spite and malice, a soul severed from the cycle of death and afterlife. When their form is dispersed, fragments of their soul can be imprinted on spirit paper. These fragments radiate with as much hate as their original complete form, and prolonged exposure to it can result in terrible psychological damage."
       ],
       "useText": [
-        "A creature that spends at least 6 hours a day within 30 feet of this item for 7 continuous days becomes cursed. While cursed in this way, the creature has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight while in sunlight. In addition, their dreams become wracked with nightmares and they gain no benefit from a long rest. If the cursed target sleeps within 30 feet of this item, they must succeed on a DC 10 Constitution saving throw or have their hit point maximum reduced by 3d6 points. The target dies if this effect reduces its hit point maximum to 0. Only one creature may be cursed by this item at a time, and if a creature cursed by this item manages to remove their curse by any means, this item becomes useless and crumbles into dust."
+        "A creature that spends at least 6 hours a day within 30 feet of this item for 7 continuous days becomes cursed. While cursed in this way, the creature has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight while in sunlight. In addition, their dreams become wracked with nightmares and they gain no benefit from a long rest. If the cursed target sleeps within 30 feet of this item, they must succeed on a DC 10 Constitution saving throw or have their hit point maximum reduced by {@dice 3d6} points. The target dies if this effect reduces its hit point maximum to 0. Only one creature may be cursed by this item at a time, and if a creature cursed by this item manages to remove their curse by any means, this item becomes useless and crumbles into dust."
       ],
       "requiredToolNames": ["Spirit paper"]
     },
@@ -23633,7 +23633,7 @@
         "A basket sized organ located alongside the lungs. When the dragon turtle inhales water, some is stored inside this organ, where it reacts with enzymes that rapidly accelerate heating. While it appears nominally that this organ is meant to provide the dragon turtle with warmth during its deep sea dives, it doubles as a defense mechanism, allowing the dragon turtle to spit jets of scalding steam from its mouth. When harvested, it maintains this property, but lacks both the muscular support for long ranges and the ability to refill on enzymes, giving it a short shelf life."
       ],
       "useText": [
-        "As an action, a creature may squeeze the steam ventral to release a 30-foot cone of scalding steam. Each creature in that area must make a DC 18 Constitution saving throw, taking 15d6 fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistsance against this damage. This ability can only be used within 48 hours of the dragon turtle's death. Once used, the steam ventral is emptied out and rendered useless."
+        "As an action, a creature may squeeze the steam ventral to release a 30-foot cone of scalding steam. Each creature in that area must make a DC 18 Constitution saving throw, taking {@dice 15d6} fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistsance against this damage. This ability can only be used within 48 hours of the dragon turtle's death. Once used, the steam ventral is emptied out and rendered useless."
       ],
       "requiredToolNames": []
     },
@@ -23945,7 +23945,7 @@
         "A naturally produced poison that the tlincalli use to even to coat their eggs. This poison is designed to debilitate rather than kill, lending itself well to the tlincalli's penchant for toying with those they hunt."
       ],
       "useText": [
-        "Can be used to coat up to 10 pieces of ammunition, or one slashing or piercing melee weapon. Applying this poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 14 Constitution saving throw, taking 4d6 poison damage on a failed save and becoming poisoned for 1 minute, or half damage and no poisoned condition on a successful save. If the target failed their saving throw by 5 or more the target is also paralyzed while poisoned. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        "Can be used to coat up to 10 pieces of ammunition, or one slashing or piercing melee weapon. Applying this poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 14 Constitution saving throw, taking {@dice 4d6} poison damage on a failed save and becoming poisoned for 1 minute, or half damage and no poisoned condition on a successful save. If the target failed their saving throw by 5 or more the target is also paralyzed while poisoned. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
       ],
       "requiredToolNames": []
     },
@@ -24433,7 +24433,7 @@
         "The collected spores of a vrock, requiring a special collection process and preservation in oil to ensure they retain their potency even after the original owner's death."
       ],
       "useText": [
-        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the spores takes 1 minute. For the next 10 minutes, the coated item is considered magical and any creature successfully hit by this weapon must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a target takes 1d10 poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it."
+        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the spores takes 1 minute. For the next 10 minutes, the coated item is considered magical and any creature successfully hit by this weapon must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a target takes {@dice 1d10} poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it."
       ],
       "requiredToolNames": []
     },
@@ -24499,7 +24499,7 @@
         "The blood of a wight is a black congealed mess, however it carries strong traces of necrotic energy. This energy reacts strangely with living creatures, granting them interesting abilities, but at a cost."
       ],
       "useText": [
-        "If you drink this vial of blood, for the next 24 hours you gain darkvision out to 60 ft., as well as the ability to see the life spark of all living things. This life spark appears as a white hot aura around a creature's body and is visible even through invisibility, and opaque cover no more than 2 feet thick. While able to see this spark, you have advantage on any Wisdom (Perception) checks made to find living creatures. However, if you are in sunlight, you also have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight. Also, you must succeed on a DC 13 Constitution saving throw or have your hit point maximum reduced by 1d6+2 until you finish a long rest. You die if this causes your hit point maximum to be reduced below 0 and then rise again 24 hours later as a wandering zombie unless your body is destroyed or you are restored to life."
+        "If you drink this vial of blood, for the next 24 hours you gain darkvision out to 60 ft., as well as the ability to see the life spark of all living things. This life spark appears as a white hot aura around a creature's body and is visible even through invisibility, and opaque cover no more than 2 feet thick. While able to see this spark, you have advantage on any Wisdom (Perception) checks made to find living creatures. However, if you are in sunlight, you also have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight. Also, you must succeed on a DC 13 Constitution saving throw or have your hit point maximum reduced by {@dice 1d6+2} until you finish a long rest. You die if this causes your hit point maximum to be reduced below 0 and then rise again 24 hours later as a wandering zombie unless your body is destroyed or you are restored to life."
       ],
       "requiredToolNames": []
     },
@@ -24599,7 +24599,7 @@
         "Perhaps the most ubiquitous of all poisons, no assassin's kit is complete without at least one jar of wyvern poison."
       ],
       "useText": [
-        "Can be used to coat up to 15 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next 10 minutes, any creature successfully hit must make a DC 15 Constitution saving throw, taking 7d6 poison damage on a failed save, or half that on a successful saving throw."
+        "Can be used to coat up to 15 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next 10 minutes, any creature successfully hit must make a DC 15 Constitution saving throw, taking {@dice 7d6} poison damage on a failed save, or half that on a successful saving throw."
       ],
       "requiredToolNames": []
     },
@@ -24781,7 +24781,7 @@
         "It is more than just a superstition that the howl of a yeti brings a blizzard, as anyone who has faced an abominable yeti can attest to. These larger specimens breathe the cold itself, using it to weaken large groups of unwary mountaineers before moving in for the final kill."
       ],
       "useText": [
-        "You may spend an action to press these lungs and exhale a 30-foot cone of frigid air. Each creature in that area must make a DC 18 Constitution saving throw, taking 10d8 cold damage on a failed save, or half as much damage on a successful one. Once this item has been used, it cannot be used again and becomes worthless."
+        "You may spend an action to press these lungs and exhale a 30-foot cone of frigid air. Each creature in that area must make a DC 18 Constitution saving throw, taking {@dice 10d8} cold damage on a failed save, or half as much damage on a successful one. Once this item has been used, it cannot be used again and becomes worthless."
       ],
       "requiredToolNames": []
     },
@@ -24807,7 +24807,7 @@
         "The ooze of a yochlol is said to be more poisonous than that of the deadliest spiders in the world. It is ironic then that the other societies of the Underdark use this poison against the drow after they have defeated their demonic servants."
       ],
       "useText": [
-        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 15 Constitution saving throw, taking 6d6 poison damage on a failed save, or half that on a successful saving throw."
+        "Can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 15 Constitution saving throw, taking {@dice 6d6} poison damage on a failed save, or half that on a successful saving throw."
       ],
       "requiredToolNames": []
     },
@@ -24993,7 +24993,7 @@
         "The venom of a yuan-ti combines elements of several of the most deadly snakes in nature. The poison has been described by survivors as \"like having one's blood transfigured into fire.\""
       ],
       "useText": [
-        "Can be used to coat up to 10 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 15 Constitution saving throw, taking 3d6 poison damage on a failed save, or half that on a successful saving throw."
+        "Can be used to coat up to 10 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the poison takes 1 minute. For the next minute, any creature successfully hit must make a DC 15 Constitution saving throw, taking {@dice 3d6} poison damage on a failed save, or half that on a successful saving throw."
       ],
       "requiredToolNames": []
     },
@@ -25055,7 +25055,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations (dry meat)",
+          "descriptionLine": "{@dice 1d4} days' worth of rations (dry meat)",
           "value": "3 sp",
           "weight": "1 lb"
         },
@@ -25067,13 +25067,13 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "1d8 small leather pouches",
+          "descriptionLine": "{@dice 1d8} small leather pouches",
           "value": "2 sp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d10 feet of linen wrappings",
+          "descriptionLine": "{@dice 1d10} feet of linen wrappings",
           "value": "5 cp",
           "weight": "1 lb"
         },
@@ -25091,7 +25091,7 @@
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d4 sticks of sweet smelling incense",
+          "descriptionLine": "{@dice 1d4} sticks of sweet smelling incense",
           "value": "4 sp",
           "weight": "1 lb"
         },
@@ -25109,7 +25109,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations (mouldy produce)",
+          "descriptionLine": "{@dice 1d4} days' worth of rations (mouldy produce)",
           "value": "8 cp",
           "weight": "2 lb"
         },
@@ -25151,7 +25151,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "10d10 silver pieces",
+          "descriptionLine": "{@dice 10d10} silver pieces",
           "value": "value",
           "weight": "varies"
         }
@@ -25163,7 +25163,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations (swamp plants and critters)",
+          "descriptionLine": "{@dice 1d4} days' worth of rations (swamp plants and critters)",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25175,7 +25175,7 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "2d4 shrunken critter carcasses on strings",
+          "descriptionLine": "{@dice 2d4} shrunken critter carcasses on strings",
           "value": "3 cp",
           "weight": "2 lb"
         },
@@ -25193,19 +25193,19 @@
         },
         {
           "d8Roll": 6,
-          "descriptionLine": "1d8 bundles of mildly intoxicating roots and leaves",
+          "descriptionLine": "{@dice 1d8} bundles of mildly intoxicating roots and leaves",
           "value": "1 sp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d4 pouches filled with minor trinkets",
+          "descriptionLine": "{@dice 1d4} pouches filled with minor trinkets",
           "value": "2 sp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "2d100 copper pieces",
+          "descriptionLine": "{@dice 2d100} copper pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25217,7 +25217,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25229,13 +25229,13 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "1d6 pouches of pipeweed",
+          "descriptionLine": "{@dice 1d6} pouches of pipeweed",
           "value": "7 sp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d4 precious gems",
+          "descriptionLine": "{@dice 1d4} precious gems",
           "value": "10 gp",
           "weight": "2 lb"
         },
@@ -25259,7 +25259,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "5d10 silver pieces",
+          "descriptionLine": "{@dice 5d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25295,13 +25295,13 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d8 pieces of vibrant coral",
+          "descriptionLine": "{@dice 1d8} pieces of vibrant coral",
           "value": "2 sp",
           "weight": "4 lb"
         },
         {
           "d8Roll": 6,
-          "descriptionLine": "1d4 pilfered trinkets",
+          "descriptionLine": "{@dice 1d4} pilfered trinkets",
           "value": "5 gp",
           "weight": "2 lb"
         },
@@ -25313,7 +25313,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "4d10 silver pieces",
+          "descriptionLine": "{@dice 4d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25325,7 +25325,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25349,7 +25349,7 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "2d6 sets of humanoid ears",
+          "descriptionLine": "{@dice 2d6} sets of humanoid ears",
           "value": "1 cp",
           "weight": "1 lb"
         },
@@ -25367,7 +25367,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "10d10 gold pieces",
+          "descriptionLine": "{@dice 10d10} gold pieces",
           "value": "varies ",
           "weight": "varies"
         }
@@ -25379,7 +25379,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25397,7 +25397,7 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d4 precious gems",
+          "descriptionLine": "{@dice 1d4} precious gems",
           "value": "10 gp",
           "weight": "2 lb"
         },
@@ -25421,7 +25421,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "8d10 silver pieces",
+          "descriptionLine": "{@dice 8d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25433,7 +25433,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25469,13 +25469,13 @@
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d6 poorly smelted pieces of jewelry",
+          "descriptionLine": "{@dice 1d6} poorly smelted pieces of jewelry",
           "value": "3 gp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "2d6 gold pieces",
+          "descriptionLine": "{@dice 2d6} gold pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25487,7 +25487,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d8 golden rings",
+          "descriptionLine": "{@dice 1d8} golden rings",
           "value": "2 gp",
           "weight": "1 lb"
         },
@@ -25505,7 +25505,7 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "2d4 preserved illithid tentacles",
+          "descriptionLine": "{@dice 2d4} preserved illithid tentacles",
           "value": "2 gp",
           "weight": "1 lb"
         },
@@ -25517,7 +25517,7 @@
         },
         {
           "d8Roll": 6,
-          "descriptionLine": "1d4 bottles of scented oils",
+          "descriptionLine": "{@dice 1d4} bottles of scented oils",
           "value": "1 gp",
           "weight": "1 lb"
         },
@@ -25529,7 +25529,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "12d10 gold pieces ",
+          "descriptionLine": "{@dice 12d10} gold pieces ",
           "value": "Varies ",
           "weight": "Varies"
         }
@@ -25541,7 +25541,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25553,7 +25553,7 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "2d6 sticks of fine incense",
+          "descriptionLine": "{@dice 2d6} sticks of fine incense",
           "value": "1 gp",
           "weight": "1 lb"
         },
@@ -25595,7 +25595,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 day's worth of rations (mouldy produce)",
+          "descriptionLine": "{@dice 1d4} day's worth of rations (mouldy produce)",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25613,13 +25613,13 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d6 strings of trophies",
+          "descriptionLine": "{@dice 1d6} strings of trophies",
           "value": "8 cp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "2d8 piercings (bone and metal)",
+          "descriptionLine": "{@dice 2d8} piercings (bone and metal)",
           "value": "1 sp",
           "weight": "1 lb"
         },
@@ -25637,7 +25637,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "5d10 silver pieces",
+          "descriptionLine": "{@dice 5d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25661,7 +25661,7 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "2d6 broken spearheads",
+          "descriptionLine": "{@dice 2d6} broken spearheads",
           "value": "2 sp",
           "weight": "2 lb"
         },
@@ -25673,7 +25673,7 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d4 shiny trinkets",
+          "descriptionLine": "{@dice 1d4} shiny trinkets",
           "value": "2 gp",
           "weight": "2 lb"
         },
@@ -25703,7 +25703,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25721,13 +25721,13 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d4 string of animal trophies",
+          "descriptionLine": "{@dice 1d4} string of animal trophies",
           "value": "8 cp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d4 shiny trinkets",
+          "descriptionLine": "{@dice 1d4} shiny trinkets",
           "value": "2 sp",
           "weight": "2 lb"
         },
@@ -25745,7 +25745,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "3d100 copper pieces",
+          "descriptionLine": "{@dice 3d100} copper pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25757,7 +25757,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations (swamp roots and critters)",
+          "descriptionLine": "{@dice 1d4} days' worth of rations (swamp roots and critters)",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25769,7 +25769,7 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "1d6 scraps of leather",
+          "descriptionLine": "{@dice 1d6} scraps of leather",
           "value": "7 sp",
           "weight": "1 lb"
         },
@@ -25781,7 +25781,7 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d4 binds made from swamp plant fibers",
+          "descriptionLine": "{@dice 1d4} binds made from swamp plant fibers",
           "value": "7 sp",
           "weight": "1 lb"
         },
@@ -25793,13 +25793,13 @@
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d6 grimy trinkets",
+          "descriptionLine": "{@dice 1d6} grimy trinkets",
           "value": "3 gp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "2d10 gold pieces",
+          "descriptionLine": "{@dice 2d10} gold pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25811,7 +25811,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25853,7 +25853,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "10d10 gold pieces",
+          "descriptionLine": "{@dice 10d10} gold pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25901,7 +25901,7 @@
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d4 rolls of bandages",
+          "descriptionLine": "{@dice 1d4} rolls of bandages",
           "value": "6 sp",
           "weight": "1 lb"
         },
@@ -25919,7 +25919,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -25937,13 +25937,13 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "3d6 bright bird feathers",
+          "descriptionLine": "{@dice 3d6} bright bird feathers",
           "value": "1 sp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "2d6 shiny trinkets",
+          "descriptionLine": "{@dice 2d6} shiny trinkets",
           "value": "2 sp",
           "weight": "1 lb"
         },
@@ -25961,7 +25961,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "10d10 silver pieces",
+          "descriptionLine": "{@dice 10d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -25985,7 +25985,7 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "1d4 shiny trinkets",
+          "descriptionLine": "{@dice 1d4} shiny trinkets",
           "value": "2 sp",
           "weight": "1 lb"
         },
@@ -26009,7 +26009,7 @@
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "2d6 horns of a deceased relative",
+          "descriptionLine": "{@dice 2d6} horns of a deceased relative",
           "value": "5 cp",
           "weight": "2 lb"
         },
@@ -26033,7 +26033,7 @@
         },
         {
           "d8Roll": 2,
-          "descriptionLine": "1d4 pouches of smoking herbs",
+          "descriptionLine": "{@dice 1d4} pouches of smoking herbs",
           "value": "1 gp",
           "weight": "1 lb"
         },
@@ -26051,19 +26051,19 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d4 pieces of a dragon eggshell",
+          "descriptionLine": "{@dice 1d4} pieces of a dragon eggshell",
           "value": "1 gp",
           "weight": "3 lb"
         },
         {
           "d8Roll": 6,
-          "descriptionLine": "1d4 animal cages",
+          "descriptionLine": "{@dice 1d4} animal cages",
           "value": "8 sp",
           "weight": "5 lb"
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d10 iron spikes",
+          "descriptionLine": "{@dice 1d10} iron spikes",
           "value": "1 sp",
           "weight": "1 lb"
         },
@@ -26081,13 +26081,13 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations (dried fish and seaweed)",
+          "descriptionLine": "{@dice 1d4} days' worth of rations (dried fish and seaweed)",
           "value": "5 sp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 2,
-          "descriptionLine": "2d4 pieces of homemade jewelry",
+          "descriptionLine": "{@dice 2d4} pieces of homemade jewelry",
           "value": "1 sp",
           "weight": "1 lb"
         },
@@ -26099,7 +26099,7 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d4 pieces of salvaged jewelry",
+          "descriptionLine": "{@dice 1d4} pieces of salvaged jewelry",
           "value": "2 gp",
           "weight": "2 lb"
         },
@@ -26135,7 +26135,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -26153,7 +26153,7 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d8 pieces of bone and shell jewelry",
+          "descriptionLine": "{@dice 1d8} pieces of bone and shell jewelry",
           "value": "7 sp",
           "weight": "2 lb"
         },
@@ -26165,7 +26165,7 @@
         },
         {
           "d8Roll": 6,
-          "descriptionLine": "1d6 chewing roots",
+          "descriptionLine": "{@dice 1d6} chewing roots",
           "value": "2 sp",
           "weight": "1 lb"
         },
@@ -26177,7 +26177,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "6d10 silver pieces",
+          "descriptionLine": "{@dice 6d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -26189,13 +26189,13 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 2,
-          "descriptionLine": "2d6 pieces of bright coral",
+          "descriptionLine": "{@dice 2d6} pieces of bright coral",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -26207,13 +26207,13 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "2d4 pieces of shell jewelry",
+          "descriptionLine": "{@dice 2d4} pieces of shell jewelry",
           "value": "4 sp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d6 pieces of salvaged jewelry",
+          "descriptionLine": "{@dice 1d6} pieces of salvaged jewelry",
           "value": "2 gp",
           "weight": "2 lb"
         },
@@ -26231,7 +26231,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "7d10 silver pieces",
+          "descriptionLine": "{@dice 7d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -26243,7 +26243,7 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations",
+          "descriptionLine": "{@dice 1d4} days' worth of rations",
           "value": "5 sp",
           "weight": "2 lb"
         },
@@ -26267,7 +26267,7 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d4 strings of dried elf ears",
+          "descriptionLine": "{@dice 1d4} strings of dried elf ears",
           "value": "1 sp",
           "weight": "2 lb"
         },
@@ -26279,13 +26279,13 @@
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d6 of salvaged jewelry",
+          "descriptionLine": "{@dice 1d6} of salvaged jewelry",
           "value": "2 gp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "3d10 gold pieces",
+          "descriptionLine": "{@dice 3d10} gold pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -26309,19 +26309,19 @@
         },
         {
           "d8Roll": 3,
-          "descriptionLine": "1d4 pouches of ceremonial ashes",
+          "descriptionLine": "{@dice 1d4} pouches of ceremonial ashes",
           "value": "2 sp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d4 strings of exotic feathers",
+          "descriptionLine": "{@dice 1d4} strings of exotic feathers",
           "value": "1 gp",
           "weight": "1 lb"
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d6 prized hunting trophies (horns, teeth)",
+          "descriptionLine": "{@dice 1d6} prized hunting trophies (horns, teeth)",
           "value": "2 gp",
           "weight": "8 lb"
         },
@@ -26333,13 +26333,13 @@
         },
         {
           "d8Roll": 7,
-          "descriptionLine": "1d6 lumps of fuel (dried manure and hay)",
+          "descriptionLine": "{@dice 1d6} lumps of fuel (dried manure and hay)",
           "value": "4 sp",
           "weight": "3 lb"
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "1d4 bags of animal feed",
+          "descriptionLine": "{@dice 1d4} bags of animal feed",
           "value": "1 gp",
           "weight": "8 lb"
         }
@@ -26351,13 +26351,13 @@
       "rows": [
         {
           "d8Roll": 1,
-          "descriptionLine": "1d4 days' worth of rations (dried fish and seaweed)",
+          "descriptionLine": "{@dice 1d4} days' worth of rations (dried fish and seaweed)",
           "value": "5 sp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 2,
-          "descriptionLine": "2d4 pieces of homemade jewelry",
+          "descriptionLine": "{@dice 2d4} pieces of homemade jewelry",
           "value": "1 sp",
           "weight": "1 lb"
         },
@@ -26369,7 +26369,7 @@
         },
         {
           "d8Roll": 4,
-          "descriptionLine": "1d4 pieces of salvaged jewelry",
+          "descriptionLine": "{@dice 1d4} pieces of salvaged jewelry",
           "value": "2 gp",
           "weight": "2 lb"
         },
@@ -26429,13 +26429,13 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d8 pieces of vibrant coral",
+          "descriptionLine": "{@dice 1d8} pieces of vibrant coral",
           "value": "2 sp",
           "weight": "4 lb"
         },
         {
           "d8Roll": 6,
-          "descriptionLine": "1d4 pilfered trinkets",
+          "descriptionLine": "{@dice 1d4} pilfered trinkets",
           "value": "5 gp",
           "weight": "2 lb"
         },
@@ -26447,7 +26447,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "4d10 silver pieces",
+          "descriptionLine": "{@dice 4d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -26483,13 +26483,13 @@
         },
         {
           "d8Roll": 5,
-          "descriptionLine": "1d4 pouches of vermin feed",
+          "descriptionLine": "{@dice 1d4} pouches of vermin feed",
           "value": "2 sp",
           "weight": "2 lb"
         },
         {
           "d8Roll": 6,
-          "descriptionLine": "1d6 stolen trinkets",
+          "descriptionLine": "{@dice 1d6} stolen trinkets",
           "value": "3 gp",
           "weight": "2 lb"
         },
@@ -26501,7 +26501,7 @@
         },
         {
           "d8Roll": 8,
-          "descriptionLine": "2d10 silver pieces",
+          "descriptionLine": "{@dice 2d10} silver pieces",
           "value": "varies",
           "weight": "varies"
         }
@@ -26516,7 +26516,7 @@
       "rarity": "Mixed",
       "requiresAttunement": false,
       "description": [
-        "You have a bonus to your attack and damage rolls made with this arrow corresponding to its rarity. When you make a successful hit with this arrow, you also deal an additional 1d8 (uncommon) 2d8 (rare), or 3d8 (very rare) damage of the type corresponding to the damage type this arrow was crafted from. You also have advantage on attacks made with this ammunition against any targets with the dragon creature type.",
+        "You have a bonus to your attack and damage rolls made with this arrow corresponding to its rarity. When you make a successful hit with this arrow, you also deal an additional {@dice 1d8} (uncommon) {@dice 2d8} (rare), or {@dice 3d8} (very rare) damage of the type corresponding to the damage type this arrow was crafted from. You also have advantage on attacks made with this ammunition against any targets with the dragon creature type.",
         "When used in a successful attack, there is a 30 per cent chance that this arrow loses all magical properties and becomes a normal arrow"
       ],
       "materials": [
@@ -26544,7 +26544,7 @@
       "rarity": "Mixed",
       "requiresAttunement": false,
       "description": [
-        "You have a bonus to your attack and damage rolls made with this bolt corresponding to its rarity. When you make a successful hit with this bolt, you also deal an additional 1d8 (uncommon) 2d8 (rare), or 3d8 (very rare) damage of the type corresponding to the damage type this bolt was crafted from. You also have advantage on attacks made with this ammunition against any targets with the dragon creature type.",
+        "You have a bonus to your attack and damage rolls made with this bolt corresponding to its rarity. When you make a successful hit with this bolt, you also deal an additional {@dice 1d8} (uncommon) {@dice 2d8} (rare), or {@dice 3d8} (very rare) damage of the type corresponding to the damage type this bolt was crafted from. You also have advantage on attacks made with this ammunition against any targets with the dragon creature type.",
         "When used in a successful attack, there is a 30 per cent chance that this bolt loses all magical properties and becomes a normal bolt."
       ],
       "materials": [
@@ -26588,7 +26588,7 @@
       "rarity": "Mixed",
       "requiresAttunement": false,
       "description": [
-        "While holding this item, you may spend an action to squeeze the bag, creating an effect identical to the nondamaging breath weapon of the dragon from whom this item was crafted (refer to the Monster Manual for the exact stats). Once this item has been used once, it cannot be used again for 1d4 hours."
+        "While holding this item, you may spend an action to squeeze the bag, creating an effect identical to the nondamaging breath weapon of the dragon from whom this item was crafted (refer to the Monster Manual for the exact stats). Once this item has been used once, it cannot be used again for {@dice 1d4} hours."
       ],
       "materials": [
         {
@@ -26619,8 +26619,8 @@
       "rarity": "Mixed",
       "requiresAttunement": false,
       "description": [
-        "This leathery pouch is repurposed from a dragon’s breath pouch and has had some of its potency reduced in exchange for long term usability. While holding this item, you may spend an action to squeeze the bag, forcing all creatures in a 15-foot (uncommon), 30-foot (rare), 60-foot (very rare) or 90-foot (legendary) cone to roll a DC 12 (uncommon), 15 (rare), DC 18 (very rare), or DC 20 (legendary) Dexterity saving throw, taking 4d6 (uncommon), 8d6 (rare), 12d6 (very rare), or 16d6 (legendary) damage on a failed save, or half that on a successful one. The damage type dealt corresponds to the damage type of the dragon from which this item was crafted.",
-        "Once this item has been used once, it cannot be used again for 1d4 hours."
+        "This leathery pouch is repurposed from a dragon’s breath pouch and has had some of its potency reduced in exchange for long term usability. While holding this item, you may spend an action to squeeze the bag, forcing all creatures in a 15-foot (uncommon), 30-foot (rare), 60-foot (very rare) or 90-foot (legendary) cone to roll a DC 12 (uncommon), 15 (rare), DC 18 (very rare), or DC 20 (legendary) Dexterity saving throw, taking {@dice 4d6} (uncommon), {@dice 8d6} (rare), {@dice 12d6} (very rare), or {@dice 16d6} (legendary) damage on a failed save, or half that on a successful one. The damage type dealt corresponds to the damage type of the dragon from which this item was crafted.",
+        "Once this item has been used once, it cannot be used again for {@dice 1d4} hours."
       ],
       "materials": [
         {
@@ -26818,7 +26818,7 @@
           ]
         },
         "If you die while wearing this amulet, and if this amulet has at least 7 charges in it, the amulet will automatically expend 7 charges to create a new body for your soul to inhabit. This body is formed from dust in a space within 5 feet of the amulet over the course of 24 hours, upon which the amulet can be placed on the new body, allowing your soul to enter it and return to life. This new body is a duplicate of your original one at the moment of its death but with all wounds healed and all hit points restored. This ability fails if the amulet is destroyed or removed from your body during the 24 hours it is creating a new body.",
-        "This item regains 1d8+1 charges daily at dawn."
+        "This item regains {@dice 1d8+1} charges daily at dawn."
       ],
       "materials": [{ "componentId": "mummylordheart_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -26875,7 +26875,7 @@
             "While you are submerged in water, you may emit a magical pulse that allows you to sense the distance, direction, and shape of any solid object and creature that are both within 1 mile of you and within the same body of water as you (1 charge)."
           ]
         },
-        "This item regains 1d8 charges daily at dawn."
+        "This item regains {@dice 1d8} charges daily at dawn."
       ],
       "materials": [{ "componentId": "krakenbrainstem_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -26956,7 +26956,7 @@
           "lines": [
             "1-2: If the spell affects an area or has multiple targets, it fails and has no effect. If the spell targets only you, it has no effect on you and is reflected back at the caster, using the spell slot level, spell save DC, attack bonus, and spellcasting ability of the caster.",
             "3-4: No additional effect.",
-            "5-6: The shield converts some of the spell's energy into a burst of destructive force. Each creature within 30 feet of you must make a DC 15 Constitution saving throw, taking 1d6 force damage per level of the spell on a failed save, or half as much damage on a successful one."
+            "5-6: The shield converts some of the spell's energy into a burst of destructive force. Each creature within 30 feet of you must make a DC 15 Constitution saving throw, taking {@dice 1d6} force damage per level of the spell on a failed save, or half as much damage on a successful one."
           ]
         },
         "This shield loses all its magical properties 1 month after being crafted. After this point, the shield may be reused to create a spellguard shield, counting for 2,000 gp of the crafting cost."
@@ -27173,7 +27173,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "While you are wearing this cloak, you deal 1d10 piercing damage to any creature grappling you at the start of your turn."
+        "While you are wearing this cloak, you deal {@dice 1d10} piercing damage to any creature grappling you at the start of your turn."
       ],
       "materials": [{ "componentId": "barbedhide_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -27246,7 +27246,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "As a bonus action, you may activate this weapon. It remains active for 1 minute or until you deactivate it as another bonus action or drop it. While activated, any successful attacks made with this weapon deal an extra 1d6 acid damage. In addition, whenever you make a successful attack against a creature made of flesh, you heal an amount of hit points equal to the amount of acid damage dealt by this weapon.",
+        "As a bonus action, you may activate this weapon. It remains active for 1 minute or until you deactivate it as another bonus action or drop it. While activated, any successful attacks made with this weapon deal an extra {@dice 1d6} acid damage. In addition, whenever you make a successful attack against a creature made of flesh, you heal an amount of hit points equal to the amount of acid damage dealt by this weapon.",
         "Curse: While attuned to this weapon you are cursed. While cursed in this way, you cannot voluntarily end your attunement to this weapon and the amount of food you require to eat per day is doubled. If you spend a day without eating this amount of food, you automatically gain one level of exhaustion and have a 25 per cent chance of gaining a troll-like mutation such as: discolored skin, warty scars, or vestigial body parts. Casting the remove curse spell on you or this weapon ends the curse and breaks your attunement to this weapon. However, it does not end any of the mutations you may have gained, which may only be removed if you are targeted by the greater restoration spell or similar magic."
       ],
       "materials": [{ "componentId": "markofvarpak_hh1", "quantity": "x1" }],
@@ -27499,7 +27499,7 @@
       "description": [
         "This leather cape is formed from two enchanted sheets of leather, connected to a repurposed marilith spine running down the centre.",
         "While wearing this cape, you may speak the command word as an action to animate the two sheets of leather which detach from the spine and form an extra set of arms and hands. You may control these arms and hands as if they were your own free hands, and they have a reach, strength, and dexterity equal to your regular arms and hands. You do not gain any extra attacks, and the rules for two-weapon fighting remain unchanged.",
-        "These extra hands remain for 1 hour or until you dismiss them by repeating the command word as an action. When they disappear, they cannot be used again for the next 1d6 hours."
+        "These extra hands remain for 1 hour or until you dismiss them by repeating the command word as an action. When they disappear, they cannot be used again for the next {@dice 1d6} hours."
       ],
       "materials": [{ "componentId": "marilithspine_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -27528,9 +27528,9 @@
       "rarity": "Legendary",
       "requiresAttunement": true,
       "description": [
-        "This helm has 9 charges and regains 1d8 charges at dawn. While wearing this helm, you spend an action to expend 1 or more charges to do any of the following:",
+        "This helm has 9 charges and regains {@dice 1d8} charges at dawn. While wearing this helm, you spend an action to expend 1 or more charges to do any of the following:",
         "You, and any equipment you are wearing or carrying, teleport up to 120 feet to an unoccupied space you can see. (1 charge)",
-        "You emit a magical, divine energy. Each creature of your choice in a 10-foot radius centered on yourself must make a DC 20 Dexterity saving throw, taking 4d6 fire damage plus 4d6 radiant damage on a failed save, or half as much on a successful one. (1 charges)",
+        "You emit a magical, divine energy. Each creature of your choice in a 10-foot radius centered on yourself must make a DC 20 Dexterity saving throw, taking {@dice 4d6} fire damage plus {@dice 4d6} radiant damage on a failed save, or half as much on a successful one. (1 charges)",
         "You target one creature you can see within 30 feet. If the target can see, it must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the lesser restoration spell removes the blindness. (2 charges)",
         "You release your held melee weapon to hover magically in an unoccupied space within 5 feet of you. If you can see the melee weapon, you can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to your hands. If the hovering sword is targeted by any effect, you are considered to be holding it. The hovering weapon falls if you die or take off the helmet. Otherwise, this effect lasts for 1 minute. This ability may only be used on one melee weapon at a time, any attempt to use it on another while one is already under its effect causes the original one to fall to the ground. (2 charges)"
       ],
@@ -27645,7 +27645,7 @@
         "This trident’s three horns are made of a chimera’s goat horn, lion tooth, and dragon fang. This trident has three abilities, each of which may be used upon a successful melee weapon attack with this weapon.",
         "- You force the creature you hit to succeed on a DC 15 Strength saving throw or be knocked prone.",
         "- The next weapon attack by one of your allies that is made against the creature you hit is made with advantage so long as you are within melee range of that creature.",
-        "- You deal an additional 1d8 fire damage.",
+        "- You deal an additional {@dice 1d8} fire damage.",
         "Once used, an individual ability may not be used again until the next dawn."
       ],
       "materials": [
@@ -27815,9 +27815,9 @@
           "type": "list",
           "lines": [
             "You are immune to lightning and thunder damage and have resistance to nonmagical attacks.",
-            "Your unarmed strikes deal an additional 1d6 lightning damage.",
+            "Your unarmed strikes deal an additional {@dice 1d6} lightning damage.",
             "You have a flying (hover) and swim speed equal to your walking speed.",
-            "You may move through a space as narrow as 1 inch wide without squeezing. You may also enter a hostile creature’s space and stop there. The first time you enter a creature’s space on a turn, or if a creature starts their turn in a space occupied by you, that creature takes 2d6 lightning damage."
+            "You may move through a space as narrow as 1 inch wide without squeezing. You may also enter a hostile creature’s space and stop there. The first time you enter a creature’s space on a turn, or if a creature starts their turn in a space occupied by you, that creature takes {@dice 2d6} lightning damage."
           ]
         },
         "If you are in living storm form while in an area under the effect of the control weather spell or similar magic, you instantly revert to your true form. Once this item’s ability has been used once, it cannot be used again until the next dawn."
@@ -27884,7 +27884,7 @@
         "- You cast any of the following spells: greater restoration (5 charges), fire storm (7 charges), plane shift (7 charges, self only), earthquake (8 charges)",
         "- You strike the ground, triggering an earth tremor. All other creatures on the ground within 60 feet of you must succeed on a DC 25 Strength saving throw or be knocked prone (2 charges).",
         "- You bolster all nonhostile creatures within 120 feet of you until the end of your next turn. Bolstered creatures can’t be charmed or frightened, and they gain advantage on ability checks and saving throws until the end of your next turn (1 charge).",
-        "- You may make a ranged spell attack at a target within 600 feet. On a successful hit, you deal 7d6 damage of one of the following types (your choice): acid, cold, fire, force, lightning, radiant, or thunder. This ranged attack uses your normal spell attack modifier, or your Charisma modifier + your proficiency bonus, whichever one is higher (1 charge).",
+        "- You may make a ranged spell attack at a target within 600 feet. On a successful hit, you deal {@dice 7d6} damage of one of the following types (your choice): acid, cold, fire, force, lightning, radiant, or thunder. This ranged attack uses your normal spell attack modifier, or your Charisma modifier + your proficiency bonus, whichever one is higher (1 charge).",
         "Additionally, if you fail a saving throw while wearing this crown, you may spend your reaction and 3 charges to succeed on that saving throw instead."
       ],
       "materials": [{ "componentId": "empyreanheart_hh1", "quantity": "x1" }],
@@ -27900,7 +27900,7 @@
       "requiresAttunement": true,
       "description": [
         "This crown has 9 charges. While wearing and attuned to this crown, and so long as you are not in bright light, you may spend an action to expend 1 or more of the crown’s charges to cast one of the following spells from it, with Intelligence as your spellcasting modifier: conjure animals (3 charges and may only summon swarms of rats, swarms of bats, or wolves), darkness (2 charges), invisibility (2 charges, plus 1 additional charge for every level above 2nd), spider climb (2 charge), gaseous form (3 charges), vampiric touch (3 charges, plus 1 additional charge for evert level cast above 3rd).",
-        "The crown recovers 1d8+1 charges at midnight. While wearing and attuned to the crown, you also gain advantage on any Dexterity (Stealth) checks made to hide in dim light or darkness, and darkvision out to 60 ft."
+        "The crown recovers {@dice 1d8+1} charges at midnight. While wearing and attuned to the crown, you also gain advantage on any Dexterity (Stealth) checks made to hide in dim light or darkness, and darkvision out to 60 ft."
       ],
       "materials": [{ "componentId": "vampireheart_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -28110,7 +28110,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "While wearing these goggles, you may spend your action to target a humanoid within 30 feet of you. If that humanoid is unwilling, they may make a DC 13 Wisdom saving throw to avoid the effects of this item. If they are willing, or if they fail the saving throw, you immediately gain the targeted humanoid’s memory of the most recent time in which they killed another humanoid. If that killing happened within the past 24 hours, they also suffer 2d10 psychic damage.",
+        "While wearing these goggles, you may spend your action to target a humanoid within 30 feet of you. If that humanoid is unwilling, they may make a DC 13 Wisdom saving throw to avoid the effects of this item. If they are willing, or if they fail the saving throw, you immediately gain the targeted humanoid’s memory of the most recent time in which they killed another humanoid. If that killing happened within the past 24 hours, they also suffer {@dice 2d10} psychic damage.",
         "If the targeted humanoid has never killed another humanoid, you instead become blinded for 1 minute."
       ],
       "materials": [{ "componentId": "bodakeye_hh1", "quantity": "x2" }],
@@ -28198,7 +28198,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "This bomb is a black iron sphere filled with balor ashes and explosive elements and is roughly the size of an orange. You may spend an action to light and throw this item at a point within 20 feet. At the end of your next turn, this item will explode, forcing all creatures within 20 feet of it to make a DC 20 Dexterity saving throw, taking 15d6 fire damage on a failure, or half as much damage on a success. The explosion ignites flammable objects in this area that aren’t being worn or carried."
+        "This bomb is a black iron sphere filled with balor ashes and explosive elements and is roughly the size of an orange. You may spend an action to light and throw this item at a point within 20 feet. At the end of your next turn, this item will explode, forcing all creatures within 20 feet of it to make a DC 20 Dexterity saving throw, taking {@dice 15d6} fire damage on a failure, or half as much damage on a success. The explosion ignites flammable objects in this area that aren’t being worn or carried."
       ],
       "materials": [
         { "componentId": "balorash_hh1", "quantity": "x1 small pouch" }
@@ -28316,7 +28316,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "You gain a +1 to attack and damage rolls made with this weapon. When you hit an attack using this weapon, the target takes an additional 1d6 radiant damage.",
+        "You gain a +1 to attack and damage rolls made with this weapon. When you hit an attack using this weapon, the target takes an additional {@dice 1d6} radiant damage.",
         "While holding this weapon, you may also spend an action to hold this weapon above your head, causing you to emanate a holy aura for the next 10 minutes. This aura is a cylinder 20 feet high and with a 10-foot radius centered on where you used this ability. Any fiend or undead within this aura may not willingly leave by any means unless they first succeed on a Charisma saving throw against your spell save DC. In addition, any fiend that dies within this aura acts as if it died on its native plane. Once this ability has been used once, it may not be used again until the next dawn."
       ],
       "materials": [{ "componentId": "planetarbone_hh1", "quantity": "x1" }],
@@ -28441,7 +28441,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": false,
       "description": [
-        "When you drink this jelly-like potion, you recover 10d4+20 hit points and are cured of any disease."
+        "When you drink this jelly-like potion, you recover {@dice 10d4+20} hit points and are cured of any disease."
       ],
       "materials": [
         {
@@ -28664,13 +28664,13 @@
         "2. Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "3. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "4. Slowing Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "5. Enervation Ray. The targeted creature must make a DC 16 Constitution saving throw, taking 8d8 necrotic damage on a failed save, or half as much damage on a successful one.",
+        "5. Enervation Ray. The targeted creature must make a DC 16 Constitution saving throw, taking {@dice 8d8} necrotic damage on a failed save, or half as much damage on a successful one.",
         "6. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or you can it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of your next turn or until you are incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 ft. in any direction. You can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
         "7. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
         "8. Petrification Ray. The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.",
-        "9. Disintegration Ray. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 10d8 force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
-        "10. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 10d10 necrotic damage. The target dies if the ray reduces it to 0 hit points.",
-        "This wand recovers 1d4 charges at dawn. When you use the last charge of the wand, there is a 10 per cent chance that it crumbles into ashes and is destroyed."
+        "9. Disintegration Ray. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take {@dice 10d8} force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+        "10. Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take {@dice 10d10} necrotic damage. The target dies if the ray reduces it to 0 hit points.",
+        "This wand recovers {@dice 1d4} charges at dawn. When you use the last charge of the wand, there is a 10 per cent chance that it crumbles into ashes and is destroyed."
       ],
       "materials": [
         { "componentId": "beholdereyestalk_hh1", "quantity": "x1" }
@@ -28731,7 +28731,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "This vial is filled with a concentrated extract of a spine devil’s blood and is highly flammable. As an action you may make a ranged weapon attack to throw this vial at a target within 20 feet, shattering it on impact. Make a ranged attack against the target, treating the vial as an improvised object. On a hit, the target suffers 2d4 fire damage at the start of each of its turns and has disadvantage on any saving throw against an effect that would cause them to suffer fire damage.",
+        "This vial is filled with a concentrated extract of a spine devil’s blood and is highly flammable. As an action you may make a ranged weapon attack to throw this vial at a target within 20 feet, shattering it on impact. Make a ranged attack against the target, treating the vial as an improvised object. On a hit, the target suffers {@dice 2d4} fire damage at the start of each of its turns and has disadvantage on any saving throw against an effect that would cause them to suffer fire damage.",
         "A creature can end these effects by using its action to make a DC 11 Dexterity check to remove the oil and flames."
       ],
       "materials": [{ "componentId": "spinedevilblood_hh1", "quantity": "x1" }],
@@ -28774,7 +28774,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "These arrows combust upon direct piercing organic material. When you hit a target successfully with this arrow, you deal an additional 1d6 fire damage. These arrows lose this property on hit and become regular arrows afterwards."
+        "These arrows combust upon direct piercing organic material. When you hit a target successfully with this arrow, you deal an additional {@dice 1d6} fire damage. These arrows lose this property on hit and become regular arrows afterwards."
       ],
       "materials": [
         { "componentId": "spineddevilspine_hh1", "quantity": "x1" }
@@ -28790,7 +28790,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "These bolts combust upon direct piercing organic material. When you hit a target successfully with this bolt, you deal an additional 1d6 fire damage. These bolts lose this property on hit and become regular bolts afterwards."
+        "These bolts combust upon direct piercing organic material. When you hit a target successfully with this bolt, you deal an additional {@dice 1d6} fire damage. These bolts lose this property on hit and become regular bolts afterwards."
       ],
       "materials": [
         { "componentId": "spineddevilspine_hh1", "quantity": "x1" }
@@ -28820,7 +28820,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": false,
       "description": [
-        "This piece of armor is fitted with intricate fire giant technology that imbues its wearer with supercharged movement when activated. While wearing this armor, you may spend an action to activate this armor’s heat coils. While the heat coils are activated, you gain a +2 bonus to AC, have advantage on Dexterity saving throws, and gain an additional action on each of your turns which may only be used to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. While active, you also suffer 3d6 fire damage at the end of each of your turns. This item remains active for 1 minute, until you spend your action to deactivate this item, or if you are doused with more than 10 gallons of water in a single round. Once this item has been deactivated, it cannot be used again for 24 hours."
+        "This piece of armor is fitted with intricate fire giant technology that imbues its wearer with supercharged movement when activated. While wearing this armor, you may spend an action to activate this armor’s heat coils. While the heat coils are activated, you gain a +2 bonus to AC, have advantage on Dexterity saving throws, and gain an additional action on each of your turns which may only be used to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. While active, you also suffer {@dice 3d6} fire damage at the end of each of your turns. This item remains active for 1 minute, until you spend your action to deactivate this item, or if you are doused with more than 10 gallons of water in a single round. Once this item has been deactivated, it cannot be used again for 24 hours."
       ],
       "materials": [
         { "componentId": "firegiantshieldscrap_hh1", "quantity": "x1" }
@@ -28852,7 +28852,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "This item takes the form of a grey-blue liquid inside a vial roughly the size of a weapon hilt. While holding the flask, you may spend a bonus action to imagine a non-twohanded melee weapon. If you do so, the liquid inside this flask pours out and takes the shape of the weapon you imagined, attaching itself to the flask which acts as the weapon’s hilt. This weapon may be used like any other weapon, and attacks made with it are considered magical. Once per turn, when you make a successful attack with this weapon, you may also deal an additional 2d6 lightning damage. You may also shape the liquid into an object that is not a weapon, so long as that object is no larger than 1 cubic foot in volume. The liquid returns to its flask if it is ever dropped, or if you spend a bonus action while holding it to mentally command it to do so."
+        "This item takes the form of a grey-blue liquid inside a vial roughly the size of a weapon hilt. While holding the flask, you may spend a bonus action to imagine a non-twohanded melee weapon. If you do so, the liquid inside this flask pours out and takes the shape of the weapon you imagined, attaching itself to the flask which acts as the weapon’s hilt. This weapon may be used like any other weapon, and attacks made with it are considered magical. Once per turn, when you make a successful attack with this weapon, you may also deal an additional {@dice 2d6} lightning damage. You may also shape the liquid into an object that is not a weapon, so long as that object is no larger than 1 cubic foot in volume. The liquid returns to its flask if it is ever dropped, or if you spend a bonus action while holding it to mentally command it to do so."
       ],
       "materials": [
         { "componentId": "stormgiantquintessentwater_hh1", "quantity": "x1" }
@@ -28882,7 +28882,7 @@
       "rarity": "Rare",
       "requiresAttunement": true,
       "description": [
-        "While holding this item, you may spend your action to force a creature you can see within 60 feet of you to make a DC 14 Charisma saving throw. On a failed save, that creature takes 6d8 psychic damage and is cursed with magical deformities. While deformed, the creature has its speed halved and has disadvantage on ability checks, saving throws, and attacks based on Strength or Dexterity. On a success, a creature only takes half damage and suffers no deformities. A transformed creature can repeat the saving throw whenever it finished a long rest, ending the effect on a success. Once used, this ability may not be used again until the next dawn. If this item goes 24 hours without its ability being used, it automatically attempts to use it on the nearest creature within range, including the holder."
+        "While holding this item, you may spend your action to force a creature you can see within 60 feet of you to make a DC 14 Charisma saving throw. On a failed save, that creature takes {@dice 6d8} psychic damage and is cursed with magical deformities. While deformed, the creature has its speed halved and has disadvantage on ability checks, saving throws, and attacks based on Strength or Dexterity. On a success, a creature only takes half damage and suffers no deformities. A transformed creature can repeat the saving throw whenever it finished a long rest, ending the effect on a success. Once used, this ability may not be used again until the next dawn. If this item goes 24 hours without its ability being used, it automatically attempts to use it on the nearest creature within range, including the holder."
       ],
       "materials": [{ "componentId": "fomorianeye_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -28896,7 +28896,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "You gain a +1 bonus to AC and resistance to cold damage while wearing this armour. In addition, the first time in a turn that a creature within 5 feet hits you with a melee weapon attack while you are wearing this armour, they suffer 2d6 cold damage."
+        "You gain a +1 bonus to AC and resistance to cold damage while wearing this armour. In addition, the first time in a turn that a creature within 5 feet hits you with a melee weapon attack while you are wearing this armour, they suffer {@dice 2d6} cold damage."
       ],
       "materials": [
         { "componentId": "icedevilcarapace_hh1", "quantity": "x1" }
@@ -28912,7 +28912,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "You gain a +2 bonus to all attack and damage rolls made with this weapon. When you hit with this weapon, you may choose to deal an extra 3d6 cold damage and force the target creature to make a DC 15 Constitution saving throw. On a failed save, for the next minute the target’s speed is reduced by 10 feet, is unable to take reactions, and only be able to take either an action or a bonus action on its turn, but not both. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "You gain a +2 bonus to all attack and damage rolls made with this weapon. When you hit with this weapon, you may choose to deal an extra {@dice 3d6} cold damage and force the target creature to make a DC 15 Constitution saving throw. On a failed save, for the next minute the target’s speed is reduced by 10 feet, is unable to take reactions, and only be able to take either an action or a bonus action on its turn, but not both. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "Once this ability has been used once, it cannot be used again until the end of your next short rest. If you roll a 20 on attack roll with this weapon however, the ability may be used again at that time, regardless of if you used it recently or not."
       ],
       "materials": [
@@ -28929,7 +28929,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "If you are using the rare version of this weapon, you gain a +1 bonus to all attack and damage rolls made with this weapon. When you hit with this weapon, you may choose to deal an extra 1d6 cold damage, or 2d6 cold damage if you are using the rare version of this weapon. Once you have used this ability once, it can’t be used again until the end of your next short rest."
+        "If you are using the rare version of this weapon, you gain a +1 bonus to all attack and damage rolls made with this weapon. When you hit with this weapon, you may choose to deal an extra {@dice 1d6} cold damage, or {@dice 2d6} cold damage if you are using the rare version of this weapon. Once you have used this ability once, it can’t be used again until the end of your next short rest."
       ],
       "materials": [
         { "componentId": "abominableyeticlaw_hh1", "quantity": "x2" }
@@ -28945,7 +28945,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "If you are using the rare version of this weapon, you gain a +1 bonus to all attack and damage rolls made with this weapon. When you hit with this weapon, you may choose to deal an extra 1d6 cold damage, or 2d6 cold damage if you are using the rare version of this weapon. Once you have used this ability once, it can’t be used again until the end of your next short rest."
+        "If you are using the rare version of this weapon, you gain a +1 bonus to all attack and damage rolls made with this weapon. When you hit with this weapon, you may choose to deal an extra {@dice 1d6} cold damage, or {@dice 2d6} cold damage if you are using the rare version of this weapon. Once you have used this ability once, it can’t be used again until the end of your next short rest."
       ],
       "materials": [{ "componentId": "yeticlaw_hh1", "quantity": "x2" }],
       "type": "Weapon (any weapon that deals slashing damage)",
@@ -29003,7 +29003,7 @@
       "rarity": "Rare",
       "requiresAttunement": true,
       "description": [
-        "This gem has 5 charges. While holding this gem, you may spend your action and 1 charge in order to teleport yourself and any equipment you are wearing or carrying up to 60 feet to an unoccupied space you can see. This gem regains 1d4+1 charges at dawn.",
+        "This gem has 5 charges. While holding this gem, you may spend your action and 1 charge in order to teleport yourself and any equipment you are wearing or carrying up to 60 feet to an unoccupied space you can see. This gem regains {@dice 1d4+1} charges at dawn.",
         "Alternatively, you may use 5 charges to cast the spell plane shift through the gem with the plane of Gehenna as your destination. If used in this way, the gem dissolves into a useless black ichor and is destroyed."
       ],
       "materials": [{ "componentId": "yugolothheart_hh1", "quantity": "x1" }],
@@ -29232,7 +29232,7 @@
       "requiresAttunement": false,
       "description": [
         "When you drink this potion, you must succeed on a DC 10 Constitution saving throw or become afflicted with the disease gut rot. While afflicted with gut rot, any time you attempt to swallow food, you instead suffer 4 necrotic damage and regurgitate that food. At the end of a long rest, you may attempt the saving throw again, ending the disease on a success.",
-        "If a creature dies while afflicted with gut rot, a violet fungus sprouts from the mouldering corpse, growing to full size in 2d6 days."
+        "If a creature dies while afflicted with gut rot, a violet fungus sprouts from the mouldering corpse, growing to full size in {@dice 2d6} days."
       ],
       "materials": [
         { "componentId": "violetfungusstalk_hh1", "quantity": "x1" }
@@ -29248,7 +29248,7 @@
       "rarity": "Common",
       "requiresAttunement": false,
       "description": [
-        "When you massage this tonic into a patch of skin for 1 minute, that patch of skin experiences extremely rapid hair growth, even if hair growth in that area is not usually possible. Each day for the next 7 days, roll 1d6. You grow that many inches in hair over the course of the day in that area.",
+        "When you massage this tonic into a patch of skin for 1 minute, that patch of skin experiences extremely rapid hair growth, even if hair growth in that area is not usually possible. Each day for the next 7 days, roll {@dice 1d6}. You grow that many inches in hair over the course of the day in that area.",
         "This bottle has enough hair tonic to cover 10 square feet of skin."
       ],
       "materials": [
@@ -29383,7 +29383,7 @@
         "- For the next hour you gain telepathy out to 120 feet and are able to both understand and speak Infernal (1 charge).",
         "- For the next hour you gain resistance to cold, fire, and poison damage (2 charges).",
         "- You may target a devil with a CR less than 20 that you can see within 60 feet of you. That devil must succeed on a DC 21 Wisdom saving throw or be charmed by you for 1 hour. While charmed by you, that devil must obey any command you give it that is not directly harmful to it. If a devil succeeds on the saving throw, it is immune to this ability for the next 24 hours (3 charges).",
-        "This helmet regains 1d10 charges at dawn."
+        "This helmet regains {@dice 1d10} charges at dawn."
       ],
       "materials": [{ "componentId": "pitfiendhead_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -29458,7 +29458,7 @@
       "rarity": "Rare",
       "requiresAttunement": true,
       "description": [
-        "While wearing this helmet, you have telepathy out to a range of 120 feet. In addition, you may spend an action to magically emit psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 4d8 psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once this ability has been used once, it cannot be used again until the next dawn."
+        "While wearing this helmet, you have telepathy out to a range of 120 feet. In addition, you may spend an action to magically emit psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take {@dice 4d8} psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once this ability has been used once, it cannot be used again until the next dawn."
       ],
       "materials": [{ "componentId": "mindflayerbrain_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -29472,7 +29472,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "While wearing this helmet, if you move at least 10 feet straight towards a target in a turn and then make a successful shove attack, you may choose to deal 2d8 piercing damage to your target in addition to the shove attack’s regular results."
+        "While wearing this helmet, if you move at least 10 feet straight towards a target in a turn and then make a successful shove attack, you may choose to deal {@dice 2d8} piercing damage to your target in addition to the shove attack’s regular results."
       ],
       "materials": [{ "componentId": "minotaurhorn_hh1", "quantity": "x2" }],
       "type": "Wondrous item",
@@ -29486,7 +29486,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "While wearing this helm, you have telepathy out to a range of 120 feet. In addition, you may spend an action to magically emit psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 4d12 psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once this ability has been used once, it cannot be used again until the next dawn.",
+        "While wearing this helm, you have telepathy out to a range of 120 feet. In addition, you may spend an action to magically emit psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take {@dice 4d12} psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once this ability has been used once, it cannot be used again until the next dawn.",
         "While wearing this helm you also mentally receive duplicates of any messages sent or received via telepathy by creatures within 30 feet of you. The original sender and receiver are not made aware of this interception, and you cannot telepathically respond to a duplicated telepathic message."
       ],
       "materials": [{ "componentId": "ulitharidbrain_hh1", "quantity": "x1" }],
@@ -29535,7 +29535,7 @@
         "You may spend your action to blow this horn. If you do, a magical roar is emitted from the horn which can be heard from a distance of 300 feet. Each creature (except the blower of the horn) that can hear the horn is subjected to a certain effect. The effect of the horn changes depending on how many times the horn has been blown that day. Once this horn has been used 3 times in one day, it cannot be blown again for 7 days.",
         "First Blow Each creature that fails a DC 16 Wisdom saving throw is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "Second Roar Each creature that fails a DC 16 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "Third Roar Each creature makes a DC 16 Constitution saving throw. On a failed save, a creature takes 8d10 thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone."
+        "Third Roar Each creature makes a DC 16 Constitution saving throw. On a failed save, a creature takes {@dice 8d10} thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone."
       ],
       "materials": [
         { "componentId": "androsphinxvocalcords_hh1", "quantity": "x1" }
@@ -29676,7 +29676,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": false,
       "description": [
-        "This several-foot-long bolt is designed to be loaded and fired from a ballista, usually one mounted on board a naval ship. An attack made with this bolt has a +10 to hit, range 120/480 ft., deals 6d10 piercing damage upon a successful hit, and ignores any damage threshold of their target. If the attack is being made against an object or structure, this attack deals 12d10 piercing damage instead. Unlike most ballista bolts, kraken bolts may be used again after being shot, so long as they can be retrieved successfully."
+        "This several-foot-long bolt is designed to be loaded and fired from a ballista, usually one mounted on board a naval ship. An attack made with this bolt has a +10 to hit, range 120/480 ft., deals {@dice 6d10} piercing damage upon a successful hit, and ignores any damage threshold of their target. If the attack is being made against an object or structure, this attack deals {@dice 12d10} piercing damage instead. Unlike most ballista bolts, kraken bolts may be used again after being shot, so long as they can be retrieved successfully."
       ],
       "materials": [{ "componentId": "krakentooth_hh1", "quantity": "x1" }],
       "type": "Weapon (ballista bolt)",
@@ -29691,7 +29691,7 @@
       "requiresAttunement": false,
       "description": [
         "A pot of this black paint is enough to cover up to 100 square feet of material. An enclosed space that has had its interior surface covered entirely in kraken paint acts as it were permanently under the effect of the darkness spell.",
-        "You may also spill the entire pot of paint into a body of water as an action to create a 60-foot radius cloud that spreads around corners. This area is considered heavily obscured and each creature that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 3d10 poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of your next turn."
+        "You may also spill the entire pot of paint into a body of water as an action to create a 60-foot radius cloud that spreads around corners. This area is considered heavily obscured and each creature that ends its turn there must succeed on a DC 23 Constitution saving throw, taking {@dice 3d10} poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of your next turn."
       ],
       "materials": [{ "componentId": "krakenink_hh1", "quantity": "x2 vials" }],
       "type": "Wondrous item",
@@ -29787,7 +29787,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "When you hit a Huge or smaller sized creature with this weapon, you may make a grapple check against them as a free action, using this whip to grapple instead of your free hand. While you have a creature grappled in this way, you may not attack with this weapon. If you have a creature grappled by this weapon, you may spend an action to force that creature to succeed on a DC 16 Constitution saving throw or suffer 2d10 necrotic damage. In addition, if a creature fails their saving throw, a vial’s worth of their blood becomes stored in the whip, which you may harvest as an action without requiring a check. This whip can only store one vial’s worth of blood at a time."
+        "When you hit a Huge or smaller sized creature with this weapon, you may make a grapple check against them as a free action, using this whip to grapple instead of your free hand. While you have a creature grappled in this way, you may not attack with this weapon. If you have a creature grappled by this weapon, you may spend an action to force that creature to succeed on a DC 16 Constitution saving throw or suffer {@dice 2d10} necrotic damage. In addition, if a creature fails their saving throw, a vial’s worth of their blood becomes stored in the whip, which you may harvest as an action without requiring a check. This whip can only store one vial’s worth of blood at a time."
       ],
       "materials": [
         { "componentId": "deathkisstentacle_hh1", "quantity": "x1" }
@@ -29877,13 +29877,13 @@
       "requiresAttunement": true,
       "description": [
         "This wand has 3 charges. While holding this wand, you may spend an action and 1 charge to shoot a magical ray of energy at a target within 120 feet of you. The type of ray depends on the type of gauth eye stalk that the wand was crafted from. Consult the list below to find out what your wand does.",
-        "1. Devour Magic Ray: The targeted creature must succeed on a DC 14 Dexterity saving throw or have one of its magic items lose all magical properties until the start of your next turn. If the object is a charged item, it also loses 1d4 charges. Determine the affected item randomly, ignoring single-use items such as potions and scrolls.",
-        "2. Enervation Ray: The targeted creature must make a DC 14 Constitution saving throw, taking 4d8 necrotic damage on a failed save, or half as much damage on a successful one.",
+        "1. Devour Magic Ray: The targeted creature must succeed on a DC 14 Dexterity saving throw or have one of its magic items lose all magical properties until the start of your next turn. If the object is a charged item, it also loses {@dice 1d4} charges. Determine the affected item randomly, ignoring single-use items such as potions and scrolls.",
+        "2. Enervation Ray: The targeted creature must make a DC 14 Constitution saving throw, taking {@dice 4d8} necrotic damage on a failed save, or half as much damage on a successful one.",
         "3. Pushing Ray: The targeted creature must succeed on a DC 14 Strength saving throw or be pushed up to 15 feet directly away from you and have its speed halved until the start of your next turn.",
-        "4. Fire Ray: The targeted creature must succeed on a DC 14 Dexterity saving throw or take 4d10 fire damage.",
+        "4. Fire Ray: The targeted creature must succeed on a DC 14 Dexterity saving throw or take {@dice 4d10} fire damage.",
         "5. Paralyzing Ray: The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "6. Sleep Ray: The targeted creature must succeed on a DC 14 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
-        "The wand recovers 1d2 charges at dawn. When you use the last charge of the wand, there is a 10 per cent chance that it crumbles into ashes and is destroyed."
+        "The wand recovers {@dice 1d2} charges at dawn. When you use the last charge of the wand, there is a 10 per cent chance that it crumbles into ashes and is destroyed."
       ],
       "materials": [{ "componentId": "gautheyestalk_hh1", "quantity": "x1" }],
       "type": "Wand",
@@ -29901,7 +29901,7 @@
         "1. Confusion Ray. The target must succeed on a DC 13 Wisdom saving throw or become unable to take reactions until the end of its next turn. On its turn, the target can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If the target can't attack, it does nothing on its turn.",
         "2. Paralyzing Ray. The target must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "3. Fear Ray. The target must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the spectator is visible to the target, ending the effect on itself on a success.",
-        "4. Wounding Ray. The target must make a DC 13 Constitution saving throw, taking 3d10 necrotic damage on a failed save, or half as much damage on a successful one.",
+        "4. Wounding Ray. The target must make a DC 13 Constitution saving throw, taking {@dice 3d10} necrotic damage on a failed save, or half as much damage on a successful one.",
         "When the last charge of this wand is used, it crumbles into dust and is destroyed."
       ],
       "materials": [
@@ -29933,7 +29933,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": false,
       "description": [
-        "A line of lightning constantly crackles through this bottle of cloudy grey liquid. A dose of this oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and deals an extra 1d8 lightning damage on a successful hit.",
+        "A line of lightning constantly crackles through this bottle of cloudy grey liquid. A dose of this oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and deals an extra {@dice 1d8} lightning damage on a successful hit.",
         "This bottle has enough liquid in it for 3 doses."
       ],
       "materials": [{ "componentId": "lightningsack_hh1", "quantity": "x1" }],
@@ -29963,7 +29963,7 @@
       "requiresAttunement": false,
       "description": [
         "This set of dentures automatically adapts itself to fit inside the mouth of any Medium or smaller creature that attempts to insert it. These dentures automatically fill in any missing teeth of that creature. If you have these dentures inserted, you may spend an action to concentrate on them to give them the appearance of other teeth such as buck teeth or fangs, but no matter what form they take, these dentures are no stronger than human teeth.",
-        "When left outside, these teeth chatter loudly for a few seconds every 1d4 hours."
+        "When left outside, these teeth chatter loudly for a few seconds every {@dice 1d4} hours."
       ],
       "materials": [
         {
@@ -30016,8 +30016,8 @@
         "- You gain truesight out to a range of 120 feet for one hour (1 charge).",
         "- You gain telepathy out to a range of 120 feet for one hour. This telepathy allows you to communicate with marine life who are capable of responding with basic emotions and images, however you gain no special ability to command them (1 charge).",
         "- You gain the ability to understand the waves and the wind for the next 24 hours. During this time, you automatically succeed on any ability check to navigate a course at sea (2 charges).",
-        "- You magically create up to three bolts of lightning, each of which can strike a target you can see within 120 feet of you. A target must make a DC 23 Dexterity saving throw, taking 4d10 lightning damage on a failed save, or half as much damage on a successful one (1 charge per lightning bolt).",
-        "This item regains 1d8 charges daily at dawn."
+        "- You magically create up to three bolts of lightning, each of which can strike a target you can see within 120 feet of you. A target must make a DC 23 Dexterity saving throw, taking {@dice 4d10} lightning damage on a failed save, or half as much damage on a successful one (1 charge per lightning bolt).",
+        "This item regains {@dice 1d8} charges daily at dawn."
       ],
       "materials": [{ "componentId": "krakeneye_hh1", "quantity": "x2" }],
       "type": "Wondrous item",
@@ -30152,7 +30152,7 @@
       "rarity": "Rare",
       "requiresAttunement": true,
       "description": [
-        "This weapon has 6 charges. When you successfully hit a creature with this weapon, you may choose to expend 1 or more charges from this weapon. If you do, you add 1d6 poison damage to your damage roll for every charge expended. This weapon regains 1 charge every hour."
+        "This weapon has 6 charges. When you successfully hit a creature with this weapon, you may choose to expend 1 or more charges from this weapon. If you do, you add {@dice 1d6} poison damage to your damage roll for every charge expended. This weapon regains 1 charge every hour."
       ],
       "materials": [
         { "componentId": "medusahair_hh1", "quantity": "x1 bundle" }
@@ -30293,7 +30293,7 @@
         "While holding this wand, you may spend an action to shoot a magical ray of energy at a target creature within 60 feet of you. The type of ray depends on the type of gazer eye stalk that the wand was crafted from. Consult the list below to find out what your wand does.",
         "1. Dazing Ray: The targeted creature must succeed on a DC 12 Wisdom saving throw or be charmed until the start of your next turn. While the target is charmed in this way, its speed is halved, and it has disadvantage on attack rolls.",
         "2. Fear Ray: The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened until the start of your next turn.",
-        "3. Frost Ray: The targeted creature must succeed on a DC 12 Dexterity saving throw or take 3d6 cold damage.",
+        "3. Frost Ray: The targeted creature must succeed on a DC 12 Dexterity saving throw or take {@dice 3d6} cold damage.",
         "4. Telekinetic Ray: If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from you. If the target is an object weighing 10 pounds or less that isn't being worn or carried, you move it up to 30 feet in any direction. You can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.",
         "Once this item has been used once, it crumbles into dust and is destroyed."
       ],
@@ -30417,7 +30417,7 @@
       "requiresAttunement": false,
       "description": [
         "A noxious potion brewed from the corpse dust of a mummy. It carries much of the lethal mummy rot that the cursed creatures are known for. This potion has a murky brown colour and smells roughly like an opened tomb; however, the smell can be covered easily enough with an overpowering scent.",
-        "When you drink this potion, you must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. While cursed, you cannot regain hit points, and your hit point maximum decreases by 3d6 for every 24 hours that elapse. If the curse reduces your hit point maximum to 0, you die, and your body turns to dust. This curse lasts until removed by the remove curse spell or other magic."
+        "When you drink this potion, you must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. While cursed, you cannot regain hit points, and your hit point maximum decreases by {@dice 3d6} for every 24 hours that elapse. If the curse reduces your hit point maximum to 0, you die, and your body turns to dust. This curse lasts until removed by the remove curse spell or other magic."
       ],
       "materials": [
         { "componentId": "mummydust_hh1", "quantity": "x1 small pouch" }
@@ -30436,11 +30436,11 @@
         "This wand has 5 charges. While holding this wand, you may spend an action and 1 charge to shoot a magical ray of energy at a target within 120 feet of you. The type of ray depends on the type of mindwitness eye stalk that the wand was crafted from. Consult the list below to find out what your wand does.",
         "1. Aversion Ray: The targeted creature must make a DC 13 Charisma saving throw. On a failed save, the target has disadvantage on attack rolls for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "2. Fear Ray: The targeted creature must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "3. Psychic Ray: The target must succeed on a DC 13 Intelligence saving throw or take 6d8 psychic damage.",
+        "3. Psychic Ray: The target must succeed on a DC 13 Intelligence saving throw or take {@dice 6d8} psychic damage.",
         "4. Slowing Ray: The targeted creature must make a DC 13 Dexterity saving throw. On a failed save, the target’s speed is halved for 1 minute. In addition, the creature can’t take reactions, and it can take either an action or a bonus action on its turn but not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "5. Stunning Ray: The targeted creature must succeed on a DC 13 Constitution saving throw or be stunned for 1 minute. The target can repeat the saving throw at the start of each of its turns, ending the effect on itself on a success.",
         "6. Telekinetic Ray: If the target is a creature, it must make a DC 13 Strength saving throw. On a failed save, you move it up to 30 feet in any direction, and it is restrained by the ray’s telekinetic grip until the start of your next turn or until you are incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is telekinetically moved up to 30 feet in any direction. You can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
-        "The wand recovers 1d4 charges at dawn. When you use the last charge of the wand, there is a 10 per cent chance that it crumbles into ashes and is destroyed."
+        "The wand recovers {@dice 1d4} charges at dawn. When you use the last charge of the wand, there is a 10 per cent chance that it crumbles into ashes and is destroyed."
       ],
       "materials": [
         { "componentId": "mindwitnesseyestalk_hh1", "quantity": "x1" }
@@ -30565,7 +30565,7 @@
       "requiresAttunement": true,
       "description": [
         "The heart of an oni, transfigured into a dark crystal. It seems to pulse with the corrupted radiance of the night, and those that gaze at it long enough swear they can see two pinpricks of white gazing back at them. While attuned to this amulet, you become more oni-like as your eyes become black with large white pupils, and two small, white, ivory nubs grow out of your forehead. If you are both wearing and attuned to this amulet, you gain the following benefits:",
-        "- You may spend a bonus action to summon a magical glaive into your empty hand. You are proficient in wielding this glaive if you weren’t already before. In addition, if for whatever reason you grow in size, this glaive grows in proportion with you and deals an additional 1d10 damage if you become larger than Medium sized. This glaive disappears if it is out of your hand for more than 1 minute.",
+        "- You may spend a bonus action to summon a magical glaive into your empty hand. You are proficient in wielding this glaive if you weren’t already before. In addition, if for whatever reason you grow in size, this glaive grows in proportion with you and deals an additional {@dice 1d10} damage if you become larger than Medium sized. This glaive disappears if it is out of your hand for more than 1 minute.",
         "- You gain darkvision out to 60 ft.",
         "- You gain proficiency in the Deception skill if you did not have it already.",
         "- You can speak and understand Giant if you could not already.",
@@ -30702,7 +30702,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": false,
       "description": [
-        "This item resembles an iron cylinder attached to a leathery sack capable of being filled with air. While holding this item, you may spend an action to squeeze the sack to release a 15-foot cone of poisonous gas in front of you. Each creature in that area must make a DC 19 Constitution saving throw, taking 10d8 poison damage on a failed save, or half as much on a successful one. Once used, this item may not be used again for another 1d8 hours."
+        "This item resembles an iron cylinder attached to a leathery sack capable of being filled with air. While holding this item, you may spend an action to squeeze the sack to release a 15-foot cone of poisonous gas in front of you. Each creature in that area must make a DC 19 Constitution saving throw, taking {@dice 10d8} poison damage on a failed save, or half as much on a successful one. Once used, this item may not be used again for another {@dice 1d8} hours."
       ],
       "materials": [{ "componentId": "poisoncanister_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -30864,19 +30864,19 @@
       "materials": [
         {
           "componentId": "[type]wyrmlingdragonblood_hh1",
-          "quantity": "x1 vial (uncommon, 3d4+3)"
+          "quantity": "x1 vial (uncommon, {@dice 3d4+3})"
         },
         {
           "componentId": "adult[type]dragonblood_hh1",
-          "quantity": "x1 vial (very rare, 10d4+10)"
+          "quantity": "x1 vial (very rare, {@dice 10d4+10})"
         },
         {
           "componentId": "ancient[type]dragonblood_hh1",
-          "quantity": "x1 vial (legendary, 12d4+12)"
+          "quantity": "x1 vial (legendary, {@dice 12d4+12})"
         },
         {
           "componentId": "young[type]dragonblood_hh1",
-          "quantity": "x1 vial (rare, 6d4+6)"
+          "quantity": "x1 vial (rare, {@dice 6d4+6})"
         }
       ],
       "type": "Potion",
@@ -31006,7 +31006,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": false,
       "description": [
-        "When you drink this potion, you recover 8d4+8 hit points and you gain a fiendish constitution for the next 1d4 hours. During this time, you gain resistance to cold, fire, and poison damage as well as damage from nonmagical weapons that aren’t silvered. You also have advantage on saving throws against spells and other magical effects. This potion is a deep crimson and smells strongly of sulfur."
+        "When you drink this potion, you recover {@dice 8d4+8} hit points and you gain a fiendish constitution for the next {@dice 1d4} hours. During this time, you gain resistance to cold, fire, and poison damage as well as damage from nonmagical weapons that aren’t silvered. You also have advantage on saving throws against spells and other magical effects. This potion is a deep crimson and smells strongly of sulfur."
       ],
       "materials": [
         { "componentId": "pitfiendblood_hh1", "quantity": "x1 vial" }
@@ -31053,7 +31053,7 @@
         "- You are able to enter an enemy’s space and stop there. You can also move through a space as narrow as 1 inch wide without squeezing.",
         "- While you remain motionless, you are indistinguishable from a puddle, unless an observer succeeds on a DC 18 Intelligence (Investigation) check.",
         "- While underwater, you have advantage on Dexterity (Stealth) checks made to hide, and you can take the Hide action as a bonus action.",
-        "Once the hour is over, you return to your normal form. If you return to your normal form in a space that would not support your normal form, you take 4d8 force damage at the start of each of your turns until you are in a space that can support you."
+        "Once the hour is over, you return to your normal form. If you return to your normal form in a space that would not support your normal form, you take {@dice 4d8} force damage at the start of each of your turns until you are in a space that can support you."
       ],
       "materials": [
         { "componentId": "slitheringtrackerslime_hh1", "quantity": "x1" }
@@ -31069,7 +31069,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "When you drink this potion, you go slightly mad for the next 1d4 hours. While in this state, you gain the ability to sense the presence of any creature within 30 feet of you that is invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving.",
+        "When you drink this potion, you go slightly mad for the next {@dice 1d4} hours. While in this state, you gain the ability to sense the presence of any creature within 30 feet of you that is invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving.",
         "If you are a spellcaster, you also gain the ability to cast any spell on the cleric spell list (excluding cantrips) for which you would have spell slots available. Any time you cast a spell known in this way, you suffer psychic damage equal to the spell level of that spell multiplied by 3. This damage is unmitigable in any way. Any attempt to record the knowledge of these spells fails as they inevitably become incomprehensible ramblings to you once the madness fades."
       ],
       "materials": [
@@ -31258,7 +31258,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "When you drink this potion, you become sick with mane disease for 1d12 hours. While sick in this way, your nose becomes runny and your eyes watery, causing you to have disadvantage on Wisdom (Perception) checks that rely on sight. However, your relatively mild sickness also boosts your immune system, giving you advantage on Constitution saving throws against being poisoned and other diseases. This potion is a pale grey colour with a string of liquid in it that resembles watery mucus."
+        "When you drink this potion, you become sick with mane disease for {@dice 1d12} hours. While sick in this way, your nose becomes runny and your eyes watery, causing you to have disadvantage on Wisdom (Perception) checks that rely on sight. However, your relatively mild sickness also boosts your immune system, giving you advantage on Constitution saving throws against being poisoned and other diseases. This potion is a pale grey colour with a string of liquid in it that resembles watery mucus."
       ],
       "materials": [
         { "componentId": "manesvapour_hh1", "quantity": "x1 vial" }
@@ -31420,7 +31420,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "When you drink this potion, you regain 8d4+8 hit points and for the next 24 hours, you have advantage on Constitution saving throws to resist the effects of diseases and poisons. This potion is a bright gold color with constant activity regardless of whether it has been shaken recently or not."
+        "When you drink this potion, you regain {@dice 8d4+8} hit points and for the next 24 hours, you have advantage on Constitution saving throws to resist the effects of diseases and poisons. This potion is a bright gold color with constant activity regardless of whether it has been shaken recently or not."
       ],
       "materials": [{ "componentId": "kirinblood_hh1", "quantity": "x1" }],
       "type": "Potion",
@@ -31463,7 +31463,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "When you drink this potion, your physiology changes entirely and your blood becomes icy cold for 1d4 hours. During this time, you are immune to cold damage, and any time a creature within 5 feet of you hits you with an attack that deals piercing or slashing damage, they suffer 2d6 cold damage. This potion is bright blue with frost constantly encasing the glass."
+        "When you drink this potion, your physiology changes entirely and your blood becomes icy cold for {@dice 1d4} hours. During this time, you are immune to cold damage, and any time a creature within 5 feet of you hits you with an attack that deals piercing or slashing damage, they suffer {@dice 2d6} cold damage. This potion is bright blue with frost constantly encasing the glass."
       ],
       "materials": [
         { "componentId": "icedevilblood_hh1", "quantity": "x1 vial" }
@@ -31480,7 +31480,7 @@
       "requiresAttunement": false,
       "description": [
         "This potion is constantly cool to the touch and appears to have snowflakes floating in the middle of it. If you willingly drink this potion, you enter a comatose state and fall unconscious and then immediately become encased in a block of ice that extends half a foot away from your body in either direction. While inside this ice block, you are considered behind total cover in all directions. You also do not age, require food, drink, or sleep, and any physical ailments including diseases and poisons halt their effect. If you were on 0 hit points you are also instantly stabilised. You instantly wake up if the ice block is destroyed, and all of these effects end. The ice block has AC 12, 30 hit points, is immune to psychic and poison damage and is vulnerable to fire damage. The ice block does not melt under nonmagical sources of heat.",
-        "If you unwillingly drink this potion, you may make a DC 13 Constitution saving throw to avoid being encased in the ice block, taking only 3d6 cold damage instead."
+        "If you unwillingly drink this potion, you may make a DC 13 Constitution saving throw to avoid being encased in the ice block, taking only {@dice 3d6} cold damage instead."
       ],
       "materials": [
         { "componentId": "yetieye(abominableyeti)_hh1", "quantity": "x1" },
@@ -31497,7 +31497,7 @@
       "rarity": "Common",
       "requiresAttunement": true,
       "description": [
-        "This weapon possesses a wickedly curved head, taken from the stinger of a purple worm. You gain +3 to attack and damage rolls made with this weapon. Once per day, you may use a bonus action to cause the spearhead to secrete purple worm venom. The next time you successfully hit a creature with this weapon, the target must succeed on a DC 19 Constitution saving throw, taking 12d6 poison damage on a failed save, or half as much damage on a successful one."
+        "This weapon possesses a wickedly curved head, taken from the stinger of a purple worm. You gain +3 to attack and damage rolls made with this weapon. Once per day, you may use a bonus action to cause the spearhead to secrete purple worm venom. The next time you successfully hit a creature with this weapon, the target must succeed on a DC 19 Constitution saving throw, taking {@dice 12d6} poison damage on a failed save, or half as much damage on a successful one."
       ],
       "materials": [
         { "componentId": "purplewormstinger_hh1", "quantity": "x1" }
@@ -31514,7 +31514,7 @@
       "requiresAttunement": false,
       "description": [
         "You may spend 1 minute applying this oil to an item no larger than 1 cubic foot in volume. For the next hour, the oiled item shines bright light out to a range of 15 feet and then dim light for 15 feet beyond that, and any damage dealt using that item may be treated as radiant damage instead of its usual damage type.",
-        "Alternatively, you may smash this bottle of oil on a hard surface up to 20 feet away from you. If you do so, the oil violently reacts and creates a blinding flash of light, affecting any creature in a 10-foot radius of it. Any creature in that area must make a DC 11 Constitution saving throw. On a failure, the creature takes 2d6 radiant damage and, if the creature can see the light, is blinded until the end of its next turn. If the saving throw is successful, the creature takes half the damage and isn’t blinded."
+        "Alternatively, you may smash this bottle of oil on a hard surface up to 20 feet away from you. If you do so, the oil violently reacts and creates a blinding flash of light, affecting any creature in a 10-foot radius of it. Any creature in that area must make a DC 11 Constitution saving throw. On a failure, the creature takes {@dice 2d6} radiant damage and, if the creature can see the light, is blinded until the end of its next turn. If the saving throw is successful, the creature takes half the damage and isn’t blinded."
       ],
       "materials": [
         { "componentId": "darklingeldertattoo_hh1", "quantity": "x1" }
@@ -31624,7 +31624,7 @@
         "- Your Strength score is considered 29",
         "- You gain temporary hit points equal to your Constitution modifier multiplied by your character level",
         "- You gain immunity to lightning damage.",
-        "- As an action, you may hurl a lightning bolt at a point you can see within 500 feet. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 12d8 lightning damage on a failed save, or half as much damage on a successful one. Once this ability is used, it may not be used again until the next time the ring is used.",
+        "- As an action, you may hurl a lightning bolt at a point you can see within 500 feet. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking {@dice 12d8} lightning damage on a failed save, or half as much damage on a successful one. Once this ability is used, it may not be used again until the next time the ring is used.",
         "Once used, this ring cannot be used again for the next 7 days."
       ],
       "materials": [{ "componentId": "rocheartpiece_hh1", "quantity": "x1" }],
@@ -31665,7 +31665,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "This vial contains 3 doses. Salamander fire is a highly viscous oil that is incredibly flammable and yet strangely easy to control. You may spend an action to cover a melee weapon in a dose of this oil and set it alight. While on fire in this way, a weapon deals an extra 1d6 fire damage on a successful hit and also sheds bright light out to a distance of 10 feet and dim light for a further 10 feet. The weapon will continue to burn for 1 minute before extinguishing itself. Traditional methods of extinguishing the flame do not work unless they manage to take the oil itself off the melee weapon."
+        "This vial contains 3 doses. Salamander fire is a highly viscous oil that is incredibly flammable and yet strangely easy to control. You may spend an action to cover a melee weapon in a dose of this oil and set it alight. While on fire in this way, a weapon deals an extra {@dice 1d6} fire damage on a successful hit and also sheds bright light out to a distance of 10 feet and dim light for a further 10 feet. The weapon will continue to burn for 1 minute before extinguishing itself. Traditional methods of extinguishing the flame do not work unless they manage to take the oil itself off the melee weapon."
       ],
       "materials": [
         { "componentId": "salamanderblood_hh1", "quantity": "x1 vial" }
@@ -31713,7 +31713,7 @@
       "requiresAttunement": true,
       "description": [
         "This shield is plated with scales taken from a yuan-ti abomination and pulses with the residual divine magic of the serpent gods. While wearing this shield, you may spend a bonus action to transform the shield and the arm holding it into a single serpent attached to your shoulder for the next 10 minutes.",
-        "This shield does not provide any bonus to AC while it is in serpent form. You may make melee weapon attacks with your serpent appendage by having it bite your targets. When used for melee weapon attacks, your serpent appendage is considered to have the finesse, reach, and light properties and deals 1d4 piercing damage plus 1d6 poison damage on a successful hit. You may at any point, spend a bonus action to transform your serpent appendage back into your arm and shield.",
+        "This shield does not provide any bonus to AC while it is in serpent form. You may make melee weapon attacks with your serpent appendage by having it bite your targets. When used for melee weapon attacks, your serpent appendage is considered to have the finesse, reach, and light properties and deals {@dice 1d4} piercing damage plus {@dice 1d6} poison damage on a successful hit. You may at any point, spend a bonus action to transform your serpent appendage back into your arm and shield.",
         "Once this ability has been used, you may not use it again until the end of your next long rest."
       ],
       "materials": [
@@ -31764,7 +31764,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "The oil in this vial can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the oil takes 1 minute. For the next 10 minutes, any creature successfully hit by this weapon or ammunition takes an extra 2d6 necrotic damage. If this weapon or ammunition kills a creature, a shadow under your control rises from that corpse (refer to the Monster Manual for the relevant statblock). This shadow acts directly after you in the initiative count and disappears after 1 hour or if it or you fall unconscious."
+        "The oil in this vial can be used to coat up to 5 pieces of slashing or piercing ammunition or one slashing or piercing weapon. Applying the oil takes 1 minute. For the next 10 minutes, any creature successfully hit by this weapon or ammunition takes an extra {@dice 2d6} necrotic damage. If this weapon or ammunition kills a creature, a shadow under your control rises from that corpse (refer to the Monster Manual for the relevant statblock). This shadow acts directly after you in the initiative count and disappears after 1 hour or if it or you fall unconscious."
       ],
       "materials": [
         { "componentId": "shadowflameember_hh1", "quantity": "x1 vial" }
@@ -31958,7 +31958,7 @@
         "- Any attack and damage roll made with this weapon is made with a +3 bonus.",
         "- Any attack made with this weapon to an object or structure deals double damage.",
         "- Any attack made with this weapon ignores an object’s damage threshold if it has one.",
-        "- If the wielder of this weapon moves at least 15 feet straight towards a target and then hits them with a melee weapon attack with this weapon, that target suffers an extra 4d8 bludgeoning damage and must succeed on a DC 21 Strength saving throw or be pushed up to 20 feet away and knocked prone."
+        "- If the wielder of this weapon moves at least 15 feet straight towards a target and then hits them with a melee weapon attack with this weapon, that target suffers an extra {@dice 4d8} bludgeoning damage and must succeed on a DC 21 Strength saving throw or be pushed up to 20 feet away and knocked prone."
       ],
       "materials": [{ "componentId": "goristrohorn_hh1", "quantity": "x2" }],
       "type": "Wondrous item",
@@ -32051,7 +32051,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "When you use this magical weapon to successfully hit a creature that has the incorporeal movement trait, you deal an additional 1d8 damage to them."
+        "When you use this magical weapon to successfully hit a creature that has the incorporeal movement trait, you deal an additional {@dice 1d8} damage to them."
       ],
       "materials": [{ "componentId": "barghestfang_hh1", "quantity": "x2" }],
       "type": "Weapon (any piercing or slashing melee weapon)",
@@ -32224,8 +32224,8 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "When you hit with an attack using this magic sword, the target takes an extra 1d6 lightning damage.",
-        "In addition, if you are outside and holding this weapon, you may spend an action to call a lightning bolt from the sky to strike your weapon, forcing every creature other than yourself within 10 feet of you to make a DC 16 Dexterity saving throw. On a failure, they suffer 6d6 lightning damage, or half that on a success. Once this ability has been used once, it cannot be used again until the next dawn."
+        "When you hit with an attack using this magic sword, the target takes an extra {@dice 1d6} lightning damage.",
+        "In addition, if you are outside and holding this weapon, you may spend an action to call a lightning bolt from the sky to strike your weapon, forcing every creature other than yourself within 10 feet of you to make a DC 16 Dexterity saving throw. On a failure, they suffer {@dice 6d6} lightning damage, or half that on a success. Once this ability has been used once, it cannot be used again until the next dawn."
       ],
       "materials": [{ "componentId": "lightningsack_hh1", "quantity": "x1" }],
       "type": "Weapon (any melee weapon)",
@@ -32239,7 +32239,7 @@
       "rarity": "Very Rare",
       "requiresAttunement": false,
       "description": [
-        "This 10-foot-long, 40-pound pole constantly crackles with energy and has an innate connection to the storms and clouds. As long as this pole is planted in the ground and under an open sky, a lightning bolt will strike it from the skies every 1d4 hours. Any creature within 5 feet of the pole when this happens suffers 12d8 lightning damage, or half that on a successful DC 17 Dexterity saving throw.",
+        "This 10-foot-long, 40-pound pole constantly crackles with energy and has an innate connection to the storms and clouds. As long as this pole is planted in the ground and under an open sky, a lightning bolt will strike it from the skies every {@dice 1d4} hours. Any creature within 5 feet of the pole when this happens suffers {@dice 12d8} lightning damage, or half that on a successful DC 17 Dexterity saving throw.",
         "A switch on the base of the pole may also be flipped, which causes lightning to strike this pole once every 6 seconds (on initiative count 20 if done during combat) for the next minute, after which the switch flips to the off position. A creature may also spend their action to flip the switch back prematurely. Once the switch has been flipped off, it cannot be flipped back on for another 24 hours."
       ],
       "materials": [{ "componentId": "stormgiantspine_hh1", "quantity": "x1" }],
@@ -32322,7 +32322,7 @@
       "requiresAttunement": true,
       "description": [
         "This bow does not require any physical arrows to be loaded in order to make an attack; instead, whenever its string is drawn back, a Sun Arrow made of solid light is formed in the wielder’s pull hand which dissipates after either 6 seconds, or when it hits a solid object, whichever comes first.",
-        "Sun Arrows deal an additional 1d6 radiant damage upon a successful hit and leave a trail of sunlight behind them as they fly through the air. This trail of sunlight illuminates everything in a 5-foot radius around it in bright light and dissipates at the start of the wielder’s next turn. The sunlight created by these arrows is considered equivalent to a 3rd level spell for the purposes of overcoming magical darkness."
+        "Sun Arrows deal an additional {@dice 1d6} radiant damage upon a successful hit and leave a trail of sunlight behind them as they fly through the air. This trail of sunlight illuminates everything in a 5-foot radius around it in bright light and dissipates at the start of the wielder’s next turn. The sunlight created by these arrows is considered equivalent to a 3rd level spell for the purposes of overcoming magical darkness."
       ],
       "materials": [{ "componentId": "kirinfur_hh1", "quantity": "x7 bolts" }],
       "type": "Weapon (longbow or shortbow)",
@@ -32393,7 +32393,7 @@
       "rarity": "Uncommon",
       "requiresAttunement": false,
       "description": [
-        "While wearing this cap, you may spend an action to target a creature you can see within 30 feet of you. If you do so, that creature must make a DC 11 Wisdom saving throw. On a failed save, you learn that creature’s greatest fear, and for the next 24 hours, you have advantage on Charisma (Intimidation) checks made against them. In addition, if they were incapacitated, they also take 3d6 psychic damage. On a successful save, that creature becomes immune to the effects of this item and is made aware of you targeting them. This item has no effect on creatures that are immune to the fear condition."
+        "While wearing this cap, you may spend an action to target a creature you can see within 30 feet of you. If you do so, that creature must make a DC 11 Wisdom saving throw. On a failed save, you learn that creature’s greatest fear, and for the next 24 hours, you have advantage on Charisma (Intimidation) checks made against them. In addition, if they were incapacitated, they also take {@dice 3d6} psychic damage. On a successful save, that creature becomes immune to the effects of this item and is made aware of you targeting them. This item has no effect on creatures that are immune to the fear condition."
       ],
       "materials": [{ "componentId": "meenlockhead_hh1", "quantity": "x1" }],
       "type": "Wondrous item",
@@ -32481,8 +32481,8 @@
       "rarity": "Very Rare",
       "requiresAttunement": true,
       "description": [
-        "While you are holding this item, you may target one creature you can see within 30 feet of you. That target must make a Charisma saving throw with a DC equal to 8 + your Intelligence modifier + your proficiency bonus. On a failed save, the target's soul is magically trapped inside this gem. While the soul is trapped, the target's body and all the equipment it is carrying cease to exist. On a successful save, the target takes 7d6 necrotic damage, and if this damage reduces the target to 0 hit points, its soul is trapped as if it failed the saving throw. A soul trapped in a gem for 24 hours is devoured and ceases to exist, and this gem gains 1 charge.",
-        "If you die while holding this gem, and if this gem has at least 1 charge, you return to life within 1d10 days so long as the gem is in contact with you for the entire duration. If it ever leaves contact with you, the magic of the gem fades and becomes a mundane object. At the end of the 1d10 days, the gem loses 1 charge and you return to life as if the reincarnate spell had been cast on you, with your new body identical to one of the creatures whose soul had been devoured by this item (chosen randomly). Once a body has been chosen, it cannot be chosen again.",
+        "While you are holding this item, you may target one creature you can see within 30 feet of you. That target must make a Charisma saving throw with a DC equal to 8 + your Intelligence modifier + your proficiency bonus. On a failed save, the target's soul is magically trapped inside this gem. While the soul is trapped, the target's body and all the equipment it is carrying cease to exist. On a successful save, the target takes {@dice 7d6} necrotic damage, and if this damage reduces the target to 0 hit points, its soul is trapped as if it failed the saving throw. A soul trapped in a gem for 24 hours is devoured and ceases to exist, and this gem gains 1 charge.",
+        "If you die while holding this gem, and if this gem has at least 1 charge, you return to life within {@dice 1d10} days so long as the gem is in contact with you for the entire duration. If it ever leaves contact with you, the magic of the gem fades and becomes a mundane object. At the end of the {@dice 1d10} days, the gem loses 1 charge and you return to life as if the reincarnate spell had been cast on you, with your new body identical to one of the creatures whose soul had been devoured by this item (chosen randomly). Once a body has been chosen, it cannot be chosen again.",
         "Crushing this gem releases any soul trapped within, at which point the target's body re-forms in an unoccupied space nearest to the gem and in the same state as when it was trapped."
       ],
       "materials": [{ "componentId": "soulgem_hh1", "quantity": "x1" }],
@@ -32512,7 +32512,7 @@
       "rarity": "Rare",
       "requiresAttunement": false,
       "description": [
-        "You gain a +1 to attack and damage rolls made with this weapon. If you are a good-aligned character, when you hit a creature with this weapon, you may deal an additional 2d6 radiant damage in addition to the weapon’s damage.",
+        "You gain a +1 to attack and damage rolls made with this weapon. If you are a good-aligned character, when you hit a creature with this weapon, you may deal an additional {@dice 2d6} radiant damage in addition to the weapon’s damage.",
         "Once you use this ability you may not use it again for one hour, or until you have landed the killing blow on an evilaligned creature, whichever comes first."
       ],
       "materials": [{ "componentId": "unicornhorn_hh1", "quantity": "x1" }],
@@ -32568,7 +32568,7 @@
       "requiresAttunement": true,
       "description": [
         "This wand has 4 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the confusion spell (save DC 15) from it. For 1 charge, you cast the 4th-level version of the spell. You can increase the spell slot level by one for each additional charge you spend.",
-        "The wand regains 1d4 charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
+        "The wand regains {@dice 1d4} charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
       ],
       "materials": [{ "componentId": "umberhulkeye_hh1", "quantity": "x2" }],
       "type": "Wand",
@@ -32611,7 +32611,7 @@
       "requiresAttunement": true,
       "description": [
         "This wand has 6 charges. While holding it, you can use an action to expend 1 or more charges to cast the blight spell (save DC 15) from it. For 1 charge, you cast the 4th-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
-        "The wand regains 1d6 expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into compost and is destroyed.",
+        "The wand regains {@dice 1d6} expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into compost and is destroyed.",
         "Additionally, you may use an action to plant the wand into soft soil. If you do so, the wand drains the energy of all living beings around it. All creatures and plants within a 30- foot radius of the wand are subjected to a DC 15 blight spell (cast at 4th-level). If the total damage dealt to all targets exceeds 65, the wand transforms into a shambling mound with the same amount of HP that was just dealt, up to a maximum of 136. This shambling mound has no allegiance to any creature around it and will act in its own interest. If the wand did not deal more than 65 damage, the wand simply crumbles into compost and is destroyed."
       ],
       "materials": [{ "componentId": "rootstem_hh1", "quantity": "x1" }],
@@ -32801,7 +32801,7 @@
       "rarity": "Rare",
       "requiresAttunement": true,
       "description": [
-        "While wearing these lenses, you may target a creature you can see within 30 feet of you. The target must make a DC 16 Constitution saving throw, suffering 8d8 necrotic damage on a failed save, or half that on a success. If the saving throw fails by 5 or more, the target instead takes 64 necrotic damage. The target dies if reduced to 0 hit points by this ability.",
+        "While wearing these lenses, you may target a creature you can see within 30 feet of you. The target must make a DC 16 Constitution saving throw, suffering {@dice 8d8} necrotic damage on a failed save, or half that on a success. If the saving throw fails by 5 or more, the target instead takes 64 necrotic damage. The target dies if reduced to 0 hit points by this ability.",
         "Once used, this ability may not be used again until the next dawn."
       ],
       "materials": [{ "componentId": "catoblepaseye_hh1", "quantity": "x2" }],
@@ -32828,7 +32828,7 @@
       "rarity": "Rare",
       "requiresAttunement": true,
       "description": [
-        "When you make a successful hit with this weapon on a creature that is not either an undead or a construct, that creature must succeed on a DC 15 Constitution saving throw or lose 2d6 hit points at the start of each of its turns due to an infernal wound. Each time this weapon hits the wounded target, the damage dealt by the wound increases by 2d6.",
+        "When you make a successful hit with this weapon on a creature that is not either an undead or a construct, that creature must succeed on a DC 15 Constitution saving throw or lose {@dice 2d6} hit points at the start of each of its turns due to an infernal wound. Each time this weapon hits the wounded target, the damage dealt by the wound increases by {@dice 2d6}.",
         "Any creature adjacent to the wounded target can take an action to staunch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
       ],
       "materials": [{ "componentId": "horneddeviltail_hh1", "quantity": "x1" }],

@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 import { connect } from "react-redux";
 import { getCraftableItemDict } from "../redux/selectors";
+import { rollableTokenisedLine, stripTags } from "../utility/stringUtil";
 
 const selectors = (store) => ({
   craftableItemDict: getCraftableItemDict(store),
@@ -48,7 +49,7 @@ function HarvestedItemDisplay(props) {
         <Col className="col-3 font-weight-bold">Description:</Col>
         <Col>
           {hItem.description.map((para, idx) => {
-            return <p key={idx}>{para}</p>;
+            return <p key={idx}>{rollableTokenisedLine(para)}</p>;
           })}
         </Col>
       </Row>
@@ -57,7 +58,7 @@ function HarvestedItemDisplay(props) {
           <Col className="col-3 font-weight-bold">UseText:</Col>
           <Col>
             {hItem.useText.map((para, idx) => {
-              return <p key={idx}>{para}</p>;
+              return <p key={idx}>{rollableTokenisedLine(para)}</p>;
             })}
           </Col>
         </Row>

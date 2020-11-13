@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StatBlock } from "../utility/statsUtil";
 import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import { CARD_SIZES } from "../data/referenceCardSizes";
-import { TrinketTableDisplay } from "./TrinketTableDisplay";
+import TrinketTableDisplay from "./TrinketTableDisplay";
 import HarvestingTableDisplay from "./HarvestingTableDisplay";
 import { stripTags } from "../utility/stringUtil";
 import { DynamicRender, SpellcastingBlock } from "./RenderBlocks";
@@ -16,6 +16,7 @@ import {
   getSubMonsterDict,
   getTrinketTableDict,
 } from "../redux/selectors";
+import { useHistory, useLocation, withRouter } from "react-router";
 
 const COMBAT_TAB_KEY = "combat";
 const TABLES_TAB_KEY = "tables";
@@ -27,6 +28,18 @@ function MonsterDisplay(props) {
   let [tabKey, setTabKey] = useState(COMBAT_TAB_KEY);
   let [tablesTabKey, setTablesTabKey] = useState(HARVESTING_TAB_KEY);
   let monster = props.monster;
+  let { location, history, match } = props;
+  // let location = useLocation();
+  // let history = useHistory();
+
+  let queryTokens = {};
+  let qString = location.search.substring(location.search.indexOf("?") + 1);
+  qString.split("&").forEach((pair) => {
+    let [key, value] = pair.split("=");
+    queryTokens[key] = value;
+  });
+
+  console.log(JSON.stringify(location));
 
   if (monster === null) {
     return (
@@ -92,8 +105,15 @@ function MonsterDisplay(props) {
 
   let hasTables = hasHarvestingTable || hasTrinketTable;
 
+  if (queryTokens.tab) {
+    tabKey = TABLES_TAB_KEY;
+    tablesTabKey = queryTokens.tab;
+  } else {
+    tabKey = COMBAT_TAB_KEY;
+  }
+
   if (!hasTables) {
-    if (tabKey === TABLES_TAB_KEY) {
+    if (tabKey !== COMBAT_TAB_KEY) {
       tabKey = COMBAT_TAB_KEY;
     }
   } else {
@@ -103,7 +123,6 @@ function MonsterDisplay(props) {
       tablesTabKey = HARVESTING_TAB_KEY;
     }
   }
-  //tabKey = COMBAT_TAB_KEY;
 
   let otherSourcesOut = monster.otherSources.map((oSrc, idx) => {
     let line = (
@@ -117,6 +136,8 @@ function MonsterDisplay(props) {
       return line;
     }
   });
+
+  console.log(`tabKey: ${tabKey}`);
 
   return (
     <>
@@ -149,7 +170,17 @@ function MonsterDisplay(props) {
           </div>
         </Col>
       </Row>
-      <Tabs activeKey={tabKey} onSelect={(k) => setTabKey(k)}>
+      <Tabs
+        activeKey={tabKey}
+        onSelect={(k) => {
+          setTabKey(k);
+          if (k === COMBAT_TAB_KEY) {
+            history.replace(location.pathname);
+          } else {
+            history.replace(`${location.pathname}?tab=${tablesTabKey}`);
+          }
+        }}
+      >
         <Tab eventKey={COMBAT_TAB_KEY} title="Combat">
           <div>
             <ACHPSpeed monster={monster} />
@@ -166,7 +197,13 @@ function MonsterDisplay(props) {
           {reactionsOut}
         </Tab>
         <Tab eventKey={TABLES_TAB_KEY} title="Tables" disabled={!hasTables}>
-          <Tabs activeKey={tablesTabKey} onSelect={(k) => setTablesTabKey(k)}>
+          <Tabs
+            activeKey={tablesTabKey}
+            onSelect={(k) => {
+              history.replace(`${location.pathname}?tab=${k}`);
+              setTablesTabKey(k);
+            }}
+          >
             <Tab
               eventKey={HARVESTING_TAB_KEY}
               title="Harvesting"
@@ -186,7 +223,10 @@ function MonsterDisplay(props) {
               title="Trinkets"
               disabled={!hasTrinketTable}
             >
-              <TrinketTableDisplay trinketTable={trinketTable} />
+              <TrinketTableDisplay
+                trinketTable={trinketTable}
+                monsterId={monster.id}
+              />
             </Tab>
           </Tabs>
         </Tab>
@@ -352,4 +392,4 @@ const monstersSelector = (state) => ({
   trinketTableDict: getTrinketTableDict(state),
 });
 
-export default connect(monstersSelector)(MonsterDisplay);
+export default connect(monstersSelector)(withRouter(MonsterDisplay));
