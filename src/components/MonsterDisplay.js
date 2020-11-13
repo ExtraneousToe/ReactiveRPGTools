@@ -4,7 +4,7 @@ import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import { CARD_SIZES } from "../data/referenceCardSizes";
 import TrinketTableDisplay from "./TrinketTableDisplay";
 import HarvestingTableDisplay from "./HarvestingTableDisplay";
-import { stripTags } from "../utility/stringUtil";
+import { RollableSpan, stripTags } from "../utility/stringUtil";
 import { DynamicRender, SpellcastingBlock } from "./RenderBlocks";
 import { stringFromSize } from "../utility/monsterUtil";
 import Sources from "../data/sources.json";
@@ -261,7 +261,8 @@ function ACHPSpeed(props) {
   );
   let hpOut = (
     <>
-      {monster.health.average} ({monster.health.formula})
+      {monster.health.average} (
+      {<RollableSpan formula={monster.health.formula} />})
     </>
   );
   topBlock.push(
