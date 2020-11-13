@@ -10,6 +10,24 @@ object-assign
   http://jedwatson.github.io/classnames
 */
 
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/**
+ * rpg-dice-roller - An advanced JS based dice roller that can roll various types of dice and modifiers, along with mathematical equations.
+ * 
+ * @version 4.5.2
+ * @license MIT
+ * @author GreenImp <info@greenimp.co.uk> (http://greenimp.co.uk)
+ * @link https://github.com/GreenImp/rpg-dice-roller
+ */
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
