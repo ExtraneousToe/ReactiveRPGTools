@@ -262,7 +262,7 @@ function ACHPSpeed(props) {
   let hpOut = (
     <>
       {monster.health.average} (
-      {<DynamicRender toRender={`{@dice ${monster.health.formula}}`} />}
+      {<DynamicRender toRender={`{@dice ${monster.health.formula}}`} />})
     </>
   );
   topBlock.push(
