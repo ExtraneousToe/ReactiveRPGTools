@@ -87,7 +87,6 @@ function TrinketTableDisplay(props) {
 
             setRolledArray(arrayCopy);
 
-            console.log(JSON.stringify(arrayCopy));
           }}
         >
           Roll
